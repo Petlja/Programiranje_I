@@ -1,82 +1,22 @@
-=====================
-This Is A New Project
-=====================
+=======================================================
+Учење на даљину - програмирање за први разред гимназије
+=======================================================
 
-.. Here is were you specify the content and order of your new book.
+О учењу на даљину
+:::::::::::::::::
 
-.. Each section heading (e.g. "SECTION 1: A Random Section") will be
-   a heading in the table of contents. Source files that should be
-   generated and included in that section should be placed on individual
-   lines, with one line separating the first source filename and the
-   :maxdepth: line.
+Ово је курс за учење програмирања на даљину путем интернета. Курс је направљен према плану учења за предмет Рачунарство и информатика у првом разреду гимназије, али може га корстити свако ко жели да на лак и забаван начин научи да програмира!
+Учење на даљину подразумева да проучаваш наставне материјале и радиш предложене задатке, самостално, сопственим темпом, у време које ти највише одговара. Када савладаш неку лекцију можеш да пређеш на следећу. Ако нешто не разумеш или се нечега не сећаш, можеш се враћати на претходне лекције колико год желиш!
+Када завршиш са неком лекцијом или тестом, поред линка  појавиће се зелени кружић са ознаком да је та лекција или тест завршен, тако да следећи пут кад се вратиш на курс знаш одакле да наставиш даље.
+Лекције су прављене тако да се очекује да једну лакцију пређеш за један школски час и да ти остане нешто и за домаћи. Зато ће курс имати 30 лекција, што одговара предвиђеном броју часова за програмирање у првом разреду - 30 часова. Очекује се да током једне недеље савладаш бар две лекције, а ако ти добро иде, можеш и више...
 
-.. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
+Садржај курса
+:::::::::::::
 
-SECTION 1: Introduction
-:::::::::::::::::::::::
+Најпре ћеш научити шта је то алгоритам.
+Затим ћеш упознати једног робота, Карела и Корњачу која црта рачунарску графику. Помоћу њих ћеш начинити своје прве кораке у програмском језику Пајтон (енгл. Python).
+Затим ћеш научити да правиш и мало сложеније програме за најразличитије намене. На крају ћеш се упознати са библиотеком Пајгејм помоћу које ћеш у Пајтону да креираш и сопствене игрице.
 
-Congratulations!   If you can see this file you have probably successfully run the ``runestone init`` command.  If you are looking at this as a source file you should now run ``runestone build``  to generate html files.   Once you have run the build command you can run ``runestone serve`` and then view this in your browser at ``http://localhost:8000``
+Основна литература за пролазак кроз овај курс су материјали направљени управо за први разред гимназије. Налазе се такође овде, на Петљи: Početna/Škola/Gimnazija/Prvi razred gimnazija `Početna/Škola/Gimnazija/Prvi razred gimnazija  <https://petlja.org/skola/gimnazija/prvi>`_.
 
-This is just a sample of what you can do.  The index.rst file is the table of contents for your entire project.  You can put all of your writing in the index, or  you can include additional rst files.  Those files may even be in subdirectories that you can reference using a relative path.
-
-
-::
-
-
-   .. toctree::
-      :maxdepth: 2
-
-      some/path/myfile.rst
-
-
-Section 2: Links
-::::::::::::::::
-
-Runestone uses the ``restructuredText`` (rst) markup language.  We chose this over markdown largely because rst is extensible.  Nearly all of the basic markup tasks are already handled by restructuredText.  You should check out the docs for the basics of restructuredText (link below). Our extensions are all for the interactive elements.  One key hint about restructuredText:  Its like **Python** -- *indentation matters!*
-
-* `restructuredText Docs <http://docutils.sourceforge.net/rst.html>`_
-* `Runestone Docs <http://runestoneinteractive.org/build/html/index.html>`_
-* Join the discussion on our `Google Group <https://groups.google.com/forum/#!forum/runestone_instructors>`_
-* Tell us about problems on `Github <https://github.com/RunestoneInteractive/RunestoneComponents>`_
-
-
-
-SECTION 3: Sample Directives
-::::::::::::::::::::::::::::
-
-ActiveCode
-----------
-
-.. activecode:: codeexample1
-   :coach:
-   :caption: This is a caption
-
-   print("My first program adds a list of numbers")
-   myList = [2, 4, 6, 8, 10]
-   total = 0
-   for num in myList:
-       total = total + num
-   print(total)
-
-Multiple Choice
----------------
-
-.. mchoice:: question1_2
-    :multiple_answers:
-    :correct: a,b,d
-    :answer_a: red
-    :answer_b: yellow
-    :answer_c: black
-    :answer_d: green
-    :feedback_a: Red is a definitely on of the colors.
-    :feedback_b: Yes, yellow is correct.
-    :feedback_c: Remember the acronym...ROY G BIV.  B stands for blue.
-    :feedback_d: Yes, green is one of the colors.
-
-    Which colors might be found in a rainbow? (choose all that are correct)
-
-These are just two of the many interactive components for writing online course materials.  You can see examples of all of them `On our Example Page <http://interactivepython.org/runestone/static/overview/overview.html>`_
-
-Now feel free to modify this file to start creating your own interactive page.
-
+Хајде да почнемо!
