@@ -1,6 +1,6 @@
-ime: Šesti razred # ovde se unosi ime kusa koje zelite, ne mesajte ovo ime sa imenom koje ce se videti na sajtu jer se na sajtu vidi instanca kursa
-dBalias: sesti-milena #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
-logo: 6ologo.png #ovaj deo nije toliko vazan posto u bazi vec postoje logo-i pa cu ja menjati i updatovati svaki yaml validnim imenom
+ime: Prvi razred gimnazije # ovde se unosi ime kusa koje zelite, ne mesajte ovo ime sa imenom koje ce se videti na sajtu jer se na sajtu vidi instanca kursa
+dBalias: prvigim-milena #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
+logo: 1slogo.png #ovaj deo nije toliko vazan posto u bazi vec postoje logo-i pa cu ja menjati i updatovati svaki yaml validnim imenom
 nauciti: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da pocienj sa -)
   - Кроз ове лекције упознаћеш се са текстуалним програмирањем учећи програмски језик Python.
 potrebno: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da pocienj sa -)
