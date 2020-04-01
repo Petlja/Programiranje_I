@@ -1,6 +1,6 @@
 ime: Први разред, класична гимназија # ovde se unosi ime kusa koje zelite, ne mesajte ovo ime sa imenom koje ce se videti na sajtu jer se na sajtu vidi instanca kursa
 dBalias: први-милена #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
-logo: 6ologo.png #ovaj deo nije toliko vazan posto u bazi vec postoje logo-i pa cu ja menjati i updatovati svaki yaml validnim imenom
+logo: 1slogo.png #ovaj deo nije toliko vazan posto u bazi vec postoje logo-i pa cu ja menjati i updatovati svaki yaml validnim imenom
 nauciti: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da pocienj sa -)
   - Кроз ове лекције упознаћеш се са текстуалним програмирањем учећи програмски језик Python.
 potrebno: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da pocienj sa -)
@@ -19,69 +19,115 @@ sadrzaj: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da
   - Структуре података
   - Основни алгоритми
 lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake lekcije je isti.
+
   - tip: section 
-    ime: Садржај #kako zelite da bude ime lekcije, tako ce se svaka lekcija zvati i na petljinom interfejsu, ovde je primer "Sadrzaj" i to mozda moze da zbuni. Milena je htela da sve bude pod jednim modulom, Laza na primer ima vise sekcija: Cas 1, Cas2 itd.. 
-    order: 1 #kod sekcije postoji u suprotnom prazan, ako mozda iz nekog razloga zelite da promesate redosled sekcija dozvoljeno je. Neophodno je zapamtiti da sve lekcije koje se nalaze ispod neke sekcije pripadaju toj sekciji, sve do sledece sekcije. (nema duplog ugnjezdavanja)
-    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
-    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: sadrzaj-lekcija # neophodno je navesti alias lekcije koji je jedinstven na nivou kura, mozete navesti bilo koje ima dok god je jedinstvneno
+    ime: Час 1
+    order: 1
+    content:
+    opis:  #
+    alias: cas1
+    
   - tip: html 
-    ime: Увод
+    ime: Алгоритми
     order: 
-    content: VI_razred_uvod_1.html  #kod html lekcije, content je ime file-a (ako je file u nekom folderu neophodno je navesti putanju do isto u samom build folder: (primer iz skola od kuce) Petlje/Petlje_01_VrstePetlji.html)
-    opis: #prazan 
-    alias: lekcija1 #edinstven-alias-u-okviru-kursa1
+    content: 1a_algoritmi.html
+    opis: #
+    alias: 1a_algoritmi
+    
   - tip: html 
     ime: Робот Карел - линијски програми
-    order: #samo se navodi kod sekcije
-    content: VI_razred_lekcija_1.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
-    opis: #prazan
-    alias: lekcija2 #jedinstven-alias-u-okviru-kursa
+    order: #
+    content: 1b_karel_linijski.html
+    opis: #
+    alias: 1b_karel_linijski
+    
   - tip: quiz
     ime: Teст
     order: 
-    content: VI_razred_test_1.html #potpuno isti princip vazi i ovde kao i za obicnu html lekciju
-    opis: 0, 1, 121112, 1, 1 #koristimo ovo polje da se izlistaju svi odgovori: koristi se programersko brojanje: 0-a, 1-b itd... Sto se tice fill in the blank samo navedite resenje, bez navodnika
-    alias: test1
+    content: 1b_karel_linijski_test.html
+    opis: 0, 1, 121112, 1, 1
+    alias: 1b_karel_linijski_test
+
+  - tip: html 
+    ime: Робот Карел - петља for
+    order: #
+    content: 1c_karel_for.html
+    opis: #
+    alias: 1c_karel_for
+    
+  - tip: quiz
+    ime: Teст
+    order: 
+    content: 1c_karel_for_test.html
+    opis: 0, 1, 121112, 1, 1
+    alias: 1c_karel_for_test
+
+  - tip: section 
+    ime: Час 2
+    order: 2
+    content:
+    opis:  #
+    alias: cas2
+    
   - tip: html
-    ime: "Други час: условне петље, гранање" #ukoliko ime sadzi u sebi : neophodno ga je staviti pod navodnike, yaml parser gleda to kao specijalan znak pa je neophodno reci da je zapravo string
+    ime: Робот Карел - услови
     order: 
-    content: Drugi_cas_1.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
-    opis: #prazan
-    alias: lekcija3 #edinstven-alias-u-okviru-kursa1
+    content: 2a_karel_uslovi.html
+    opis: #
+    alias: 2a_karel_uslovi
+      
   - tip: video
-    ime: Петља while
+    ime: Робот Карел - петља while
     order: 
-    content: https://www.youtube.com/embed/Zk-4gG4iZmc  # sto se tice vide-a, svaki YT link ima svoj "video kod", samo zamenite na kraju ovaj deo kako bi embedovanje radilo kako treba
-    opis: #prazan
-    alias: video1 #edinstven-alias-u-okviru-kursa1
+    content: https://www.youtube.com/embed/Zk-4gG4iZmc
+    opis: #
+    alias: 2b_karel_while_video
+      
   - tip: quiz
     ime: Teст
     order: 
-    content: Drugi_cas_test_1.html
-    opis: 0, 0, 02, 1213222, 34 #koristimo ovo polje da se izlistaju svi odgovori 
-    alias: test2
+    content: 2b_karel_while_test.html
+    opis: 0, 0, 02, 1213222, 34
+    alias: 2b_karel_while_test
+    
   - tip: video
-    ime: Наредба if
+    ime: Робот Карел - наредба if
     order: 
-    content: https://www.youtube.com/embed/Nyun0pML3-M  # sto se tice vide-a, svaki YT link ima svoj "video kod", samo zamenite na kraju ovaj deo kako bi embedovanje radilo kako treba
-    opis: #prazan
-    alias: video2 #edinstven-alias-u-okviru-kursa1
+    content: https://www.youtube.com/embed/Nyun0pML3-M
+    opis: #
+    alias: 2c_karel_if_video
+      
   - tip: video
-    ime: Проширени облик наредбе if
+    ime: Робот Карел - наредба if-else
     order: 
-    content: https://www.youtube.com/embed/KQVm3KpZtrY  # sto se tice vide-a, svaki YT link ima svoj "video kod", samo zamenite na kraju ovaj deo kako bi embedovanje radilo kako treba
-    opis: #prazan
-    alias: video3 #jedinstven-alias-u-okviru-kursa1
+    content: https://www.youtube.com/embed/KQVm3KpZtrY
+    opis: #
+    alias: 2d_karel_if_else_video
+    
   - tip: quiz
     ime: Teст
     order: 
-    content: Drugi_cas_test_2.html
+    content: 2d_karel_if_else_test.html
     opis: 1, 0, 1, 2, 2 #koristimo ovo polje da se izlistaju svi odgovori 
-    alias: test3
+    alias: 2d_karel_if_else_test
 
-  
-
-
-
-
+  - tip: section 
+    ime: Час 3
+    order: 3
+    content:
+    opis:  #
+    alias: cas3
+    
+  - tip: html
+    ime: Робот Карел - вежбање
+    order:
+    content: 3a_karel_vezbanje.html
+    opis: #
+    alias: 3a_karel_vezbanje
+    
+#  - tip: quiz
+#    ime: Teст
+#    order: 
+#    content: 3a_karel_test.html
+#    opis: ???
+#    alias: 3a_karel_test
