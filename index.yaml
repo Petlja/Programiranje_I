@@ -126,9 +126,9 @@ lekcije:
     opis: #
     alias: 3a_karel_vezbanje
     
-#  - tip: quiz
-#    ime: Teст
-#    order: 
-#    content: 3a_karel_test.html
-#    opis: ???
-#    alias: 3a_karel_test
+  - tip: quiz
+    ime: Teст
+    order: 
+    content: 3b_karel_test.html
+    opis: ???
+    alias: 3b_karel_test
