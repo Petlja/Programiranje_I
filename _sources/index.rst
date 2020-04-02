@@ -49,4 +49,5 @@
 	1b_karel_linijski_test.rst
 	1c_karel_for.rst
 	1c_karel_for_test.rst
+	3b_karel_test.rst
 
