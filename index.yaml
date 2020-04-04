@@ -132,3 +132,46 @@ lekcije:
     content: 3b_karel_test.html
     opis: ???
     alias: 3b_karel_test
+	
+- tip: section 
+    ime: Час 4
+    order: 4
+    content:
+    opis:  #
+    alias: cas4
+    
+  - tip: html
+    ime: Корњача графика - увод
+    order:
+    content: 4а_kornjaca_lekcija.html
+    opis: #
+    alias: 4а_kornjaca_lekcija
+
+  - tip: video
+    ime: Корњача графика - увод
+    order:
+    content: https://youtu.be/q0btftOGHyE?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
+    alias: 4b_kornjaca_uvod_video
+
+  - tip: video
+    ime: Корњача графика - линијска структура
+    order:
+    content: https://youtu.be/Wiq2DawUT9c?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
+    alias: 4c_kornjaca_linijski_programi_video
+
+  - tip: video
+    ime: Корњача графика - понављање
+    order:
+    content: https://youtu.be/vq9H7E2WDt4?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
+    alias: 4d_kornjaca_ponavljanje_video
+
+  - tip: quiz
+    ime: Teст
+    order: 
+    content: 4е_kornjaca_test.html
+    opis: #
+    alias: 4е_kornjaca_test
+
