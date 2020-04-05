@@ -32,8 +32,10 @@
 најразличитије намене. На крају ћеш се упознати са библиотеком Пајгејм
 помоћу које ћеш у Пајтону да креираш и сопствене игрице.
 
-Петља је портал са отвореним ресурсима за учење и овде можеш наћи доста материјала (приручнике, збирке задатака, збирке кратких питања,
-синтаксни приручник и много тога још). Циљ овог курса је да те води кроз наше материјале који се налазе на адреси `Петља
+Петља је портал са отвореним ресурсима за учење и овде можеш наћи
+доста материјала (приручнике, збирке задатака, збирке кратких питања,
+синтаксни приручник и много тога још). Циљ овог курса је да те води
+кроз наше материјале који се налазе на адреси `Петља
 <https://petlja.org/skola/gimnazija/prvi>`_.
 
 Желимо ти успешан рад!
@@ -43,11 +45,22 @@
 
 .. toctree::
 	:maxdepth: 2
-	
-	1a_algoritmi.rst
-	1b_karel_linijski.rst
-	1b_karel_linijski_test.rst
-	1c_karel_for.rst
-	1c_karel_for_test.rst
-	3b_karel_test.rst
 
+        1a_algoritmi.rst            
+	1b_karel_linijski.rst	    
+	1b_karel_linijski_test.rst  
+	1c_karel_for.rst	    
+	1c_karel_for_test.rst	    
+	2a_karel_uslovi.rst	    
+	2b_karel_while_test.rst	    
+	2b_karel_while_video.rst    
+	2c_karel_if_video.rst	    
+        2d_karel_if_else_test.rst
+        2d_karel_if_else_video.rst             
+        3a_karel_vezbanje.rst                  
+        3b_karel_test.rst                      
+        4a_kornjaca_lekcija.rst                
+        4b_kornjaca_uvod_video.rst             
+        4c_kornjaca_linijski_programi_video.rst
+        4d_kornjaca_ponavljanje_video.rst      
+        4e_kornjaca_test.rst                   
