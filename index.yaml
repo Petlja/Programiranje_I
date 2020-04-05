@@ -130,10 +130,10 @@ lekcije:
     ime: Teст
     order: 
     content: 3b_karel_test.html
-    opis: ???
+    opis: 
     alias: 3b_karel_test
-	
-- tip: section 
+
+  - tip: section 
     ime: Час 4
     order: 4
     content:
@@ -143,12 +143,12 @@ lekcije:
   - tip: html
     ime: Корњача графика - увод
     order:
-    content: 4а_kornjaca_lekcija.html
+    content: 4a_kornjaca_lekcija.html
     opis: #
-    alias: 4а_kornjaca_lekcija
+    alias: 4a_kornjaca_lekcija
 
   - tip: video
-    ime: Корњача графика - увод
+    ime: Корњача графика - уводни видео
     order:
     content: https://youtu.be/q0btftOGHyE?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
     opis: #
