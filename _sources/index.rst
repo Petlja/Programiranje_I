@@ -1,66 +1,42 @@
-=======================================================
-Програмирање за први разред гимназије
-=======================================================
-
-О курсу
-::::::::
-
-Ово је курс за учење програмирања на даљину путем интернета. Курс је
-направљен према плану учења за предмет Рачунарство и информатика у
-првом разреду гимназије, али може га корстити свако ко жели да на лак
-и забаван начин научи да програмира!  Учење на даљину подразумева да
-проучаваш наставне материјале и радиш предложене задатке, самостално,
-сопственим темпом, у време које ти највише одговара. Када савладаш
-неку лекцију можеш да пређеш на следећу. Ако нешто не разумеш или се
-нечега не сећаш, можеш се враћати на претходне лекције колико год
-желиш!  Када завршиш са неком лекцијом или тестом, поред линка
-појавиће се зелени кружић са ознаком да је та лекција или тест
-завршен, тако да следећи пут кад се вратиш на курс знаш одакле да
-наставиш даље.  Лекције су прављене тако да се очекује да једну
-лакцију пређеш за један школски час и да ти остане нешто и за
-домаћи. Зато ће курс имати 30 лекција, што одговара предвиђеном броју
-часова за програмирање у првом разреду - 30 часова. Очекује се да
-током једне недеље савладаш бар две лекције, а ако ти добро иде, можеш
-и више...
-
-Садржај курса
-:::::::::::::
-
-Најпре ћеш упознати једног робота, Карела и Корњачу која црта рачунарску графику. 
-Помоћу њих ћеш начинити своје прве кораке у програмском језику Пајтон (енгл. Python).
-Затим ћеш научити да правиш и мало сложеније програме за
-најразличитије намене. На крају ћеш се упознати са библиотеком Пајгејм
-помоћу које ћеш у Пајтону да креираш и сопствене игрице.
-
-Петља је портал са отвореним ресурсима за учење и овде можеш наћи
-доста материјала (приручнике, збирке задатака, збирке кратких питања,
-синтаксни приручник и много тога још). Циљ овог курса је да те води
-кроз наше материјале који се налазе на адреси `Петља
-<https://petlja.org/skola/gimnazija/prvi>`_.
-
-Желимо ти успешан рад!
-
-Списак лекција
-::::::::::::::
+=======
+Садржај
+=======
 
 .. toctree::
 	:maxdepth: 2
-
-        1a_algoritmi.rst            
-	1b_karel_linijski.rst	    
-	1b_karel_linijski_test.rst  
-	1c_karel_for.rst	    
-	1c_karel_for_test.rst	    
-	2a_karel_uslovi.rst	    
-	2b_karel_while_test.rst	    
-	2b_karel_while_video.rst    
-	2c_karel_if_video.rst	    
+	
+        1a_uvod.rst
+        1b_karel_linijski.rst
+        1b_karel_linijski_test.rst
+        1c_karel_for.rst
+        1c_karel_for_test.rst
+        2a_karel_uslovi.rst
+        2b_karel_while_test.rst
+        2b_karel_while_video.rst
+        2c_karel_if_video.rst
         2d_karel_if_else_test.rst
-        2d_karel_if_else_video.rst             
-        3a_karel_vezbanje.rst                  
-        3b_karel_test.rst                      
-        4a_kornjaca_lekcija.rst                
-        4b_kornjaca_uvod_video.rst             
+        2d_karel_if_else_video.rst
+        3a_karel_vezbanje.rst
+        3b_karel_test.rst
+        4a_kornjaca_lekcija.rst
+        4b_kornjaca_uvod_video.rst
         4c_kornjaca_linijski_programi_video.rst
-        4d_kornjaca_ponavljanje_video.rst      
-        4e_kornjaca_test.rst                   
+        4d_kornjaca_ponavljanje_video.rst
+        4e_kornjaca_test.rst
+        5a_uvod.rst
+        5b_grananje.rst
+        5c_ugneydjene_petlje.rst
+        5d_procedure.rst
+        5e_torke.rst
+        5f_kornjaca_test.rst
+        6_kornjaca_test.rst
+        7a_osnovne_aritmeticke_operacije.rst
+        7b1_python_kao_kalkulator.rst
+        7b2_ucitavanje_promenljive.rst
+        7c_vezba.rst
+        7d_korak_po_korak.rst
+        7e_izmena_vrednosti_promenljive.rst
+        7f_python_test.rst
+
+	
+
