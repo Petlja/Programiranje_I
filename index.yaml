@@ -1,43 +1,45 @@
-ime: Šesti razred
-dBalias: sesti-milena
-logo: 6ologo.png
+ime: Први разред, класична гимназија
+dBalias: први-милена
+logo: 1slogo.png
 nauciti:
   - Кроз ове лекције упознаћеш се са текстуалним програмирањем учећи програмски језик Python.
 potrebno:
   - инсталиран Python
 linkovi:
 sadrzaj:
+  - Алгоритамски начин размишљања
   - Робот Карел - линијски програми
   - Робот Карел - бројачка петља
   - Робот Карел - условна петља
   - Робот Карел - гранање
   - Корњача графика
-  - "Израчунавање: основне аритметичке операције и променљиве"
+  - "Израчунавање: основне аритметичке операције и променљиве" #neophodni su navodnici ako postoji :
   - "Функције: готове функције и дефинисање функција"
   - Контроле тока
   - Структуре података
   - Основни алгоритми
+
 lekcije:
 
   - tip: section 
     ime: Час 1
     order: 1
     content:
-    opis:  
+    opis:  #
     alias: cas1
     
   - tip: html 
-    ime: Увод 
+    ime: Алгоритми
     order: 
-    content: 1a_uvod.html
-    opis: 
-    alias: 1a_uvod
+    content: 1a_algoritmi.html
+    opis: #
+    alias: 1a_algoritmi
     
   - tip: html 
     ime: Робот Карел - линијски програми
-    order: 
+    order: #
     content: 1b_karel_linijski.html
-    opis: 
+    opis: #
     alias: 1b_karel_linijski
     
   - tip: quiz
@@ -49,9 +51,9 @@ lekcije:
 
   - tip: html 
     ime: Робот Карел - петља for
-    order: 
+    order: #
     content: 1c_karel_for.html
-    opis: 
+    opis: #
     alias: 1c_karel_for
     
   - tip: quiz
@@ -65,21 +67,21 @@ lekcije:
     ime: Час 2
     order: 2
     content:
-    opis:  
+    opis:  #
     alias: cas2
     
   - tip: html
     ime: Робот Карел - услови
     order: 
     content: 2a_karel_uslovi.html
-    opis: 
+    opis: #
     alias: 2a_karel_uslovi
       
   - tip: video
     ime: Робот Карел - петља while
     order: 
     content: https://www.youtube.com/embed/Zk-4gG4iZmc
-    opis: 
+    opis: #
     alias: 2b_karel_while_video
       
   - tip: quiz
@@ -93,14 +95,14 @@ lekcije:
     ime: Робот Карел - наредба if
     order: 
     content: https://www.youtube.com/embed/Nyun0pML3-M
-    opis: 
+    opis: #
     alias: 2c_karel_if_video
       
   - tip: video
     ime: Робот Карел - наредба if-else
     order: 
     content: https://www.youtube.com/embed/KQVm3KpZtrY
-    opis: 
+    opis: #
     alias: 2d_karel_if_else_video
     
   - tip: quiz
@@ -114,14 +116,14 @@ lekcije:
     ime: Час 3
     order: 3
     content:
-    opis:  
+    opis:  #
     alias: cas3
     
   - tip: html
     ime: Робот Карел - вежбање
     order:
     content: 3a_karel_vezbanje.html
-    opis: 
+    opis: #
     alias: 3a_karel_vezbanje
     
   - tip: quiz
@@ -135,42 +137,42 @@ lekcije:
     ime: Час 4
     order: 4
     content:
-    opis:  
+    opis:  #
     alias: cas4
     
   - tip: html
     ime: Корњача графика - увод
     order:
     content: 4a_kornjaca_lekcija.html
-    opis: 
+    opis: #
     alias: 4a_kornjaca_lekcija
 
   - tip: video
     ime: Корњача графика - уводни видео
     order:
-    content: https://www.youtube.com/embed/q0btftOGHyE
-    opis: 
+    content: https://youtu.be/q0btftOGHyE?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
     alias: 4b_kornjaca_uvod_video
 
   - tip: video
     ime: Корњача графика - линијска структура
     order:
-    content: https://www.youtube.com/embed/Wiq2DawUT9c
-    opis: 
+    content: https://youtu.be/Wiq2DawUT9c?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
     alias: 4c_kornjaca_linijski_programi_video
 
   - tip: video
     ime: Корњача графика - понављање
     order:
-    content: https://www.youtube.com/embed/vq9H7E2WDt4
-    opis: 
+    content: https://youtu.be/vq9H7E2WDt4?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    opis: #
     alias: 4d_kornjaca_ponavljanje_video
 
   - tip: quiz
     ime: Teст
     order: 
     content: 4е_kornjaca_test.html
-    opis: 
+    opis: #
     alias: 4е_kornjaca_test
 
   - tip: section 
@@ -264,7 +266,6 @@ lekcije:
     opis: 
     alias: 7b2_ucitavanje_promenljive
 
-	
   - tip: video
     ime: Вежба
     order:
@@ -286,11 +287,9 @@ lekcije:
     opis: 
     alias: 7e_izmena_vrednosti_promenljive
 
-
 - tip: quiz
     ime: Teст
     order: 
     content: 7f_python_test.html
     opis: 
     alias: 7f_python_test
-
