@@ -5,17 +5,16 @@
 .. toctree::
 	:maxdepth: 2
 	
-        1a_uvod.rst
         1b_karel_linijski.rst
         1b_karel_linijski_test.rst
         1c_karel_for.rst
         1c_karel_for_test.rst
         2a_karel_uslovi.rst
-        2b_karel_while_test.rst
         2b_karel_while_video.rst
+        2b_karel_while_test.rst
         2c_karel_if_video.rst
-        2d_karel_if_else_test.rst
         2d_karel_if_else_video.rst
+        2d_karel_if_else_test.rst
         3a_karel_vezbanje.rst
         3b_karel_test.rst
         4a_kornjaca_lekcija.rst
@@ -37,6 +36,36 @@
         7d_korak_po_korak.rst
         7e_izmena_vrednosti_promenljive.rst
         7f_python_test.rst
+        8а_python_celi_i_realni.rst
+        8b_python_realno_deljenje.rst
+        8c_python_celobrojno_deljenje.rst
+        8d_python_celi_i_realni_test.rst
+        9а_python_funkcije.rst
+        9b_python_ugradjene_funkcije.rst
+        9c_python_definisanje_funkcija.rst
+        9d_python_funkcije_test.rst
+        10a_grananje.rst
+        10b_grananje_video.rst
+        10c_kombinacija_uslova.rst
+        10d_kombinacija_uslova_video.rst
+        10e_konstrukcija_elif.rst
+        10f_konstrukcija_elif_video.rst
+        10g_grananje_test.rst
+        11a_petlje.rst
+        11b_uslovno_ponavljanje.rst
+        11c_ugnezdjene_petlje.rst
+        11d_ponavljanje_test.rst
+        12a_uvod.rst
+        12b_grananje_test.rst
+        12c_ponavljanje_test.rst
+
+
+
+
+
+
+
+
 
 	
 

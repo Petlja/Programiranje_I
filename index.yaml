@@ -91,14 +91,14 @@ lekcije:
     opis: 0, 0, 02, 1213222, 34
     alias: 2b_karel_while_test
     
-  - tip: video
+  - tip: html
     ime: Робот Карел - наредба if
     order: 
     content: https://www.youtube.com/embed/Nyun0pML3-M
     opis: #
     alias: 2c_karel_if_video
       
-  - tip: video
+  - tip: html
     ime: Робот Карел - наредба if-else
     order: 
     content: https://www.youtube.com/embed/KQVm3KpZtrY
@@ -293,3 +293,188 @@ lekcije:
     content: 7f_python_test.html
     opis: 
     alias: 7f_python_test
+
+  - tip: section 
+    ime: Час 8
+    order: 8
+    content:
+    opis:  
+    alias: cas8
+    
+  - tip: html
+    ime: Цели и реални бројеви, дељење
+    order:
+    content: 8a_python_celi_i_realni.html
+    opis: 
+    alias: 8a_python_celi_i_realni
+
+  - tip: html
+    ime: Реално дељење
+    order:
+    content: 8b_python_realno_deljenje.html
+    opis: 
+    alias: 8b_python_realno_deljenje
+
+  - tip: html
+    ime: Целобројно дељење
+    order:
+    content: 8c_python_celobrojno_deljenje.html
+    opis: 
+    alias: 8c_python_celobrojno_deljenje
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 8d_python_celi_i_realni_test.html
+    opis: 
+    alias: 8d_python_celi_i_realni_test
+
+  - tip: section 
+    ime: Час 9
+    order: 9
+    content:
+    opis:  
+    alias: cas9
+    
+  - tip: html
+    ime: Коришћење и дефинисање функција
+    order:
+    content: 9a_python_funkcije.html
+    opis: 
+    alias: 9a_python_funkcije
+
+  - tip: html
+    ime: Уграђене функције
+    order:
+    content: 9b_ugradjene_funkcije.html
+    opis: 
+    alias: 9b_ugradjene_funkcije
+
+  - tip: html
+    ime: Дефинисање функција
+    order:
+    content: 8c_python_definisanje_funkcija.html
+    opis: 
+    alias: 8c_python_definisanje_funkcija
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 9d_python_funkcije_test.html
+    opis: 
+    alias: 9d_python_funkcije_test
+  - tip: section 
+
+ime: Час 10
+    order: 10
+    content:
+    opis:  
+    alias: cas10
+    
+  - tip: html
+    ime: Гранање
+    order:
+    content: 10а_grananje.html
+    opis: 
+    alias: 10a_grananje
+
+  - tip: video
+    ime: Гранање - видео
+    order:
+    content: https://youtu.be/5YV_i-zNXa4
+    opis: 
+    alias: 10b_grananje_video
+
+  - tip: html
+    ime: Комбинација више услова
+    order:
+    content: 10c_kominacija_uslova.html
+    opis: 
+    alias: 10c_kominacija_uslova
+
+  - tip: video
+    ime: Комбинација више услова - видео
+    order:
+    content: https://youtu.be/I7N9zYVj3oo
+    opis: 
+    alias: 10d_kombinacija_uslova_video
+
+  - tip: html
+    ime: Конструкција elif
+    order:
+    content: 10e_konstrukcija_elif.html
+    opis: 
+    alias: 10e_konstrukcija_elif
+
+  - tip: video
+    ime: Конструкција elif - видео
+    order:
+    content: https://youtu.be/SRdwk8v7oBA
+    opis: 
+    alias: 10f_konstrukcija_elif
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 10g_granaje_test.html
+    opis: 
+    alias: 10g_granaje_test
+	
+ime: Час 11
+    order: 11
+    content:
+    opis:  
+    alias: cas11
+    
+  - tip: html
+    ime: Понављање
+    order:
+    content: 11a_petlje.html
+    opis: 
+    alias: 11a_petlje
+
+  - tip: html
+    ime: Условна петља
+    order:
+    content: 11b_uslovno_ponavljanje.html
+    opis: 
+    alias: 11b_uslovno_ponavljanje
+
+  - tip: html
+    ime: Угнежђене петље
+    order:
+    content: 11c_ugnezdjene_petlje.html
+    opis: 
+    alias: 11c_ugnezdjene_petlje
+
+- tip: qquiz    ime: Teст
+    order: 
+    content: 10d_ponavljanje_test.html
+    opis: 
+    alias: 10d_ponavljanje_test
+	
+ime: Час 12
+    order: 1quiz  content:
+    opiТест
+    alias: cas12
+    
+  - tip: html
+    ime: Гранање и понављање - вежбање
+    order:
+    content: 12a_uvod.html
+    opis: 
+    alias: 12a_uvod
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 12b_grananje_test.html
+    opis: 
+    alias: 12b_grananje_test
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 12c_ponavljanje_test.html
+    opis: 
+    alias: 12c_ponavljanje_test
