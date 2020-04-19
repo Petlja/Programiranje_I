@@ -150,30 +150,30 @@ lekcije:
   - tip: video
     ime: Корњача графика - уводни видео
     order:
-    content: https://youtu.be/q0btftOGHyE?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    content: https://www.youtube.com/embed/q0btftOGHyE
     opis: #
     alias: 4b_kornjaca_uvod_video
 
   - tip: video
     ime: Корњача графика - линијска структура
     order:
-    content: https://youtu.be/Wiq2DawUT9c?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    content: https://www.youtube.com/embed/Wiq2DawUT9c
     opis: #
     alias: 4c_kornjaca_linijski_programi_video
 
   - tip: video
     ime: Корњача графика - понављање
     order:
-    content: https://youtu.be/vq9H7E2WDt4?list=PLWXhVV6d5_uXFh9vOfagoU4FzJJlV3oWz
+    content: https://www.youtube.com/embed/vq9H7E2WDt4
     opis: #
     alias: 4d_kornjaca_ponavljanje_video
 
   - tip: quiz
     ime: Teст
     order: 
-    content: 4е_kornjaca_test.html
+    content: 4e_kornjaca_test.html
     opis: #
-    alias: 4е_kornjaca_test
+    alias: 4e_kornjaca_test
 
   - tip: section 
     ime: Час 5
@@ -192,21 +192,21 @@ lekcije:
   - tip: video
     ime: Корњача графика - гранање
     order:
-    content: https://youtu.be/XJIcrFdJ_Co
+    content: https://www.youtube.com/embed/XJIcrFdJ_Co
     opis: 
     alias: 5b_grananje
 
   - tip: video
     ime: Корњача графика - угнежђене петље
     order:
-    content: https://youtu.be/dfeX9T_M9xo
+    content: https://www.youtube.com/embed/dfeX9T_M9xo
     opis: 
     alias: 5c_ugneydjene_petlje
 
   - tip: video
     ime: Корњача графика - процедуре
     order:
-    content: https://youtu.be/A9mKe0iZyks
+    content: https://www.youtube.com/embed/A9mKe0iZyks
     opis: 
     alias: 5d_procedure
 
@@ -217,7 +217,7 @@ lekcije:
     opis: 
     alias: 5e_torke
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 5f_kornjaca_test.html
@@ -231,7 +231,7 @@ lekcije:
     opis:  
     alias: cas6
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 6_kornjaca_test.html
@@ -255,39 +255,39 @@ lekcije:
   - tip: video
     ime: Python као калкулатор и променљиве
     order:
-    content: https://youtu.be/tNf5ImS5mw4
+    content: https://www.youtube.com/embed/tNf5ImS5mw4
     opis: 
     alias: 7b1_python_kao_kalkulator
 
   - tip: video
     ime: Учитавање променљиве
     order:
-    content: https://youtu.be/iOI_S1QFgI4
+    content: https://www.youtube.com/embed/iOI_S1QFgI4
     opis: 
     alias: 7b2_ucitavanje_promenljive
 
   - tip: video
     ime: Вежба
     order:
-    content: https://youtu.be/vHAo8ywwutY
+    content: https://www.youtube.com/embed/vHAo8ywwutY
     opis: 
     alias: 7c_vezba
 
   - tip: video
     ime: Извршавање програма корак по корак
     order:
-    content: https://youtu.be/wth_pDjOeUQ
+    content: https://www.youtube.com/embed/wth_pDjOeUQ
     opis: 
     alias: 7d_korak_po_korak
 
   - tip: video
     ime: Измена вредности променљиве
     order:
-    content: https://youtu.be/VBTZgr8aaVg
+    content: https://www.youtube.com/embed/VBTZgr8aaVg
     opis: 
     alias: 7e_izmena_vrednosti_promenljive
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 7f_python_test.html
