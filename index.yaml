@@ -322,7 +322,7 @@ lekcije:
     opis: 
     alias: 8c_python_celobrojno_deljenje
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 8d_python_celi_i_realni_test.html
@@ -357,15 +357,15 @@ lekcije:
     opis: 
     alias: 8c_python_definisanje_funkcija
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 9d_python_funkcije_test.html
     opis: 
     alias: 9d_python_funkcije_test
+  
   - tip: section 
-
-ime: Час 10
+    ime: Час 10
     order: 10
     content:
     opis:  
@@ -413,14 +413,15 @@ ime: Час 10
     opis: 
     alias: 10f_konstrukcija_elif
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 10g_granaje_test.html
     opis: 
     alias: 10g_granaje_test
 	
-ime: Час 11
+  - tip: section
+    ime: Час 11
     order: 11
     content:
     opis:  
@@ -447,13 +448,14 @@ ime: Час 11
     opis: 
     alias: 11c_ugnezdjene_petlje
 
-- tip: qquiz    ime: Teст
+  - tip: quiz    
+    ime: Teст
     order: 
     content: 10d_ponavljanje_test.html
     opis: 
     alias: 10d_ponavljanje_test
 	
-ime: Час 12
+    ime: Час 12
     order: 1quiz  content:
     opiТест
     alias: cas12
