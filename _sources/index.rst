@@ -58,6 +58,16 @@
         12a_uvod.rst
         12b_grananje_test.rst
         12c_ponavljanje_test.rst
+        13a_tlnsr.rst
+        13b_tlnsr_test.rst
+        14a_strukture_petlje.rst
+        14a_strukture_petlje_test.rst
+        15a_algoritmi.rst
+        15b_algoritmi_test.rst
+        16a_algoritmi.rst
+        16b_algoritmi_test.rst
+
+
 
 
 
