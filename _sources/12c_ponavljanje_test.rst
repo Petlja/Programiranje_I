@@ -220,7 +220,7 @@
     :feedback_a: Нетачно 
     :answer_b: Исписују се цифре унетог броја n.
     :feedback_b: Тачно        
-    :answer_c: Исписује се сума цифара унетог броја n.
+    :answer_c: Исписује се збир цифара унетог броја n.
     :feedback_c: Тачно   
     :correct: c
 
@@ -231,7 +231,8 @@
      s = 0
      n = int(input("Unesi broj:"))
      while n > 0:
-     	s = n % 10
+     	a = n % 10
      	n = n // 10
+     	s = s + a
      print(s)
 

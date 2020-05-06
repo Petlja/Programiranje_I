@@ -470,14 +470,14 @@ lekcije:
     alias: 12a_uvod
 
   - tip: quiz
-    ime: Тест
+    ime: Тест I
     order:
     content: 12b_grananje_test.html
     opis: 
     alias: 12b_grananje_test
 
   - tip: quiz
-    ime: Тест
+    ime: Тест II
     order:
     content: 12c_ponavljanje_test.html
     opis: 
