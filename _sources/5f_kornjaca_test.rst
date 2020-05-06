@@ -76,14 +76,14 @@
 
 .. mchoice:: k4
     :answer_a: У нивоу спољашње петље for, на крају, једна наредба turtle.left(90).
-    :feedback_a: Тачно    
+    :feedback_a: Нетачно    
     :answer_b: У нивоу спољашње петље for једна наредба turtle.forward(90).
     :feedback_b: Нетачно    
     :answer_c: У нивоу унутрашње петље for, на крају, једна наредба turtle.left(90).
-    :feedback_c: Нетачно    
-    :correct: a
+    :feedback_c: Тачно    
+    :correct: c
     
-	Шта недостаје у следећем коду да би била исцртана фигур као на слици? Изабаери тачан одговор:	
+	Шта недостаје у следећем коду да би била исцртана фигурa као на слици? Изабаери тачан одговор:	
 		
 	.. code-block:: python
 	
@@ -91,7 +91,9 @@
 		for i in range(4):
 			turtle.forward(90)
 			turtle.left(90)
-
+			
+    .. image:: ../_images/4_kvadrata.png      
+       :align: center
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -106,7 +108,9 @@
     
 	Шта је дефинисано исцртавањем следећих наредби? Изабаери тачан одговор:	
 		
-	.. def poligon(n, a):
+	.. code-block:: python
+	
+	   def poligon(n, a):
 		for i in range(n):
 			turtle.forward(a)
 			turtle.right(360 / n)
@@ -114,23 +118,23 @@
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: k6
+.. mchoice:: k21
     :answer_a: Квадрат са ивицама које су црвено, зелене, плаве и жуте боје. 
     :feedback_a: Тачно    
     :answer_b:  Правоугаоник са ивицама које су црвено, зелене, плаве и жуте боје.
     :feedback_b: Нетачно    
     :answer_c:  Квадрат са ивицама које су црвено, жуте, плаве и зелене боје.
     :feedback_c: Нетачно    
-    :correct: а
+    :correct: a
     
-	Шта је резултат извршавањ следећег програма? Изабаери тачан одговор:	
+	Шта је резултат извршавањa следећег програма? Изабаери тачан одговор:	
 		
 	.. code-block:: python
 	
-	 boje = ("red", "green", "blue", "yellow")
-	 for i in range(4):
-		turtle.color(boje[i])
-		turtle.forward(100)
-		turtle.left(90)
+	   boje = ("red", "green", "blue", "yellow")
+	   for i in range(4):
+		 turtle.color(boje[i])
+		 turtle.forward(100)
+		 turtle.left(90)
 
 
