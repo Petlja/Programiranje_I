@@ -19,7 +19,7 @@
 	
 	.. code-block:: python
 	
-	 turtle.forwared(20)
+	 turtle.forward(20)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,6 +87,12 @@
 	  turtle.left(90)       
 	  turtle.forward(100)   
 	  turtle.left(90) 
+	  turtle.forward(100)   
+	  turtle.left(90) 
+	  turtle.forward(100)   
+	  turtle.left(90) 
+
+
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +124,7 @@
     :feedback_b: Нетачно    
     :answer_c:  правоугаоник
     :feedback_c: Нетачно    
-    :correct: а
+    :correct: a
     
 	Шта је резултат извршавањ следећег програма? Изабаери тачан одговор:	
 		
@@ -138,7 +144,7 @@
     :feedback_b: Нетачно    
     :answer_c:  слово М
     :feedback_c: Тачно    
-    :correct: а
+    :correct: c
     
 	Шта је резултат извршавањ следећег програма? Изабаери тачан одговор:	
 		
