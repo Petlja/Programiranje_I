@@ -27,13 +27,13 @@
     .. code-block:: python
 
      for broj in lista:
-     	print(broj)
+     print(broj)
 
     (3)
 
     .. code-block:: python
 
-     for broj in lista:
+     for broj in lista
      	print(broj)
 
 Питање 2.
@@ -90,12 +90,12 @@
     :answer_a: i in range(ocene)
     :feedback_a: Нетачно
     :answer_b: i i in range(broj_ocena)
-    :feedback_b: Тачно    
+    :feedback_b: Нетачно    
     :answer_c: i in range(broj_ocena):
-    :feedback_c: Нетачно    
-    :correct: b
+    :feedback_c: Тачно    
+    :correct: c
 
-    Шта би требало дописати на црти тако да се у програму учитава број оцена ученика, затим и подединачне оцене и да се на крају израчуна просек ученика.
+    Шта је резултат извршавања следећег кода?
 
     .. code-block:: python
 
@@ -111,15 +111,15 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp5
-    :answer_a: i in range(ocene)
+    :answer_a: Ученику се рачуна закључна оцена из предмета.
     :feedback_a: Нетачно
-    :answer_b: i in range(broj_ocena)
-    :feedback_b: Тачно    
-    :answer_c: i in range(broj_ocena):
-    :feedback_c: Нетачно    
-    :correct: b
+    :answer_b: Проверава се коју је последњу оцену добио ученик.
+    :feedback_b: Нетачно    
+    :answer_c: Ученику се рачуна закључна оцена из предмета у зависности од тога коју је последњу оцену ученик добио.
+    :feedback_c: Тачно    
+    :correct: c
 
-    Шта би требало дописати на црти тако да се у програму учитава број оцена ученика, затим и подединачне оцене и да се на крају израчуна просек ученика.
+    Шта је резултат извршавања следећег кода?
 
     .. code-block:: python
 
@@ -155,7 +155,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp7
-    :answer_a: i in range(6),  broj > 10
+    :answer_a: i in range(7),  broj > 10
     :feedback_a: Нетачно
     :answer_b: i in lista, broj > 10
     :feedback_b: Нетачно    
@@ -194,10 +194,15 @@
     .. code-block:: python
 
      proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
-     for _________ in proizvodi:
+     for _____________________
      	komada = 1000 // cena
      	ostalo = 1000 % cena
      print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
+
+
+
+
+
 
 
 
