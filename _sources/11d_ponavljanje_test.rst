@@ -79,15 +79,15 @@
     :feedback_d: Нетачно    
     :correct: a
 
-    Шта ће бити резултат наредног програма ако му се при покретању да педесет примерака броја 2? Изабери тачан одговор:
+    Шта ће бити резултат наредног програма ако му се при покретању да 36 примерака броја 2? Изабери тачан одговор:
 
     .. code-block:: python
  
      for i in range(36):
-    	 o = int(input("unesi broj opravdanih")
+    	o = int(input("unesi broj opravdanih")
     	n = int(input("unesi broj neopravdanih")
     	u = o + n
-     print(u)
+        print(u)
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
