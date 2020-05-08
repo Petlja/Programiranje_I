@@ -5,6 +5,7 @@
 .. toctree::
 	:maxdepth: 2
 	
+        1a_algoritmi.rst
         1b_karel_linijski.rst
         1b_karel_linijski_test.rst
         1c_karel_for.rst
@@ -61,21 +62,53 @@
         13a_tlnsr.rst
         13b_tlnsr_test.rst
         14a_strukture_petlje.rst
-        14a_strukture_petlje_test.rst
+        14b_strukture_petlje_test.rst
         15a_algoritmi.rst
         15b_algoritmi_test.rst
         16a_algoritmi.rst
         16b_algoritmi_test.rst
-
-
-
-
-
-
-
-
-
-
-
-	
-
+        poluvreme.rst
+        prvi_cas.rst
+        prvi_cas_video.rst
+        prvi_cas_kviz.rst
+        drugi_cas.rst
+        drugi_cas_video.rst
+        drugi_cas_kviz.rst
+        treci_cas.rst
+        treci_cas_video.rst
+        treci_cas_kviz.rst
+        cetvrti_cas.rst
+        cetvrti_cas_video.rst
+        cetvrti_cas_kviz.rst
+        peti_cas.rst
+        peti_cas_video.rst
+        peti_cas_kviz.rst
+        sesti_cas.rst
+        sesti_cas_video.rst
+        sesti_cas_kviz.rst
+        sedmi_cas.rst
+        sedmi_cas_video.rst
+        sedmi_cas_kviz.rst
+        osmi_cas.rst
+        osmi_cas_video.rst
+        osmi_cas_kviz.rst
+        deveti_cas.rst
+        deveti_cas_video.rst
+        deveti_cas_kviz.rst
+        deseti_cas.rst
+        deseti_cas_video.rst
+        deseti_cas_kviz.rst
+        jedanaesti_cas.rst
+        jedanaesti_cas_video.rst
+        jedanaesti_cas_kviz.rst
+        dvanaesti_cas.rst
+        dvanaesti_cas_video.rst
+        dvanaesti_cas_kviz.rst
+        trinaesti_cas.rst
+        trinaesti_cas_kviz.rst
+        cetrnaesti_cas.rst
+        cetrnaesti_cas_kviz.rst
+	petnaesti_cas.rst
+        petnaesti_cas_kviz.rst
+        sesnaesti_cas.rst
+        sesnaesti_cas_kviz.rst
