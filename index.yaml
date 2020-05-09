@@ -183,9 +183,9 @@ lekcije:
   - tip: quiz
     ime: Teст
     order: 
-    content: 4е_kornjaca_test.html
+    content: 4e_kornjaca_test.html
     opis: #
-    alias: 4е_kornjaca_test
+    alias: 4e_kornjaca_test
 
   - tip: section 
     ime: Час 5
@@ -316,9 +316,9 @@ lekcije:
   - tip: html
     ime: Цели и реални бројеви, дељење
     order:
-    content: 8a_python_celi_i_realni.html
+    content: 8а_python_celi_i_realni.html
     opis: 
-    alias: 8a_python_celi_i_realni
+    alias: 8а_python_celi_i_realni
 
   - tip: html
     ime: Реално дељење
@@ -351,9 +351,9 @@ lekcije:
   - tip: html
     ime: Коришћење и дефинисање функција
     order:
-    content: 9a_python_funkcije.html
+    content: 9а_python_funkcije.html
     opis: 
-    alias: 9a_python_funkcije
+    alias: 9а_python_funkcije
 
   - tip: html
     ime: Уграђене функције
@@ -595,11 +595,11 @@ lekcije:
     opis: #prazan
     alias: poluvreme_pygame #edinstven-alias-u-okviru-kursa1
   - tip: section
-    ime: Час 1
+    ime: Час 17
     order: 18 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas1
+    alias: cas17
   - tip: html
     ime: Пајгејм - Први час
     order: 
@@ -619,11 +619,11 @@ lekcije:
     opis: 1, 3, 4, 2, 2, 2, 3 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test1
   - tip: section
-    ime: Час 2
+    ime: Час 18
     order: 19 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas2
+    alias: cas18
   - tip: html
     ime: Пајгејм - Други час
     order: 
@@ -643,11 +643,11 @@ lekcije:
     opis: 2, 1, 1, 0, 13, 2 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test4
   - tip: section
-    ime: Час 3
+    ime: Час 19
     order: 20 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas3
+    alias: cas19
   - tip: html
     ime: Пајгејм - Тећи час
     order: 
@@ -667,11 +667,11 @@ lekcije:
     opis: 2, 01, 0, 0, 13, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test5
   - tip: section
-    ime: Час 4
+    ime: Час 20
     order: 21 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas4
+    alias: cas20
   - tip: html
     ime: Пајгејм - Четврти час
     order: 
@@ -691,11 +691,11 @@ lekcije:
     opis: 1, 0, 1, 0, 1, 3 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test6
   - tip: section
-    ime: Час 5
+    ime: Час 21
     order: 22 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas5
+    alias: cas21
   - tip: html
     ime: Пајгејм - Пети час
     order: 
@@ -715,11 +715,11 @@ lekcije:
     opis: 3, 1, 1, 0, 0, 2 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test7
   - tip: section
-    ime: Час 6
+    ime: Час 22
     order: 23 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas6
+    alias: cas22
   - tip: html
     ime: Пајгејм - Шести час
     order: 
@@ -739,11 +739,11 @@ lekcije:
     opis: 2, 1, 3, XVLT, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test8
   - tip: section
-    ime: Час 7
+    ime: Час 23
     order: 24 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas7
+    alias: cas23
   - tip: html
     ime: Пајгејм - Седми час
     order: 
@@ -763,11 +763,11 @@ lekcije:
     opis: 2, 2, 2, 0123, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test9
   - tip: section
-    ime: Час 8
+    ime: Час 24
     order: 25 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas8
+    alias: cas24
   - tip: html
     ime: Пајгејм - Осми час
     order: 
@@ -787,11 +787,11 @@ lekcije:
     opis: 2, 01, 0, 0, 13, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test10
   - tip: section
-    ime: Час 9
+    ime: Час 25
     order: 26 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas9
+    alias: cas25
   - tip: html
     ime: Пајгејм - Девети час
     order: 
@@ -811,11 +811,11 @@ lekcije:
     opis: 3, 2, 2413, 0, 2 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test11
   - tip: section
-    ime: Час 10
+    ime: Час 26
     order: 27 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas10
+    alias: cas26
   - tip: html
     ime: Пајгејм - Десети час
     order: 
@@ -835,11 +835,11 @@ lekcije:
     opis: 0, 3, 2, 3, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test12
   - tip: section
-    ime: Час 11
+    ime: Час 27
     order: 28 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas11
+    alias: cas27
   - tip: html
     ime: Пајгејм - Једанаести час
     order: 
@@ -859,11 +859,11 @@ lekcije:
     opis: 0, 3, 3, 2, 2 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test13
   - tip: section
-    ime: Час 12
+    ime: Час 28
     order: 29 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas12
+    alias: cas28
   - tip: html
     ime: Пајгејм - Дванаести час
     order: 
@@ -883,11 +883,11 @@ lekcije:
     opis: 1, 2, 2, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test14
   - tip: section
-    ime: Час 13
+    ime: Час 29
     order: 30 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas13
+    alias: cas29
   - tip: html
     ime: Пајгејм - Тринаести час
     order: 
@@ -901,11 +901,11 @@ lekcije:
     opis: 2, 3, 0, 1, 4 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test15
   - tip: section
-    ime: Час 14
+    ime: Час 30
     order: 31 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas14
+    alias: cas30
   - tip: html
     ime: Пајгејм - Четрнаести час
     order: 
@@ -919,11 +919,11 @@ lekcije:
     opis: 0, 13, 1, 2, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test16
   - tip: section
-    ime: Час 15
+    ime: Час 31
     order: 32 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas15
+    alias: cas31
   - tip: html
     ime: Пајгејм - Петнаести час
     order: 
@@ -937,11 +937,11 @@ lekcije:
     opis: 3142, 2, 0, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test17
   - tip: section
-    ime: Час 16
+    ime: Час 32
     order: 33 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas16
+    alias: cas32
   - tip: html
     ime: Пајгејм - Шеснаести час
     order: 
