@@ -163,7 +163,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: kornjaca_8
-    :answer_a: Логи Петље
+    :answer_a: лого Петље
     :feedback_a: Нетачно    
     :answer_b:  Број 8
     :feedback_b: Нетачно    
