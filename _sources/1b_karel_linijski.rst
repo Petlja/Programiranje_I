@@ -62,23 +62,23 @@
             world.addNSWall(3, 4, 1);
             world.addNSWall(1, 5, 1);
             world.addEWWall(4, 1, 1);
-            
-	    var robot = new Robot();
+                
+        var robot = new Robot();
 
-	    var code = ["from karel import *",
-					"napred()      # idi napred",
-					"napred()      # idi napred",
-					"levo()        # okreni se nalevo",
-					"napred()      # idi napred",
-					"napred()      # idi napred",
-					"uzmi()        # uzmi lopticu"];
+        var code = ["from karel import *",
+                    "napred()      # idi napred",
+                    "napred()      # idi napred",
+                    "levo()        # okreni se nalevo",
+                    "napred()      # idi napred",
+                    "napred()      # idi napred",
+                    "uzmi()        # uzmi lopticu"];
             return {robot:robot, world:world, code:code};
         },
-	
+
         isSuccess: function(robot, world) {
            return robot.getStreet() === 3 &&
            robot.getAvenue() === 3 &&
-	   robot.getBalls() === 1;
+           robot.getBalls() === 1;
         },
    }
 

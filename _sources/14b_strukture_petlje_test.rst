@@ -13,14 +13,14 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    На који од следећих начин се исписују елементи листе ``lista = [1,22,43,5]``? Изабери тачан одговор:
+    На који од следећих начина се исписују елементи листе ``lista = [1,22,43,5]``? Изабери тачан одговор:
 
     (1)
 
     .. code-block:: python
 
      for broj in lista:
-     	print(broj)
+         print(broj)
 
     (2)
 
@@ -34,7 +34,7 @@
     .. code-block:: python
 
      for broj in lista
-     	print(broj)
+         print(broj)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,17 +52,17 @@
 
     .. code-block:: python
 
-     brojevi = [3, 4, 17, 21, 23, 27, 33]
-     b = int(input("Unesi broj: "))
-     for i in brojevi:
-     	if i == b:
-    		print("da")
+        brojevi = [3, 4, 17, 21, 23, 27, 33]
+        b = int(input("Unesi broj: "))
+        for i in brojevi:
+            if i == b:
+                print("da")
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp3
-    :answer_a: За сваку земљу која је у речнику исисује се површина те земље.
+    :answer_a: За сваку земљу која је у речнику исписује се површина те земље.
     :feedback_a: Нетачно
     :answer_b: Исписује се списак земаља тако што се прво испише назив земље, па површина земље.
     :feedback_b: Тачно    
@@ -74,14 +74,14 @@
 
     .. code-block:: python
 
-     povrsine = {"Srbija": 88361,
+        povrsine = {"Srbija": 88361,
             "Hrvatska": 56594,
             "Crna Gora": 13812,
             "Bosna i Hercegovina": 51197,
             "Slovenija": 20273,
             "Makedonija": 25713}
-     for zemlja in povrsine:
-    	print("Naziv: ", zemlja, "Površina: ", povrsine[zemlja])
+        for zemlja in povrsine:
+            print("Naziv: ", zemlja, "Površina: ", povrsine[zemlja])
 
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,13 +99,13 @@
 
     .. code-block:: python
 
-     broj_ocena = int(input("Unesi broj ocena:"))
-     ocene = []
-     for ________________:
-    	ocena = int(input("Unesi ocenu:"))
-    	ocene.append(ocena)
-     prosek = sum(ocene) / len(ocene)
-     print("Prosek:", prosek)
+        broj_ocena = int(input("Unesi broj ocena:"))
+        ocene = []
+        for ________________
+            ocena = int(input("Unesi ocenu:"))
+            ocene.append(ocena)
+        prosek = sum(ocene) / len(ocene)
+        print("Prosek:", prosek)
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@
     :feedback_a: Нетачно
     :answer_b: Проверава се коју је последњу оцену добио ученик.
     :feedback_b: Нетачно    
-    :answer_c: Ученику се рачуна закључна оцена из предмета у зависности од тога коју је последњу оцену ученик добио.
+    :answer_c: Ученику се рачуна закључна оцена из предмета у зависности од последње оцене коју добије.
     :feedback_c: Тачно    
     :correct: c
 
@@ -126,9 +126,9 @@
      ocene = [3, 5, 4, 2]
      zbir = sum(ocene)
      for poslednja_ocena in (1, 2, 3, 4, 5):
-    	zakljucna = round((zbir + poslednja_ocena) / 5)
-    	print("Ako dobije", poslednja_ocena,
-        	"biće mu zaključena ocena", zakljucna_ocena)
+        zakljucna = round((zbir + poslednja_ocena) / 5)
+        print("Ako dobije", poslednja_ocena,
+            "biće mu zaključena ocena", zakljucna_ocena)
 
 
 Питање 6.
@@ -149,13 +149,13 @@
 
      godisnja_doba = ["пролеће", "лето", "јесен", "зима"]
      for i in range(5 * len(godisnja_doba)):
-     	print(godisnja_doba[________])   #  ispravi ovaj red
-		
+         print(godisnja_doba[________])   #  ispravi ovaj red
+
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp7
-    :answer_a: i in range(7),  broj > 10
+    :answer_a: i in range(6),  broj > 10
     :feedback_a: Нетачно
     :answer_b: i in lista, broj > 10
     :feedback_b: Нетачно    
@@ -169,8 +169,8 @@
 
      lista = [12, 3, 45, 67, 90, 102]
      for ___________________________:
-     	if _________________________:
-			print(broj)
+         if _________________________:
+            print(broj)
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,27 +184,18 @@
     :feedback_c: Тачно    
     :correct: c
 
-    Шта би требало дописати на црти тако да наредни код буде решенје следећег задатка:
+    Шта би требало дописати на црти тако да наредни код буде решење следећег задатка:
 
     *Наталија има 1000 динара. Жели да купи чоколаде које коштају 120 динара, чипс који кошта 89 динара или кока-коле које коштају 135 динара. 
     Ако буде куповала све производе исте врсте, напиши програм који одређује колико производа може да купи и колико јој динара остаје.* 
-	
+
     Изабери тачан одговор:
 
     .. code-block:: python
 
      proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
      for _____________________
-     	komada = 1000 // cena
-     	ostalo = 1000 % cena
+         komada = 1000 // cena
+         ostalo = 1000 % cena
      print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
-
-
-
-
-
-
-
-
-
 

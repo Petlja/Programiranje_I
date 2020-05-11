@@ -20,9 +20,9 @@
     .. code-block:: python
 
      if n % 2 == 0:
-     	print("jeste")
+         print("jeste")
      else:
-     	print("nije")
+         print("nije")
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,9 +42,9 @@
 
      a = 6
      if a % 2 == 0:
-     	a = a // 2
+         a = a // 2
      else:
-     	a = a % 10
+         a = a % 10
      print(a)
 
 Питање 3.
@@ -59,14 +59,14 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    Следећи код је решење ког задатка? Изабери тачан одговор:
+    Који задатак решава следећи програм, Ако се зна да се уноси природан број? Изабери тачан одговор:
 
     .. code-block:: python
 
      if (a % 2 == 0) and (a => 10):
-     	print(a+1)
+         print(a+1)
      else:
-     	print(a % 10)
+         print(a % 10)
 
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,9 +88,9 @@
 
      semafor = 'plavo'
      if (semafor == 'zeleno'):
-     	print('predji ulicu')
+         print('predji ulicu')
      else:
-     	print('ne mozes da predjes ulicu')
+         print('ne mozes da predjes ulicu')
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,9 +104,9 @@
     a = -1
     b = -1
     if (a > b):
-    	print(a)
+        print(a)
     else:
-    	print(b)
+        print(b)
 
    Одговор: |blank|
 
@@ -142,16 +142,16 @@
     :answer_c: У зависности од тога да ли је унета вредност исправна или не биће исписана реч Ispravno, односно Neispravno.
     :feedback_c: Нетачно    
     :correct: a
-	
+
     Шта ће бити резултат извршавања следећег кода? Изабери тачан одговор:
 
     .. code-block:: python
 
      ime = input("Unesi ime")
      if True:
-     	print("Ispravno")
+         print("Ispravno")
      else:
-     	print("Neispravno") 
+         print("Neispravno") 
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -174,9 +174,9 @@
      a = 10
      b = 50
      if (( a >= 10) or (b > 70)) and (a + b > 50):
-     	print(a - b)
+         print(a - b)
      else:
-     	print(2 * a - b)
+         print(2 * a - b)
 
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -199,9 +199,9 @@
      a = 10
      b = 50
      if (( a > 10) or (b > 70)) and (a + b > 50):
-     	print(a - b)
+         print(a - b)
      else:
-     	print(2 * a - b)
+         print(2 * a - b)
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -224,9 +224,8 @@
      s = 1
      n = 15
      if n % 2 == 1:
-     	s = s + n % 10
+         s = s + n % 10
      else:
-     	s = s + n // 10
+         s = s + n // 10
      print(s)
-
 

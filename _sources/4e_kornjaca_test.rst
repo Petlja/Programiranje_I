@@ -16,10 +16,10 @@
     :correct: b
     
     Шта је резултат извршавања следеће наредбе:
-	
-	.. code-block:: python
-	
-	 turtle.forward(20)
+
+    .. code-block:: python
+
+        turtle.forward(20)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,10 +36,10 @@
     :correct: c
     
     Шта је резултат извршавања следеће наредбе:
-	
-	.. code-block:: python
-	
-	 turtle.left(30)
+
+    .. code-block:: python
+
+        turtle.left(30)
 
 
 Питање 3.
@@ -56,16 +56,16 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Шта је резултат извршавања следеће наредбе:
-	
-	.. code-block:: python
-	
-	 turtle.shape("turtle")
-	 turtle.width(5)
-	 turtle.color("red")
-	 turtle.forward(50)
-	 turtle.color("green")
-	 turtle.forward(50)
+    Шта је резултат извршавања следећих наредби:
+
+    .. code-block:: python
+
+        turtle.shape("turtle")
+        turtle.width(5)
+        turtle.color("red")
+        turtle.forward(50)
+        turtle.color("green")
+        turtle.forward(50)
 
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,18 +79,18 @@
     :feedback_c: Нетачно    
     :correct: a
     
-	Шта је резултат извршавања следећег програма? Изабери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  turtle.forward(100)   
-	  turtle.left(90)       
-	  turtle.forward(100)   
-	  turtle.left(90) 
-	  turtle.forward(100)   
-	  turtle.left(90) 
-	  turtle.forward(100)   
-	  turtle.left(90) 
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      turtle.forward(100)   
+      turtle.left(90)       
+      turtle.forward(100)   
+      turtle.left(90) 
+      turtle.forward(100)   
+      turtle.left(90) 
+      turtle.forward(100)   
+      turtle.left(90) 
 
 
 
@@ -106,13 +106,13 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је потребно додати на месту * како би се исцртао квадрат? Изабери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  for i in range(*):
-	        turtle.forward(*)
-	        turtle.left(*)
+    Шта је потребно додати на месту * како би се исцртао квадрат? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      for i in range(*):
+            turtle.forward(*)
+            turtle.left(*)
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,13 +126,13 @@
     :feedback_c: Нетачно    
     :correct: a
     
-	Шта је резултат извршавања следећег програма? Изабери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  for i in range(6):
-	     turtle.forward(100)
-	     turtle.left(60)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      for i in range(6):
+         turtle.forward(100)
+         turtle.left(60)
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,18 +146,18 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је резултат извршавањa следећег програма? Изабери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  turtle.left(90)
-	  turtle.forward(150)
-	  turtle.right(150)
-	  turtle.forward(100)
-	  turtle.left(130)
-	  turtle.forward(100)
-	  turtle.right(150)
-	  turtle.forward(150)
+    Шта је резултат извршавањa следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      turtle.left(90)
+      turtle.forward(150)
+      turtle.right(150)
+      turtle.forward(100)
+      turtle.left(130)
+      turtle.forward(100)
+      turtle.right(150)
+      turtle.forward(150)
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -171,13 +171,13 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је резултат извршавања следећег програма? Изабери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  for i in range(5):
-	     turtle.forward(100)
-	     turtle.left(144)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      for i in range(5):
+         turtle.forward(100)
+         turtle.left(144)
 
 
 

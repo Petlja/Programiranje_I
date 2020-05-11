@@ -13,7 +13,7 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    Шта је резултат извршавања селдећег програма? Изабери тачан одговор:
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
 
     (1)
 
@@ -21,15 +21,15 @@
 
      n = int(input())
      while n > 0:
-     	if n % 10 > 2:
-        	print(n)
-     	n = n - 1
+         if n % 10 > 2:
+            print(n)
+         n = n - 1
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: к2
-    :answer_a: За сваку дату страницу израчунава се површина квадрата са том странице.
+    :answer_a: За сваку дату страницу израчунава се површина квадрата са том страницом.
     :feedback_a: Тачно
     :answer_b: израчунава се површина квадрата.
     :feedback_b: Нетачно    
@@ -37,16 +37,16 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    Шта је резултат извршавања селдећег програма? Изабери тачан одговор:
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
 
     .. code-block:: python
 
      def povrsina(a):
-     	return a * a
+         return a * a
 
      stranice = [13, 18, 43, 11, 8]
      for a in stranice:
-     	print("Stranica:", a, "Povrsina:", povrsina(a))
+         print("Stranica:", a, "Povrsina:", povrsina(a))
 
 
 
@@ -54,9 +54,9 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: к3
-    :answer_a: Oд унета три броја исписује се број који је мањи од 12.
+    :answer_a: Oд унета три броја исписује се један који је мањи од 12.
     :feedback_a: Нетачно
-    :answer_b: Oд унета три броја исписује се број који је већи од 12.
+    :answer_b: Oд унета три броја исписује се сваки који је већи од 12.
     :feedback_b: Тачно    
     :answer_c: Ништа од наведеног.
     :feedback_c: Нетачно    
@@ -88,8 +88,8 @@
     .. code-block:: python
 
      temperature = [2, -1, 0, -8, -10, -1, 4, 5, 8, 6]
-     negativne_temperature = [t __ t in temperature if t > 0]
-     print(negativne_temperature)
+     pozitivne_temperature = [t __ t in temperature if t > 0]
+     print(pozitivne_temperature)
 
 
 Питање 5.
@@ -112,9 +112,9 @@
      prosek_mira = 5.00
      prosek_jelica = 5.00
      if prosek_pera >= 4.50 ___ prosek_mira >= 4.50 ___ prosek_jelica >= 4.50:
-     	print("Svi učenici su odlični")
+         print("Svi učenici su odlični")
      else:
-     	print("Nisu svi učenici odlični")
+         print("Nisu svi učenici odlični")
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,7 +135,7 @@
      lista = [1, 23, 3, 45, 17, 90, 88]
      n = int(input("Unesi broj:"))
      for i in lista:
-     	print (max(i, n))
+         print (max(i, n))
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,8 +155,8 @@
 
      i = 2
      while i <= 100:
-     	print(i)
-     	i = i + 2
+         print(i)
+         i = i + 2
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -177,60 +177,60 @@
      lista = [1, 23, 3, 45, 17, 90, 88]
      n = int(input("Unesi broj:"))
      for i in lista:
-     	print (max(i, n), min(i,n))
+         print (max(i, n), min(i,n))
 
     (1)
-	
+
     .. code-block:: python
-	
+
      1 66
-	 
+ 
      23 66
-	 
+ 
      3 66
-	 
+ 
      45 66
-	 
+ 
      17 66
-	 
+ 
      66 90
-	 
+ 
      66 88
-	 
+ 
     (2)
-	
+
     .. code-block:: python
-	
+
      66 1
-	 
+ 
      66 23
-	 
+ 
      66 3
-	 
+ 
      66 45
-	 
+ 
      66 17
-	 
+ 
      90 66
-	 
+ 
      88 66
 
     (3)
-	
+
     .. code-block:: python
-	
+
      66, 1
-	 
+ 
      66, 23
-	 
+ 
      66, 3
-	 
+ 
      66, 45
-	 
+ 
      66, 17
-	 
+ 
      90, 66
-	 
+ 
      88, 66
 
 
@@ -253,8 +253,8 @@
      s = 0
      l = [1, 23, 45, 67, 22, 67, 89]
      for i in lista:
-     	if i % 2 == 0:
-        	print(i)
+         if i % 2 == 0:
+            print(i)
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

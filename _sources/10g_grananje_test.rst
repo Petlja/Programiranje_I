@@ -21,9 +21,9 @@
 
      semafor = 'zeleno'
      if (semafor == 'zeleno'):
-     	print('predji ulicu')
+         print('predji ulicu')
      else:
-     	print('ne mozes da predjes ulicu')
+         print('ne mozes da predjes ulicu')
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,9 +45,9 @@
 
      semafor = 'plavo'
      if (semafor == 'zeleno'):
-     	print('predji ulicu')
+         print('predji ulicu')
      else:
-     	print('ne mozes da predjes ulicu')
+         print('ne mozes da predjes ulicu')
 
 
 Питање 3.
@@ -62,9 +62,9 @@
     a = -1
     b = -1
     if (a > b):
-    	print(a)
+        print(a)
     else:
-    	print(b)
+        print(b)
 
    Одговор: |blank|
 
@@ -85,17 +85,16 @@
     :feedback_d: Нетачно    
     :correct: a
 
-    Нека је задатак да се напише програм којим се учитавају цене сладоледа Руменко и Шаренко, а затим испише назив скупљег и нека је код који следи његово 
-	решење. Шта ће бити резултат извршавања тог кода уколико се при покретању дају исте цене за сладоледе? Изабери тачан одговор:
+    Нека је задатак да се напише програм којим се учитавају цене сладоледа Руменко и Шаренко, а затим испише назив скупљег и нека је код који следи његово решење. Шта ће бити резултат извршавања тог кода уколико се при покретању дају исте цене за сладоледе? Изабери тачан одговор:
 
     .. code-block:: python
 
      rumenko=int(input('Unesi cenu za rumenka'))
      sarenko=int(input('Unesi cenu za sarenka'))
      if (rumenko>sarenko):
-     	print("rumenko")
+         print("rumenko")
      else:
-     	print("sarenko")
+         print("sarenko")
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,9 +116,9 @@
 
      a = int(input('Unesi jedan broj'))
      if (   ):
-     	print('Broj je deljiv sa 5')
+         print('Broj je deljiv sa 5')
      else:
-     	print('Broj nije deljiv sa 5')
+         print('Broj nije deljiv sa 5')
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -243,9 +242,9 @@
     a = 2
     b = 62
     if (( a >= 10) or (b <= 70)) and (a + b > 50):
-    	print(a - b)
+        print(a - b)
     else:
-    	print(2 * a - b)
+        print(2 * a - b)
 
    Одговор: |blank|
 
@@ -288,7 +287,7 @@
    - :^\s*3\s*$: Тачно
      :x: Одговор није тачан.
       
-	  
+  
 Питање 14.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -314,7 +313,7 @@
      godine = int(input("Unesi koliko imas godina"))
      cena = 660
      if (_______________________):
-     	cena = 660 - 100
+         cena = 660 - 100
      print(cena)
 
     Којим од датих услова треба допунити програм (на означеном месту) да би програм исправно одређивао цену карте? Изабери тачан одговор:
@@ -330,15 +329,15 @@
 
     poeni = int(input('Unesi broj poena sa testa'))
     if poeni > 85:
-    	o = 5
+        o = 5
     elif poeni > 70:
-    	o = 4       
+        o = 4       
     elif poeni>55:
-    	o = 3     
+        o = 3     
     elif poeni>39:
-    	o = 2
+        o = 2
     else:
-    	o = 1    
+        o = 1    
     print(o)
 
    ако му се као вредност поена да 89?
@@ -361,11 +360,11 @@
     a = 2
     b = 10
     if (a + b > 10):
-    	print(a * a)           
+        print(a * a)           
     elif (a + b == 10):
-    	print(a-b)
+        print(a-b)
     else:       
-    	print(b)
+        print(b)
 
    Одговор: |blank|
 
@@ -385,11 +384,11 @@
     b = -8
     c = -1
     if (c > 10):
-    	print(a * a)
+        print(a * a)
     elif (a + b > 10) or (b % 2 == 0):
-    	print(a - b)   
+        print(a - b)   
     else:
-    	print(b)
+        print(b)
 
    Одговор: |blank|
 

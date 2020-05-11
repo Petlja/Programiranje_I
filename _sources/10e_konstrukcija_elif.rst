@@ -52,7 +52,7 @@
 ``elif``.
   
 .. activecode:: агрегатно_стање_2
-		
+
    temperatura = 15
    
    if temperatura < 0:

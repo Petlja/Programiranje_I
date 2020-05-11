@@ -13,16 +13,16 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    Шта је резултат извршавања селдећег програма? Изабери тачан одговор:
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
 
     .. code-block:: python
 
-     s = 0
-     n = int(input())
-     for i in range(n):
-     	a = int(input())
-		s = s + a
-     print(s)
+        s = 0
+        n = int(input())
+        for i in range(n):
+            a = int(input())
+            s = s + a
+        print(s)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,18 +36,18 @@
     :feedback_c: Нетачно    
     :correct: a
 
-    Шта је резултат извршавања селдећег програма? Изабери тачан одговор:
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
 
     (1)
 
     .. code-block:: python
 
-     p = 0
-     n = int(input())
-     for i in range(n):
-     	a = int(input())
-		p = p * a
-     print(p)
+        p = 0
+        n = int(input())
+        for i in range(n):
+            a = int(input())
+            p = p * a
+        print(p)
 
 
 Питање 3.
@@ -56,9 +56,9 @@
 .. mchoice:: a3
     :answer_a: Израчунава се збир бројева од 10 до 1.
     :feedback_a: Нетачно
-    :answer_b: Израчунава се збир бројева од 9 до 1 и исписује.
+    :answer_b: Израчунава се и исписује збир бројева од 9 до 1.
     :feedback_b: Тачно    
-    :answer_c: Израчунава се збир бројева од 9 до 1 и исписује.
+    :answer_c: Исписује се 0.
     :feedback_c: Нетачно    
     :correct: b
 
@@ -66,12 +66,12 @@
 
     .. code-block:: python
 
-     s = 0
-     x = 10
-     while x > 0:
-     	x = x - 1
-     	s = s + x
-     print(s)
+        s = 0
+        x = 10
+        while x > 0:
+            x = x - 1
+            s = s + x
+        print(s)
 
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,22 +79,22 @@
 .. mchoice:: a4
     :answer_a: Израчунава се збир бројева 10 + 8 + 6 + 4 + 2.
     :feedback_a: Нетачно
-    :answer_b: Израчунава се збир бројева 2 + 4 + 6 + 8.
-    :feedback_b: Тачно    
-    :answer_c: Израчунава се збир бројева 0 + 2 + 4 + 6 + 8.
-    :feedback_c: Нетачно    
+    :answer_b: Израчунава се збир бројева 8 + 6 + 4 + 2.
+    :feedback_b: Тачно
+    :answer_c: Израчунава се збир бројева 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1.
+    :feedback_c: Нетачно
     :correct: b
 
     Шта је резултат извршавања следећег кода? Изабери тачан одговор:
 
     .. code-block:: python
 
-     a = 10
-     s = 0
-     while a > 0:
-     	a = a - 2
-     	s = s + a
-     print(s)
+        a = 10
+        s = 0
+        while a > 0:
+            a = a - 2
+            s = s + a
+        print(s)
 
 
 Питање 5.
@@ -113,12 +113,12 @@
 
     .. code-block:: python
 
-     f = 1
-     x = 10
-     while x > 0:
-     	f = f * x 
-     	x = x - 1
-     print(f)
+        f = 1
+        x = 10
+        while x > 0:
+            f = f * x 
+            x = x - 1
+        print(f)
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -136,13 +136,13 @@
 
     .. code-block:: python
 
-     m = 1
-     x = int(input("Unesi broj:"))
-     while x > 0:
-     	m = m * x 
-     	x = x - 2
-     print(m)
-	 
+         m = 1
+         x = int(input("Unesi broj:"))
+         while x > 0:
+             m = m * x 
+             x = x - 2
+         print(m)
+ 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,10 +159,10 @@
 
     .. code-block:: python
 
-     i = 2
-     while i <= 100:
-     	print(i)
-     	i = i + 2
+        i = 2
+        while i <= 100:
+            print(i)
+            i = i + 2
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -172,7 +172,7 @@
     :feedback_a: Нетачно
     :answer_b: Исписују се сви бројеви дељиви са 3 од m до n, укључујући и бројеве m и n.
     :feedback_b: Тачно    
-    :answer_c: Исписују се сви бројеви дељиви са 3 од  n до m.
+    :answer_c: Исписују се сви бројеви дељиви са 3 од n до m.
     :feedback_c: Нетачно    
     :correct: b
 
@@ -180,12 +180,12 @@
 
     .. code-block:: python
 
-     n = int(input())
-     m = int(input())
-     while m <= n:
-     	if m % 3 == 0:
-     		print(m)
-     	m = m + 1
+        n = int(input())
+        m = int(input())
+        while m <= n:
+            if m % 3 == 0:
+                print(m)
+            m = m + 1
 
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -203,12 +203,12 @@
 
     .. code-block:: python
 
-     n = int(input())
-     s = 0
-	 while n > 0:
-     	s = s + n % 10
-     	n = n // 10
-     print(s)
+        n = int(input())
+        s = 0
+        while n > 0:
+            s = s + n % 10
+            n = n // 10
+        print(s)
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -229,8 +229,8 @@
 
     .. code-block:: python
 
-     ana = 287
-     maja = 240
-     tina = 278
-     _____________
+        ana = 287
+        maja = 240
+        tina = 278
+        _____________
 

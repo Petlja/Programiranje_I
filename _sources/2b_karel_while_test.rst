@@ -27,7 +27,6 @@
 ~~~~~~~~~
 
 .. mchoice:: while2
-    :multiple_answers:
     :answer_a: Робот ће оставити све лоптице које има код себе на пољу на коме је.
     :feedback_a: Тачно
     :answer_b: Робот ће оставити све лоптице које има код себе на пољу испред себе.
@@ -36,7 +35,7 @@
     :feedback_c: Нетачно
     :answer_d: Робот ће оставити једну лоптицу на пољу испред себе.
     :feedback_d: Нетачно
-    :correct: ['a']
+    :correct: a
 
     Дата је наредба `while` :
 
@@ -61,7 +60,7 @@
     :feedback_c: Тачно
     :answer_d: 4
     :feedback_d: Нетачно    
-    :correct: ['a', 'c']
+    :correct: a,c
     
     Нека је Карел робот у положају као на слици.
     
@@ -77,8 +76,8 @@
     
       from karel import *
       while mozeNapred():
-        napred()
-        uzmi()
+          napred()
+      uzmi()
       
     (2)
 
@@ -86,8 +85,8 @@
     
       from karel import *
       while mozeNapred():
-      napred()
-      uzmi()
+          napred()
+          uzmi()
   
     (3)
     
@@ -101,7 +100,7 @@
     (4)
     
     .. code-block:: python
-		    
+    
        from karel import *
        for i in range(3):
            napred()
@@ -125,22 +124,22 @@
 
       from karel import *      
       while (moze_napred()):    
-      ____________
+          ____________
        
-      ____________
+          ____________
     
    У блоку петље недостаје неколико наредби. Допуни тело петље навођењем што мање понуђених наредби у одговарајућем редоследу, тако да Карел узме сваку лоптицу чим може, а да се извршавањем програма исправно решава задатак.
    
    (1)
    
    .. code-block:: python
-		   
+   
       napred() 
       
    (2)
   
    .. code-block:: python
-		  
+  
       desno()
 
    (3)
@@ -172,7 +171,7 @@
     :feedback_d: Тачно
     :answer_e: Програм (5)
     :feedback_e: Тачно
-    :correct: ['d', 'e']
+    :correct: d,e
     
     Изабери тачан одговор:
 
@@ -192,11 +191,11 @@
      
         from karel import *   
         while (moze_napred()):
-          while (ima_loptica_na_polju()):
-            uzmi()
-          while (ima_loptica_kod_sebe()):
-            ostavi()
-          napred()   
+            while (ima_loptica_na_polju()):
+                uzmi()
+            while (ima_loptica_kod_sebe()):
+                ostavi()
+            napred()   
       
     (2)
       .. code-block:: python
@@ -204,47 +203,46 @@
         from karel import *   
         napred()
         while (moze_napred()):
-          while (ima_loptica_kod_sebe()):
-            ostavi()
-          napred()
-          while (ima_loptica_na_polju()):
-            uzmi()
-          napred()  
+            while (ima_loptica_kod_sebe()):
+                ostavi()
+            napred()
+            while (ima_loptica_na_polju()):
+                uzmi()
+            napred()  
      
     (3)
       .. code-block:: python
      
         from karel import *   
         while (moze_napred()):
-          while (ima_loptica_na_polju()):
-            uzmi()
-          napred()
-          while (ima_loptica_kod_sebe()):
-            ostavi()
-          napred()  
+            while (ima_loptica_na_polju()):
+                uzmi()
+            napred()
+            while (ima_loptica_kod_sebe()):
+                ostavi()
+            napred()  
      
     (4)
       .. code-block:: python
      
         from karel import *   
         while (moze_napred()):
-          napred()
-          while (ima_loptica_na_polju()):
-            uzmi()
-          napred()
-          while (ima_loptica_kod_sebe()):
-            ostavi()
+            napred()
+            while (ima_loptica_na_polju()):
+                uzmi()
+            napred()
+            while (ima_loptica_kod_sebe()):
+                ostavi()
      
     (5)
       .. code-block:: python
      
         from karel import *   
         while (moze_napred()):
-          while (ima_loptica_na_polju()):
-            uzmi()
-          napred()
-          while (ima_loptica_kod_sebe()):
-            ostavi()
+            while (ima_loptica_na_polju()):
+                uzmi()
+            napred()
+            while (ima_loptica_kod_sebe()):
+                ostavi()
       
      
-

@@ -9,17 +9,17 @@ Tест
     :feedback_a: Тачно
     :answer_b: Не
     :feedback_b: Нетачно    
-    :correct: ['b']
+    :correct: a
 
     Написана је наредба `if` :
   
     .. code-block:: python
     
-      from karel import *
-      if mozeNapred():
-        napred()
-      else:
-        levo()
+        from karel import *
+        if mozeNapred():
+            napred()
+        else:
+            levo()
 
     Да ли је ова наредба написана у складу са правилима програмског језика Пајтон? Изабери тачан одговор:
 
@@ -36,7 +36,7 @@ Tест
     :feedback_c: Тачно
     :answer_d: 4
     :feedback_d: Нетачно    
-    :correct: ['a']
+    :correct: a
     
     Извршавањем којих од наредних програма ће робот ако може да пређе на наредно поље покупити лоптицу са тог поља (подразумева се да је на сваком пољу лоптица)?
     Изабери тачан одговор:
@@ -45,44 +45,43 @@ Tест
     
     .. code-block:: python
     
-      from karel import *
-      if mozeNapred():
-        napred()
-        uzmi()
+        from karel import *
+        if mozeNapred():
+            napred()
+            uzmi()
 
     (2)        
   
     .. code-block:: python
     
-      from karel import *
-      if mozeNapred():
-        napred()
-      uzmi()
+        from karel import *
+        if mozeNapred():
+            napred()
+        uzmi()
 
     (3)
   
     .. code-block:: python
     
-      from karel import *
-      if mozeNapred()
-        napred()
-        uzmi()
+        from karel import *
+        if mozeNapred()
+            napred()
+            uzmi()
 
     (4)
   
     .. code-block:: python
     
-      from karel import *
-      if mozeNapred():
-      napred()
-        uzmi()
+        from karel import *
+        if mozeNapred():
+        napred()
+            uzmi()
 
 
 Питање 3.
 ~~~~~~~~~
 
 .. mchoice:: grananje3
-    :multiple_answers:
     :answer_a: Ако постоје лоптице на пољу, робот ће узети све, у супротном ће оставити једну.    
     :feedback_a: Нетачно
     :answer_b: Ако постоје лоптице на пољу, робот ће узети једну, у супротном ће оставити једну.    
@@ -97,11 +96,11 @@ Tест
 
     .. code-block:: python
     
-      from karel import *
-      if ima_loptica_na_polju():
-          uzmi()    
-      else:
-          ostavi()
+        from karel import *
+        if ima_loptica_na_polju():
+            uzmi()    
+        else:
+            ostavi()
 
     Шта је резултат извршавања следеће наредбе? Изабери тачан одговор.
 
@@ -110,7 +109,6 @@ Tест
 ~~~~~~~~~
 
 .. mchoice:: grananje
-    :multiple_answers:
     :answer_a: 1
     :feedback_a: Нетачно
     :answer_b: 2
@@ -119,9 +117,7 @@ Tест
     :feedback_c: Нетачно
     :answer_d: 4
     :feedback_d: Нетачно
-    :answer_e: 5
-    :feedback_e: Нетачно
-    :correct: ['c']
+    :correct: b
 
     Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?
       
@@ -129,35 +125,28 @@ Tест
     
     .. code-block:: python
 
-      ima_loptica_kod_sebe()
-        ostavi()
+        ima_loptica_kod_sebe()
+            ostavi()
       
     (2)
     
     .. code-block:: python
 
-      if (ima_loptica_kod_sebe()):
-      ostavi()    
+        if (ima_loptica_kod_sebe()):
+            ostavi()    
           
     (3)
     
     .. code-block:: python
 
-      if (ima_loptica_kod_sebe()):
+        while (ima_loptica_kod_sebe()):
             ostavi()  
       
     (4)
     
     .. code-block:: python
 
-      while (ima_loptica_kod_sebe()):
-            ostavi()  
-      
-    (5)
-    
-    .. code-block:: python
-
-       if (broj_loptica_kod_sebe()):
+        if (broj_loptica_kod_sebe()):
             ostavi()   
     
 Питање 5.
@@ -182,33 +171,33 @@ Tест
     
     .. code-block:: python
 
-      ima_loptica_kod_sebe():
-        uzmi()
+        ima_loptica_kod_sebe():
+            uzmi()
       
     (2)
     
     .. code-block:: python
 
-      if (ima_loptica_na_polju()):
-        ostavi()    
+        if (ima_loptica_na_polju()):
+            ostavi()    
           
     (3)
     
     .. code-block:: python
 
-      if (ima_loptica_na_polju()):
+        if (ima_loptica_na_polju()):
             uzmi()  
       
     (4)
     
     .. code-block:: python
 
-      while (ima_loptica_na_polju()):
+        while (ima_loptica_na_polju()):
             ostavi()  
       
     (5)
     
     .. code-block:: python
 
-       if (broj_loptica_kod_sebe()):
-            uzmi()   
+        if (broj_loptica_kod_sebe()):
+            uzmi()

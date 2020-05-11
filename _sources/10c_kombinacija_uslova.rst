@@ -65,7 +65,7 @@
    и тежак 79 килограма нормалне дебљине?
 
 .. activecode:: bmi
-		
+
    masa = 79
    visina = 180 / 100
    bmi = masa / (visina * visina)

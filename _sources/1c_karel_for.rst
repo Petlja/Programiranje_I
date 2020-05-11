@@ -20,21 +20,21 @@
 
    {
       setup: function() {
-	   var world = new World(9, 1);
+       var world = new World(9, 1);
            world.setRobotStartAvenue(1);
            world.setRobotStartStreet(1);
            world.setRobotStartDirection("E");
-	   world.putBall(9, 1);
+       world.putBall(9, 1);
            var robot = new Robot();
-	   var code = ["from karel import *",
-	       "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "uzmi()"]
-	   return {world: world, robot: robot, code: code};
+       var code = ["from karel import *",
+           "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "uzmi()"]
+       return {world: world, robot: robot, code: code};
       },
 
       isSuccess: function(robot, world) {
            return robot.getStreet() === 1 &&
            robot.getAvenue() === 6 &&
-	   world.getBalls(6, 1) == 0;
+       world.getBalls(6, 1) == 0;
       }
    }
 
@@ -53,21 +53,21 @@ Python, који наш робот Карел разуме, понављање �
 
    {
       setup: function() {
-	   var world = new World(9, 1);
+       var world = new World(9, 1);
            world.setRobotStartAvenue(1);
            world.setRobotStartStreet(1);
            world.setRobotStartDirection("E");
-	   world.putBall(9, 1);
+       world.putBall(9, 1);
            var robot = new Robot();
-	   var code = ["from karel import *",
-	       "for i in range(8):", "    napred()", "uzmi()"]
-	   return {world: world, robot: robot, code: code};
+       var code = ["from karel import *",
+           "for i in range(8):", "    napred()", "uzmi()"]
+       return {world: world, robot: robot, code: code};
       },
 
       isSuccess: function(robot, world) {
            return robot.getStreet() === 1 &&
            robot.getAvenue() === 9 &&
-	   world.getBalls(9, 1) == 0;
+       world.getBalls(9, 1) == 0;
       }
    }
 

@@ -21,8 +21,8 @@
 
      s = 0
      for i in range(5):
-     	s = s + i
-     	print(s)
+         s = s + i
+         print(s)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,25 +39,25 @@
     Која од следећих наредби исисује три пута `Здраво, свете!` ? Изабери тачан одговор:
 
     (1)
-	
+
     .. code-block:: python
-	
+
      for i in range(3):
-     	print("Здраво, свете!")
+         print("Здраво, свете!")
 
     (2)
-	
+
     .. code-block:: python
-	
+
      for i in range(3):
      print("Здраво, свете!")
 
     (3)
-	
+
     .. code-block:: python
-	
+
      for i in range(3)
-     	print("Здраво, свете!")
+         print("Здраво, свете!")
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@
    .. code-block:: python
 
     for i in range(9,12,8):
-    	print(i)
+        print(i)
 
    Одговор: |blank|
 
@@ -96,7 +96,7 @@
 
      s = 0
      for i in range(7):
-     	s = s + i
+         s = s + i
      print(s)
 
 Питање 5.
@@ -119,7 +119,7 @@
 
      p = 0
      for i in range(4):
-     	p = p * i
+         p = p * i
      print(p)
 
 Питање 6.
@@ -141,7 +141,7 @@
     .. code-block:: python
 
      while 1 < 0:
-     	print("Zdravo, svete!")
+         print("Zdravo, svete!")
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,8 +164,8 @@
      s = 0
      a = 5
      while a > 0:
-     	a = a - 1
-     	s = s + a
+         a = a - 1
+         s = s + a
      print(s)
 
 Питање 8.
@@ -188,8 +188,8 @@
 
      b = 5
      while b <= 100:
-     	print(b)
-     	b = b + 5
+         print(b)
+         b = b + 5
 
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -209,8 +209,8 @@
 
      n = int(input("Unesi broj:"))
      while n > 0:
-     	print(n % 10)
-     	n = n // 10
+         print(n % 10)
+         n = n // 10
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -231,8 +231,8 @@
      s = 0
      n = int(input("Unesi broj:"))
      while n > 0:
-     	a = n % 10
-     	n = n // 10
-     	s = s + a
+         a = n % 10
+         n = n // 10
+         s = s + a
      print(s)
 

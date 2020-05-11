@@ -38,10 +38,10 @@
 
     .. code-block:: python
 
-       for i in range(2):
-          napred()
-          desno()
-       napred()
+        for i in range(2):
+            napred()
+            desno()
+        napred()
 
     Који од наредних кодова ће дати исти резултат при извршавању? Изабери тачан одговор:
 
@@ -95,12 +95,12 @@
     (1)
       .. code-block:: python
      
-        from karel import *   
-        napred()    
-        for i in range(5):    
-          uzmi()
-          for i in range(5):
-          ostavi()
+        from karel import *
+        napred()
+        for i in range(5):
+            uzmi()
+            for i in range(5):
+                ostavi()
       
     (2)
       .. code-block:: python
@@ -108,10 +108,10 @@
         from karel import *   
         napred()    
         for i in range(5):    
-          uzmi()
-          napred()
-          for i in range(5):
-          ostavi()
+            uzmi()
+            napred()
+            for i in range(5):
+                ostavi()
      
     (3)
       .. code-block:: python
@@ -119,9 +119,9 @@
         from karel import *   
         napred()    
         for i in range(5):    
-          uzmi()
-          napred()
-          ostavi()
+            uzmi()
+            napred()
+            ostavi()
      
     (4)
       .. code-block:: python
@@ -129,10 +129,10 @@
         from karel import *   
         napred()    
         for i in range(5):    
-          uzmi()
+            uzmi()
         napred()
         for i in range(5):
-          ostavi()
+            ostavi()
       
 
 Питање 5.
@@ -183,7 +183,7 @@
     
    Од могућих решења, одабрати оно које подразумева најмањи број команди и у коме Карел оставља лоптицу чим дође до поља.
    (Одговор упиши навођењем редних бројева команди распоређених у одговарајући редослед, нпр. 12213)
-    	 
+
    - :^\s*31422122\s*$: Тачно
      :x: Одговор није тачан.
 

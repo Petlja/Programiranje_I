@@ -233,9 +233,9 @@
 
      nagradjeni = {"Lenka", "Sofija", "Dimitrije"}
      if "Miodrag" ___________:
-     	print("Bravo!")
+         print("Bravo!")
      else:
-     	print("Nažalost, Miodrag nije među nagrađenima.")
+         print("Nažalost, Miodrag nije među nagrađenima.")
 
 Питање 13.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -243,7 +243,7 @@
 .. mchoice:: l13
     :answer_a: листа аутомобила
     :feedback_a: Нетачно    
-    :answer_b: рецник који пресликава марку аутомобила у цену аутомобила
+    :answer_b: речник који пресликава марку аутомобила у цену аутомобила
     :feedback_b: Тачно
     :answer_c: скуп аутомобила и цена аутомобила
     :feedback_c: Нетачно    

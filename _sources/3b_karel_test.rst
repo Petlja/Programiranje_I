@@ -12,46 +12,46 @@
     :correct: a
     
     Да ли је следећа наредба `if` исправно записана. Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	  if moze_napred():
-		napred()
-	  else:
-		ostavi()
+
+    .. code-block:: python
+
+        if moze_napred():
+            napred()
+        else:
+            ostavi()
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: karel_while_4
     :answer_a: Да
-    :feedback_a: Тачно    
+    :feedback_a: Нетачно
     :answer_b: Не
-    :feedback_b: Нетачно    
+    :feedback_b: Тачно
     :correct: b
     
     Да ли је следећа наредба `while` исправно записана. Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	  while moze_napred()
-		napred()
-		uzmi()
-		levo()
+
+    .. code-block:: python
+
+        while moze_napred()
+            napred()
+            uzmi()
+            levo()
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: karel_pitanje_8
-    :answer_a: Бројачка петља
+    :answer_a: Бројачку петљу
     :feedback_a: Тачно    
-    :answer_b: Петља са провером услова на почетку
+    :answer_b: Петљу са провером услова на почетку
     :feedback_b: Нетачно    
     :answer_c: Гранање
     :feedback_c: Нетачно
     :correct: a
     
-    Шта од понуђених одговора користимо ако унапред знамо да робот мора да покупи 10 лоптица?
+    Коју наредбу треба употребити када робот треба да покупи 10 лоптица од 14 лоптица са поља?
 
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,58 +67,58 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Који од наредних програма описује кретање робота кроз лавиринт тако да покупи све лоптице испред себе и пренесе их у одгорајуће рупе испред?
-	
-	.. image:: ../_images/karel3_1.png 
-   	   :align: center
-	
-	(1)
-	
-	.. code-block:: python
-	
-	  while moze_napred():
-		napred()
-	  while ima_loptica_na_polju():
-		uzmi()
-		napred()
-	  while ima_loptica_kod_sebe():
-			ostavi()
+    Који од наредних програма описује кретање робота кроз лавиринт тако да покупи све лоптице испред себе и пренесе их у одговарајуће рупе испред?
 
-	(2)
-	
-	.. code-block:: python
-	
-	  while moze_napred():
-		napred()
-	  	while ima_loptica_na_polju():
-			uzmi()
-			napred()
-	  	while ima_loptica_kod_sebe():
-			ostavi()
+    .. image:: ../_images/karel3_1.png 
+        :align: center
 
-	(3)
-	
-	.. code-block:: python
-	
-	  while moze_napred():
-		napred()
-	  	while ima_loptica_na_polju():
-			uzmi()
-		napred()
-	  	while ima_loptica_kod_sebe():
-			ostavi()
+    (1)
 
-	(4)
-	
-	.. code-block:: python
-	
-	  while moze_napred():
-		napred()
-	  	while ima_loptica_na_polju():
-			uzmi()
-			napred()
-	  		while ima_loptica_kod_sebe():
-				ostavi()
+    .. code-block:: python
+
+      while moze_napred():
+          napred()
+      while ima_loptica_na_polju():
+          uzmi()
+          napred()
+      while ima_loptica_kod_sebe():
+          ostavi()
+
+    (2)
+
+    .. code-block:: python
+
+        while moze_napred():
+            napred()
+            while ima_loptica_na_polju():
+                uzmi()
+                napred()
+            while ima_loptica_kod_sebe():
+                ostavi()
+
+    (3)
+
+    .. code-block:: python
+
+        while moze_napred():
+            napred()
+            while ima_loptica_na_polju():
+                uzmi()
+            napred()
+            while ima_loptica_kod_sebe():
+                ostavi()
+
+    (4)
+
+    .. code-block:: python
+
+        while moze_napred():
+            napred()
+            while ima_loptica_na_polju():
+                uzmi()
+                napred()
+                while ima_loptica_kod_sebe():
+                    ostavi()
 
 
 Питање 5.
@@ -135,14 +135,14 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Погледај део кода који је дат, а затим одговори шта је резултат извршавања овог кода.
+    Који низ наредби има исто дејство као и дати део програма?
 
-	.. code-block:: python
+    .. code-block:: python
      
-	 for i in range(2):
-	 	napred()
-		desno()
-	 napred()
+        for i in range(2):
+            napred()
+            desno()
+        napred()
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,14 +158,14 @@
     :feedback_d: Тачно
     :correct: d
 
-	Нека je дат следећи део кода. Погледај код, па одговори шта је резултат извршавања овог кода.
+    Који низ наредби има исто дејство као и дати део програма?
 
-	.. code-block:: python
+    .. code-block:: python
 
-  	 napred() 
-  	 for i in range(2):
-	 	desno()
-  	 napred()
+        napred() 
+        for i in range(2):
+            desno()
+        napred()
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,46 +181,46 @@
     :feedback_d: Тачно
     :correct: d
 
-	Испред робота је зачарани лавиринт такав да се дужина лавиринта мења, али се испред Карела на сваком пољу увек налази по 4 лоптице. Којим од наредних програма робот сакупља све лоптице испред себе?
-	
-	.. image:: ../_images/karel3_2.png 
-   	   :align: center
+    Испред робота је зачарани лавиринт такав да се дужина лавиринта мења, али се испред Карела на сваком пољу увек налази по 4 лоптице. Којим од наредних програма робот сакупља све лоптице испред себе?
 
-	(1)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred():
-		for i in range(4):
-			uzmi()
+    .. image:: ../_images/karel3_2.png 
+        :align: center
 
-	(2)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-		for i in range(4)
-			uzmi()
+    (1)
 
-	(3)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-	 for i in range(4)
-	 	uzmi()
+    .. code-block:: python
+ 
+        while moze_napred():
+            napred():
+            for i in range(4):
+                uzmi()
 
-	(4)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-		for i in range(4):
-			uzmi()
+    (2)
+
+    .. code-block:: python
+
+        while moze_napred():
+            napred()
+            for i in range(4)
+                uzmi()
+
+    (3)
+
+    .. code-block:: python
+ 
+        while moze_napred():
+            napred()
+        for i in range(4)
+            uzmi()
+
+    (4)
+
+    .. code-block:: python
+ 
+        while moze_napred():
+            napred()
+            for i in range(4):
+                uzmi()
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -236,48 +236,48 @@
     :feedback_d: Нетачно
     :correct: b
 
-	Испред робота је лавиринт као на слици, који од наредних програма ће помоћи роботу да покупи све лоптице испред себе?
-	
-	.. image:: ../_images/karel3_3.png 
-   	   :align: center
+    Испред робота је лавиринт као на слици, који од наредних програма ће помоћи роботу да покупи све лоптице испред себе?
 
-	(1)
-	
-	.. code-block:: python
-	 
-	 for i in range(5):
-	 	napred():
-		for i in range(3):
-			uzmi()
+    .. image:: ../_images/karel3_3.png 
+          :align: center
 
-	(2)
-	
-	.. code-block:: python
-	 
-	 for i in range(3):
-	 	napred()
-		for i in range(5):
-			uzmi()
+    (1)
 
+    .. code-block:: python
+ 
+        for i in range(5):
+            napred():
+            for i in range(3):
+                uzmi()
 
-	(3)
-	
-	.. code-block:: python
-	 
-	 for i in range(5):
-		for i in range(3):
-		    napred()
-			uzmi()
+    (2)
+
+    .. code-block:: python
+ 
+        for i in range(3):
+            napred()
+            for i in range(5):
+                uzmi()
 
 
-	(4)
-	
-	.. code-block:: python
-	 
-	 for i in range(3):
-		for i in range(5):
-		    napred()
-			uzmi()
+    (3)
+
+    .. code-block:: python
+ 
+        for i in range(5):
+            for i in range(3):
+                napred()
+                uzmi()
+
+
+    (4)
+
+    .. code-block:: python
+ 
+        for i in range(3):
+            for i in range(5):
+                napred()
+                uzmi()
 
 
 
@@ -295,11 +295,11 @@
     :feedback_d: Тачно
     :correct: d
 
-	Робот је у празном лавиринту и окренут је на десно. Шта је резултат извршавања следећег низа наредби? Изабери тачан одговор:
+    Робот је у празном лавиринту и окренут је на десно. Шта је резултат извршавања следећег низа наредби? Изабери тачан одговор:
 
-	.. code-block:: python
+    .. code-block:: python
 
-  	 for i in range(2):
-	 	napred()
-		levo()
-		levo()
+        for i in range(2):
+            napred()
+            levo()
+            levo()

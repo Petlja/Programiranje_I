@@ -1,5 +1,5 @@
 Наредба ``if``
-=============
+==============
 
 Подсетимо се синтаксе наредбе ``if``:
 
@@ -60,31 +60,31 @@
 
    {
       setup: function() {
-	   var world = new World(4, 1);
+       var world = new World(4, 1);
            world.setRobotStartAvenue(1);
            world.setRobotStartStreet(1);
            world.setRobotStartDirection("E");
-	   for (var k = 2; k <= 4; k++)
-	      if (Math.random() > 0.5) 
+       for (var k = 2; k <= 4; k++)
+          if (Math.random() > 0.5) 
                   world.putBall(k, 1);
            var robot = new Robot();
-	   var code = ["from karel import *",
-					"napred();             # idi napred",
-					"if ima_loptica_na_polju():  # ako je na polju loptica:",
-					"    uzmi()       #    uzmi lopticu",
-					"",
-					"napred();             # idi napred",
-					"if ima_loptica_na_polju():  # ako je na polju loptica:",
-					"    uzmi()       #    uzmi lopticu",
-					"",
-					"# dopuni program", "???"]
-	   return {world: world, robot: robot, code: code};
+       var code = ["from karel import *",
+                    "napred();             # idi napred",
+                    "if ima_loptica_na_polju():  # ako je na polju loptica:",
+                    "    uzmi()       #    uzmi lopticu",
+                    "",
+                    "napred();             # idi napred",
+                    "if ima_loptica_na_polju():  # ako je na polju loptica:",
+                    "    uzmi()       #    uzmi lopticu",
+                    "",
+                    "# dopuni program", "???"]
+       return {world: world, robot: robot, code: code};
       },
 
       isSuccess: function(robot, world) {
            return world.getBalls(2, 1) == 0 &&
-	          world.getBalls(3, 1) == 0 &&
-	          world.getBalls(4, 1) == 0;
+              world.getBalls(3, 1) == 0 &&
+              world.getBalls(4, 1) == 0;
       }
    }
 

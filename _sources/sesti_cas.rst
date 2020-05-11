@@ -20,7 +20,7 @@
       круг                                   ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
       елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
       многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
-      укључивање слике                       ``pg.image.load("putanja_do_slike")``
+      учитавање слике                        ``pg.image.load("putanja_do_slike")``
       приказивање слике                      ``prozor.blit(slika, (x, y))``
       ====================================   =================================================================================
 

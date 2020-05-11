@@ -15,7 +15,7 @@
 
       Пре него што почнеш са овом лекцијом, важно је да се подсетиш како се користе петље у програмском језику Пајтон. У лекцији `Понављање <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas11#id1>`__ из Приручника за Пајтон налази се неколико области које ће ти помоћи да се подсетиш овога. Прво погледај област `Понављање наредби дати број пута <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas11#id2>`__ и реши два лака задатка који су у тој области. Онда прочитај део који се зове `Опсег бројева <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas11#range>`__ и који се тиче тога како се употребљава функција ``range``. Када то завршиш погледај и део који говори о томе како се употребљава `Условна петља <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas19#>`__
 
-      Такође, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетника за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари. Одељак *Контрола тока* ће ти бити сасвим довољан.
+      Такође, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари. Одељак *Контрола тока* ће ти бити сасвим довољан.
       
       Као и до сада, оставићемо ти овде подсетник за неке најважније функције.
 
@@ -26,7 +26,7 @@
       круг                                   ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
       елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
       многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
-      укључивање слике                       ``pg.image.load("putanja_do_slike")``
+      учитавање слике                        ``pg.image.load("putanja_do_slike")``
       приказивање слике                      ``prozor.blit(slika, (x, y))``
       ====================================   =================================================================================
 

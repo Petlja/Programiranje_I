@@ -32,7 +32,7 @@
 начин да то урадимо је да употребимо наредни облик програма.
 
 .. activecode:: здраво_десет_пута
-		
+
    for i in range(10):        # ponovi 10 puta:
        print("Zdravo")         #    ispiši tekst "Zdravo"
 
@@ -40,7 +40,7 @@
 пример,
 
 .. activecode:: здраво_десет_пута_2
-		
+
    for i in range(10):        # ponovi 10 puta:
        print("Zdravo")         #    ispiši tekst "Zdravo"
    print("Doviđenja")
@@ -70,9 +70,9 @@
 .. questionnote::
 
    Употреби петљу да би се исписали бројеви од 0 до 9. 
-	   
+   
 .. activecode:: бројеви_од_0_до_9
-		
+
    for i in range(0):    # ispravi ovaj red
        print(i)
 
@@ -89,9 +89,9 @@
    исписује све бројеве од ``a`` до ``b`` (укључујући и њих).
 
 .. activecode:: бројеви_од_a_до_b
-		
+
    a = int(input("Odakle se broji: "))
-   b = int(input("Dokle se broji: "))		
+   b = int(input("Dokle se broji: "))
    for i in range(0, 0):    # ispravi ovaj red
        print(i)
 
