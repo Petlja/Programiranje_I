@@ -1,6 +1,6 @@
-courseId: kurs-primer
+courseId: kurs-prvi
 lang: sr-Cyrl
-title: Пример курса
+title:  Настава програмирања за Први разред гимназије
 description:
   willLearn: # list
     - Научићете 1
