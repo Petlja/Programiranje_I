@@ -1,4 +1,4 @@
-courseId: kurs-prvi
+courseId: kurs-drugi
 lang: sr-Cyrl
 title:  Настава програмирања за Први разред гимназије
 description:
@@ -7,10 +7,9 @@ description:
     - Научићете 2
   requirements:
     - Имаш инсталиран Пајтон
-    - Имаш инсталиран Петљадок
+    - Имаш отворен налог на Петљи
   toc:
-    - Пример_лекције
-    - Пример_лекције2
+    - Пајтон
   externalLinks: # opciono 
     - text: Синтакса restructuredText
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
@@ -18,50 +17,144 @@ description:
       href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 lessons:
-  - title: Наслов_1
-    folder: Пример_лекција1
-    guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
-    description: Прва лекција
+  - title: Прва лекција - Робот Карел
+    folder: 1_lekcija
+    guid: 102e6fae-33d2-44ab-938b-9f0ca17e60de
     activities:
       - type: reading
-        title: Пример фајла
-        file: primer_1.rst
-        description: #opciono
-        guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
+        title: Лекција
+        file: 1a.rst
+        guid: f03227d8-ab84-4c64-9180-a77b5d7ab58b
       - type: reading
-        title: Пример pdf фајла
-        file: primer_dokument.pdf
-        description: ...
-        guid: d90350ae-84e4-4e49-bac8-2d4849e3c409
-      - type: video
-        title: Пример видеа
-        url: https://www.youtube.com/watch?v=flu3-ntQIlE # može da se navede i ceo YT url, a može i samo ID (id u bilo kom yt linku predstavlja 11 karatkera nakon v=)
-        description: ...
-        guid: 61657689-aa6b-46c9-87da-51869d6477ee
-      - type: quiz 
-        title: Пример теста
-        file: primer_test_1.rst
-        description: ...
-        guid: a725f29a-b323-4a1a-b52d-6eae141bc243
-    archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: de4d8ced-7457-4257-a156-250bdb711d65
-      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Naslov_2
-    folder: Пример_лекција2
-    guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
-    description:  Друга лекција
+        title: Лекција
+        file: 1b.rst
+        guid: ad288008-e86b-4255-a6b9-c0da241f26b7
+  - title: Друга лекција - Робот Карел
+    folder: 2_lekcija
+    guid: 6f8ab8af-f563-40b4-8c6d-6e4ccd9d7045
     activities:
       - type: reading
-        title: Primer rst fajla
-        file: primer_2.rst
-        description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be   
-archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-  - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
-
-
-
-
-
-
+        title: Лекција
+        file: 2a.rst
+        guid: 330e6e4d-2371-4513-a90b-447acae82af4
+      - type: reading
+        title: Лекција
+        file: 2b.rst
+        guid: f35d3b28-5aef-4821-96b8-548765596c19
+  - title: Трећа лекција - вежбање
+    folder: 3_lekcija
+    guid: 4be44082-6709-4193-a527-2f1689ba583d
+    activities:
+      - type: reading
+        title: Лекција
+        file: 3a.rst
+        guid: 6715aafa-b9b5-49b6-82b7-d473059d0d3d
+  - title: Пета лекција - вежбање
+    folder: 5_lekcija
+    guid: 0a4a76cd-03d3-428e-8019-860589d9aea9
+    activities:
+      - type: reading
+        title: Лекција
+        file: 5a.rst
+        guid: 7a3f1517-5b33-4c49-9299-23078b0d8361
+      - type: reading
+        title: Лекција
+        file: 5b.rst
+        guid: 4e2b40fb-594a-497d-881b-b5d4c8c48e47
+  - title: Шеста лекција - вежбање
+    folder: 6_lekcija
+    guid: 3847d7c8-ff63-4136-92b1-3c4840242bca
+    activities:
+      - type: reading
+        title: Лекција
+        file: 6a.rst
+        guid: 327724dd-83a2-409e-b852-42c6056c606e
+  - title: Седма лекција 
+    folder: 7_lekcija
+    guid: 986d5314-a202-416c-9d00-edd54bf1f04c
+    activities:
+      - type: reading
+        title: Лекција
+        file: 7a.rst
+        guid: 86ede5ad-3aba-4abe-b6ff-b11c22c6657d    
+      - type: reading
+        title: Лекција
+        file: 7b.rst
+        guid: 63b22829-cff1-48fb-bfcc-00da205621b4   
+  - title: Осма лекција 
+    folder: 8_lekcija
+    guid: f1ee2c94-4023-4307-8875-6d455b4a567f
+    activities:
+      - type: reading
+        title: Лекција
+        file: 8a.rst
+        guid: 3b285d82-051d-4da2-ae3c-e4b92446cd8e    
+      - type: reading
+        title: Лекција
+        file: 8b.rst
+        guid: 253dc2d3-195e-4a60-bdf5-862998412a7a     
+  - title: Девета лекција 
+    folder: 9_lekcija
+    guid: 501e7102-1901-42ad-a767-928533ecf1e9
+    activities:
+      - type: reading
+        title: Лекција
+        file: 9a.rst
+        guid: 30b9f050-3c10-4a9b-9c91-4e00f1cced31    
+      - type: reading
+        title: Лекција
+        file: 9b.rst
+        guid: 7b7317dd-336e-4d15-b311-05f03cd38d77
+  - title: Десета лекција 
+    folder: 10_lekcija
+    guid: 97b7c690-0649-4c18-afab-3133d1633d51
+    activities:
+      - type: reading
+        title: Лекција
+        file: 10a.rst
+        guid: 72474326-394a-4834-8dd5-e4169e34c02f    
+      - type: reading
+        title: Лекција
+        file: 10b.rst
+        guid: 7414f407-2cad-4f4a-a67d-d5c30c9e9ade
+  - title: Једанаеста лекција 
+    folder: 11_lekcija
+    guid: a0c33527-c62d-483b-9100-bc35480503cc
+    activities:
+      - type: reading
+        title: Лекција
+        file: 11a.rst
+        guid: 658ccd89-cabb-4bed-942d-9e9e4ba6d20f    
+      - type: reading
+        title: Лекција
+        file: 11b.rst
+        guid: fe8deeec-8716-4208-8115-38583ceb43ad
+  - title: Дванаеста лекција 
+    folder: 12_lekcija
+    guid: 4a14585b-1279-446c-a576-e647a7caa75e
+    activities:
+      - type: reading
+        title: Лекција
+        file: 12a.rst
+        guid: 83f65443-5a4e-4116-9c50-8dc63ccdea7f 
+  - title: Тринаеста лекција 
+    folder: 13_lekcija
+    guid: e0780ff9-d347-45ef-b878-097942adbad7
+    activities:
+      - type: reading
+        title: Лекција
+        file: 13a.rst
+        guid: dc8540a9-d9be-46ea-beff-c4a6d40e9dd5  
+      - type: reading
+        title: Лекција
+        file: 13b.rst
+        guid: 2dd5a586-0514-4e1d-b9ac-739f99eff063 
+  - title: Четрнаеста лекција 
+    folder: 14_lekcija
+    guid: 7ff294ce-8a51-4abc-8400-06f7b3140bcc
+    activities:
+      - type: reading
+        title: Лекција
+        file: 14a.rst
+        guid: 38d2f63e-8276-41a9-a54e-3e43ef629afb  
+            
