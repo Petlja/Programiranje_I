@@ -1,339 +1,458 @@
-Дефинисање функција
-===================
+9.2. Целобројно дељење - позициони запис броја
+----------------------------------------------
 
-Видели смо колико је корисно када на располагању имамо дате функције
-попут ``min``, ``max`` или ``abs``. Сви програмски језици, па и Python
-допуштају корисницима да дефинишу своје функције.
+Ако је укупан број центиметара био 123, тада је број метара 1, број
+дециметара 2 и број центиметара 3. Решавањем претходног задатка смо
+заправо одређивали појединачне цифре коришћене у запису тог
+троцифреног броја. Приказана техника може бити уопштена тако да се
+одређују све цифре и у запису дужих бројева.
 
-У програмима са корњача-графиком смо се срели са дефинисањем
-**процедура**, што нам је омогућило да проширимо језик који корњача
-разуме и да лакше пишемо програме. Једном када се дефинише процедура,
-практично нема разлике између њеног коришћења и коришћења неке од
-уграђених наредби, тако да су нам процедуре заправо дале начин да
-дефинишемо нове, сложеније наредбе корњачи. **Функције** су веома
-сличне процедурама, са главном разликом да функције служе да на основу
-улазних вредности израчунају неки резултат и врате га, док процедуре
-служе да промене стање програма и обично не враћају никакав резултат.
-На пример, `abs` је функција која на основу дате вредности броја
-одређује његову апсолутну вредност, док је `kvadrat(a)` процедура која
-не враћа никакву вредност већ наређује корњачи да нацрта квадрат на
-екрану. `input`, коју смо користили за учитавање са тастатуре је
-функција (јер враћа унету вредност), док је `print` процедура (јер не
-враћа никакву вредност, већ мења стање програма тј. оно што је
-исписано на екрану).
+
+Цифре броја
+'''''''''''
+.. level:: 2
+
+.. questionnote::
+
+   Чест начин откривања грешака при слању података је да се уз податке
+   које треба послати, пошаљу и одређени контролни подаци, израчунати
+   на основу самих података. Када прималац прими податке, он на основу
+   примљених података поново израчунава контролне податке и упоређује
+   их са контролним подацима које је примио. Ако се приликом преноса
+   података, услед неких сметњи, подаци случајно измене, прималац ће
+   то приметити тако што ће видети да се контролни подаци које је он
+   израчунао неће поклопити са онима које је примио. Сви подаци се у
+   рачунарима представљају помоћу бројева, а још од најранијег доба
+   рачунарства као метода контроле коришћен је збир цифара. На пример,
+   ако би податак који се шаље био број 12345, онда би се уз њега слао
+   и контролни број 15 (збир 1 + 2 + 3 + 4 + 5). Ако би приликом слања
+   нека цифра била случајно промењена (на пример, ако би прималац
+   грешком примио број 12335) тада би се и контролни број
+   највероватније разликовао (контролни број би у нашем примеру био
+   14). Напиши програм који за дати петоцифрени број одређује његов
+   контролни број (збир његових цифара).
+
+.. activecode:: цифре_броја
+   :runortest: broj, kontrolni_broj
+   :enablecopy:
+		
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   broj = 12345
+   # -*- acsection: main -*-
+   c0 = (broj // 1) % 10
+   c1 = (broj // 10) % 10
+   c2 = 0 # ispravi ovaj red
+   c3 = (broj // 1000) % 10
+   c4 = 0 # ispravi ovaj red
+   kontrolni_broj = c0 + c1 + c2 + c3 + c4
+   # -*- acsection: after-main -*-
+   print(kontrolni_broj)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for broj, kontrolni_broj in [(71425, 19), (33214, 13), (62040, 12)]:
+             self.assertEqual(acMainSection(broj = broj)["kontrolni_broj"],kontrolni_broj,"За број %s контролни број је %s." % (broj, kontrolni_broj))
+   myTests().main()
+   
+
+Приметимо да смо цифре броја одређивали веома слично као у претходном
+задатку.  Цифре одређујемо сдесна налево, тако што делимо број са
+тежином цифре (за цифру јединица број делимо са 1, десетица са 10,
+стотина са 100 итд.) и проналазимо остатак при дељењу са 10.
 
 .. infonote::
 
-   Јасна подела на процедуре и функције уведена је у програмском
-   језику Pascal. У Python-у се за обе врсте потпрограма користи иста
-   кључна реч ``def``, па се стога често не прави разлика између ова
-   два облика потпрограма, већ се говори о функцијама које враћају и
-   функцију које не враћају вредности.
+   Људи су контролу података примењивали и ручно, а сада рачунари
+   обављају такве контроле у овиру прецизно задатих поступака –
+   *протокола за размену података*. Иако је контролни збир
+   најједноставнији начин контроле, он не може да открије грешке до
+   којих може доћи услед случајне размене редоследа цифара (на пример,
+   ако се уместо броја 12345 грешком пошаље број 12435, контролни збир
+   оба броја ће бити исти и грешка неће бити примећена). Зато се
+   уместо збира понекад користе изрази облика :math:`c_0 + 2c_1 +
+   3c_2 + 4c_3 + 5c_4`. Покушај да измениш претходни програм тако да
+   израчунава контролни број на овај начин.
 
 
-Примери дефинисања функција
----------------------------
+Целобројно дељење - време и углови
+''''''''''''''''''''''''''''''''''
 
-На пример, функција која израчунава обим правоугаоника се може
-дефинисати и онда употребити на следећи начин.
+За разлику од бројева и јединица мере које записујемо у систему чија
+је основа 10, при раду са временом и угловима користимо систем чија је
+основа број 60. Тако један сат има 60 минута, а један минут 60
+секунди. Слично један степен има 60 угаоних минута, а један угаони
+минут има 60 угаоних секунди. Прикажимо сада кроз неколико задатака
+како можемо у програмима вршити израчунавања у којима учествују време
+и углови.
 
-.. activecode:: функција_површине_правоугаоника
-
-   def obim_pravougaonika(a, b):
-       return 2 * a + 2 * b
-
-   print(obim_pravougaonika(3, 5))
-   print(obim_pravougaonika(4.2, 5.7))
-   
-Дефиниција функције почиње речју ``def`` након тога се наводи назив
-функције, затим у заградама наведени улазни параметри функције и
-симбол двотачка (``:``).  Након те прве линије наводи се тело
-функције, које мора бити мало увучено.  Код најједноставнијих функција
-(као што су ове две наведене у примерима) тело функције представља
-само наредба ``return`` након које се налази израз који представља
-везу између улазних параметара и резултата функције. Код
-компликованијих функција у телу се налазе дужа израчунавања, али се и
-даље у телу функције (најчешћње на самом крају) налази наредба
-``return`` иза које се наводи вредност функције (то може бити и име
-променљиве у којој је израчуната резултујућа вредност). Функције се
-позивају тако што се наведе њихов назив и у загради вредности
-аргумената.
-
-Обим квадрата
-'''''''''''''
+Конверзија сати и минута у минуте и обратно
+'''''''''''''''''''''''''''''''''''''''''''
 .. level:: 1
 
 .. questionnote::
 
-   Дефиниши функцију која на основу дужине странице израчунава
-   површину квадрата.
+   Ако се зна колико је тренутно сати и минута, израчунај колико је
+   минута протекло од претходне поноћи.
 
-   
-.. activecode:: површина квадрата
+Пошто у једном сату има 60 минута, довољно је да помоножиш број сати
+са 60 и на то да додаш број минута.
 
-   def povrsina_kvadrata    # dopuni ovaj i naredni red
-       return 
+.. activecode:: сати_и_минути_у_минуте
+   :runortest: sati, minuta, minuta_od_ponoci
+   :enablecopy:
 
-   a = int(input("Unesi dužinu stranice kvadrata: "))
-   print(povrsina_kvadrata(a))
-
-Површина сложених облика
-''''''''''''''''''''''''
-.. level:: 2
-
-Размотримо проблем израчунавања површине наредних сложених облика.
-
-.. image:: ../../_images/slozeni_oblik.png
-   :width: 300px   
-   :align: center
-
-.. image:: ../../_images/slozeni_oblik_polukrugovi.png
-   :width: 300px   
-   :align: center
-
-Први облик се може разложити на два правоугаоника, један правоугли
-троугао и један полукруг, док се површина другог облика може добити
-тако што се од површине највећег полукруга одузме површина најмањег, а
-дода површина средњег полукруга и површина правоуглог троугла.
-
-Ако једном дефинишемо функције за израчунавање површине сваког од тих
-елементарних облика, веома једноставно у главном програму можемо
-израчунавати површине разних сложених облика, не размишљајући више о
-формулама потребним за израчучнавање површине појединачних облика
-(површина правоугаоника страница :math:`a` и :math:`b` израчунава се
-по формули :math:`P=a\cdot b`, површина правоуглог троугла чије су
-странице које образују прав угао :math:`a` и :math:`b` једнака је
-:math:`\frac{a\cdot b}{2}`, јер је тај троугао половина одговарајућег
-правоугаоника, а површина круга полупречника :math:`r` може се
-израчунати по формули :math:`P = r^2\pi`, где је :math:`pi =
-3,1415926...`, а у језику Python се може добити помоћу `math.pi`).
-
-.. activecode:: сложени_облици
-
-   # površina pravougaonika datih stranica
-   def P_pravougaonika(a, b):
-       return a * b
-
-   # površina pravouglog trougla datih kateta
-   def P_pravouglog_trougla(a, b):
-       return a * b / 2
-
-   # površina kruga datog poluprečnika
-   def P_kruga(r):
-       return r * r * math.pi
-
-   # površina polukruga datog prečnika
-   def P_polukruga(R):
-       return P_kruga(R / 2) / 2
-
-   P1 = (P_pravougaonika(2, 3) + ??? + 
-         P_pravouglog_trougla(2, 1) + P_polukruga(3))
-   P2 = (P_polukruga(7) - P_polukruga(2) + ??? + 
-         P_pravouglog_trougla(???, ???))
-
-   print(P1, P2)
-   
-
-Функције са више резултата
---------------------------
-У неким ситуацијама функција треба да врати више вредности. На пример,
-желимо да претварање центиметара у метре и центиметре опишемо у облику
-посебне функције. Резултат тада можемо вратити у облику пара или торке
-елемената (више речи о паровима и торкама је дато у поглављу о
-представљају података у програмима).
-
-.. activecode:: функција_конверзије_дужине
-
-   def cm_u_mcm(cm):
-       return (cm // 100, cm % 100)
-
-   (m, cm) = cm_u_mcm(178)
-   print(178, "cm", "=", m, "m", "i", cm, "cm")
-   (m, cm) = cm_u_mcm(161)
-   print(161, "cm", "=", m, "m", "i", cm, "cm")
-
-Секунде у сате, минуте и секунде
-''''''''''''''''''''''''''''''''
-.. level:: 2
-
-.. questionnote::
-
-   Напиши функцију која на основу броја секунди протеклих од претходне
-   поноћи израчуна тренутно време у сатима, минутима и секундама,
-   водећи рачуна да број сати буде између 0 и 23.
-
-У наредној дефиницији функције направљено је неколико грешака. Исправи
-је тако да наредни програм да исправне резултате.
-   
-.. activecode:: функција_конверзије_времена
-		
-  def sek_u_satminsek(s):
-      sek = (s // (60*60)) % 24
-      min = (s // 1) % 60
-      sat = (s // 60) % 60
-      return                  # dopuni ovaj red
-
-  (sat, min, sek) = sek_u_satminsek(1000)
-  print(sat, ":", min, ":", sek)
-  () = sek_u_satminsek(7200)      # dopuni ovaj red
-  print(sat, ":", min, ":", sek)
-
-Када програм покренеш треба да испише ``0 : 16 : 40`` и ``2 : 0 : 0``.
-
-Сврха дефинисања функција
--------------------------
-
-Резимирајмо на крају неколико основних разлога за дефинисање функција.
-
-- Увођењем функција добијају се разумљивији програми (ономе ко чита
-  главни програм много је јасније да се у неком делу израчунава обим
-  правоугаоника ако у програму види израз ``obim_pravougaonika(2, 5)``
-  него ако види израз ``2 * 2 + 2 * 5)``). Када дефинишемо погодне
-  функције, главни програм је било много лакше написати.
-
-- Функције помажу да се програм скрати тако што се избегава понављање
-  истог програмског кода (ако је тај програмски код дугачак и
-  компликован, издвајање у функцију може значајно поједноставити и
-  скратити програм). Ако се покаже да је тај део кода често потребно
-  мењати (што је често случај у програмирању) то што се код јавља само
-  једном (у склопу тела функције) чини одржавање много једноставнијим
-  (не морамо измене да правимо на пуно места, већ само на једном).
-
-- Функције помажу и да се неки проблеми реше, тако што омогућавају
-  разлагање комплексних проблема на једноставније потпроблеме.
-
-
-Домаћи задатак
---------------
-
-Уради за домаћи неколико наредних задатака.
-
-Време чекања на станици
-'''''''''''''''''''''''
-.. level:: 2
-
-.. questionnote::
-
-   Јелена је дошла аутобусом на станицу у s1 сати и m1 минута, док је
-   Иванин аутобус стигао у s2 сати и m2 минута. Колико је сати и
-   минута она која је прва стигла чекала ону која је друга стигла?
-
-И у овом задатку се тражи да се израчуна растојање између два
-временска тренутка за које се не зна који је први, а који други. Као
-што смо приказали раније, рачунање растојања се своди на рачунање
-апсолутне вредности разлике, а рад са сатима и минутима лакше обављамо
-ако прво претворимо све у минуте, затим израчунамо број минута колико
-су се чекале и након тога то претворимо у сате и минуте.
-   
-.. activecode:: чекање_на_станици
-   :runortest: s1, m1, s2, m2, s, m
-      
    # -*- acsection: general-init -*-
    # -*- acsection: var-init -*-
-   s1 = int(input())
-   m1 = int(input())
-   s2 = int(input())
-   m2 = int(input())
+   sati = 2
+   minuta = 60
    # -*- acsection: main -*-
-   vreme1 = 0  # pretvori u ovom redu s1 sati i m1 minuta u minute
-   vreme2 = 0  # pretvori u ovom redu s2 sati i m2 minuta u minute
-   vreme = 0   # izracunaj u ovom redu duzinu cekanja u minutima
-   s = 0       # u ovom redu izracunaj broj sati cekanja
-   m = 0       # u ovom redu broj minuta cekanja
+   minuta_od_ponoci = 0 # ispravi ovaj red
    # -*- acsection: after-main -*-
-   print(s, m)
+   print(minuta_od_ponoci)
    ====
    from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
-
        def testOne(self):
-          for (s1, m1, s2, m2, s, m) in [(9, 35, 12, 12, 2, 37), (11, 40, 12, 10, 0, 30), (10, 15, 8, 50, 1, 25)]:
-             self.assertEqual((acMainSection(s1 = s1, m1 = m1, s2 = s2, m2 = m2)["s"], acMainSection(s1 = s1, m1 = m1, s2 = s2, m2 = m2)["m"]),  (s, m) ,"Ако је Јелена стигла у %s:%s, а Ивана у %s:%s, онда је Јелена чекала Ивану %s сата и %s минута." % (s1, m1, s2, m2, s, m))
+          for sati, minuta, minuta_od_ponoci in [(14, 19, 859), (11, 13, 673), (23, 59, 1439)]:
+             self.assertEqual(acMainSection(sati = sati, minuta = minuta)["minuta_od_ponoci"],minuta_od_ponoci,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
+   myTests().main()
+   
+   
+.. questionnote::
+
+   Ако се зна колико је минута протекло од претходне поноћи, израчунај
+   колико је тренутно сати и минута.
+
+Ако са :math:`s` обележимо тренутни број сати, са :math:`m` тренутни
+број минута, а са :math:`M` број минута протеклих од поноћи, тада важи
+да је :math:`M = s \cdot 60 + m`, при чему за :math:`m` важи да је
+број између :math:`0` и :math:`59`, што јасно указује на то да се
+тражене вредности могу израчунати применом целобројног дељења.
+   
+.. activecode:: минути_у_сате_и_минуте
+   :runortest: minuta_od_ponoci, sati, minuta
+   :enablecopy:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   minuta_od_ponoci = 125
+   # -*- acsection: main -*-
+   sati = 0     # ispravi ovaj red
+   minuta = 0   # ispravi ovaj red
+   # -*- acsection: after-main -*-
+   print(sati, minuta)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for sati, minuta, minuta_od_ponoci in [(14, 19, 859), (11, 13, 673), (23, 59, 1439)]:
+             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["sati"],sati,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
+             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["minuta"],minuta,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
    myTests().main()
 
-.. reveal:: чекање_на_станици_решење1
+Аутобус
+'''''''
+.. level:: 2
+
+.. questionnote:: 
+
+  Aутобус је кренуо са станице у 6 часова и 17 минута и путовао је 2
+  сата и 55 минута. У колико сати и минута је стигао?
+
+.. activecode::  време_путовања
+
+   # sat i munut kada je autobus krenuo
+   krenuo_sat = 6
+   krenuo_min = 17
+   # broj sati i minuta koliko je autobus putovao
+   putovao_sat = 2
+   putovao_min = 55
+   # sabiramo minute i prenosimo sate ako je potrebno (ako su minuti bar 60)
+   stigao_min = (krenuo_min + putovao_min) % 60;
+   prenos = (krenuo_min + putovao_min) // 60;
+   # sabiramo sate dodajuci prenos minuta
+   stigao_sat = krenuo_sat + putovao_sat + prenos;
+   print(stigao_sat, stigao_min)
+
+Други начин да се реши задатак је да се прво све прерачуна у минуте,
+да се сабирање изврши у минутима, а да се затим добијени минути
+претворе назад у сате и минуте. Приликом превођења неког временског
+тренутка у минуте израчунавамо заправо број минута протеклих од
+претходне поноћи (или поднева, ако се сати рачунају само до 12). Тај
+број минута се може добити тако што се број сати помножи бројем 60
+(јер у једном сату има 60 минута) и на то дода број минута.
+   
+.. activecode:: време_путовања_1
+
+   # sat i minut kada je autobus krenuo		
+   krenuo_sat = 6
+   krenuo_min = 17
+   # broj sati i minuta koliko je autobus putovao
+   putovao_sat = 2
+   putovao_min = 55
+   # trenutak polaska u minutima
+   krenuo_u_minutima = krenuo_sat * 60 + krenuo_min
+   # trajanje putovanja u minutima
+   putovao_u_minutima = putovao_sat * 60 + putovao_min
+   # trenutak dolaska u minutima
+   stigao_u_minutima = krenuo_u_minutima + putovao_u_minutima
+   # sat i minut dolaska
+   stigao_sat = stigao_u_minutima // 60
+   stigao_min = stigao_u_minutima % 60
+   print(stigao_sat, stigao_min)
+
+Криви торањ у Пизи
+''''''''''''''''''
+.. level:: 2
+
+.. questionnote::
+
+   Криви торањ у Пизи је нагнут и са земљом заклапа угао од 86 степени
+   и 3 минута. Колико степени и минута је торањ нагнут, то јест,
+   колико одступа од усправног положаја.
+
+
+Прав угао има 90 степени тј. 90·60 минута. Ако угао од 86 степени и 3
+минута преведемо у минуте и одузмемо га од правог угла добићемо
+тражени угао у минутима. На крају ћемо израчунати целобројни количник
+и остатак и тако добити тражени угао у степенима и минутама. Рецимо
+још да смо у овом задатку заправо одређивали комплемент датог угла,
+што је операција о којој је сигурно било речи на часовима математике.
+Пошто се торањ с временом криви, твој програм треба исправно да ради и
+ако је угао мало другачји.
+   
+.. activecode:: криви_торањ
+   :runortest: alfa_stepeni, alfa_minuti, beta_stepeni, beta_minuti
+   :enablecopy:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   # ugao pod kojim je nagnut toranj u stepenima i minutima
+   alfa_stepeni = 86
+   alfa_minuti = 3
+   # -*- acsection: main -*-
+   # prevodimo taj ugao u minute
+   alfa_u_minutima = 0      # ispravi ovaj red
+   # prav ugao u minutima
+   prav_u_minutima = 90 * 60
+   # komplement ugla u minutima
+   beta_u_minutima = prav_u_minutima - alfa_u_minutima
+   # komplement ugla u stepenima i minutima
+   beta_stepeni = 0         # ispravi ovaj red
+   beta_minuti = 0          # ispravi ovaj red
+   # -*- acsection: after-main -*-
+   print(beta_stepeni, "stepenа i", beta_minuti, "minuta")
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for (alfa_stepeni, alfa_minuti, beta_stepeni, beta_minuti) in [(86, 37, 3, 23), (85, 19, 4, 41)]:
+             self.assertEqual(acMainSection(alfa_stepeni = alfa_stepeni, alfa_minuti = alfa_minuti)["beta_stepeni"],beta_stepeni,"Комплемент угла %s:%s је %s:%s." % (alfa_stepeni, alfa_minuti, beta_stepeni, beta_minuti))
+             self.assertEqual(acMainSection(alfa_stepeni = alfa_stepeni, alfa_minuti = alfa_minuti)["beta_minuti"],beta_minuti,"Комплемент угла %s:%s је %s:%s." % (alfa_stepeni, alfa_minuti, beta_stepeni, beta_minuti))
+   myTests().main()
+     
+
+Домаћи задатак
+'''''''''''''''
+
+Ако на часу нисте стигли да урадите све задатке, уради их сада, у
+склопу домаћег задатка. Након тога покушај да урадиш и наредних
+неколико задатака.
+
+
+Прочитане стране књиге
+''''''''''''''''''''''
+.. level:: 1
+
+.. questionnote::
+
+   Књига има 282 стране. Марко је првог дана прочитао трећину, другог
+   дана половину остатка, а трећег књигу прочитао до краја. Колико
+   страна је прочитао ког дана? Напиши програм тако да исправно ради
+   и ако је број страна првог дана другачији.
+
+.. activecode:: Читање
+   :runortest: broj_strana, prvi_dan, drugi_dan, treci_dan
+   :enablecopy:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   broj_strana = 282
+   # -*- acsection: main -*-
+   prvi_dan = 0      # ispravi ovaj red
+   drugi_dan = 0     # ispravi ovaj red
+   treci_dan = 0     # ispravi ovaj red
+   # -*- acsection: after-main -*-
+   print(prvi_dan, drugi_dan, treci_dan)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for broj_strana, dan in [(369, 123), (333, 111)]:
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["prvi_dan"],dan,"Ако књига има %s страна, први дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["drugi_dan"],dan,"Ако књига има %s страна, други дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["treci_dan"],dan,"Ако књига има %s страна, трећи дан је прочитано %s страна." % (broj_strana,dan))
+   myTests().main()
+   
+
+.. reveal:: пресек_решење11
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
-   .. activecode:: чекање_на_станици_решење2
+   Марко је прочитао 94 стране сваког дана. Првог дана је прочитао
+   трећину и остале су му две трећине. Другог дана је прочитао пола од
+   тога тј. опет трећину и за трећи дан му је остала последња трећина.
+	       
+   .. activecode:: Читање_решење
+
+      broj_strana = 282		
+      prvi_dan = broj_strana / 3
+      drugi_dan = (broj_strana - prvi_dan) / 2
+      treci_dan = broj_strana - prvi_dan - drugi_dan
+      print(treci_dan)
+
+      
+
+Повећање и смањење плата
+''''''''''''''''''''''''
+.. level:: 2
+
+Ево опет једног сличног задатка за вежбу.
+
+.. questionnote::
+
+   Плате су прво смањене за десет процената, а онда су после неколико
+   месеци те смањене плате повећане за 10 процената. Ако је у почетку
+   плата била 50,000 динара, колика је она после смањења и повећања?
+
+.. activecode:: плате
+   :runortest: plata, povecana_plata
+   :enablecopy:
+      
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   plata = 50000
+   # -*- acsection: main -*-
+   smanjena_plata = 0  # popravi ovaj red
+   povecana_plata = 0  # popravi ovaj red
+   # -*- acsection: after-main -*-
+   print(povecana_plata)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for plata, povecana_plata in [(45123, 44671.77), (54321, 53777.79)]:
+             self.assertEqual(acMainSection(plata = plata)["povecana_plata"],povecana_plata,"Ако је плата била %s динара, после повећања она износи %s динара." % (plata,povecana_plata))
+   myTests().main()
+
+   
+Ако добијеш решење 49,500 значи да је све како треба, иако је тај
+резултат мало неочекиван. Често се помисли да ће смањење и повећање за
+по 10% да се пониште и да ће се плата вратити на полазну
+вредност. Међутим, смањење је било 10% полазне величине од 50,000
+динара тј. за 5,000 динара, док је повећање за 10% од смањене величине
+од 45,000 динара тј. повећање је за 450 динара.
+   
+.. reveal:: пресек_решење21
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: плате_решење
+
+      plata = 50000
+      smanjena_plata = plata - (10 / 100) * plata
+      povecana_plata = smanjena_plata + (10 / 100) * smanjena_plata
+      print(povecana_plata)
+
+Преостало време видео-снимка
+''''''''''''''''''''''''''''
+.. level:: 2
+
+.. questionnote::
+
+   Апликација за пуштање видео-снимака нуди опцију приказа преосталог
+   времена до краја снимка. Ако је познато трајање снимка у сатима,
+   минутима и секундама и време протекло од почетка снимка, такође
+   задато у сатима, минутима и секундама напиши програм који израчунава
+   време до краја у сатима, минутима и секундама.
+
+Најлакши начин да решиш задатак је да оба позната времена претвориш у
+секунде, затим да тражено време израчунаш у секундама, а онда да
+добијени резултат претвориш у сате, минуте и секунде. 
+
+.. activecode:: време_до_краја_видеа
+   :runortest: trajanje_sati, trajanje_minuta, trajanje_sekundi, od_pocetka_sati, od_pocetka_minuta, od_pocetka_sekundi, preostalo_sati, preostalo_minuta, preostalo_sekundi
+   :enablecopy:
 		
-      s1 = int(input())
-      m1 = int(input())
-      s2 = int(input())
-      m2 = int(input())
-      vreme1 = s1*60 + m1
-      vreme2 = s2*60 + m2
-      vreme = abs(vreme1 - vreme2)
-      s = vreme // 60
-      m = vreme % 60
-      print(s, "sati i", m, "minuta")
-
-Месечне промене плате
-'''''''''''''''''''''
-.. level:: 2
-
-.. questionnote::
-
-   Основна плата једног радника у првом месецу била је 48.375
-   динара. У наредном месецу је повећана за 10%, затим је у наредном
-   месецу смањена за 5%, а затим је у наредном месецу опет повећана за
-   15%. Приликом сваке промене, плата је заокруживана на најближи цео
-   број динара. Колико је износила плата тог радника у четвртом
-   месецу?
-
-Формулу за промену новчаног износа за одређени проценат смо већ раније
-разматрали. Ако се плата :math:`P` увећава за :math:`p\%` тада је нови
-износ једнак :math:`P \cdot (1 + \frac{p}{100})`. Након овога,
-потребно је додатно заокружити износ на најближи цео број коришћењем
-функције `round`. Пошто је формула компликована, уместо да је више
-пута користимо у програму, много је боље издвојити је у посебну
-функцију.
-
-Допуни дефиницију те функције, и затим исправи аргументе у њеним
-позивима у складу са текстом задатка. Провери на крају да ли је
-резултат који добијеш тачан.
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   trajanje_sati = 1
+   trajanje_minuta = 23
+   trajanje_sekundi = 14
    
-.. activecode:: промена_плате
+   od_pocetka_sati = 0
+   od_pocetka_minuta = 47
+   od_pocetka_sekundi = 53
 
-   def promena_plate(plata, procenat):
-       return int(round(plata * (1)))
-
-   plata1 = 48375
-   plata2 = promena_plate(plata1, 0)
-   plata3 = promena_plate(plata2, 0)
-   plata4 = promena_plate(plata3, 0)
-   print(plata4)
-
-.. fillintheblank:: fill_тврђава0
-
-      Плата у четвртом месецу је |blank|
-
-      -     :58135|58135[.]0+: Тачно!
-            :x: Примени формулу ``plata * (1 + posto / 100)``. Za smanjenje plate stavi negativan broj procenata.
-
-Просек 3 броја
-''''''''''''''
-.. level:: 2
-
-.. questionnote::
-
-   Димитрије, Ања, Ивона и Марко су високи редом 165, 162, 158 и
-   171 cm. Пријављују трочлану екипу за школски турнир у кошарци и у
-   формулару је неопходно да наведу просечну висину своје екипе, али
-   се још нису одлучили ко ће сачињавати екипу. Дефиниши функцију за
-   израчунавање просека три броја, а затим испиши просечне висине за
-   сваку од 4 могуће варијанте трочлане екипе.
-
+   # -*- acsection: main -*-
+   # izracunaj trajanje u sekundama
+   trajanje = 0
    
-.. activecode:: просек3броја
+   # izracunaj vreme od pocetka videa u sekundama
+   od_pocetka = 0
 
-   # definiši funkciju prosek koja izračunava prosek 3 data broja
-   def ...
+   # izracunaj preostalo vreme u sekundama
+   preostalo = 0
+   # preracunaj to vreme u sate, minute i sekunde
+   preostalo_sati = 0
+   preostalo_minuta = 0
+   preostalo_sekundi = 0
+   
+   # -*- acsection: after-main -*-
+   print(preostalo_sati, ":", preostalo_minuta, ":", preostalo_sekundi)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for (trajanje_sati, trajanje_minuta, trajanje_sekundi, od_pocetka_sati, od_pocetka_minuta, od_pocetka_sekundi, preostalo_sati, preostalo_minuta, preostalo_sekundi) in [(2, 54, 15, 1, 48, 29, 1, 5, 46), (1, 44, 13, 0, 0, 19, 1, 43, 54)]:
+             self.assertEqual(acMainSection(trajanje_sati = trajanje_sati, trajanje_minuta = trajanje_minuta, trajanje_sekundi = trajanje_sekundi, od_pocetka_sati = od_pocetka_sati, od_pocetka_minuta = od_pocetka_minuta, od_pocetka_sekundi = od_pocetka_sekundi)["preostalo_sati"],preostalo_sati,"Ако је трајање (%s, %s, %s), а од почетка је протекло (%s, %s, %s), тада је преостало (%s, %s, %s)." % (trajanje_sati, trajanje_minuta, trajanje_sekundi, od_pocetka_sati, od_pocetka_minuta, od_pocetka_sekundi, preostalo_sati, preostalo_minuta, preostalo_sekundi))
+             self.assertEqual(acMainSection(trajanje_sati = trajanje_sati, trajanje_minuta = trajanje_minuta, trajanje_sekundi = trajanje_sekundi, od_pocetka_sati = od_pocetka_sati, od_pocetka_minuta = od_pocetka_minuta, od_pocetka_sekundi = od_pocetka_sekundi)["preostalo_minuta"],preostalo_minuta,"Ако је трајање (%s, %s, %s), а од почетка је протекло (%s, %s, %s), тада је преостало (%s, %s, %s)." % (trajanje_sati, trajanje_minuta, trajanje_sekundi, od_pocetka_sati, od_pocetka_minuta, od_pocetka_sekundi, preostalo_sati, preostalo_minuta, preostalo_sekundi))
+             self.assertEqual(acMainSection(trajanje_sati = trajanje_sati, trajanje_minuta = trajanje_minuta, trajanje_sekundi = trajanje_sekundi, od_pocetka_sati = od_pocetka_sati, od_pocetka_minuta = od_pocetka_minuta, od_pocetka_sekundi = od_pocetka_sekundi)["preostalo_sekundi"],preostalo_sekundi,"Ако је трајање (%s, %s, %s), а од почетка је протекло (%s, %s, %s), тада је преостало (%s, %s, %s)." % (trajanje_sati, trajanje_minuta, trajanje_sekundi, od_pocetka_sati, od_pocetka_minuta, od_pocetka_sekundi, preostalo_sati, preostalo_minuta, preostalo_sekundi))
+   myTests().main()
 
-   dimitrije = 165
-   anja = 162
-   ivona = 158
-   marko = 171
-   print("Anja, Ivona, Marko:", prosek(anja, ivona, marko))
-   print("Dimitrije, Ivona, Marko:", prosek(dimitrije, ivona, marko))
-   # dopuni program za preostale dve kombinacije
+Ако урадиш све како треба, добићеш да је преостало ``0 : 35 :
+21``. Провери и на другим тест-примерима.
+
+.. reveal:: пресек_решење41
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: време_до_краја_видеа_решење
+
+      # ukupno vreme trajanja videa
+      trajanje_sati = 1
+      trajanje_minuta = 23
+      trajanje_sekundi = 14
+      
+      # vreme proteklo od pocetka videa
+      od_pocetka_sati = 0
+      od_pocetka_minuta = 47
+      od_pocetka_sekundi = 53
+
+      # izracunaj trajanje u sekundama
+      trajanje = (trajanje_sati*60 + trajanje_minuta)*60 + trajanje_sekundi
+      
+      # izracunaj vreme od_pocetka od pocetka videa u sekundama
+      od_pocetka = (od_pocetka_sati*60 + od_pocetka_minuta)*60 + od_pocetka_sekundi
+    
+      # izracunaj preostalo vreme do kraja videa u sekundama
+      preostalo = trajanje - od_pocetka
+      # preracunaj to vreme u sate, minute i sekunde
+      preostalo_sati = preostalo // (60 * 60)
+      preostalo_minuta = (preostalo // 60) % 60
+      preostalo_sekundi = preostalo % 60
+      
+      print(preostalo_sati, ":", preostalo_minuta, ":", preostalo_sekundi)
+

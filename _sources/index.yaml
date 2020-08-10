@@ -3,21 +3,26 @@ lang: sr-Cyrl
 title:  Настава програмирања за Први разред гимназије
 description:
   willLearn: # list
-    - Научићете 1
-    - Научићете 2
+    - Ово је почетни курс текстуалног програмирања у програмском језику Пајатон. Научићеш основне концепте програмирања (изразе, контролу тока, структуре...)
   requirements:
     - Имаш инсталиран Пајтон
     - Имаш отворен налог на Петљи
   toc:
-    - Пајтон
+    - Робот Карел
+    - Корњача графика
+    - Изрази
+    - Контрола тока (линијска структура, гранање, понављање)
+    - Структуре података
   externalLinks: # opciono 
-    - text: Синтакса restructuredText
-      href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
-    - text: Синтакса restructuredText 2
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+    - text: Петљин приручник за Пајтон
+      href: https://petlja.org/biblioteka/r/kursevi/prirucnik-python-gim
+    - text: Петљин приручник за библиотеку Пајгејм
+      href: https://petlja.org/biblioteka/r/kursevi/pygame-prirucnik-gim
+    - text: Збирка кратких питања из програмирања за први разред
+      href: https://petlja.org/biblioteka/r/kursevi/python-zbirka-pitanja-gim
 
 lessons:
-  - title: Прва лекција - Робот Карел
+  - title: 1. лекција - Робот Карел
     folder: 1_lekcija
     guid: 102e6fae-33d2-44ab-938b-9f0ca17e60de
     activities:
@@ -29,7 +34,7 @@ lessons:
         title: Лекција
         file: 1b.rst
         guid: ad288008-e86b-4255-a6b9-c0da241f26b7
-  - title: Друга лекција - Робот Карел
+  - title: 2. лекција - Робот Карел
     folder: 2_lekcija
     guid: 6f8ab8af-f563-40b4-8c6d-6e4ccd9d7045
     activities:
@@ -41,7 +46,7 @@ lessons:
         title: Лекција
         file: 2b.rst
         guid: f35d3b28-5aef-4821-96b8-548765596c19
-  - title: Трећа лекција - вежбање
+  - title: 3. лекција - вежбање
     folder: 3_lekcija
     guid: 4be44082-6709-4193-a527-2f1689ba583d
     activities:
@@ -49,7 +54,15 @@ lessons:
         title: Лекција
         file: 3a.rst
         guid: 6715aafa-b9b5-49b6-82b7-d473059d0d3d
-  - title: Пета лекција - вежбање
+  - title: 4. Квиз - робот Карел
+    folder: 4_lekcija
+    guid: 2794cfc2-75ee-43bd-b5b2-4c2aa7b457bb
+    activities:
+      - type: quiz
+        title: 4. Квиз - робот Карел
+        file: 4a.rst
+        guid: bd84746c-1007-40fa-96a1-1061531db1eb
+  - title: 5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)
     folder: 5_lekcija
     guid: 0a4a76cd-03d3-428e-8019-860589d9aea9
     activities:
@@ -61,7 +74,7 @@ lessons:
         title: Лекција
         file: 5b.rst
         guid: 4e2b40fb-594a-497d-881b-b5d4c8c48e47
-  - title: Шеста лекција - вежбање
+  - title: 6. лекција - вежбање
     folder: 6_lekcija
     guid: 3847d7c8-ff63-4136-92b1-3c4840242bca
     activities:
@@ -69,92 +82,124 @@ lessons:
         title: Лекција
         file: 6a.rst
         guid: 327724dd-83a2-409e-b852-42c6056c606e
-  - title: Седма лекција 
+  - title: 7. лекција -квиз
     folder: 7_lekcija
+    guid: f63670aa-033b-49ea-88de-ed01e0bcf1c5
+    activities:
+      - type: reading
+        title: 7.1. Квиз - корњача графика
+        file: 7a.rst
+        guid: 1245ee05-e831-4d44-952e-5f97055fde55
+  - title: 8. лекција 
+    folder: 8_lekcija
     guid: 986d5314-a202-416c-9d00-edd54bf1f04c
     activities:
       - type: reading
         title: Лекција
-        file: 7a.rst
+        file: 8a.rst
         guid: 86ede5ad-3aba-4abe-b6ff-b11c22c6657d    
       - type: reading
         title: Лекција
-        file: 7b.rst
-        guid: 63b22829-cff1-48fb-bfcc-00da205621b4   
-  - title: Осма лекција 
-    folder: 8_lekcija
+        file: 8b.rst
+        guid: 63b22829-cff1-48fb-bfcc-00da205621b4  
+  - title: 9. лекција 
+    folder: testovi
+    guid: a45eabac-74f2-4b07-ace4-8611d8f55ed6
+    activities:
+      - type: quiz
+        title: 9.1. Квиз - изрази
+        file: izrazi.rst
+        guid: e071d61d-4f6c-4123-8e26-35bb0200f1f3
+  - title: 9. лекција 
+    folder: 9_lekcija
     guid: f1ee2c94-4023-4307-8875-6d455b4a567f
     activities:
       - type: reading
         title: Лекција
-        file: 8a.rst
+        file: 9a.rst
         guid: 3b285d82-051d-4da2-ae3c-e4b92446cd8e    
       - type: reading
         title: Лекција
-        file: 8b.rst
+        file: 9b.rst
         guid: 253dc2d3-195e-4a60-bdf5-862998412a7a     
-  - title: Девета лекција 
-    folder: 9_lekcija
+  - title: 10. лекција 
+    folder: 10_lekcija
     guid: 501e7102-1901-42ad-a767-928533ecf1e9
     activities:
       - type: reading
         title: Лекција
-        file: 9a.rst
+        file: 10a.rst
         guid: 30b9f050-3c10-4a9b-9c91-4e00f1cced31    
       - type: reading
         title: Лекција
-        file: 9b.rst
-        guid: 7b7317dd-336e-4d15-b311-05f03cd38d77
-  - title: Десета лекција 
-    folder: 10_lekcija
-    guid: 97b7c690-0649-4c18-afab-3133d1633d51
-    activities:
-      - type: reading
-        title: Лекција
-        file: 10a.rst
-        guid: 72474326-394a-4834-8dd5-e4169e34c02f    
-      - type: reading
-        title: Лекција
         file: 10b.rst
-        guid: 7414f407-2cad-4f4a-a67d-d5c30c9e9ade
-  - title: Једанаеста лекција 
-    folder: 11_lekcija
-    guid: a0c33527-c62d-483b-9100-bc35480503cc
+        guid: 7b7317dd-336e-4d15-b311-05f03cd38d77
+  - title: 11. лекција - квиз
+    folder: testovi
+    guid: 48950d1d-7f6a-40f3-9998-c56bd779cdfc
     activities:
-      - type: reading
-        title: Лекција
-        file: 11a.rst
-        guid: 658ccd89-cabb-4bed-942d-9e9e4ba6d20f    
-      - type: reading
-        title: Лекција
-        file: 11b.rst
-        guid: fe8deeec-8716-4208-8115-38583ceb43ad
-  - title: Дванаеста лекција 
+      - type: quiz
+        title: 11. Квиз - коришћење функција
+        file: funkcije.rst
+        guid: 9ba85b76-1e37-4610-9211-6a4f89ba8166
+  - title: 12. лекција 
     folder: 12_lekcija
-    guid: 4a14585b-1279-446c-a576-e647a7caa75e
+    guid: f8b5d8cd-cf55-4019-bdad-34225e29817f
     activities:
       - type: reading
         title: Лекција
         file: 12a.rst
-        guid: 83f65443-5a4e-4116-9c50-8dc63ccdea7f 
-  - title: Тринаеста лекција 
+        guid: 72474326-394a-4834-8dd5-e4169e34c02f    
+      - type: reading
+        title: Лекција
+        file: 12b.rst
+        guid: f696f251-ea7d-4413-a449-00bc62b6eeda
+  - title: 13. лекција - понављање
     folder: 13_lekcija
-    guid: e0780ff9-d347-45ef-b878-097942adbad7
+    guid: 97b7c690-0649-4c18-afab-3133d1633d51
     activities:
       - type: reading
         title: Лекција
         file: 13a.rst
-        guid: dc8540a9-d9be-46ea-beff-c4a6d40e9dd5  
+        guid: e0694c8a-0082-45a7-acae-246559602c55    
       - type: reading
         title: Лекција
         file: 13b.rst
-        guid: 2dd5a586-0514-4e1d-b9ac-739f99eff063 
-  - title: Четрнаеста лекција 
-    folder: 14_lekcija
-    guid: 7ff294ce-8a51-4abc-8400-06f7b3140bcc
+        guid: 6c489177-63fe-414b-8fe2-ce0bffda2510
+  - title: 14. лекција - квиз
+    folder: testovi
+    guid: fc4fbf5d-3036-4bc2-9ca2-831d21d4b9ef
+    activities:
+      - type: quiz
+        title: Лекција
+        file: ponavljanje.rst
+        guid: a5f14e9e-eadd-4100-8784-ac2b8c5c850e
+  - title: 15. лекција - структуре
+    folder: 15_lekcija
+    guid: a0c33527-c62d-483b-9100-bc35480503cc
     activities:
       - type: reading
         title: Лекција
-        file: 14a.rst
-        guid: 38d2f63e-8276-41a9-a54e-3e43ef629afb  
-            
+        file: 15a.rst
+        guid: 658ccd89-cabb-4bed-942d-9e9e4ba6d20f    
+      - type: reading
+        title: Лекција
+        file: 15b.rst
+        guid: fe8deeec-8716-4208-8115-38583ceb43ad
+  - title: 16. лекција - структуре
+    folder: 16_lekcija
+    guid: 7ff277ce-8a51-4abc-8400-06f7b3140bcc
+    activities:
+      - type: reading
+        title: Лекција
+        file: 16a.rst
+        guid: 3878f63e-8276-41a9-a54e-3e43ef629afb  
+  - title: 17. лекција - квиз
+    folder: testovi
+    guid: 7ff277ce-8a51-4abc-8400-06f7b31403ac
+    activities:
+      - type: quiz
+        title: Лекција
+        file: strukture.rst
+        guid: 3878f63e-8276-41a9-a54e-3e43am629afb  
+ 
