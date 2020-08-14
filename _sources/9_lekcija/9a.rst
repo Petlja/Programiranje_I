@@ -122,6 +122,12 @@
       stanje_posle = stanje_pre + uplata
       print(stanje_posle)
 
+Хајде да заједно погледамо шта је то реално, а шта целобројно дељење, погледај наредни видео:
+
+.. ytpopup:: wl2wvHeB0pQ
+    :width: 735
+    :height: 415
+    :align: center
       
 Реално дељење
 -------------
