@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>13.1. Квиз - гранање &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">4. Квиз - робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4a.html">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">6. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6a.html">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9a.html">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">10. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10a.html">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">12. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12a.html">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>13.1. Квиз - гранање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_1">
+            <p>Q-44: Шта ће бити резултат извршавања следећег Пајтон кода? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">semafor</span> <span class="o">=</span> <span class="s1">&#39;zeleno&#39;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">semafor</span> <span class="o">==</span> <span class="s1">&#39;zeleno&#39;</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;predji ulicu&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ne mozes da predjes ulicu&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="g_1_opt_a">Биће исписан текст 'ne mozes da predjes ulicu'.</li><li data-component="feedback" id="g_1_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="g_1_opt_b">Биће исписан текст 'predji ulicu'.</li><li data-component="feedback" id="g_1_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="g_1_opt_c">Биће исписан текст 'zeleno'.</li><li data-component="feedback" id="g_1_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_1_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="g_1_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id3">
+<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_2">
+            <p>Q-45: Шта ће бити резултат извршавања следећег Пајтон кода? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">semafor</span> <span class="o">=</span> <span class="s1">&#39;plavo&#39;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">semafor</span> <span class="o">==</span> <span class="s1">&#39;zeleno&#39;</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;predji ulicu&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ne mozes da predjes ulicu&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="g_2_opt_a">Биће исписан текст 'ne mozes da predjes ulicu'.</li><li data-component="feedback" id="g_2_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_2_opt_b">Биће исписан текст 'predji ulicu'.</li><li data-component="feedback" id="g_2_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="g_2_opt_c">Биће исписан текст 'plavo'.</li><li data-component="feedback" id="g_2_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_2_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="g_2_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id4">
+<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_3">
+            <p>Шта ће бити резултат извршавања следећег Пајтон кода?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*\\-1\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id5">
+<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_4">
+            <dl class="simple">
+<dt>Q-46: Нека је задатак да се напише програм којим се учитавају цене сладоледа Руменко и Шаренко, а затим испише назив скупљег и нека је код који следи његово</dt><dd><p>решење. Шта ће бити резултат извршавања тог кода уколико се при покретању дају исте цене за сладоледе? Изабери тачан одговор:</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rumenko</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Unesi cenu za rumenka&#39;</span><span class="p">))</span>
+<span class="n">sarenko</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Unesi cenu za sarenka&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">rumenko</span><span class="o">&gt;</span><span class="n">sarenko</span><span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;rumenko&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sarenko&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="g_4_opt_a">sarenko</li><li data-component="feedback" id="g_4_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_4_opt_b">rumenko</li><li data-component="feedback" id="g_4_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="g_4_opt_c">Биће исписани називи оба сладоледа.</li><li data-component="feedback" id="g_4_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_4_opt_d">Програм неће исписати никакву поруку.</li><li data-component="feedback" id="g_4_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_5">
+            <p>Q-47: Који услов треба да буде уписан у следећи код да би код исписивао исправан коментар о дељивости унетог броја а бројем 5? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Unesi jedan broj&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span>   <span class="p">):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Broj je deljiv sa 5&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Broj nije deljiv sa 5&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="g_5_opt_a">a % 5 == 0</li><li data-component="feedback" id="g_5_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_5_opt_b">a / 5 == 0</li><li data-component="feedback" id="g_5_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="g_5_opt_c">a // 5 == 0</li><li data-component="feedback" id="g_5_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_5_opt_d">Ниједан од наведених одговора није тачан.</li><li data-component="feedback" id="g_5_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_6">
+            <p>Q-48: Која од наведених линија имену Istinito додељује истинитосну вредност ТАЧНО? Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="g_6_opt_a">Istinito = true</li><li data-component="feedback" id="g_6_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="g_6_opt_b">Istinito = False</li><li data-component="feedback" id="g_6_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="g_6_opt_c">Istinito = True</li><li data-component="feedback" id="g_6_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="g_6_opt_d">Istinito = false</li><li data-component="feedback" id="g_6_opt_d">Нетачно</li>
+            
+            <li data-component="answer"  id="g_6_opt_e">Istinito = T</li><li data-component="feedback" id="g_6_opt_e">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id8">
+<h2>Питање 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_7">
+            <p>Q-49: Шта ће бити резултат извршавања следећег програма? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">24</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="g_7_opt_a">True</li><li data-component="feedback" id="g_7_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_7_opt_b">-3 > -24</li><li data-component="feedback" id="g_7_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="g_7_opt_c">False</li><li data-component="feedback" id="g_7_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_7_opt_d">Прва команда није разумљива Пајтон окружењу, па ће бити исписана порука о грешци.</li><li data-component="feedback" id="g_7_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id9">
+<h2>Питање 8.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_8">
+            <p>Q-50: Шта ће бити резултат извршавања следећег програма? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="mi">0</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="g_8_opt_a">True</li><li data-component="feedback" id="g_8_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="g_8_opt_b">0 > -20</li><li data-component="feedback" id="g_8_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="g_8_opt_c">False</li><li data-component="feedback" id="g_8_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="g_8_opt_d">Прва команда није разумљива Пајтон окружењу, па ће бити исписана порука о грешци.</li><li data-component="feedback" id="g_8_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id10">
+<h2>Питање 9.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_9">
+            <p>Q-51: Који од наредних логичких израза одговара исказу  <cite>a није веће од 5</cite>, где а има бројевну вредност? Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="g_9_opt_a">а not> 5</li><li data-component="feedback" id="g_9_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="g_9_opt_b">not (a > 5)</li><li data-component="feedback" id="g_9_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="g_9_opt_c">(a >= 5)</li><li data-component="feedback" id="g_9_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_9_opt_d">!(a > 5)</li><li data-component="feedback" id="g_9_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id11">
+<h2>Питање 10.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_10">
+            <p>Q-52: Шта ће Пајтон окружење исписати након извршавања следећег кода? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="nb">print</span><span class="p">(</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="g_10_opt_a">True</li><li data-component="feedback" id="g_10_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="g_10_opt_b">False</li><li data-component="feedback" id="g_10_opt_b">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id12">
+<h2>Питање 11.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_11">
+            <p>Q-53: Шта ће Пајтон окружење исписати након извршавања следећег кода? Изабери тачан одговор:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="nb">print</span><span class="p">(</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="g_11_opt_a">True</li><li data-component="feedback" id="g_11_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_11_opt_b">False</li><li data-component="feedback" id="g_11_opt_b">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id13">
+<h2>Питање 12.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_12">
+            <p>Шта ће бити резултат извршавања следећег кода?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">62</span>
+<span class="k">if</span> <span class="p">((</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">b</span> <span class="o">&lt;=</span> <span class="mi">70</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*\\-60\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id14">
+<h2>Питање 13.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_13">
+            <p>Који од наредних логичких израза одговара исказу  <cite>Бар један од бројева a и b је ненегативан</cite>?</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*3\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id15">
+<h2>Питање 14.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="g_14">
+            <p>Q-54: Нека је постављен следећи проблем</p>
+<p><cite>Цена аутобуске карте је</cite> 660 <cite>динара. За децу (деца старија од</cite> 7  <cite>и не старија од</cite> 20 <cite>година) и пензионере (не млађи од</cite> 65 <cite>) одобрава се попуст од</cite> 100 <cite>динара. Напиши програм којим се на основу унетог броја година исписује цена карте.</cite></p>
+<p>и следећи недовршени код</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">godine</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi koliko imas godina&quot;</span><span class="p">))</span>
+<span class="n">cena</span> <span class="o">=</span> <span class="mi">660</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">_______________________</span><span class="p">):</span>
+   <span class="n">cena</span> <span class="o">=</span> <span class="mi">660</span> <span class="o">-</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cena</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Којим од датих услова треба допунити програм (на означеном месту) да би програм исправно одређивао цену карте? Изабери тачан одговор:</p>
+
+            <li data-component="answer" data-correct id="g_14_opt_a">(godine > 7 and godine <= 20) or (godine >= 65)</li><li data-component="feedback" id="g_14_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="g_14_opt_b">(godine > 7 and godine < 20) or (godine > 65)</li><li data-component="feedback" id="g_14_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="g_14_opt_c">godine > 7 and godine <= 20 or godine >= 65</li><li data-component="feedback" id="g_14_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="g_14_opt_d">godine > 7 and godine < 20 or godine > 65</li><li data-component="feedback" id="g_14_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id16">
+<h2>Питање 15.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_15">
+            <p>Шта ће исписати Пајтон окружење при извршавању следећег кода</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">poeni</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Unesi broj poena sa testa&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">poeni</span> <span class="o">&gt;</span> <span class="mi">85</span><span class="p">:</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">elif</span> <span class="n">poeni</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">:</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">elif</span> <span class="n">poeni</span><span class="o">&gt;</span><span class="mi">55</span><span class="p">:</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">elif</span> <span class="n">poeni</span><span class="o">&gt;</span><span class="mi">39</span><span class="p">:</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ако му се као вредност поена да 89?</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*5\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id17">
+<h2>Питање 16.<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_16">
+            <p>Шта ће исписати Пајтон окружење при извршавању следећег кода?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*4\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id18">
+<h2>Питање 17.<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="g_17">
+            <p>Шта ће исписати Пајтон окружење при извршавању следећег кода?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">8</span>
+<span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">b</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*\\-2\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

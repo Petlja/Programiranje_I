@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>9.1. Цели и реални бројеви, дељење &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="9.2. Целобројно дељење - позициони запис броја" href="9b.html" />
+    <link rel="prev" title="9. лекција" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">4. Квиз - робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4a.html">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">6. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6a.html">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">9. лекција</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">10. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10a.html">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">12. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12a.html">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>9.1. Цели и реални бројеви, дељење<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Цели и реални бројеви<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>До сада смо у задацима користили само природне бројеве. Језик Python
+подржава и рад са целим бројевима (који укључују и негативне
+вредности) и они се записују на исти начин као у математици. На
+пример, вредност израза <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">-</span> <span class="pre">8</span></code> је <code class="docutils literal notranslate"><span class="pre">-5</span></code> док је вредност израза
+<code class="docutils literal notranslate"><span class="pre">(-3)</span> <span class="pre">-</span> <span class="pre">(-8)</span></code> број <code class="docutils literal notranslate"><span class="pre">5</span></code>. На енглеском се цели бројеви називају
+<em>integers</em>, па се за променљиве и изразе чија је вредност целобројна
+каже да су типа <strong>int</strong>.</p>
+<p>Реалне бројеве је такође веома једноставно користити, једино што се,
+уместо децималног зареза на који смо навикли у математици, мора
+користити децимална тачка. Тако се, на пример, број <em>2,5</em> записује као
+<code class="docutils literal notranslate"><span class="pre">2.5</span></code>. За реалне бројеве у рачунару се каже да су записани у облику
+<em>покретног зареза</em> (енгл. <em>floating point</em>), па се за променљиве и
+изразе чија је вредност реална кажу да су вредност типа <strong>float</strong>.</p>
+<p>Решимо сада и неколико задатака који укључују и рад са бројевима који
+нису природни.</p>
+<div class="section" id="id3">
+<h3>Бајкалско језеро<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Бајкалско језеро у Русији је најдубље језеро на свету. Оно је
+криптодепресија јер се његово дно (најнижа тачка) налази на 1,181
+километара испод нивоа мора, а површина му се налази на 456 метара
+надморске висине. Израчунај његову највећу дубину у метрима.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="бајкалско_језеро" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=бајкалско_језеро data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+nivo_povrsine = 456
+nivo_dna = -1.181 * 1000
+dubina = nivo_povrsine - nivo_dna
+print(dubina)
+</textarea>
+</div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Криптодепресија је удубљење испуњено водом, чија је површина изнад
+нивоа мора, а дно испод нивоа мора. Потиче од грчке речи крипто,
+што значи скривен или тајан, и речи депресија, што у географији
+представља израз за предео нижи од нивоа површине
+мора. Криптодепресије су углавном језера. Највећа криптодепресија
+на свету је управо Бајкалско језеро, а у Европи је то језеро
+Ладога. На Балканском полуострву највећа криптодепресија је
+Скадарско језеро на граници Црне Горе и Албаније. Криптодепресије
+обично настају када се раседи и расцепи у земљиној кори испуне
+водом.</p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id5">
+<h3>Куповина намирница<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Марко је купио 0,45 kg саламе, 0,25 kg сира и два паковања од по
+0,3 kg шунке. Колико је тешка кеса коју носи кући?</p>
+
+    </p></div></div>
+
+<div data-childcomponent="маса_производа" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=маса_производа data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+salama = 0.45
+sir = 0.25
+sunka = 0.3
+print(salama + sir + 2 * sunka)
+</textarea>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Банковни рачун<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Ђура је уплатио летовање пре него што је добио плату и ушао је у тзв.
+дозвољени минус тј. након те уплате дуговао је банци 12.376,5 динара.
+Три дана касније на рачун му је уплаћена плата од 43.386,9 динара.
+Колико му је тада било стање на рачуну.</p>
+
+    </p></div></div>
+<p>Допуни наредни програм тако да коректно решава тражени задатак</p>
+
+<div data-childcomponent="банковни_рачун" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=банковни_рачун data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+stanje_pre =
+uplata =
+stanje_posle =
+print(stanje_posle)
+</textarea>
+</div>
+<p>Након покретања, програм треба да испише вредност <code class="docutils literal notranslate"><span class="pre">31010.4</span></code>.</p>
+
+    <div data-component="reveal" id="пресек_решење1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="банковни_рачун_решење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=банковни_рачун_решење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+stanje_pre = -12376.5
+uplata = 43386.9
+stanje_posle = stanje_pre + uplata
+print(stanje_posle)
+</textarea>
+</div>
+
+    </div>
+    <p>Исправи сада програм тако да се почетно стање и износ уплате учитава
+на почетку рада програма. Подсетимо се, учитавање реалног броја може
+се извршити помоћу <code class="docutils literal notranslate"><span class="pre">float(input(&quot;...&quot;))</span></code>.</p>
+
+    <div data-component="reveal" id="пресек_решење2"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="банковни_рачун_решење_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=банковни_рачун_решење_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+stanje_pre = float(input("Unesi početno stanje:"))
+uplata = ???
+stanje_posle = stanje_pre + uplata
+print(stanje_posle)
+</textarea>
+</div>
+
+    </div>
+    </div>
+</div>
+<div class="section" id="id11">
+<h2>Реално дељење<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>У наставку ћемо се посветити операцији дељења. У већини програмских
+језика разликују се два облика дељења: <strong>реално</strong> и
+<strong>целобројно</strong>. Резултат (количник) реалног дељења је реалан број (на
+пример, када се 13 реално дели са 4, добија се количник 3,25), док је
+код целобројног дељења количник увек цео број, при чему је могуће да
+постоји и целобројни остатак (на пример, када се 13 целобројно дели са
+4, добија се количник 3 и остатак 1).</p>
+<p>Реалним дељењем се могу делити и реални и цели бројеви, а резултат је
+реалан број. На пример, ако се користи реално дељење тада је <em>7,5 :
+2,5</em> једнако <em>3</em> док је <em>5 : 2</em> једнако <em>2,5</em>. Реално дељење се у
+језику Python3 обележава знаком <code class="docutils literal notranslate"><span class="pre">/</span></code>. Тако је вредност израза <code class="docutils literal notranslate"><span class="pre">7.5</span> <span class="pre">/</span>
+<span class="pre">2.5</span></code> једнака <code class="docutils literal notranslate"><span class="pre">3.0</span></code>.</p>
+<p>Провери своје знање наредним питањем.</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill_проценат">
+            <p>Вредност израза <code class="docutils literal notranslate"><span class="pre">4.5</span> <span class="pre">/</span> <span class="pre">5</span></code> је <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [0.9, 0.9], "feedback": "<p>T\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *0,9 *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e, \u0430\u043b\u0438 \u0443\u043c\u0435\u0441\u0442\u043e \u0434\u0435\u0446\u0438\u043c\u0430\u043b\u043d\u043e\u0433 \u0437\u0430\u0440\u0435\u0437\u0430 \u0442\u0440\u0435\u0431\u0430 \u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0434\u0435\u0446\u0438\u043c\u0430\u043b\u043d\u0443 \u0442\u0430\u0447\u043a\u0443</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>\u041d\u0435\u0442\u0430\u0447\u043d\u043e</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Посматрајмо наредни једноставан задатак у којем ћемо употребити реално
+дељење.</p>
+<div class="section" id="id12">
+<h3>Просек скокова у даљ<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Скакач у даљ је у квалификацијама у првој серији скочио 8,12, у
+другој 8,23, а у трећој 8,17 метара. Колико је износио његов
+просечни скок?</p>
+
+    </p></div></div>
+<p>Просек (каже се и аритметичка средина) неколико бројева једнак је
+количнику њиховог збира и њиховог броја. Са просеком сте се сигурно
+већ срели када сте рачунали просек својих оцена. Дакле, да бисмо решили
+овај задатак потребно је сабрати дужине сва три скока и поделити са
+три.</p>
+
+<div data-childcomponent="Просек_скокова" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Просек_скокова data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+skok1 = 8.12
+skok2 = 8.23
+skok3 = 8.17
+prosek = (skok1 + skok2 + skok3) / 3
+print(prosek)
+</textarea>
+</div>
+</div>
+<div class="section" id="id14">
+<h3>Сложени израз из збирке из математике<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>У једној збирици из математике за шести разред јавља се задатак у
+коме се тражи да се израчуна вредност израза 1 + (3 - (-4)) : 2 +
+0,7. Израчунај ту вредност у Python-у.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="Сложени_израз_са_дељењем" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Сложени_израз_са_дељењем data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(1 + (3 - (-4)) / 2 + 0.7)
+</textarea>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Израчунај вредност израза <span class="math notranslate nohighlight">\(7 + \frac{4 - (-5)}{(-3) \cdot 2 -
+7}\)</span> у Python-у.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="Сложени_израз_са_дељењем_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Сложени_израз_са_дељењем_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print()  # popravi ovaj red
+</textarea>
+</div>
+<p>Ако урадиш све како треба, добићеш резултат <code class="docutils literal notranslate"><span class="pre">6.3076923076923075</span></code>.</p>
+</div>
+<div class="section" id="id17">
+<h3>Полице са књигама<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>На првој полици има 150 књига. На другој има дупло мање него на
+првој, а на трећој три пута мање него на другој. Колико је укупно
+књига на полицама.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="Полице_са_књигама" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Полице_са_књигама data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+polica1 = 150
+polica2 = polica1 / 2
+polica3 = polica2 / 3
+ukupno = polica1 + polica2 + polica3
+print(ukupno)
+</textarea>
+</div>
+<p>Приметимо да се као резултат добија број <code class="docutils literal notranslate"><span class="pre">250.0</span></code> уместо <code class="docutils literal notranslate"><span class="pre">250</span></code>. То
+је због тога што се након примене операције реалног дељења (операције
+<code class="docutils literal notranslate"><span class="pre">/</span></code>) добије увек резултат у облику реалног броја. Пошто је број
+књига цео број и пошто је број 150 дељив и са 2, а број 75 са 3 (иначе
+задатак не би имао смисла) на овом месту је било могуће употребити и
+операцију целобројног дељења о којој ће више речи бити у наставку.</p>
+</div>
+<div class="section" id="id19">
+<h3>Поскупљења и појефтињења<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Цена хлеба је била 35 динара, затим је поскупела 10%. Млеко је
+коштало 100 динара, али је сада на снижењу и продаје се по 20%
+нижој цени. Колико коштају три хлеба и два млека?</p>
+
+    </p></div></div>
+<p><em>Проценат</em> (каже се и <em>посто</em>) се у математици обележава знаком %
+и означава стоти део нечега. На пример, када напишемо 10% броја 200,
+мислимо заправо на десет стотих делова броја 200, што знамо да је
+заправо <span class="math notranslate nohighlight">\(\frac{10}{100} \cdot 200\)</span> тј. 20. Дакле, запамтимо,
+запис <em>p%</em> је просто скраћеница за запис
+<span class="math notranslate nohighlight">\(\frac{p}{100}\)</span>. Провери да ли ово разумеш.</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill_проценат_2">
+            <p>20% броја 80 је број <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [16, 16], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>20% \u043e\u0434 80 \u0458\u0435 20 \u0441\u0442\u043e\u0442\u0438\u043d\u0430 \u043e\u0434 80</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Ако је цена <em>c</em>, тада је <em>p</em> процената те цене једнако <em>p</em> стотих
+делова те цене тј. <span class="math notranslate nohighlight">\(\frac{p}{100} \cdot c\)</span>. Када се каже да је
+производ поскупео <em>p</em> процената, то значи да му је цена порасла за <em>p</em>
+процената, тј. да је она увећана за <em>p</em> својих стотих делова. Ако је
+цена пре поскупљења била <em>c</em>, тада је након поскупљења она једнака
+<span class="math notranslate nohighlight">\(c + \frac{p}{100} \cdot c\)</span> тј. <span class="math notranslate nohighlight">\(c \cdot (1 +
+\frac{p}{100})\)</span>. Слично, ако је производ појефтинио <em>p</em> процената, то
+значи да му је цена снижена за <em>p</em> процената, тј. да је почетна цена
+умањена за <em>p</em> својих стотина и једнака је <span class="math notranslate nohighlight">\(c - \frac{p}{100}
+\cdot c\)</span> тј. <span class="math notranslate nohighlight">\(c \cdot (1 - \frac{p}{100})\)</span>. На основу овога,
+задатак се лако може решити.</p>
+
+<div data-childcomponent="поскупљење_и_појефтињење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=поскупљење_и_појефтињење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+hleb_pre = 35
+hleb_posle = hleb_pre + (10 / 100) * hleb_pre
+mleko_pre = 100
+mleko_posle = mleko_pre - (20 / 100) * mleko_pre
+racun = 3 * hleb_posle + 2 * mleko_posle
+print(racun)
+</textarea>
+</div>
+<p>Приметимо и да ако је неки производ поскупео 10%, тада је његова нова
+цена једнака старој цени помноженој бројем <span class="math notranslate nohighlight">\(1 + \frac{10}{100} =
+1,1\)</span>, а да ако је појефтинио 20%, тада је његова нова цена једнака
+старој цени помноженој бројем <span class="math notranslate nohighlight">\(1 - \frac{20}{100} = 0,8\)</span>.</p>
+</div>
+<div class="section" id="id21">
+<h3>Група радника<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p><span class="math notranslate nohighlight">\(n\)</span> радника уради посао за <span class="math notranslate nohighlight">\(s\)</span> сати. Написати програм
+којим се одређује за колико сати ће посао бити завршен ако се
+прикључи још <span class="math notranslate nohighlight">\(m\)</span> радника?</p>
+
+    </p></div></div>
+<p>Један начин да се задатак реши је да се прво израчуна колико је
+радник-сати потребно да се заврши цео посао. Пошто сваки од <span class="math notranslate nohighlight">\(n\)</span>
+радника ради <span class="math notranslate nohighlight">\(s\)</span> сати, за завршетак посла потребно је <span class="math notranslate nohighlight">\(n
+\cdot s\)</span> радник-сати (један радник би сам посао радио <span class="math notranslate nohighlight">\(n\cdot s\)</span>
+сати). Ако посао треба да заврши <span class="math notranslate nohighlight">\(n+m\)</span> радника, тада ће се посао
+завршити <span class="math notranslate nohighlight">\(n+m\)</span> пута брже него када радни један радник, тј. посао
+ће бити завршен за <span class="math notranslate nohighlight">\(\frac{n\cdot s}{n+m}\)</span> сати.</p>
+<p>Други начин да се задатак реши је да се примени пропорција. Уколико
+ради више радника потребно је мање дана, па је потребно применити
+обрнуту пропорцију. Ако са <span class="math notranslate nohighlight">\(x\)</span> обележимо број сати за које посао
+уради већа група радника, тада важи да је <span class="math notranslate nohighlight">\(n : (n+m) = x : s\)</span>
+(са обе стране једнакости вредности су поређане од мање ка
+већој). Одатле опет закључујемо да је <span class="math notranslate nohighlight">\(x = \frac{n\cdot s}{n
++ m}\)</span>.</p>
+
+<div data-childcomponent="група_радника" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=група_радника data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+# unosimo podatke
+n = int(input("Koliko radnika radi:"))
+s = float(input("Za koliko sati bi završili posao da rade sami:"))
+m = int(input("Koliko će im se radnika pridružiti:"))
+# izračunavamo rezultat
+s1 = ???   # ispravi ovaj red
+# prikazujemo rezultat
+print(s1)
+</textarea>
+</div>
+<p>Провери свој програм тако што провериш да ли за улазе <code class="docutils literal notranslate"><span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code>,
+<code class="docutils literal notranslate"><span class="pre">2</span></code> исписује <code class="docutils literal notranslate"><span class="pre">2.0</span></code>, док за улазе <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code> исписује
+<code class="docutils literal notranslate"><span class="pre">2.5</span></code>.</p>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>Целобројно дељење<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p>Целобројно дељење обично подразумева дељење целих бројева и као
+резултат се одређују целобројни количник и остатак при дељењу. На
+пример, ако се целобројно деле бројеви <em>14</em> и <em>3</em> тада се добија
+целобројни количник <em>4</em> и остатак <em>2</em>.</p>
+
+    <div class="rst-level rst-level-2">
+<p>У општем случају, целобројни количник и остатак при дељењу бројева
+<span class="math notranslate nohighlight">\(a\)</span> и <span class="math notranslate nohighlight">\(b\)</span> су бројеви <span class="math notranslate nohighlight">\(q\)</span> и <span class="math notranslate nohighlight">\(r\)</span> такви да је
+<span class="math notranslate nohighlight">\(a = q \cdot b + r\)</span> и <span class="math notranslate nohighlight">\(0 \leq r &lt; b\)</span>. Приметимо да ова
+веза важи у примеру дељења <span class="math notranslate nohighlight">\(14\)</span> и <span class="math notranslate nohighlight">\(3\)</span> важи управо ова
+веза тј. важи да је <span class="math notranslate nohighlight">\(14 = 4 \cdot 3 + 2\)</span>, при чему је
+<span class="math notranslate nohighlight">\(0 \leq 2 &lt; 3\)</span>. Други услов каже да остатак мора бити мањи од
+делиоца тј. да количник мора бити што је могуће већи. Тај услов је
+веома важан (на пример, важи да је <span class="math notranslate nohighlight">\(14 = 3 \cdot 3 + 5\)</span>,
+међутим, нећемо рећи да је целобројни количник <span class="math notranslate nohighlight">\(3\)</span> а остатак
+<span class="math notranslate nohighlight">\(5\)</span> јер број <span class="math notranslate nohighlight">\(5\)</span> није мањи од делиоца).</p>
+
+    </div>
+<p>Кроз наредно питање провери колико разумеш операције целобројног
+дељења и остатка при дељењу.</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill1412">
+            <p>При дељењу бројева 13 и 5 целобројни количник је <input type="text"> а остатак је <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [2, 2], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0412\u0430\u0436\u0438 \u0434\u0430 \u0458\u0435 13 = 2 \u00b7 5 + 3</p>\n"}], [{"number": [3, 3], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0412\u0430\u0436\u0438 \u0434\u0430 \u0458\u0435 13 = 2 \u00b7 5 + 3</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>У језику Python3 операција <strong>целобројног дељења</strong> се означава са
+<code class="docutils literal notranslate"><span class="pre">//</span></code>, а операција израчунавања <strong>остатка при дељењу</strong> се означава са
+<code class="docutils literal notranslate"><span class="pre">%</span></code>.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>У математици се знак % користи да означи проценат (стоти део
+нечега). Коришћење истог знака за остатак при дељењу је заправо
+несрећна околност и треба бити обазрив да се та два заправо
+неповезана појма случајно не помешају.</p>
+
+    </p></div></div>
+<p>Дакле, оператором <code class="docutils literal notranslate"><span class="pre">/</span></code> се израчунава реални, оператором <code class="docutils literal notranslate"><span class="pre">//</span></code>
+целобројни количник, а оператором <code class="docutils literal notranslate"><span class="pre">%</span></code> остатак при дељењу. Провери колико
+ово разумеш.</p>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="дељење">
+    <span data-component="question">Q-38: Превлачењем упари изразе са њиховим вредностима.</span>
+	<span data-component=feedback>Покушај поново</span>
+
+    <li data-component="draggable" id="дељење_drag1">27 / 10</li>
+    <li data-component="dropzone" for="дељење_drag1">2.7</li>
+
+    <li data-component="draggable" id="дељење_drag2">27 // 10</li>
+    <li data-component="dropzone" for="дељење_drag2">2</li>
+
+    <li data-component="draggable" id="дељење_drag3">27 % 10</li>
+    <li data-component="dropzone" for="дељење_drag3">7</li>
+</ul></div>
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="дељење1">
+    <span data-component="question">Q-39: Упари изразе са њиховим вредностима.</span>
+	<span data-component=feedback>Покушај поново</span>
+
+    <li data-component="draggable" id="дељење1_drag1">43 / 8</li>
+    <li data-component="dropzone" for="дељење1_drag1">5.375</li>
+
+    <li data-component="draggable" id="дељење1_drag2">43 // 8</li>
+    <li data-component="dropzone" for="дељење1_drag2">5</li>
+
+    <li data-component="draggable" id="дељење1_drag3">43 % 8</li>
+    <li data-component="dropzone" for="дељење1_drag3">3</li>
+</ul></div><p>Покажимо једноставну примену израчунавања целобројног количника и остатка
+на следећем задатку.</p>
+<div class="section" id="id24">
+<h3>Подела чоколадних бананица<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>У школи се организује новогодишња приредба за децу. Од пара које су
+зарадили тако што су организовали сајам својих рукотворина купили
+су неколико крем бананица које желе да равномерно поделе свој деци
+(тако да свако дете добије исти број бананица). Ако се зна колико
+ће деце доћи на приредбу, колико ће свако дете добити бананица, a
+колико ће бананица остати нерасподељено?</p>
+
+    </p></div></div>
+
+<div data-childcomponent="чоколадне_бананице" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=чоколадне_бананице data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+broj_dece = int(input("Koliko će dece doći na priredbu: "))
+ukupno_bananica = int(input("Koliko ukupno ima bananica: "))
+bananica_po_detetu = ukupno_bananica // broj_dece
+ostalo_bananica = ukupno_bananica % broj_dece
+print("Svako će dete dobiti", bananica_po_detetu, "bananica.")
+print("Ostaće", ostalo_bananica, "bananica.")
+</textarea>
+</div>
+<p>Приметимо и да смо број преосталих бананица могли израчунати и тако
+што од укупног броја бананица одузмемо број бананица које су подељене
+деци (а то је производ броја деце и броја бананица које је свако дете
+добило) тј. помоћу израза <code class="docutils literal notranslate"><span class="pre">ukupno_bananica</span> <span class="pre">-</span> <span class="pre">broj_dece</span> <span class="pre">*</span>
+<span class="pre">bananica_po_detetu</span></code>. Ипак, коришћење оператора <code class="docutils literal notranslate"><span class="pre">%</span></code> којим се
+израчунава остатак је једноставније решење.</p>
+<p>Ево једног сличног задатка, за вежбу.</p>
+</div>
+<div class="section" id="id26">
+<h3>Разломак у мешовити број<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Бројилац разломка је 37, а именилац је 12. Преведи овај разломак у
+мешовит број.</p>
+
+    </p></div></div>
+<p>Важи да је <span class="math notranslate nohighlight">\(37 = 3 \cdot 12 + 1\)</span>, па је <span class="math notranslate nohighlight">\(\frac{37}{12} =
+\frac{3 \cdot 12 + 1}{12} = 3 \frac{1}{12}\)</span>. У општем случају када
+разломак <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> преводимо у мешовит број потребно је да
+бројилац напишемо у облику <span class="math notranslate nohighlight">\(a = q \cdot b + r\)</span>, при чему мора да
+важи да је <span class="math notranslate nohighlight">\(0 \leq r &lt; b\)</span> и тада се добија межовити број
+<span class="math notranslate nohighlight">\(q \frac{r}{b}\)</span>. Број <span class="math notranslate nohighlight">\(q\)</span> је целобројни количник бројева
+<span class="math notranslate nohighlight">\(a\)</span> и <span class="math notranslate nohighlight">\(b\)</span>, док је <span class="math notranslate nohighlight">\(r\)</span> остатак при њиховом дељењу.</p>
+
+<div data-childcomponent="Мешовит_број" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Мешовит_број data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+brojilac = 37
+imenilac = 12
+mesoviti_ceo_deo = 0  # ispravi ovaj red
+mesoviti_brojilac = 0 # ispravi ovaj red
+mesoviti_imenilac = 0 # ispravi ovaj red
+print(mesoviti_ceo_deo, "celih i", mesoviti_brojilac, "/", mesoviti_imenilac)
+</textarea>
+</div>
+<p>Наравно, резултат треба да буде <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">celih</span> <span class="pre">i</span> <span class="pre">1</span> <span class="pre">/</span> <span class="pre">12</span></code>.</p>
+
+    <div data-component="reveal" id="пресек_решење31"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="Мешовит_број_решење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=Мешовит_број_решење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+brojilac = 37
+imenilac = 12
+mesoviti_ceo_deo = brojilac // imenilac
+mesoviti_brojilac = brojilac % imenilac
+mesoviti_imenilac = imenilac
+print(mesoviti_ceo_deo, "celih i", mesoviti_brojilac, "/", mesoviti_imenilac)
+</textarea>
+</div>
+
+    </div>
+    </div>
+</div>
+<div class="section" id="id29">
+<h2>Целобројно дељење - конверзија јединица<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<p>Целобројни количник и остатак често користимо када желимо да
+прерачунавамо јединице. Размотримо следећих неколико задатака.</p>
+<div class="section" id="id30">
+<h3>Конверзија центиметара у метре и центиметре<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који на основу дате дужине у центиметрима израчунава
+исту дужину у метрима и центиметрима. На пример, ако је дужина 178
+центиметара, програм израчунава да је то 1 метар и 78 центиметара.</p>
+
+    </p></div></div>
+<p>Пошто у једном метру има 100 центиметара, задатак се своди на
+израчунавање целобројног количника и остатка при дељењу
+са 100. Заиста, ако имамо <span class="math notranslate nohighlight">\(m\)</span> метара и <span class="math notranslate nohighlight">\(c\)</span> центиметара,
+тада је укупан број центиметара једнак <span class="math notranslate nohighlight">\(m\cdot 100 + c\)</span>, при
+чему је <span class="math notranslate nohighlight">\(0 \leq c &lt; 100\)</span>.</p>
+
+<div data-childcomponent="центиметри_у_метре_и_центиметре" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=центиметри_у_метре_и_центиметре data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+ukupno_centimetara = int(input("Unesi dužinu u centimetrima: "))
+metara = ukupno_centimetara // 100
+centimetara = ukupno_centimetara % 100
+print("Dužina je", metara, "m", centimetara, "cm")
+</textarea>
+</div>
+<p>Рецимо поново да је често решење до којег ученици самостално долазе и
+оно у којем се преостали број центиметара рачуна као <code class="docutils literal notranslate"><span class="pre">centimetara</span> <span class="pre">=</span>
+<span class="pre">ukupno_centimetara</span> <span class="pre">-</span> <span class="pre">metara</span> <span class="pre">*</span> <span class="pre">100</span></code>. Иако је ово решење исправно, на
+располагању нам је оператор израчунавања остатака <code class="docutils literal notranslate"><span class="pre">%</span></code> и требало би
+да се навикнемо да га користимо.</p>
+</div>
+<div class="section" id="id32">
+<h3>Конверзија милиметара у метре, дециметре, центиметре и милиметре<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који на основу дате дужине у милиметрима израчунава
+исту дужину у метрима, дециметрима, центиметрима и милиметрима. На
+пример, ако је дужина 1789 милиметара, програм израчунава да је то
+1 метар и 7 дециметара и 8 центиметара и 9 милиметара.</p>
+
+    </p></div></div>
+<p>Један од начина је да прво, слично решењу претходног задатка одредимо
+број метара и преосталих милиметара. Пошто у једном метру има 1000
+милиметара, то можемо урадити израчунавањем целобројног количника и
+остатка при дељењу са 1000. Тиме добијамо број метара и имамо даље
+задатак да преостали број милиметара разложимо на дециметре,
+центиметре и милиметре. Њега прво можемо разложити на дециметре и
+преостале милиметре израчунавањем целобројног количника и остатка при
+дељењу са 100 (јер у једном дециметру има 100 милиметара). На крају,
+преостале милиметре можемо разложити на центиметре и милиметре
+израчунавањем целобројног количника и остатка при дељењу са 10 (јер у
+једном центиметру има 10 милиметара).</p>
+
+<div data-childcomponent="центиметри_у_метре_дециметре_центиметре_и_милиметре" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=центиметри_у_метре_дециметре_центиметре_и_милиметре data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+duzina = int(input("Unesi dužinu u milimetrima: "))
+m = duzina // 1000
+ostalo_mm_1 = duzina % 1000
+dm = ostalo_mm_1 // 100
+ostalo_mm_2 = ostalo_mm_1 % 100
+cm = ostalo_mm_2 // 10
+mm = ostalo_mm_2 // 10
+print("Dužina je", m, "m", dm, "dm", cm, "cm", mm, "mm")
+</textarea>
+</div>
+<p>Ипак, задатак можемо решити и на мало систематичнији начин. Ако са
+<span class="math notranslate nohighlight">\(mm\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(d\)</span> и <span class="math notranslate nohighlight">\(m\)</span> означимо редом број
+милиметара, центиметара, дециметара и метара, тада је укупан број
+милиметара једнак <span class="math notranslate nohighlight">\(m \cdot 1000 + d \cdot 100 + c\cdot 10 +
+mm\)</span>. Пошто су прва три сабирка дељива са 10, важи да се <span class="math notranslate nohighlight">\(mm\)</span>
+moже израчунати као остатак при дељењу укупног броја милиметара са 10.
+Целобројни количник укупног броја милиметара са 10 је <span class="math notranslate nohighlight">\(m \cdot
+100 + d\cdot 10 + c\)</span>, па се зато број центиметара може израчунати тако
+што се пронађе целобројни количник укупног броја милиметара са 10, а
+затим остатак при дељењу тог броја са 10. Слично, целобројни количник
+укупног броја милиметара са 100 једнак је <span class="math notranslate nohighlight">\(m \cdot 10 + d\)</span>, па
+се број дециметара може израчунати као остатак при дељењу тог количника
+са 10. На крају, број метара једнак је целобројном количнику укупног броја
+дециметара са 1000.</p>
+
+<div data-childcomponent="центиметри_у_метре_дециметре_и_центиметре_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=центиметри_у_метре_дециметре_и_центиметре_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+duzina = int(input("Unesi dužinu u milimetrima: "))
+mm = duzina % 10
+cm = (duzina // 10) % 10
+dm = (duzina // 100) % 10
+m  = duzina // 1000
+print("Dužina je", m, "m", dm, "dm", cm, "cm", mm, "mm")
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - 9. лекција' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - 9.2. Целобројно дељење - позициони запис броја' data-toggle="tooltip"><a href="9b.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - 9. лекција' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - 9.2. Целобројно дељење - позициони запис броја' data-toggle="tooltip"><a href="9b.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

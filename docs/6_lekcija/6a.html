@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>6.1. Корњача графика - вежбање &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. лекција -квиз" href="../7_lekcija/index.html" />
+    <link rel="prev" title="6. лекција - вежбање" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">4. Квиз - робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4a.html">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. лекција - вежбање</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9a.html">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">10. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10a.html">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">12. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12a.html">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>6.1. Корњача графика - вежбање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Након неколико часова на којима смо уводили нове концепте, време је да
+направимо малу паузу и искористимо време да проверимо колико смо до
+сада научили (твој наставник може да ти да контролни задатак или
+петнаестоминутну проверу знања из области програмирања Карела и
+корњаче). Спремили смо неколико задатака за вежбу из области
+корњача-графике који ће ти помоћи да провериш своје знање. Додатне
+задатке за вежбу можеш пронаћи <a class="reference external" href="KornjacaZadaci.html">овде</a>.</p>
+<div class="section" id="id3">
+<h2>Задаци за вежбу<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Линијски програми<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="m">
+<h4>Слово M<a class="headerlink" href="#m" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм у којем корњача црта слово М.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_слово_M" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_слово_M data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+
+turtle.left(90)
+turtle.forward(150)
+turtle.right(150)
+turtle.forward(100)
+# dovrši program tako da slovo M bude simetrično
+====
+import turtle
+
+turtle.left(90)
+turtle.forward(150)
+turtle.right(150)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.right(150)
+turtle.forward(150)
+</textarea>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>Дијамант<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм у којем корњача исцртава облик дијаманта (облик се добије
+спајањем два једнакостранична троугла по заједничкој хоризонталној ивици).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_дијамант" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_дијамант data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dovrši program
+====
+import turtle
+
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.left(60)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>Петље<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>Квадратни сигнал<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм у којем корњача црта облик квадратног сигнала, као
+на следећој слици.</p>
+<img alt="../_images/kornjaca-kvadratni-signal.png" class="align-center" src="../_images/kornjaca-kvadratni-signal.png" />
+
+    </p></div></div>
+<p>Основни корак у решавању задатка је да се овај сложени облик разложи
+на низ једноставнијих облика који се понављају. Покушај прво да
+размислиш како то може да се уради, а онда погледај наредну слику.</p>
+
+    <div data-component="reveal" id="квадратни_сигнал_решење"   data-showtitle="Прикажи слику" data-hidetitle="Сакриј слику">
+    <img alt="../_images/kornjaca-kvadratni-signal-boje.png" class="align-center" src="../_images/kornjaca-kvadratni-signal-boje.png" />
+
+    </div>
+    <p>Дакле, облик се састоји од пет понављања основног облика, који се може
+добити тако што корњача иде напред, затим се окрене налево, иде
+напред, окрене се надесно, иде напред, опет се окрене надесно, иде
+напред и окрене се налево (увек се окреће за по 90 степени).</p>
+
+<div data-childcomponent="квадратни_сигнал" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=квадратни_сигнал data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dopuni program
+====
+import turtle
+dim = 20
+for i in range(5):
+    turtle.forward(dim)
+    turtle.left(90)
+    turtle.forward(dim)
+    turtle.right(90)
+    turtle.forward(dim)
+    turtle.right(90)
+    turtle.forward(dim)
+    turtle.left(90)
+</textarea>
+</div>
+<p>За вежбу прилагоди програм тако да се димензије облика лако мењају
+(уведи променљиве које представљају дужину и ширину основног облика).</p>
+</div>
+<div class="section" id="id11">
+<h4>Тестерица<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм којим корњача црта тестерицу са 10 зубаца. Угао при
+врху сваког зупца треба да буде 45 степени, а размак између два
+суседна зупца 25 корака (покушај да на основу тога одредиш дужину
+косих линија које се цртају).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="тестерица" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=тестерица data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dopuni program
+====
+import turtle
+
+for i in range(10):
+    turtle.left(45)
+    turtle.forward(35)
+    turtle.right(135)
+    turtle.forward(25)
+    turtle.left(90)
+</textarea>
+</div>
+</div>
+<div class="section" id="id13">
+<h4>Насумично кретање<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм којим се корњача насумично креће по екрану. У сваком
+кораку иде напред између 20 и 40 пиксела, а затим се окреће
+насумично налево између 0 и 360 степени.</p>
+
+    </p></div></div>
+<p>Насумично одабран број из интервала <span class="math notranslate nohighlight">\([a, b]\)</span> можеш добити помоћу
+<cite>random.randint(a, b)</cite>.</p>
+
+<div data-childcomponent="корњача_насумично" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_насумично data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle, random
+turtle.speed(0)
+for i in range(100):
+    turtle.forward(random.randint(0, 0)) # ispravi ovaj red
+    turtle.left(0)                       # ispravi ovaj red
+====
+import turtle, random
+for i in range(100):
+    turtle.forward(random.randint(20, 40))
+    turtle.left(random.randint(0, 360))
+</textarea>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>Насумично кретање - окрети у оба смера<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Исправи претходни програм тако да се корњача и налево и надесно
+(никада више од 180 степени).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_насумично_конвексни" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_насумично_конвексни data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle, random
+turtle.speed(0)
+for i in range(100):
+    turtle.forward(random.randint(20, 40))
+    ugao = random.randint(0, 360)
+    if True:               # ispravi ovaj red
+        turtle.left(0)     # ispravi ovaj red
+    else:
+        turtle.right(0)    # ispravi ovaj red
+====
+import turtle, random
+for i in range(100):
+    turtle.forward(random.randint(20, 40))
+    ugao = random.randint(0, 360)
+    if ugao <= 180:
+        turtle.left(ugao)
+    else:
+        turtle.right(360 - ugao)
+</textarea>
+</div>
+</div>
+<div class="section" id="id17">
+<h4>Плус<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм којим корњача исцртава плус (сваки од четири крака
+плуса је дугачак 50 корака).</p>
+
+    </p></div></div>
+<p>У сваком кораку корњача може да оде напред 50 пиксела, да се се врати
+назад 50 пиксела и да се окрене за 90 степени.</p>
+
+<div data-childcomponent="корњача_плус" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_плус data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dovrši program
+====
+import turtle
+
+for i in range(4):
+    turtle.forward(50)
+    turtle.backward(50)
+    turtle.right(90)
+</textarea>
+</div>
+</div>
+<div class="section" id="id19">
+<h4>Осмокрака звезда<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Модификуј претходни програм тако да се црта звездица која има 8
+кракова дужине од по 50 корака.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_осмокраки_плус" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_осмокраки_плус data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dovrši program
+====
+import turtle
+
+for i in range(8):
+    turtle.forward(50)
+    turtle.backward(50)
+    turtle.left(45)
+</textarea>
+</div>
+</div>
+<div class="section" id="n">
+<h4>n-токрака звезда<a class="headerlink" href="#n" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм на основу којег корњача црта звездицу која се
+састоји од <span class="math notranslate nohighlight">\(n\)</span> кракова дужине 50 корака, равномерно
+распоређених у круг (сваки крак креће из центра).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_n-токраки_плус" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_n-токраки_плус data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dovrši program
+====
+import turtle
+turtle.speed(10)
+n = 16
+for i in range(n):
+    turtle.forward(50)
+    turtle.backward(50)
+    turtle.left(360 / n)
+</textarea>
+</div>
+</div>
+<div class="section" id="id22">
+<h4>Парни и непарни кракови различите дужине<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Модификуј претходни програм тако да је сваки други крак краћи
+(дугачак 30 корака).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="корњача_n-токраки_пахуља" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=корњача_n-токраки_пахуља data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"    data-hidehistory=true
+       >
+import turtle
+# dovrši program
+====
+import turtle
+
+turtle.speed(10)
+n = 36
+for i in range(n):
+    if i % 2 == 0:
+        duzina = 50
+    else:
+        duzina = 30
+    turtle.forward(duzina)
+    turtle.backward(duzina)
+    turtle.left(360/n)
+</textarea>
+</div>
+</div>
+<div class="section" id="id24">
+<h4>Слободно цртање<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<p>На крају, остављамо ти празан простор да нацрташ шта год желиш.</p>
+
+<div data-childcomponent="празно_платно" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=празно_платно data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+import turtle
+</textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - 6. лекција - вежбање' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - 7. лекција -квиз' data-toggle="tooltip"><a href="../7_lekcija/index.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - 6. лекција - вежбање' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - 7. лекција -квиз' data-toggle="tooltip"><a href="../7_lekcija/index.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>10.1. Коришћење готових функција &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="10.2. Дефинисање функција" href="10b.html" />
+    <link rel="prev" title="10. лекција" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">4. Квиз - робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4a.html">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">6. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6a.html">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9a.html">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. лекција</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">12. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12a.html">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>10.1. Коришћење готових функција<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Уграђене функције<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Појам функције<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><strong>Функције</strong> су један од основних појмова математике и
+програмирања. Оне представљају пресликавања одређених улазних
+вредности (каже се параметара, аргумената) у једну или више излазних
+вредности тј. резултата. На пример, функција може да као улазни
+параметар добије дужину странице једнакостраничног троугла <span class="math notranslate nohighlight">\(а\)</span> и
+да као резултат врати дужину обима тог троугла <span class="math notranslate nohighlight">\(3\cdot a\)</span>. Таква
+зависност би се у математици описала као <span class="math notranslate nohighlight">\(f(a) = 3\cdot a\)</span> што
+значи да функција коју смо назвали <cite>f</cite> (што је најчешће име за
+функцију) на основу датог параметра <span class="math notranslate nohighlight">\(а\)</span> одређује вредност
+<span class="math notranslate nohighlight">\(3\cdot a\)</span>. Слично, функција која израчунава обим правоугаоника
+на основу дужине његових страница би се у математици описала као
+<span class="math notranslate nohighlight">\(g(a, b) = 2\cdot a + 2 \cdot b\)</span>. У овом случају је функцији дат
+назив <span class="math notranslate nohighlight">\(g\)</span>, она има два улазна параметра (<span class="math notranslate nohighlight">\(a\)</span> и <span class="math notranslate nohighlight">\(b\)</span>)
+и враћа резултат који је одређен формулом <span class="math notranslate nohighlight">\(2\cdot a + 2 \cdot
+b\)</span>.</p>
+<p>Касније ћемо видети како можемо дефинисати функције у језику Python, а
+за почетак ћемо се само позабавити коришћењем неких основних уграђених
+функција (оне су већ дефинисане језиком и можемо их слободно користити
+тј. позивати у нашим програмима). У наставку ћемо детаљније описати
+следеће функције:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code> - минимум и максимум</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">abs</span></code> - апсолутна вредност</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">math.pow</span></code>, <code class="docutils literal notranslate"><span class="pre">math.sqrt</span></code> -  степен, квадратни корен</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">round</span></code>, <code class="docutils literal notranslate"><span class="pre">math.floor</span></code>, <code class="docutils literal notranslate"><span class="pre">math.ceil</span></code> - заокругљивање реалних
+бројева</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Минимум и максимум<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>У многим задацима потребно је одредити мањи или већи од два дата
+броја. Пошто је тај задатак веома чест, програмски језик Python нуди
+решење у виду функција <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">max</span></code>. На пример, вредност израза
+<code class="docutils literal notranslate"><span class="pre">min(2,</span> <span class="pre">5)</span></code> је мањи од бројева 2 и 5 тј. број 2 (тај израз
+представља позив функције <code class="docutils literal notranslate"><span class="pre">min</span></code> са аргументима <code class="docutils literal notranslate"><span class="pre">2</span></code> и <code class="docutils literal notranslate"><span class="pre">5</span></code>), док
+је вредност израза <code class="docutils literal notranslate"><span class="pre">max(2,</span> <span class="pre">5)</span></code> већи од бројева 2 и 5 тј. број 5 (тај
+израз представља позив функције <code class="docutils literal notranslate"><span class="pre">max</span></code> са аргументима <code class="docutils literal notranslate"><span class="pre">2</span></code> и <code class="docutils literal notranslate"><span class="pre">5</span></code>).</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill_минимум">
+            <p>Вредност израза <code class="docutils literal notranslate"><span class="pre">min(24,</span> <span class="pre">17)</span></code> је <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [17, 17], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041d\u0435\u0442\u0430\u0447\u043d\u043e. min \u043e\u0437\u043d\u0430\u0447\u0430\u0432\u0430 \u043c\u0430\u045a\u0438 \u0431\u0440\u043e\u0458</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="mchoice_минимум">
+            <p>Q-1: Која је вредност израза <code class="docutils literal notranslate"><span class="pre">min(min(5,</span> <span class="pre">2),</span> <span class="pre">3)</span></code>?</p>
+
+            <li data-component="answer" data-correct id="mchoice_минимум_opt_a">2</li><li data-component="feedback" id="mchoice_минимум_opt_a">Тачно!</li>
+            
+            <li data-component="answer"  id="mchoice_минимум_opt_b">3</li><li data-component="feedback" id="mchoice_минимум_opt_b">min означава мањи од два броја.</li>
+            
+            <li data-component="answer"  id="mchoice_минимум_opt_c">5</li><li data-component="feedback" id="mchoice_минимум_opt_c">min означава мањи од два броја.</li>
+            
+
+            </ul>
+            </div>
+            <p>Минимум и максимум неколико бројева могуће је израчунати тако што се
+сви наведу као параметри функција <cite>min</cite> тј. <cite>max</cite>. На пример, вредност
+израза <code class="docutils literal notranslate"><span class="pre">max(3,</span> <span class="pre">2,</span> <span class="pre">5,</span> <span class="pre">4)</span></code> је <code class="docutils literal notranslate"><span class="pre">5</span></code>.</p>
+<p>Покажимо сада неколико задатака у чијем нам решењу ове функције могу
+помоћи.</p>
+<div class="section" id="id5">
+<h4>Већа оцена<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Љубица је једног дана добила оцену из биологије и географије. Која
+је већа оцена коју је Љубица добила тог дана?</p>
+
+    </p></div></div>
+
+<div data-childcomponent="већа_оцена" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=већа_оцена data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+biologija  = int(input("biologija: "))
+geografija = int(input("geografija: "))
+print("veća ocena: ", 0)  # ispravi ovu liniju
+</textarea>
+</div>
+</div>
+<div class="section" id="id7">
+<h4>Највећи број поена у игрици<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Асмир, Снежа и Мица су играли игрицу на рачунару. Колики је највећи
+број поена (high-score) који је освоји неко од њих.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="највећи_број_поена" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=највећи_број_поена data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+          data-runortest="asmir sneza mica najveci"     data-hidehistory=true
+       data-enablecopy="true">
+# -*- acsection: general-init -*-
+# -*- acsection: var-init -*-
+asmir = int(input("Koliko je poena osvojio Asmir: "))
+sneza = int(input("Koliko je poena osvojila Sneža: "))
+mica  = int(input("Koliko je poena osvojila Mica: "))
+# -*- acsection: main -*-
+najveci = 0 # ispravi ovu liniju
+# -*- acsection: after-main -*-
+print("Највећи број поена је: ", najveci)
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+       for asmir, sneza, mica in [(3542, 2388, 4123), (3562, 4221, 1002), (7428, 2842, 9413)]:
+          self.assertEqual(acMainSection(asmir = asmir, sneza = sneza, mica = mica)["najveci"],max(asmir, sneza, mica),"Ако су редом освајали %s, %s и %s поена, тада је највећи број поена %s." % (asmir, sneza, mica, max(asmir, sneza, mica)))
+myTests().main()
+</textarea>
+</div>
+</div>
+<div class="section" id="id9">
+<h4>Браћа и књиге на полици<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Аљоша и Борис су браћа која иду у трећи и шести разред и деле исту
+собу. У соби имају две полице за књиге, међутим, књиге су им се
+измешале и они желе да их раздвоје тако да на једној полици буду
+само Аљошине књиге за трећи, а на другој полици буду само Борисове
+књиге за шести разред (свеједно им је која ће полица бити
+чија). Колики је најмањи број књига које треба да помере?</p>
+
+    </p></div></div>
+<p>Приметимо да постоје два начина да се књиге раздвоје. Први је да се
+све Аљошине књиге са прве полице пребаце на другу, а да се све
+Борисове књиге са друге полице пребаце на прву полицу. Други начин је
+да се све Борисове књиге са прве полице пребаце на другу, а да се све
+Аљошине књиге са друге полице пребаце на прву. У првој варијанти број
+књига које се пребацују једнак је збиру броја Аљошиних књига на првој
+и Борисових књига на другој полици, док је у другој варијанти тај број
+једнак збиру броја Борисових књига на првој и Аљошиних књига на другој
+полици. Решење је мањи од та два броја (а мањи од два броја можемо
+израчунати функцијом <code class="docutils literal notranslate"><span class="pre">min</span></code>).</p>
+
+<div data-childcomponent="раздвајање_књига" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=раздвајање_књига data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+          data-runortest="polica1_aljosine polica1_borisove polica2_aljosine polica2_borisove potrebno_premestiti"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# -*- acsection: var-init -*-
+polica1_aljosine = 10
+polica1_borisove = 5
+polica2_aljosine = 7
+polica2_borisove = 8
+# -*- acsection: main -*-
+potrebno_premestiti = 0  # ispravi ovaj red
+# -*- acsection: after-main -*-
+print(potrebno_premestiti)
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+       for polica1_aljosine, polica1_borisove, polica2_aljosine, polica2_borisove, potrebno_premestiti in [(8, 4, 2, 6, 6), (9, 10, 11, 7, 16), (4, 2, 3, 6, 5)]:
+          self.assertEqual(acMainSection(polica1_aljosine = polica1_aljosine, polica1_borisove = polica1_borisove, polica2_aljosine = polica2_aljosine, polica2_borisove = polica2_borisove)["potrebno_premestiti"],potrebno_premestiti,"Ако на првој полици Аљоша има %s, а Борис %s књига, а на другој Аљоша %s, а Борис %s, тада је потребно преместити %s." % (polica1_aljosine, polica1_borisove, polica2_aljosine, polica2_borisove, potrebno_premestiti))
+myTests().main()
+</textarea>
+</div>
+
+    <div data-component="reveal" id="раздвајање_књига_решење1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="раздвајање_књига_решење2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=раздвајање_књига_решење2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+polica1_aljosine = 10
+polica1_borisove = 5
+polica2_aljosine = 7
+polica2_borisove = 8
+potrebno_premestiti = min(polica1_aljosine + polica2_borisove, polica1_borisove + polica2_aljosine)
+print(potrebno_premestiti)
+</textarea>
+</div>
+
+    </div>
+    </div>
+<div class="section" id="id12">
+<h4>Пресек интервала<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Алекса и Ђорђе су два програмера који раде у истој компанији.
+Алекса ће у понедаљак бити на послу од 8 сати до 17 сати, а Ђорђе
+од 10 до 15 сати. Колико су сати тог дана могли заједно да раде на
+игрици коју програмирају? Напиши програм тако да ради и када се
+подаци промене (на пример, у уторак ће Алекса бити на послу од 15
+до 20, а Ђорђе од 8 до 14).</p>
+
+    </p></div></div>
+<p>Време које ће моћи да раде заједно је време које тече од тренутка када
+дође други од њих, до тренутка када оде први од њих. На пример, ако је
+Алекса дошао у 8 сати, а Ђорђе у 10, онда је други дошао у 10, а ако
+је Алекса дошао у 9, а Ђорђе у 7, онда је други дошао у 9. Слично, ако
+је Алекса отишао у 17, а Ђорђе у 15, онда је први отишао у 15. Могуће
+је да се деси да је први отишао пре него што је други дошао и тада је
+заједничко време 0. Иначе је време једнако разлици између времена када
+је први отишао и времена када је други дошао (дакле, заједничко време
+је већи од броја 0 и те разлике).</p>
+
+<div data-childcomponent="заједничко_време" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=заједничко_време data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+          data-runortest="aleksa_dosao aleksa_otisao djordje_dosao djordje_otisao zajedno"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# -*- acsection: var-init -*-
+aleksa_dosao = 8
+aleksa_otisao = 17
+djordje_dosao = 10
+djordje_otisao = 15
+# -*- acsection: main -*-
+drugi_dosao = 0 # ispravi ovaj red
+prvi_otisao = 0 # ispravi ovaj red
+zajedno = 0 # ispravi ovaj red
+# -*- acsection: after-main -*-
+print(zajedno)
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+       for aleksa_dosao, aleksa_otisao, djordje_dosao, djordje_otisao, zajedno in [(8, 10, 12, 14, 0), (8, 12, 10, 14, 2), (10, 14, 8, 12, 2), (10, 14, 8, 16, 4)]:
+          self.assertEqual(acMainSection(aleksa_dosao = aleksa_dosao, aleksa_otisao = aleksa_otisao, djordje_dosao = djordje_dosao, djordje_otisao = djordje_otisao)["zajedno"],zajedno,"Ако је Алекса дошао у %s, а отишао у %s, а Ђорђе дошао у %s, а отишао у %s, заједно су били %s сати." % (aleksa_dosao, aleksa_otisao, djordje_dosao, djordje_otisao, zajedno))
+myTests().main()
+</textarea>
+</div>
+
+    <div data-component="reveal" id="заједничко_време_решење1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="заједничко_време_решење2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=заједничко_време_решење2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+aleksa_dosao = 8
+aleksa_otisao = 17
+djordje_dosao = 10
+djordje_otisao = 15
+drugi_dosao = max(aleksa_dosao, djordje_dosao)
+prvi_otisao = min(aleksa_otisao, djordje_otisao)
+zajedno = max(prvi_otisao - drugi_dosao, 0)
+print(zajedno)
+</textarea>
+</div>
+
+    </div>
+    </div>
+</div>
+<div class="section" id="id15">
+<h3>Апсолутна вредност<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Још једна веома корисна функција коју си упознао/упознала у математици
+је апсолутна вредност. Апсолутном вредношћу се одређује одступање
+броја од нуле.  На пример, број 4 одступа од нуле за 4, док број -5
+одступа од нуле за 5 јединица. Дакле апсолутна вредност броја
+<span class="math notranslate nohighlight">\(x\)</span>, која се, подсетимо се, обележава са <span class="math notranslate nohighlight">\(|x|\)</span>, једнака је
+самом броју <span class="math notranslate nohighlight">\(x\)</span> ако је <span class="math notranslate nohighlight">\(x \geq 0\)</span> тј.  броју <span class="math notranslate nohighlight">\(-x\)</span>,
+ако је <span class="math notranslate nohighlight">\(x &lt; 0\)</span>.</p>
+<p>У језику Python апсолутну вредност можемо израчунати помоћу функције
+<code class="docutils literal notranslate"><span class="pre">abs</span></code>. Тако је вредност израза <code class="docutils literal notranslate"><span class="pre">abs(5)</span></code> једнака <code class="docutils literal notranslate"><span class="pre">5</span></code>, док је
+вредност израза <code class="docutils literal notranslate"><span class="pre">abs(-3)</span></code> једнака 3.</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill_апсолутна_вредност">
+            <p>Вредност израза <code class="docutils literal notranslate"><span class="pre">abs(-11.2)</span></code> је <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [11.2, 11.2], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>abs \u043e\u0437\u043d\u0430\u0447\u0430\u0432\u0430 \u0430\u043f\u0441\u043e\u043b\u0443\u0442\u043d\u0443 \u0432\u0440\u0435\u0434\u043d\u043e\u0441\u0442 \u0431\u0440\u043e\u0458\u0430 \u0438 \u043e\u043d\u0430 \u043d\u0435 \u043c\u043e\u0436\u0435 \u0431\u0438\u0442\u0438 \u043d\u0435\u0433\u0430\u0442\u0438\u0432\u043d\u0430</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Једна од најзначајнијих примена апсолутне вредности је да се израчуна
+удаљеност бројева, без обзира на њихов међусобни однос. Наиме,
+растојање између бројева <span class="math notranslate nohighlight">\(x_1\)</span> и <span class="math notranslate nohighlight">\(x_2\)</span> је једнако
+апсолутној вредности њихове разлике тј. вредности <span class="math notranslate nohighlight">\(|x_1 - x_2|\)</span>,
+без обзира да ли је <span class="math notranslate nohighlight">\(x_1 \geq x_2\)</span> или је <span class="math notranslate nohighlight">\(x_1 &lt;
+x_2\)</span>. Размотримо наредни задатак.</p>
+<div class="section" id="id16">
+<h4>Удаљеност спратова<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Cпратови у једној згради су обележени бројевима од -2 до 10
+(бројеви -2 и -1 означавају два нивоа испод земље, 0 означава
+приземље, док остали бројеви означавају спратове изнад земље). Ако
+се знају спратови на којима се налазе два другара, израчунај колико
+су спратова удаљени.</p>
+
+    </p></div></div>
+<p>Пошто не знамо да ли лифт иде на горе или на доле тј. да ли је полазни
+спрат мањи или већи од долазног, растојање између спратова можемо
+израчунати тако што израчунамо апсолутну вредност разлике између тих
+спратова. На пример, ако би први другар био на трећем спрату, а други
+у првом подруму, исправи програм који рачуна то растојање.</p>
+
+<div data-childcomponent="лифт_апсолутна_вредност" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=лифт_апсолутна_вредност data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+sprat1 = 3
+sprat2 = -1
+rastojanje = abs(sprat1 - sprat2)
+print(rastojanje)
+</textarea>
+</div>
+<p>Наравно, уместо бројева 3 и -1 могуће је стављати и друге, а могуће је
+ове бројеве учитати приликом покретања програма. Пробај са неколико
+својих тест-примера, а пробај и са тест-примерима које смо ти ми
+припремили.</p>
+
+<div data-childcomponent="лифт_апсолутна_вредност_input" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=лифт_апсолутна_вредност_input data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+          data-runortest="sprat1 sprat2 rastojanje"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# -*- acsection: var-init -*-
+sprat1 = int(input("На ком се спрату налази први другар?"))
+sprat2 = int(input("На ком се спрату налази други другар?"))
+# -*- acsection: main -*-
+rastojanje = 0 # ispravi svoj red
+# -*- acsection: after-main -*-
+print(rastojanje)
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+       for sprat1, sprat2 in [(8, 4), (3, 6), (-1, 8), (4, -2)]:
+          self.assertEqual(acMainSection(sprat1 = sprat1, sprat2 = sprat2)["rastojanje"],abs(sprat1-sprat2),"Растојање између спратова %s и %s је %s." % (sprat1, sprat2, abs(sprat1-sprat2)))
+myTests().main()
+</textarea>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>Менхетн растојање<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Менхетн, део града Њујорка је организован у авеније у правцу
+север-југ и улице у правцу isток-запад. Размак између две улице је
+80m, а између две авеније је 275m. Ако се Том налази на углу улице
+<span class="math notranslate nohighlight">\(u_1\)</span> и авеније <span class="math notranslate nohighlight">\(a_1\)</span> и жели да стигне на угао улице
+<span class="math notranslate nohighlight">\(u_2\)</span> и авеније <span class="math notranslate nohighlight">\(a_2\)</span>, колико ће метара морати да
+пређе.</p>
+
+    </p></div></div>
+<a class="reference internal image-reference" href="../_images/manhattan_distance.png"><img alt="../_images/manhattan_distance.png" class="align-center" src="../_images/manhattan_distance.png" style="width: 500px;" /></a>
+<p>Том има више начина да стигне са једног на друго место (може да иде
+цик-цак, на разне начине), међутим, пређено растојање је исто као када
+би прво ишао улицом <span class="math notranslate nohighlight">\(u_1\)</span> све док не дође до угла са авенијом
+<span class="math notranslate nohighlight">\(a_2\)</span>, а затим да се креће авенијом <span class="math notranslate nohighlight">\(а_2\)</span> све док не дође
+до угла са улицом <span class="math notranslate nohighlight">\(u_2\)</span>. Дакле, потребно је израчунати растојање
+између авенија <span class="math notranslate nohighlight">\(a_1\)</span> и <span class="math notranslate nohighlight">\(a_2\)</span> (да би се оно добило у
+метрима потребно је помножити апсолутну разлику између њихових редних
+бројева размаком између суседних авенија) и на то додати растојање
+између улица <span class="math notranslate nohighlight">\(u_1\)</span> и <span class="math notranslate nohighlight">\(u_2\)</span> (да би се оно добило у метрима
+потребно је помножити апсолутну разлику између њихових редних бројева
+размаком између суседних улица).</p>
+<p>Исправи наредни код тако да коректно израчуна пређени пут (наравно, програм
+треба да ради и када се улазни подаци промене или учитају са улаза).</p>
+
+<div data-childcomponent="менхетн" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=менхетн data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+          data-runortest="ulica1 avenija1 ulica2 avenija2 rastojanje razmak_ulica razmak_avenija"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# -*- acsection: var-init -*-
+razmak_ulica = 80
+razmak_avenija = 275
+ulica1 = 51
+avenija1 = 6
+ulica2 = 58
+avenija2 = 3
+# -*- acsection: main -*-
+rastojanje = abs(avenija1 - avenija2) * 0 + \
+             0 * razmak_ulica
+# -*- acsection: after-main -*-
+print(rastojanje)
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+
+    def testOne(self):
+       for (ulica1, avenija1, ulica2, avenija2, razmak_ulica, razmak_avenija, rastojanje) in [(3, 5, 8, 4, 80, 275, 675), (1, 7, 2, 4, 80, 275, 905), (9, 4, 11, 2, 80, 275, 710), (4, 8, 1, 5, 80, 275, 1065)]:
+          self.assertEqual((acMainSection(ulica1 = ulica1, avenija1 = avenija1, ulica2 = ulica2, avenija2 = avenija2, razmak_ulica = razmak_ulica, razmak_avenija = razmak_avenija)["rastojanje"]),  rastojanje , "Растојање између тачака (%s, %s) и (%s, %s) је %s." % (ulica1, avenija1, ulica2, avenija2, rastojanje))
+myTests().main()
+</textarea>
+</div>
+<p>Приметимо да је формула у претходном примеру била веома дугачка и
+проценили смо да је прегледније да је одштампамо кроз више редова. Да
+бисмо нагласили да се нека наредба наставља и у следећој линији на
+крај линије стављамо симбол <code class="docutils literal notranslate"><span class="pre">\</span></code>.</p>
+
+    <div data-component="reveal" id="менхетн_решење1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="менхетн_решење2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=менхетн_решење2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+ulica1 = 51
+avenija1 = 6
+ulica2 = 58
+avenija2 = 3
+razmak_ulica = 80
+razmak_avenija = 275
+rastojanje = abs(avenija1 - avenija2) * razmak_avenija + \
+             abs(ulica1 - ulica2) * razmak_ulica
+print(rastojanje)
+</textarea>
+</div>
+
+    </div>
+    </div>
+<div class="section" id="id21">
+<h4>Краљево растојање на шаховској табли<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
+
+    <div data-level="3" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Краљ се на шаховској табли налази на пољу обележеном координатама
+<span class="math notranslate nohighlight">\((x_1, y_1)\)</span>. Ако се зна да се у сваком потезу краљ може
+кретати по једно поље у било ком од осам смерова, израчунај колики
+је најмањи број потеза потребних да краљ стигне на поље означено
+координатама <span class="math notranslate nohighlight">\((x_2, y_2)\)</span>.</p>
+
+    </p></div></div>
+<p>Овај задатак је донекле сличан претходном. Поново је потребно да
+израчунамо хоризонтално и вертикално растојање између полазне и
+долазне тачке. Размисли како се број потеза може израчунати на основу
+та два растојања (у првих неколико потеза краљ може да се креће
+дијагонално, а после тога, ако је потребно, наставиће да се креће
+хоризонтално тј. вертикално). Допуни дефиницију функције која
+израчунава број потеза краља између поља <code class="docutils literal notranslate"><span class="pre">(x1,</span> <span class="pre">y1)</span></code> и <code class="docutils literal notranslate"><span class="pre">(x2,</span> <span class="pre">y2)</span></code>.</p>
+
+<div data-childcomponent="краљ_на_шаховској_табли" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=краљ_на_шаховској_табли data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+def kralj(x1, y1, x2, y2):
+    broj_poteza = 0      # na ovom mestu izracunaj broj poteza
+    return broj_poteza
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+       self.assertEqual(kralj(3, 8, 5, 2), 6, "Ако краљ треба да стигне са поља (3, 8) на поље (5, 2) потребно му је 6 потеза.")
+       self.assertEqual(kralj(7, 4, 3, 7), 4, "Ако краљ треба да стигне са поља (7, 4) на поље (3, 7) потребно му је 4 потеза.")
+       self.assertEqual(kralj(1, 8, 8, 1), 7, "Ако краљ треба да стигне са поља (1, 8) на поље (8, 1) потребно му је 7 потеза.")
+       self.assertEqual(kralj(5, 5, 2, 2), 3, "Ако краљ треба да стигне са поља (5, 5) на поље (2, 2) потребно му је 3 потеза.")
+
+myTests().main()
+</textarea>
+</div>
+
+    <div data-component="reveal" id="краљево_растојање_решење1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <p>Хоризонтално и вертикално растојање израчунавамо као апсолутну
+вредност разлике одговарајућих координата. Број дијагоналних потеза
+једнак је мањем од два растојања, док је број хоризонталних
+тј. вертикалних потеза након тога једнак разлици између већег и
+мањег растојања. Дакле, укупан број потеза је једнак већем од два
+растојања. Заиста, у почетним потезима се оба растојања умањују за
+по један, све док мање растојање не достигне нулу, након чега дуже
+растојање наставља да се умањује за један и укупан број потеза да
+оно достигне нулу једнак је његовој полазној вредности.</p>
+
+<div data-childcomponent="краљ_на_шаховској_табли_решење2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=краљ_на_шаховској_табли_решење2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+x1 = 3
+y1 = 8
+x2 = 5
+y2 = 2
+broj_poteza = max(abs(x1 - x2), abs(y1 - y2))
+print(broj_poteza)
+</textarea>
+</div>
+
+    </div>
+    </div>
+</div>
+<div class="section" id="id24">
+<h3>Остале математичке функције<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="3" style="display:none">
+
+    </div>
+<p>Поред ових које смо видели, језик Python 3 нуди многе друге корисне
+функције за рад са бројевима. На пример, функција <code class="docutils literal notranslate"><span class="pre">round</span></code> заокружује
+дати реални број на најближи цео број.</p>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="round">
+    <span data-component="question">Q-2: Превлачењем упари изразе са њиховим вредностима.</span>
+	<span data-component=feedback>Покушај поново</span>
+
+    <li data-component="draggable" id="round_drag1">round(2.1)</li>
+    <li data-component="dropzone" for="round_drag1">2</li>
+
+    <li data-component="draggable" id="round_drag2">round(2.9)</li>
+    <li data-component="dropzone" for="round_drag2">3</li>
+
+    <li data-component="draggable" id="round_drag3">round(4.5)</li>
+    <li data-component="dropzone" for="round_drag3">5</li>
+</ul></div><p>Слично, функција <code class="docutils literal notranslate"><span class="pre">math.ceil</span></code> заокружује дати реалан број навише
+тј. на најмањи цео број већи или једнак њему, док <code class="docutils literal notranslate"><span class="pre">math.floor</span></code>
+заокружује дати реалан број наниже тј. на највећи цео број мањи или
+једнак њему. На пример, <code class="docutils literal notranslate"><span class="pre">math.ceil(2.1)</span></code> је <code class="docutils literal notranslate"><span class="pre">3</span></code>, исто као и
+<code class="docutils literal notranslate"><span class="pre">math.ceil(2.9)</span></code>, док је <code class="docutils literal notranslate"><span class="pre">math.floor(2.1)</span></code> једнако <code class="docutils literal notranslate"><span class="pre">2</span></code>, исто као
+и <code class="docutils literal notranslate"><span class="pre">math.floor(2.9)</span></code>. Приметимо да имена ових функција почињу са
+<code class="docutils literal notranslate"><span class="pre">math</span></code>. Оне су део такозване математичке библиотеке и да би се могле
+користити у програму на његовом почетку мора бити написано <code class="docutils literal notranslate"><span class="pre">import</span>
+<span class="pre">math</span></code>.</p>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="fill14121">
+            <p>Вредност <code class="docutils literal notranslate"><span class="pre">math.ceil(7.25)</span></code> је <input type="text">
+Вредност <code class="docutils literal notranslate"><span class="pre">math.floor(7.25)</span></code> је <input type="text"></p>
+
+        <script type="application/json">
+            [[{"number": [8, 8], "feedback": "<p>Ta\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0440\u0430\u0437\u043c\u0438\u0441\u043b\u0438 \u043a\u043e\u0458\u0438 \u0458\u0435 \u043d\u0430\u0458\u043c\u0430\u045a\u0438 \u0446\u0435\u043e \u0431\u0440\u043e\u0458 \u043a\u043e\u0458\u0438 \u0458\u0435 \u0432\u0435\u045b\u0438 \u0438\u043b\u0438 \u0458\u0435\u0434\u043d\u0430\u043a 7,25</p>\n"}], [{"number": [7, 7], "feedback": "<p>Ta\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0420\u0430\u0437\u043c\u0438\u0441\u043b\u0438 \u043a\u043e\u0458\u0438 \u0458\u0435 \u043d\u0430\u0458\u0432\u0435\u045b\u0438 \u0446\u0435\u043e \u0431\u0440\u043e\u0458 \u043a\u043e\u0458\u0438 \u0458\u0435 \u043c\u0430\u045a\u0438 \u0438\u043b\u0438 \u0458\u0435\u0434\u043d\u0430\u043a 7,25</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Функција <code class="docutils literal notranslate"><span class="pre">math.sqrt</span></code> израчунава квадратни корен тј. онај ненегативан
+број који када се помножи сам са собом (када се квадрира) даје полазни
+број. На пример, важи да је <span class="math notranslate nohighlight">\(2 \cdot 2 = 4\)</span>, тако да је
+квадратни корен броја <span class="math notranslate nohighlight">\(4\)</span> број <span class="math notranslate nohighlight">\(2\)</span> (то се у математици
+записује као <span class="math notranslate nohighlight">\(\sqrt{4} = 2\)</span>.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који за дату површину квадрата израчунава дужину његове
+странице.</p>
+
+    </p></div></div>
+<p>Пошто важи да је <span class="math notranslate nohighlight">\(P = a\cdot a\)</span>, важи да је <span class="math notranslate nohighlight">\(a = \sqrt{P}\)</span>.</p>
+
+<div data-childcomponent="страница_квадрата" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=страница_квадрата data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+import math
+P = float(input("Unesi površinu kvadrata:"))
+a = 0.0    # ispravi ovaj red
+print("Dužina stranice je: ", a)
+</textarea>
+</div>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">math.pow</span></code> врши степеновање. На пример, <span class="math notranslate nohighlight">\(2^{8} = 256\)</span>
+се може израчунати помоћу <code class="docutils literal notranslate"><span class="pre">math.pow(2,</span> <span class="pre">8)</span></code>. Као што множење означава
+узастопно сабирање, тако степеновање означава узастопно множење. Други
+степен броја <span class="math notranslate nohighlight">\(2\)</span> je <span class="math notranslate nohighlight">\(2^2 = 2 \cdot 2 = 4\)</span>, трећи степен
+броја <span class="math notranslate nohighlight">\(2\)</span> је <span class="math notranslate nohighlight">\(2^3 = 2 \cdot 2 \cdot 2 = 8\)</span> и тако даље.
+Поменимо и да је степен дефинисан и када аргументи нису цели бројеви,
+али се тиме нећемо бавити. Степеновање се може израчунати и оператором
+<code class="docutils literal notranslate"><span class="pre">**</span></code>. Тако се уместо <code class="docutils literal notranslate"><span class="pre">math.pow(2,</span> <span class="pre">8)</span></code> може употребити израз <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">**</span>
+<span class="pre">8</span></code> чија је вредност такође <code class="docutils literal notranslate"><span class="pre">256</span></code>.</p>
+<p>Осим функција, у библиотеци <code class="docutils literal notranslate"><span class="pre">math</span></code> дефинисане су и разне корисне
+константе. На пример, број <span class="math notranslate nohighlight">\(\pi\)</span> који представља однос пречника
+и обима круга доступан је помоћу <code class="docutils literal notranslate"><span class="pre">math.PI</span></code> (вредност тог броја је
+око <span class="math notranslate nohighlight">\(3,141592\)</span>).</p>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - 10. лекција' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - 10.2. Дефинисање функција' data-toggle="tooltip"><a href="10b.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - 10. лекција' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - 10.2. Дефинисање функција' data-toggle="tooltip"><a href="10b.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

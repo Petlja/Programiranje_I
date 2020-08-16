@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>12.1. Гранање &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="12.2. Конструкција elif" href="12b.html" />
+    <link rel="prev" title="12. лекција" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">4. Квиз - робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4a.html">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">6. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6a.html">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9a.html">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">10. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10a.html">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">12. лекција</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>12.1. Гранање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Наредбе гранања<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У животу често неке ствари радимо само ако је неки услов испуњен. На
+пример, ако пада киша, тада ћемо понети кишобран. Ако је наша висина
+већа од 140 cm, тада ће нас пустити да се спуштамо низ водени тобоган
+у аква-парку. И у програмирању се одређене наредбе извршавају само ако је
+неки услов испуњен. Да би се описало условно извршавање неких наредби,
+користи се наредба <code class="docutils literal notranslate"><span class="pre">if</span></code>, коју смо већ сретали у програмима са Карелом
+и корњачом и која у језику Python има следећи облик:</p>
+
+<div data-childcomponent="if_синтакса" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=if_синтакса data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+if uslov:           # ако је услов испуњен:
+    naredba_1       #     изврши наредбу 1
+    ...             #     ...
+    naredba_k       #     изврши наредбу k
+</textarea>
+</div>
+<p>Реч <cite>if</cite> на енглеском језику значи <cite>ако</cite>.</p>
+<p>Подсетимо се да се након услова обавезно мора навести двотачка
+(карактер <code class="docutils literal notranslate"><span class="pre">:</span></code>) и да се наредбе које се извршавају условно морају
+мало увући (обично се то уради тако што се испред сваке наредбе
+откуцају три размака).</p>
+<p>Често се јавља и потреба да се у зависности од тога да ли је услов
+испуњен изврши једна или друга група наредби. На пример, ако је
+корисник унео исправну лозинку треба му пожелети добродошлицу на сајт,
+а у супротном му треба јавити да унета лозинка није исправна. Такав
+облик организације извршавања програма се постиже наредбом <code class="docutils literal notranslate"><span class="pre">if-else</span></code>
+који у језику Python има следећи облик:</p>
+
+<div data-childcomponent="if_else_синтакса" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=if_else_синтакса data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+if uslov:        # ако је услов испуњен:
+    naredba_1    #   изврши наредбу 1
+    ...          #   ...
+    naredba_m    #   изврши наребу m
+else:            # у супротном:
+    naredba_1    #   изврши наредбу 1
+    ...          #   ...
+    naredba_n    #   изврши наредбу n
+</textarea>
+</div>
+<p>Реч <cite>else</cite> на енглеском језику значи <cite>у супротном</cite>.</p>
+<p>Приметимо да је двотачку потребно навести и иза <code class="docutils literal notranslate"><span class="pre">else</span></code>, као и да су
+оба блока наредби увучена.</p>
+<p>Наредбом <code class="docutils literal notranslate"><span class="pre">if-else</span></code> ток програма се раздваја на две могућности (могу
+се извршити наредбе испод <code class="docutils literal notranslate"><span class="pre">if</span></code> или испод <code class="docutils literal notranslate"><span class="pre">else</span></code>), па се каже да се
+ток програма на том месту <strong>грана</strong>, а наредба <code class="docutils literal notranslate"><span class="pre">if-else</span></code> назива се
+наредба гранања.</p>
+</div>
+<div class="section" id="id3">
+<h2>Поређење (релацијски оператори)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Најједноставнији облик услова је поређење неких величина. Рачунар уме
+да пореди величине (бројеве, али и ниске). За то се користе оператори
+слични онима које сте већ видели у математици:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> мање од <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&gt;</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> веће од <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&gt;=</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> веће или једнако <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;=</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> мање или једнако <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">==</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> једнако <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">!=</span> <span class="pre">b</span></code> проверава да ли је <code class="docutils literal notranslate"><span class="pre">a</span></code> различито од <code class="docutils literal notranslate"><span class="pre">b</span></code></p></li>
+</ul>
+<p>Резултат примене ових операција је <em>тачно</em> или <em>нетачно</em> (кажемо да је
+резултат логичка тј. истинитосна вредност).</p>
+<p>Илуструјмо сада примену гранања и поређења кроз неколико једноставних
+програма.</p>
+<div class="section" id="id4">
+<h3>Млади програмери<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напишимо програм који корисницима млађим од 15 година шаље посебну
+похвалу јер су кренули да програмирају веома рано.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="млади_програмери" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=млади_програмери data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+godine = int(input("Koliko imate godina: "))
+if godine < 15:
+    print("Tako ste mladi, a već programirate! Svaka čast!")
+</textarea>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Покушај сада да измениш претходни програм тако што ћеш онима који
+имају 15 или више године рећи да никада није касно да крену са
+учењем програмирања.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="старији_програмери" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=старији_програмери data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+godine = int(input("Koliko imate godina: "))
+if True:   # popravi ovaj uslov
+    print("Nikada nije kasno da se krene sa učenjem programiranja!")
+</textarea>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Тобоган<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који на основу висине детета одређује да ли дете сме
+да иде на тобоган.</p>
+
+    </p></div></div>
+<p>Наредни програм садржи пар грешкица. Исправи их.</p>
+
+<div data-childcomponent="тобоган" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=тобоган data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+visina = int(input("Unesi svoju visinu: "))
+if visina >= 140
+print("Možeš na tobogan")
+</textarea>
+</div>
+<p>И наредни програм садржи пар грешака. Пробај да их исрпавиш.</p>
+
+<div data-childcomponent="тобоган_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=тобоган_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+visina = int(input("Unesi svoju visinu: "))
+if visina >= 140:
+print("Možeš na tobogan")
+else
+    print("Još ne možeš na tobogan")
+print("Moraš još malo da porasteš")
+</textarea>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Цвилидрета<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+<p>Поређење се може вршити и над нискама. На пример, могуће је проверити
+да ли је унета ниска једнака некој траженој. Погледајмо наредни
+задатак.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>У бајци браће Грим, патуљак се звао Цвилидрета и девојка је требало
+да погоди његово име. Ако принцеза промаши, потребно је исписати
+јој поруку да, нажалост, није погодила.</p>
+
+    </p></div></div>
+
+<div data-childcomponent="цвилидрета" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=цвилидрета data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+ime = input("Kako se zove patuljak: ")
+if True:   # ispravi ovaj uslov
+    print("Nažalost nisi pogodila :(")
+</textarea>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Ред речи у речнику<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="3" style="display:none">
+
+    </div>
+<p>Ниске се могу поредити и по абецедном или азбучном реду, како су ваша
+имена сложена у школском дневнику или како су речи сложене у речнику.
+Такво поређење се назива <em>лексикографско</em>. За то се користе исти
+оператори који се користе и за бројеве. На пример, важи да је <code class="docutils literal notranslate"><span class="pre">&quot;Ana&quot;</span>
+<span class="pre">&lt;</span> <span class="pre">&quot;Biljana&quot;</span></code> јер је слово <code class="docutils literal notranslate"><span class="pre">A</span></code> испред слова <code class="docutils literal notranslate"><span class="pre">B</span></code> у абецеди. Слично,
+важи да је <code class="docutils literal notranslate"><span class="pre">&quot;Ana&quot;</span> <span class="pre">&gt;</span> <span class="pre">&quot;Aleksandar&quot;</span></code>, јер су им прва слова једнака,
+па се онда прелази на гледање другог слова, а на том месту се десило
+да је слово <code class="docutils literal notranslate"><span class="pre">n</span></code> у абецеди иза слова <code class="docutils literal notranslate"><span class="pre">l</span></code>.  На крају, важи и да је
+<code class="docutils literal notranslate"><span class="pre">&quot;Ana&quot;</span> <span class="pre">&lt;</span> <span class="pre">&quot;Anastasija&quot;</span></code>, јер када се не наиђе на различито слово, тада
+се краћа реч ставља пре друге. Напоменимо да овакво поређење савршено
+ради за слова енглеског алфабета, али да су за слова наше латинице или
+ћирилице понекад потребна нека додатна подешавања. Обрати пажњу и на
+то да се приликом поређења прави разлика између великих и малих слова
+(сва велика слова иду пре свих малих слова).</p>
+<blockquote>
+<div>
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="лексикграфско_поређење">
+            <p>Q-3:  Означи изразе који имају вредност <code class="docutils literal notranslate"><span class="pre">True</span></code> тј. тачно.</p>
+
+            <li data-component="answer" data-correct id="лексикграфско_поређење_opt_a">"motor" < "musaka"</li><li data-component="feedback" id="лексикграфско_поређење_opt_a">"Када је прво слово једнако, разматра се друго"</li>
+            
+            <li data-component="answer" data-correct id="лексикграфско_поређење_opt_b">"mozak" > "motor"</li><li data-component="feedback" id="лексикграфско_поређење_opt_b">"Када су прва два слова једнака, разматра се треће"</li>
+            
+            <li data-component="answer"  id="лексикграфско_поређење_opt_c">"riba" >= "ribizla"</li><li data-component="feedback" id="лексикграфско_поређење_opt_c">"Ако је је прво различито слово у првој речи мање (у абецеди иде испре) од онога у другој речи, прва реч је мања"</li>
+            
+            <li data-component="answer" data-correct id="лексикграфско_поређење_opt_d">"foto" <= "fotografija"</li><li data-component="feedback" id="лексикграфско_поређење_opt_d">"Ако нема различитих слова, онда је краћа реч увек мања од дуже"</li>
+            
+
+            </ul>
+            </div>
+            </div></blockquote>
+<p>Пошто се ниске могу поредити, на њих се могу примењивати и функције
+попут <code class="docutils literal notranslate"><span class="pre">min</span></code> (она одређује мању од две речи) и <code class="docutils literal notranslate"><span class="pre">max</span></code> (она одређује
+већу од две речи).</p>
+</div>
+<div class="section" id="id13">
+<h3>Ко иде пре у дневнику<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="3" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који за унета два презимена ђака одређује ко од њих
+иде пре, а ко иде после у дневнику.</p>
+
+    </p></div></div>
+<p>Наредна два програма представљају различита решења овог задатка, али и
+један и други садрже грешке које треба да исправиш.</p>
+
+<div data-childcomponent="лексикографски1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=лексикографски1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+ucenik1 = input("Unesi prezime prvog ucenika (koristi samo engleske karaktere):")
+ucenik2 = input("Unesi prezime drugog ucenika (koristi samo engleske karaktere):")
+if ucenik1 < ucenik2:
+    print(ucenik1, "ide pre", ucenik2)
+else:
+    print(ucenik1, "ide pre", ucenik2)
+</textarea>
+</div>
+
+<div data-childcomponent="лексикографски2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=лексикографски2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+ucenik1 = input("Unesi prezime prvog ucenika (koristi samo engleske karaktere):")
+ucenik2 = input("Unesi prezime drugog ucenika (koristi samo engleske karaktere):")
+print(min(ucenik1, ucenik2), "ide pre", min(ucenik1, ucenik2))
+</textarea>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Парност броја<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који испитује да ли је унети број паран или непаран.</p>
+
+    </p></div></div>
+<p>Проверу да ли је један број дељив другим можемо извршити тако што
+израчунамо остатак при дељењу и упоредимо га са нулом. Подсетимо се, о
+целобројном дељењу је већ било речи у глави о дељењу и тада смо рекли
+да се остатак може израчунати коришћењем оператора <code class="docutils literal notranslate"><span class="pre">%</span></code>.</p>
+
+<div data-childcomponent="паран_непаран" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=паран_непаран data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+broj = 17
+if broj % 2 == 0:
+    print("Broj je paran")
+else:
+    print("Broj je neparan")
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id18">
+<h2>Логичке вредности<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p>Променљива може да садржи и истинитосне вредности (кажемо и логичке
+вредности или исказне вредности) тачно тј. <code class="docutils literal notranslate"><span class="pre">True</span></code> и нетачно
+тј. <code class="docutils literal notranslate"><span class="pre">False</span></code> (обрати пажњу на велико почетно слово). Променљиве чије
+су вредности истинитосне се кажу да су логичке или буловске (тј. да су
+типа <code class="docutils literal notranslate"><span class="pre">bool</span></code> - у част великог математичара Џорџа Була који је први
+увео математички рачун над истинитосним вредностима).</p>
+
+<div data-childcomponent="киша" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=киша data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+pada_kisa = True
+if pada_kisa:
+    print("Ponesi kišobran")
+else:
+    print("Ne moraš da nosiš kišobran")
+</textarea>
+</div>
+<p>Ако у претходном програму у првом реду уместо вредности <code class="docutils literal notranslate"><span class="pre">True</span></code>
+поставиш вредност <code class="docutils literal notranslate"><span class="pre">False</span></code>, добићеш другачију поруку након покретања
+програма.</p>
+<p>Истинитосна вредност може бити додељена и као резултат неког поређења
+(релације). На пример:</p>
+
+<div data-childcomponent="позитиван" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=позитиван data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+x = int(input("Unesi broj:"))
+pozitivan = x > 0     # tačno ako je x > 0, tj. netačno, u suprotnom
+if pozitivan:
+    print("Uneti broj je pozitivan")
+</textarea>
+</div>
+<p>Дужи начин да се променљивој додели истинитосна вредност је да се
+употреби гранање и константе <code class="docutils literal notranslate"><span class="pre">True</span></code> и <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+
+<div data-childcomponent="позитиван1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=позитиван1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+x = int(input("Unesi broj:"))
+
+if x > 0:
+    pozitivan = True
+else:
+    pozitivan = False
+
+if pozitivan:
+    print("Uneti broj je pozitivan")
+</textarea>
+</div>
+<p>Наравно, када год можемо користићемо краћи и једноставнији начин.  Још
+једно место где ћемо често користити истинитосне вредности су функције
+које нешто испитују и враћају тачно или нетачно. На пример, можемо
+дефинисати функцију која проверава да ли је број позитиван.</p>
+
+<div data-childcomponent="позитиван_функција" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=позитиван_функција data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+def pozitivan(x):
+    return x > 0
+
+x = int(input("Unesi broj:"))
+if pozitivan(x):
+    print("Uneti broj je pozitivan")
+</textarea>
+</div>
+<p>Дужи начин да се ова функција дефинише је уз употребу гранања.</p>
+
+<div data-childcomponent="позитиван_функција_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=позитиван_функција_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+def pozitivan(x):
+    if x > 0:
+        return True
+    else:
+        return False
+
+x = int(input("Unesi broj:"))
+if pozitivan(x):
+    print("Uneti broj je pozitivan")
+</textarea>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>Комбиновање више логичких услова (логички оператори)<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<p>Једноставнији услови се могу комбиновати. На пример, учитељица жели да
+поклони књигу свим оним ученицима који нису правили проблеме у владању
+током године и који су били одлични ђаци или су учествовали у
+украшавању учионице. Једноставније услове комбинујемо обично речима
+<strong>и</strong>, <strong>или</strong> и <strong>не</strong>. Приметимо да је претходна реченица облика <em>не
+услов1 и (услов2 или услов3)</em>, где је <em>услов1</em> услов да је ученик
+правио проблеме, <em>услов2</em> да је био одличан ђак, а <em>услов3</em> да је
+учествовао у украшавању учионице.</p>
+<ul class="simple">
+<li><p>Да би услов облика <em>услов1 и услов2</em> био испуњен морају бити
+испуњена оба услова <em>услов1</em> и <em>услов2</em>. На пример, да би реченица
+<em>грмило је и севало</em> била тачна, потребно је да је грмило и да је
+севало. Приметимо да реч <em>и</em> на неки начин одговара пресеку скупова
+о којем сте сигурно пуно учили из математике. Реч <em>и</em> се у језику
+Python записује помоћу речи <code class="docutils literal notranslate"><span class="pre">and</span></code>.</p></li>
+<li><p>Да би услов облика <em>услов1 или услов2</em> био испуњен довољно је да је
+један од услова <em>услов1</em> и <em>услов2</em> буде испуњен. На пример,
+реченица „ићи ћу за викенд у позориште или у биоскоп” је тачна ако
+одеш само у позориште, само у биоскоп, али и ако одеш и у позориште
+и у биоскоп (постоји посебан облик „или-или” који забрањује да су
+оба услова испуњена, али њега нећемо детаљније разматрати). Реч
+<em>или</em> се у језику Python записује помоћу речи <code class="docutils literal notranslate"><span class="pre">or</span></code>.</p></li>
+<li><p>Да би услов облика <em>не услов</em> био испуњен услов <em>услов</em> не сме бити
+испуњен. На пример, реченица „Данас не пада киша” је тачна само ако
+реченица „Данас пада киша” није тачна. Реч <em>не</em> се у језику Python
+записује помоћу речи <code class="docutils literal notranslate"><span class="pre">not</span></code>.</p></li>
+</ul>
+<p>Веома често је потребно проверити да ли се број налази у неком
+интервалу (на пример, време је најпријатније ако је температура између
+20 и 25 степени, тј. ако припада интервалу <span class="math notranslate nohighlight">\([20, 25]\)</span>). То се
+ради тако што се провери да је вредност већа од доње границе интервала
+и да је мања од горње границе интервала.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Често је нејасно да ли се границе интервала припадају интервалу или
+не.  На пример, када кажемо између 20 и 25 степени, није јасно да
+ли ту подразумевамо и 20 и 25 степени, или не. Да би се разјаснило
+да ли крај припада интервалу користе се различите врсте
+заграда. Мале заграде (заграде ()) означавају отворене интервале
+којима крајеви не припадају, док средње заграде (заграде [])
+означавају завтворене интервале који садрже и своје крајеве.  На
+пример, интервал <span class="math notranslate nohighlight">\([20, 25]\)</span> садржи и вредности 20 и 25,
+интервал <span class="math notranslate nohighlight">\((20, 25)\)</span> их не садржи, док интервал <span class="math notranslate nohighlight">\([20,
+25)\)</span> садржи вредност 20, али не и 25. Са оваквим полуотвореним
+интервалима смо се већ срели код индексирања ниски и листа
+(подсетимо се, <code class="docutils literal notranslate"><span class="pre">str[a:b]</span></code> издваја све карактере из ниске са
+позиција из интервала <span class="math notranslate nohighlight">\([a, b)\)</span>, тј. карактере који почињу на
+позицији <code class="docutils literal notranslate"><span class="pre">a</span></code>, а завршавају се на позицији стриктно испред <code class="docutils literal notranslate"><span class="pre">b</span></code>).</p>
+
+    </p></div></div>
+<div class="section" id="id25">
+<h3>Индекс телесне масе<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Индекс телесне масе човека (енгл. body mass index, bmi) се дефинише
+као количник његове масе у килограмима и квадрата његове висине у
+метрима. Нормалним се сматра индекс телесне масе из (затвореног)
+интервала од <span class="math notranslate nohighlight">\(18,5\frac{kg}{m^2}\)</span> до 25
+<span class="math notranslate nohighlight">\(25\frac{kg}{m^2}\)</span>. Да ли човек који је висок 180 центиметара
+и тежак 79 килограма нормалне дебљине?</p>
+
+    </p></div></div>
+
+<div data-childcomponent="bmi" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bmi data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+masa = 79
+visina = 180 / 100
+bmi = masa / (visina * visina)
+if 18.5 <= bmi and bmi <= 25:
+    print("indeks telesne mase je u preporučenim granicama")
+else:
+    print("Masa treba da bude od", 18.5*visina*visina, "do", 25*visina*visina, "kg")
+</textarea>
+</div>
+</div>
+<div class="section" id="id26">
+<h3>Кућни ред<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Кућни ред забрањује прављење буке пре 6 часова и између 13 и 17
+часова, и након 22 часа. Напиши програм који радницима говори да ли
+у неком датом тренутку могу да изводе бучније радове.</p>
+
+    </p></div></div>
+<p>Сматраћемо да су ови интервали полуотворени тј. да је дозвољено
+правити буку у интервалу <span class="math notranslate nohighlight">\([6, 13)\)</span> и <span class="math notranslate nohighlight">\([17, 22)\)</span> и у
+програму ћемо проверити да ли време припада неком од тих интервала.</p>
+
+<div data-childcomponent="кућни_ред_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=кућни_ред_1 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+sati = 15
+minuta = 23
+if (sati >= 6 and sati < 13) or (sati >= 17 and sati < 22):
+    print("Možete da izvodite bučnije radove")
+else:
+    print("Ne bi trebalo da izvodite bučnije radove")
+</textarea>
+</div>
+<p>или</p>
+
+<div data-childcomponent="кућни_ред_2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=кућни_ред_2 data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+if not (sati < 6 or (13 <= sati and sati < 17) or sati >= 22):
+    print("Možete da izvodite bučnije radove")
+else:
+    print("Ne bi trebalo da izvodite bučnije radove")
+</textarea>
+</div>
+</div>
+<div class="section" id="id29">
+<h3>Преступна година<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Година је преступна ако је дељива са 4 и није дељива са 100 или је
+дељива са 400. Напиши функцију која проверава да ли је година
+преступна.</p>
+
+    </p></div></div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Овако уведен систем преступних година уводи тачно 97 преступних
+година на сваких 400 година. Тиме је време једне године тачно (97 ×
+366 + 303 × 365) / 400 = 365,2425 дана, што је прилично добра
+процена вредности 365,242374, коју астрономи обично узимају за
+трајање године.</p>
+
+    </p></div></div>
+<p>Подсетимо се, проверу да ли је број дељив другим бројем можеш извршити
+тако што израчунаш остатак при дељењу (коришћењем оператора <code class="docutils literal notranslate"><span class="pre">%</span></code>) и
+провериш да ли је он једнак нули. На пример, проверу да ли је година
+дељива са 4 можеш извршити изразом <code class="docutils literal notranslate"><span class="pre">godina</span> <span class="pre">%</span> <span class="pre">4</span> <span class="pre">==</span> <span class="pre">0</span></code>.</p>
+
+<div data-childcomponent="преступна_година" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=преступна_година data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+def prestupna(godina):
+    return True
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+       self.assertEqual(prestupna(2000), True, "2000 јесте преступна")
+       self.assertEqual(prestupna(1900), False, "1900 није преступна")
+       self.assertEqual(prestupna(2017), False, "2017 није преступна")
+       self.assertEqual(prestupna(2020), True, "2020 јесте преступна")
+
+myTests().main()
+</textarea>
+</div>
+</div>
+<div class="section" id="id31">
+<h3>Предност у превозу<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="2" style="display:none">
+
+    </div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Предност у превозу имају труднице, деца млађа од 7 година и старији
+од 65 година. Допуни програм који испитује да ли особа има предност
+(параметар <code class="docutils literal notranslate"><span class="pre">godine</span></code> садржи број година, а параметар <code class="docutils literal notranslate"><span class="pre">trudnica</span></code>
+има вредност <code class="docutils literal notranslate"><span class="pre">true</span></code> ако је особа трудница, односно <code class="docutils literal notranslate"><span class="pre">false</span></code> у
+супротном).</p>
+
+    </p></div></div>
+
+<div data-childcomponent="предност_у_превозу" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=предност_у_превозу data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+def prednost(godine, trudnica)
+    return True
+
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+       self.assertEqual(prednost(34, True), True, "Трудница од 34 године има предност")
+       self.assertEqual(prednost(6, False), True, "Дете од 6 година има предност")
+       self.assertEqual(prednost(8, False), False, "Дете од 8 година нема предност")
+       self.assertEqual(prednost(42, False), False, "Мушкарац од 42 године нема предност")
+       self.assertEqual(prednost(67, False), True, "Пензионерка од 67 година има предност")
+
+myTests().main()
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - 12. лекција' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - 12.2. Конструкција <cite>elif</cite>' data-toggle="tooltip"><a href="12b.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - 12. лекција' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - 12.2. Конструкција <cite>elif</cite>' data-toggle="tooltip"><a href="12b.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

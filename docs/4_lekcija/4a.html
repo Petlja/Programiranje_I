@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>4.1. Квиз - робот Карел &#8212; Petlja - Настава програмирања за Први разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)" href="../5_lekcija/index.html" />
+    <link rel="prev" title="4. Квиз - робот Карел" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Први разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Први разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">1. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1a.html">1.1. Робот Карел - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1b.html">1.2. Робот Карел - бројачка петља <cite>for</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">2. лекција - Робот Карел</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2a.html">2.1. Робот Карел - условне петље, гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html">2.2. Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2b.html#id11">2.3. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">3. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3a.html">3.1. Вежбање - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. Квиз - робот Карел</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1. Квиз - робот Карел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5a.html">5.1. Корњача графика - гранање, угнежђене петље, процедуре, торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html">5.2. Процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id9">5.3. Торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5b.html#id15">5.4. Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">6. лекција - вежбање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6a.html">6.1. Корњача графика - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../7_lekcija/index.html">7. лекција -квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../7_lekcija/7a.html">7.1. Квиз - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">8. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8a.html">8.1. Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html">8.2. Вежбање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8b.html#id20">Домаћи задатак</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">9. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9a.html">9.1. Цели и реални бројеви, дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9b.html">9.2. Целобројно дељење - позициони запис броја</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">10. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10a.html">10.1. Коришћење готових функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10b.html">10.2. Дефинисање функција</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">11. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">12. лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12a.html">12.1. Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12b.html">12.2. Конструкција <cite>elif</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">13. лекција - понављање</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13a.html">13.1. Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html">13.2. Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13b.html#id7">13.3. Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">14. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">15. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html">15.1. Торке, листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15a.html#id49">15.2. Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15b.html">15.3. Скупови, речници</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">16. лекција - структуре</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16a.html">16.1. Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../testovi/index.html">17. лекција - квиз</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testovi/strukture.html">17.1. Квиз - структуре података и алгоритми</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>4.1. Квиз - робот Карел<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_1">
+            <p>Q-11: Робот у лавиринту на слици се налази на пољу (4,5).</p>
+<img alt="../_images/karel1.png" class="align-center" src="../_images/karel1.png" />
+<p>На ком ће се пољу наћи робот извршавањем следеће наредбе?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">levo</span><span class="p">()</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="rk_1_opt_a">Налазиће се на истом пољу.</li><li data-component="feedback" id="rk_1_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="rk_1_opt_b">Налазиће се на пољу (3,5).</li><li data-component="feedback" id="rk_1_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_1_opt_c">Налазиће се на пољу (5,5).</li><li data-component="feedback" id="rk_1_opt_c">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id3">
+<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_2">
+            <p>Q-12: Робот у лавиринту на слици се налази на пољу (5,3).</p>
+<img alt="../_images/karel1_1.png" class="align-center" src="../_images/karel1_1.png" />
+<p>Након извршавања којег од наредних програма ће се робот наћи на пољу (3,3)?</p>
+<p>Програм 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">levo</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="n">levo</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Програм 2.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">levo</span><span class="p">()</span>
+<span class="n">levo</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="rk_2_opt_a">Извршавањем програма 1.</li><li data-component="feedback" id="rk_2_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_2_opt_b">Извршавањем програма 2.</li><li data-component="feedback" id="rk_2_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="rk_2_opt_c">Извршавањем било ког од дата два програма робот стиже на исто поље (3,3).</li><li data-component="feedback" id="rk_2_opt_c">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id4">
+<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="rk_3">
+            <p>Нека је Карел робот у положају као на слици.</p>
+<img alt="../_images/karel2.png" class="align-center" src="../_images/karel2.png" />
+<p>Поређај команде тако да робот на најкраћи начин стигне до рупе.</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">levo</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>(Одговор упиши навођењем редних бројева команди у одговарајућем редоследу, нпр. 1221)</p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*121112\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id5">
+<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_4">
+            <p>Q-13: Нека је Карел робот у положају као на слици.</p>
+<img alt="../_images/karel3.png" class="align-center" src="../_images/karel3.png" />
+<p>У ком положају ће се наћи робот након извршавања следећег дела кода:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">desno</span><span class="p">();</span> <span class="n">desno</span><span class="p">();</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="rk_4_opt_a">Робот ће се померити за два поља на лево и бити на пољу (1,1).</li><li data-component="feedback" id="rk_4_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_4_opt_b">Робот ће се окренути за 180 степени и налазити се на пољу на ком се налазио и пре извршавања датог кода.</li><li data-component="feedback" id="rk_4_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="rk_4_opt_c">Робот ће се померити за два поља на десно и бити на пољу (5,1).</li><li data-component="feedback" id="rk_4_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_4_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="rk_4_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_5">
+            <p>Q-14: Нека је Карел робот у положају као на слици.</p>
+<img alt="../_images/karel3.png" class="align-center" src="../_images/karel3.png" />
+<p>На ком пољу ће се робот наћи након извршавања следећег дела кода:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">();</span> <span class="n">levo</span><span class="p">();</span> <span class="n">levo</span><span class="p">();</span> <span class="n">napred</span><span class="p">();</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="rk_5_opt_a">Робот ће се померити за два поља лево и бити на пољу (1,1).</li><li data-component="feedback" id="rk_5_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_5_opt_b">Робот ће се налазити се на пољу на ком се налазио и пре извршавања датог кода.</li><li data-component="feedback" id="rk_5_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="rk_5_opt_c">Робот ће се померити за два поља десно и бити на пољу (5,1).</li><li data-component="feedback" id="rk_5_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_5_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="rk_5_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_6">
+            <p>Q-15: Која од наредних наредби је прави облик коришћења  петље for којом се описује понављање 4 пута:</p>
+
+            <li data-component="answer"  id="rk_6_opt_a">for i in range:</li><li data-component="feedback" id="rk_6_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_6_opt_b">for i in range()</li><li data-component="feedback" id="rk_6_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_6_opt_c">for i in range(4):</li><li data-component="feedback" id="rk_6_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="rk_6_opt_d">for i in (1,4):</li><li data-component="feedback" id="rk_6_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id8">
+<h2>Питање 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_7">
+            <p>Q-16: Нека je дат следећи део кода.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+   <span class="n">napred</span><span class="p">()</span>
+   <span class="n">desno</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Који од наредних кодова ће дати исти резултат при извршавању? Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="rk_7_opt_a">napred(); napred(); desno(); napred(); desno();</li><li data-component="feedback" id="rk_7_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_7_opt_b">napred(); napred(); napred(); desno();</li><li data-component="feedback" id="rk_7_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_7_opt_c">napred(); desno(); napred(); desno(); napred();</li><li data-component="feedback" id="rk_7_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="rk_7_opt_d">napred(); desno(); desno(); napred();</li><li data-component="feedback" id="rk_7_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id9">
+<h2>Питање 8.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_8">
+            <p>Q-17: Нека je дат следећи део кода.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">desno</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Који од наредних кодова ће дати исти резултат при извршавању? Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="rk_8_opt_a">napred(); napred(); desno(); napred(); desno();</li><li data-component="feedback" id="rk_8_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_8_opt_b">napred(); napred(); napred(); desno();</li><li data-component="feedback" id="rk_8_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_8_opt_c">napred(); desno(); napred(); desno(); napred();</li><li data-component="feedback" id="rk_8_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_8_opt_d">napred(); desno(); desno(); napred();</li><li data-component="feedback" id="rk_8_opt_d">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id10">
+<h2>Питање 9.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="rk_9">
+            <p>Q-18: Нека је Карел робот у положају као на слици</p>
+<img alt="../_images/karel7.png" class="align-center" src="../_images/karel7.png" />
+<p>Извршавањем којих од наредних програма ће робот проћи кроз цео лавиринт, caкупити свих пет лоптица и убацити их у рупу?</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">uzmi</span><span class="p">()</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">uzmi</span><span class="p">()</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+</ol>
+
+            <li data-component="answer"  id="rk_9_opt_a">Програм (1)</li><li data-component="feedback" id="rk_9_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_9_opt_b">Програм (2)</li><li data-component="feedback" id="rk_9_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_9_opt_c">Програм (3)</li><li data-component="feedback" id="rk_9_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_9_opt_d">Програм (4)</li><li data-component="feedback" id="rk_9_opt_d">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id11">
+<h2>Питање 10.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="rk_10">
+            <p>Нека је Карел робот у положају као на слици</p>
+<img alt="../_images/karel7.png" class="align-center" src="../_images/karel7.png" />
+<p>и нека је његов задатак да caкупи свих пет лоптица и убаци их у рупу.
+Дат је недовршен програм који би требало да представља решење роботовог задатка.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+  <span class="n">____________</span>
+
+  <span class="n">____________</span>
+</pre></div>
+</div>
+<p>У блоку for петље недостаје неколико команди. Допуни тело петље навођењем неких од наредних команди у одговарајућем редоследу тако да ће робот извршавањем допуњеног програма обaвити свој задатак.</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">levo</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Од могућих решења, одабрати оно које подразумева најмањи број команди и у коме Карел оставља лоптицу чим дође до поља.
+(Одговор упиши навођењем редних бројева команди распоређених у одговарајући редослед, нпр. 12213)</p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*31422122\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id12">
+<h2>Питање 11.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="рк_11">
+            <p>Q-19: Дата је наредба <cite>while</cite> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="n">ima_loptica_na_polju</span><span class="p">()</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Да ли је ова наредба је написана у складу са правилима програмског језика Пајтон? Изабери тачан одговор.</p>
+
+            <li data-component="answer" data-correct id="рк_11_opt_a">Не.</li><li data-component="feedback" id="рк_11_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="рк_11_opt_b">Да.</li><li data-component="feedback" id="рк_11_opt_b">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id13">
+<h2>Питање 12.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="рк_12">
+            <p>Q-20: Дата је наредба <cite>while</cite> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="n">ima_loptica_kod_sebe</span><span class="p">():</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Шта је резултат извршавања ове наредбе? Изабери тачан одговор.</p>
+
+            <li data-component="answer" data-correct id="рк_12_opt_a">Робот ће оставити све лоптице које има код себе на пољу на коме је.</li><li data-component="feedback" id="рк_12_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="рк_12_opt_b">Робот ће оставити све лоптице које има код себе на пољу испред себе.</li><li data-component="feedback" id="рк_12_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="рк_12_opt_c">Робот ће оставити једну лоптицу на пољу на коме се налази.</li><li data-component="feedback" id="рк_12_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="рк_12_opt_d">Робот ће оставити једну лоптицу на пољу испред себе.</li><li data-component="feedback" id="рк_12_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id14">
+<h2>Питање 13.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="рк_13">
+            <p>Q-21: Нека је Карел робот у положају као на слици.</p>
+<img alt="../_images/karel4.png" class="align-center" src="../_images/karel4.png" />
+<p>Извршавањем којих од наредних програма ће робот стићи до поља (4,1) и узети лоптицу?
+Изабери тачан одговор:</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="n">mozeNapred</span><span class="p">():</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="n">mozeNapred</span><span class="p">():</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">napred</span><span class="p">()</span>
+<span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">napred</span><span class="p">()</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="рк_13_opt_a">1</li><li data-component="feedback" id="рк_13_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="рк_13_opt_b">2</li><li data-component="feedback" id="рк_13_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="рк_13_opt_c">3</li><li data-component="feedback" id="рк_13_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="рк_13_opt_d">4</li><li data-component="feedback" id="рк_13_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            <div class="section" id="id15">
+<h3>Питање 14.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="rk_14">
+            <p>Нека је Карел робот у положају као на слици</p>
+<img alt="../_images/karel8.png" class="align-center" src="../_images/karel8.png" />
+<p>и нека је његов задатак да сиђе низ степенице и caкупи све лоптице које му се нађу на путу.
+Дат је недовршен програм који би требало да представља решење роботовог задатка. (Одговор упиши навођењем редних бројева наредби распоређених у одговарајући редослед, нпр. 12213)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+<span class="n">____________</span>
+
+<span class="n">____________</span>
+</pre></div>
+</div>
+<p>У блоку петље недостаје неколико наредби. Допуни тело петље навођењем што мање понуђених наредби у одговарајућем редоследу, тако да Карел узме сваку лоптицу чим може, а да се извршавањем програма исправно решава задатак.</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">desno</span><span class="p">()</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">uzmi</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^\\s*1213222\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id16">
+<h3>Питање 15.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="rk_15">
+            <p>Q-22: Изабери тачан одговор:</p>
+<p>Нека се Карел робот налази у лавиринту као на слици</p>
+<img alt="../_images/karel10.png" class="align-center" src="../_images/karel10.png" />
+<p>и нека је лавиринт ЗАЧАРАН тако да се при сваком покретању програма може променити дужина лавиринта и број лоптица на пољима. У свакој верзији лавиринт се састоји из једнаког броја поља са лоптицама и поља са рупама наизменично распоређених (као на слици).</p>
+<p>Извршавањем којих од наредних програма ће робот проћи кроз цео лавиринт, на сваком месту где има лоптица сакупити све лоптице и убацити их у прву наредну рупу?</p>
+<p>Напомена: Сматра се да је код исправан уколико при извршавању Пајтон окружење не пријави грешку, као што је грешка која би се јавила при извршавању команде napred() када се робот налази испред зида лавиринта.</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_na_polju</span><span class="p">()):</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">napred</span><span class="p">()</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_na_polju</span><span class="p">()):</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_na_polju</span><span class="p">()):</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_na_polju</span><span class="p">()):</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">moze_napred</span><span class="p">()):</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_na_polju</span><span class="p">()):</span>
+    <span class="n">uzmi</span><span class="p">()</span>
+  <span class="n">napred</span><span class="p">()</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
+    <span class="n">ostavi</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+</ol>
+
+            <li data-component="answer"  id="rk_15_opt_a">Програм (1)</li><li data-component="feedback" id="rk_15_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_15_opt_b">Програм (2)</li><li data-component="feedback" id="rk_15_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="rk_15_opt_c">Програм (3)</li><li data-component="feedback" id="rk_15_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="rk_15_opt_d">Програм (4)</li><li data-component="feedback" id="rk_15_opt_d">Тачно</li>
+            
+            <li data-component="answer" data-correct id="rk_15_opt_e">Програм (5)</li><li data-component="feedback" id="rk_15_opt_e">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - 4. Квиз - робот Карел' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - 5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)' data-toggle="tooltip"><a href="../5_lekcija/index.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - 4. Квиз - робот Карел' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - 5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)' data-toggle="tooltip"><a href="../5_lekcija/index.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,324 @@
+6.1. Корњача графика - вежбање
+##############################
+
+Након неколико часова на којима смо уводили нове концепте, време је да
+направимо малу паузу и искористимо време да проверимо колико смо до
+сада научили (твој наставник може да ти да контролни задатак или
+петнаестоминутну проверу знања из области програмирања Карела и
+корњаче). Спремили смо неколико задатака за вежбу из области
+корњача-графике који ће ти помоћи да провериш своје знање. Додатне
+задатке за вежбу можеш пронаћи `овде <KornjacaZadaci.html>`_.
+
+Задаци за вежбу
+---------------
+
+Линијски програми
+&&&&&&&&&&&&&&&&&
+
+Слово M
+'''''''
+   
+.. questionnote::
+
+   Напиши програм у којем корњача црта слово М.
+
+.. activecode:: корњача_слово_M
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   
+   turtle.left(90)
+   turtle.forward(150)
+   turtle.right(150)
+   turtle.forward(100)
+   # dovrši program tako da slovo M bude simetrično
+   ====
+   import turtle
+
+   turtle.left(90)
+   turtle.forward(150)
+   turtle.right(150)
+   turtle.forward(100)
+   turtle.left(120)
+   turtle.forward(100)
+   turtle.right(150)
+   turtle.forward(150)
+
+Дијамант
+''''''''
+
+.. questionnote::
+
+   Напиши програм у којем корњача исцртава облик дијаманта (облик се добије
+   спајањем два једнакостранична троугла по заједничкој хоризонталној ивици).
+
+.. activecode:: корњача_дијамант
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dovrši program
+   ====
+   import turtle
+
+   turtle.forward(100)
+   turtle.left(120)
+   turtle.forward(100)
+   turtle.left(120)
+   turtle.forward(100)
+   turtle.left(60)
+   turtle.forward(100)
+   turtle.left(120)
+   turtle.forward(100)
+
+   
+Петље
+&&&&&
+
+Квадратни сигнал
+''''''''''''''''
+
+.. questionnote::
+
+   Напиши програм у којем корњача црта облик квадратног сигнала, као
+   на следећој слици.
+
+   .. image:: ../../_images/kornjaca-kvadratni-signal.png
+      :align: center
+
+Основни корак у решавању задатка је да се овај сложени облик разложи
+на низ једноставнијих облика који се понављају. Покушај прво да
+размислиш како то може да се уради, а онда погледај наредну слику.
+
+.. reveal:: квадратни_сигнал_решење
+   :showtitle: Прикажи слику
+   :hidetitle: Сакриј слику
+
+   .. image:: ../../_images/kornjaca-kvadratni-signal-boje.png
+      :align: center
+
+Дакле, облик се састоји од пет понављања основног облика, који се може
+добити тако што корњача иде напред, затим се окрене налево, иде
+напред, окрене се надесно, иде напред, опет се окрене надесно, иде
+напред и окрене се налево (увек се окреће за по 90 степени).
+	      
+.. activecode:: квадратни_сигнал
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dopuni program
+   ====
+   import turtle
+   dim = 20
+   for i in range(5):
+       turtle.forward(dim)
+       turtle.left(90)
+       turtle.forward(dim)
+       turtle.right(90)
+       turtle.forward(dim)
+       turtle.right(90)
+       turtle.forward(dim)
+       turtle.left(90)
+     
+
+За вежбу прилагоди програм тако да се димензије облика лако мењају
+(уведи променљиве које представљају дужину и ширину основног облика).
+
+Тестерица
+'''''''''
+
+.. questionnote::
+
+   Напиши програм којим корњача црта тестерицу са 10 зубаца. Угао при
+   врху сваког зупца треба да буде 45 степени, а размак између два
+   суседна зупца 25 корака (покушај да на основу тога одредиш дужину
+   косих линија које се цртају).
+
+   
+.. activecode:: тестерица
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dopuni program
+   ====
+   import turtle
+
+   for i in range(10):
+       turtle.left(45)
+       turtle.forward(35)
+       turtle.right(135)
+       turtle.forward(25)
+       turtle.left(90)
+
+Насумично кретање
+'''''''''''''''''
+       
+.. questionnote::
+
+   Напиши програм којим се корњача насумично креће по екрану. У сваком
+   кораку иде напред између 20 и 40 пиксела, а затим се окреће
+   насумично налево између 0 и 360 степени.
+
+Насумично одабран број из интервала :math:`[a, b]` можеш добити помоћу
+`random.randint(a, b)`.
+
+.. activecode:: корњача_насумично
+   :nocodelens:
+   :playtask:
+
+   import turtle, random
+   turtle.speed(0)
+   for i in range(100):
+       turtle.forward(random.randint(0, 0)) # ispravi ovaj red
+       turtle.left(0)                       # ispravi ovaj red
+   ====
+   import turtle, random
+   for i in range(100):
+       turtle.forward(random.randint(20, 40))
+       turtle.left(random.randint(0, 360))
+
+Насумично кретање - окрети у оба смера
+''''''''''''''''''''''''''''''''''''''
+       
+.. questionnote::
+
+   Исправи претходни програм тако да се корњача и налево и надесно
+   (никада више од 180 степени).
+
+.. activecode:: корњача_насумично_конвексни
+   :nocodelens:
+   :playtask:
+
+   import turtle, random
+   turtle.speed(0)
+   for i in range(100):
+       turtle.forward(random.randint(20, 40))
+       ugao = random.randint(0, 360)
+       if True:               # ispravi ovaj red
+           turtle.left(0)     # ispravi ovaj red
+       else:
+           turtle.right(0)    # ispravi ovaj red      
+   ====
+   import turtle, random
+   for i in range(100):
+       turtle.forward(random.randint(20, 40))
+       ugao = random.randint(0, 360)
+       if ugao <= 180:
+           turtle.left(ugao)
+       else:
+           turtle.right(360 - ugao)
+
+Плус
+''''
+   
+.. questionnote::
+
+   Напиши програм којим корњача исцртава плус (сваки од четири крака
+   плуса је дугачак 50 корака).
+
+У сваком кораку корњача може да оде напред 50 пиксела, да се се врати
+назад 50 пиксела и да се окрене за 90 степени.
+   
+.. activecode:: корњача_плус
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dovrši program
+   ====
+   import turtle
+   
+   for i in range(4):
+       turtle.forward(50)
+       turtle.backward(50)
+       turtle.right(90)
+
+Осмокрака звезда
+''''''''''''''''
+
+.. questionnote::
+
+   Модификуј претходни програм тако да се црта звездица која има 8
+   кракова дужине од по 50 корака.
+      
+.. activecode:: корњача_осмокраки_плус
+   :nocodelens:
+   :playtask:
+  
+   import turtle
+   # dovrši program
+   ====
+   import turtle
+   
+   for i in range(8):
+       turtle.forward(50)
+       turtle.backward(50)
+       turtle.left(45)
+
+n-токрака звезда
+''''''''''''''''
+       
+.. questionnote::
+
+   Напиши програм на основу којег корњача црта звездицу која се
+   састоји од :math:`n` кракова дужине 50 корака, равномерно
+   распоређених у круг (сваки крак креће из центра).
+      
+.. activecode:: корњача_n-токраки_плус
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dovrši program
+   ====
+   import turtle
+   turtle.speed(10)
+   n = 16
+   for i in range(n):
+       turtle.forward(50)
+       turtle.backward(50)
+       turtle.left(360 / n)
+
+
+Парни и непарни кракови различите дужине
+''''''''''''''''''''''''''''''''''''''''
+       
+.. questionnote::
+
+   Модификуј претходни програм тако да је сваки други крак краћи
+   (дугачак 30 корака).
+
+.. activecode:: корњача_n-токраки_пахуља
+   :nocodelens:
+   :playtask:
+
+   import turtle
+   # dovrši program
+   ====
+   import turtle
+   
+   turtle.speed(10)
+   n = 36
+   for i in range(n):
+       if i % 2 == 0:
+           duzina = 50
+       else:
+           duzina = 30
+       turtle.forward(duzina)
+       turtle.backward(duzina)
+       turtle.left(360/n)
+       
+           
+Слободно цртање
+'''''''''''''''
+
+На крају, остављамо ти празан простор да нацрташ шта год желиш.
+
+.. activecode:: празно_платно
+   :nocodelens:
+
+   import turtle
+
