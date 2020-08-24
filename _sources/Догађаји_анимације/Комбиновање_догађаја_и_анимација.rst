@@ -1,0 +1,287 @@
+30.1. Комбиновање догађаја и анимација
+======================================
+
+У неким ситуацијама желимо да комбинујемо анимације и догађаје. На
+пример, желимо да мишем померамо анимиране ликове по екрану. То није
+тешко остварити коришћењем техника које смо већ објаснили у поглављима
+о анимацијама и догађајима. У наредним програмима обично ће корисник
+дефинисати три помоћне функције: ``crtaj``, ``novi_frejm`` и
+``obradi_dogadjaj`` и њихов ће задатак бити исти као и у програмима
+које смо до сада писали.
+
+Коришћење библиотеке PyGameBg омогућава да се функцији ``frame_loop``
+као трећи параметар зада и функција ``obradi_dogadjaj`` чиме се
+постиже да се приликом преласка на сваки наредни фрејм обраде сви
+догађаји који су наступили између приказивања два фрејма. Нагласимо да
+се догађаји не обрађују чим наступе, па ако је фреквенција смењивања
+фрејмова ниска, тада корисник може осетити мали застој у одзиву
+програма.
+
+Корачање до циља
+''''''''''''''''
+
+.. questionnote::
+
+   Лик стоји на малој платформи која се мишем може померати
+   лево-десно. Када се платформа помери, лик полако корача све док не
+   стигне до ње.
+
+.. activecode:: setanje_do_platforme
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/setanje.py
+
+   # učitavamo u listu slike setanje1.png, setanje2.png, ..., setanje5.png
+   slike_unapred = []   # niz u koji dodajemo slike
+   slike_unazad = []   # niz u koji dodajemo slike
+   for i in range(1, 6):
+       naziv_slike = "setanje" + str(i) + ".png"  # gradimo naziv slike od delova
+       slika = pg.image.load(naziv_slike)
+       slike_unapred.???
+       slike_unazad.append(pg.transform.flip(slika, True, False))  # pravimo sliku u ogledalu
+   slike = slike_unapred
+    
+   slika = 0   # indeks tekuće slike
+   x = 0       # x-koordinata leve ivice slike
+   cilj_x = 0  # x-koordinata do koje treba da stigne leva ivica slike
+    
+   def crtaj():
+       prozor.fill(pg.Color("white"))                          # bojimo pozadinu prozora u belo
+       prozor.blit(slike[slika], (x, 0))                       # prikazujemo sliku
+       # crtamo platformu
+       cilj_sredina_x = ???                                   # x koordinata sredine slike - sredina platforme
+       A = (cilj_sredina_x - 20, visina - 5)                  # krajnje tačke platforme
+       B = (???, ???)
+       pg.draw.line(prozor, pg.Color("black"), A, B, 10)
+    
+   def novi_frejm():
+       global slika, x
+       # slučaj kada je lik levo od platforme
+       if x < cilj_x:                        # ako je lik levo od platforme
+           x += 4                            #   pomeramo ga 4 piksela nadesno
+           slika = (slika + 1) % len(slike)  #   prelazimo na sledeću sliku
+           crtaj()                           #   poovo crtamo
+       # slučaj kada je lik desno od platforme
+       ???
+
+    
+   def obradi_dogadjaj(dogadjaj):
+       global cilj_x, slike
+       if dogadjaj.type == pg.KEYDOWN:                                  # taster na tastaturi
+           if dogadjaj.key == pg.LEFT:                               # strelica na desno
+               if cilj_x + slike[slika].get_width() <= sirina:   #   ako desna ivica slike ne ispada van desnog dela ekrana
+                   cilj_x += 20                                  #     pomeramo platformu 20 piksela nadesno
+                   slike = slike_unapred                         #     lik je okrenut nadesno
+           # dodaj obradu srelice na desno
+           ???
+
+
+
+Коришћење тајмера
+-----------------
+
+Још једно решење за прављење анимација подразумева да се направи
+*тајмер* (енгл. *timer*) који ће откуцавати у правилним временским
+интервалима. Откуцај тајмера подразумева генерисање одређеног догађаја
+у правилним временским интервалима. Тајмер се укључује помоћу функције
+``pg.time.set_timer``. Сваки пут када тајмер откуца, генерише се
+догађај који смо навели као први аргумент у позиву функције
+``pg.time.set_timer``, док је други аргумент у позиву број милисекунди
+након којих тајмер откуцава. Програмер, дакле, одређује који ће се
+догађај догађати као последица откуцаја тајмера (најчешће се користи
+догађај ``pg.USEREVENT`` који се не догађа аутоматски, већ се управо
+користи за овакве сврхе).
+
+Откуцај тајмера је, дакле, догађај као и сваки други, па се и основна
+структура програма поклапа са оном коју смо користили у програмима у
+којима смо обрађивали догађаје. Прегледности ради, догађај откуцаја
+тајмера можемо обрађивати у посебној помоћној функцији. Посматрајмо
+наредни кôд заснован на библиотеци PyGameBg.
+
+.. activecode:: animacija_event_wait_funkcije
+   :passivecode: true
+
+   import pygame as pg, pygamebg
+
+   # otvaramo prozor
+   pygamebg.open_window(...)
+
+
+   # crtamo scenu
+   def crtaj():
+       ...
+
+   # tajmer je otkucao - prelazimo na novi frejm
+   def obradi_otkucaj_tajmera():
+       ...
+       return True
+
+   # obrada događaja
+   def obradi_dogadjaj(dogadjaj):
+       if dogadjaj.type == pg.USEREVENT:   # otkucaj tajmera
+           return obradi_otkucaj_tajmera()
+       elif dogadaj.type == ???            # ostali dogadjaji
+           ...
+           return True
+       return False
+
+   pg.time.set_timer(pg.USEREVENT, 100)    # tajmer ce otkucavati nakon svakih 100 milisekundi
+
+   # započinjemo petlju obrade događaja
+   pg.event_loop(crtaj, obradi_dogadjaj)
+   
+Поновним позивом функције ``set_timer`` можемо променити интервал у
+ком ће тајмер откуцавати.
+
+Прикажимо неколико примера у којима се користи тајмер.
+
+Померање анимираног лика
+''''''''''''''''''''''''
+
+.. questionnote::
+
+   Напиши програм који омогућава померање стрелицама лика који све
+   време корача.
+
+.. activecode:: setanje_i_pomeranje
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/setanje3.py
+
+   # učitavamo u listu slike setanje1.png, setanje2.png, ..., setanje5.png
+   slike = []   # niz u koji dodajemo slike
+   for i in range(5):
+       naziv_slike = "setanje" + str(i + 1) + ".png"  # gradimo naziv slike od delova
+       slike.append(pg.image.load(naziv_slike))   # učitavamo sliku i dodajemo je na kraj niza
+    
+   slika = 0            # redni broj slike koja se prikazuje
+   (x, y) = (100, 100)  # polozaj slike
+    
+   def crtaj():
+       prozor.fill(pg.Color("white"))              # bojimo pozadinu prozora u belo
+       ???                                         # prikazujemo trenutnu sliku
+       
+   def obradi_otkucaj_tajmera():
+       global slika
+       slika = (slika + 1) % 5                    # prelazimo na narednu sliku
+       return True
+       
+   def obradi_dogadjaj(dogadjaj):
+       global ???
+       if dogadjaj.type == pg.USEREVENT:          # otkucaj tajmera
+          return obradi_otkucaj_tajmera()
+       elif dogadjaj.type == pg.KEYDOWN:          # pritisnut je taster na tastaturi
+           ???                                    # obrađujemo četiri strelice
+           return True
+    
+Покушај да овај задатак урадиш и без тајмера, коришћењем петље
+засноване на фрејмовима. Да би одзив тастатуре био задовољавајући
+тј. да би се догађаји обрађивали чешће, мораћеш да повећаш фреквенцију
+фрејмова (250 милисекунди одговара фреквенцији од 4 фрејма по секунди)
+и да исту слику приказујеш више пута.
+
+Семафор
+'''''''
+
+.. questionnote::
+
+   Напиши програм који симулира рад семафора. Прво се приказује зелено
+   светло које траје 4 секунде, након тога се укључује жуто светло
+   које траје секунду, након тога црвено које траје 3 секунде, затим
+   истовремено црвено и жуто која трају секунду, након чега се поново
+   укључује зелено и циклус понавља.
+   
+
+У низу ``svetla`` можемо чувати редом која се светла укључују и колико
+свако од њих траје. За свако светло чувамо уређени пар који као своју
+прву компоненту садржи тројку истинитосних вредности које говоре да ли
+је укључено редом црвено, жуто и зелено светло. Друга компонента је
+трајање светла у милисекундама. Тако, на пример, ``((True, True,
+False), 1000)`` означава да је црвено-жуто светло укључено током
+једне секунде, док ``((False, False, True), 4000)`` означава да је
+зелено светло укључено током четири секунде.
+
+Чуваћемо и редни број светла које тренутно треба да буде укључено и у
+сваком кораку ћемо га увећавати за 1 (у почетку може да буде
+постављено на 0, тако да рад семафора креће од црвеног светла). Када
+се цео циклус проврти, поново се враћамо на почетак (на зелено
+светло), тако што бројач светла тада постављамо на нулу. То можемо
+учинити једноставно било гранањем (након сваког увећавања
+провераваћемо да ли је бројач светла достигао укупан број светала и
+ако јесте, враћаћемо га на нулу) било модуларном аритметиком (након
+сваког увећавања израчунаћемо остатак при дељењу укупним бројем
+светала).
+
+Анимацију ћемо засновати на тајмеру који ћемо навијати тако да се
+огласи сваки пут када треба да се промени светло. Нагласимо да свако
+ново навијање тајмера (позив `pg.time.set_timer`) поништава старо.
+Дакле, сваки пут када се региструје догађај ``pg.USEREVENT``
+увећаваћемо редни број светла. Из низа ћемо читати податке о томе која
+светла треба да буду укључена и колико дуго. На основу тога ће се
+вршити цртање семафора и поново ћемо навијати тајмер на основу
+прочитане дужине трајања светла које се управо укључило.
+
+Што се тиче цртања, потребно је да проценимо величину три круга и
+њихов положај на екрану. Претпоставићемо да је размак између свака два
+светла једнак 10 пиксела, исто колики је и размак између горње ивице
+прозора и горњег светла и размак између доњег светла и доње ивице
+прозора. Дакле, гледано вертикално, висина екрана је попуњена са 4
+размака (сваки од њих је 10 пиксела) и 3 пречника светла. Дакле 6
+полупречника светала и 4 размака од по 10 пиксела једнаки су висини
+екрана, одакле лако можемо израчунати величину полупречника сваког
+светла. Центар сваког светла је хоризонтално смештен на половину
+екрана. Што се тиче вертикалне позиције центара, прво светло је од
+горње ивице удаљено за један размак и један полупречник светла, друго
+је удаљено за два размака (размак од горње ивице до горњег светла и
+размак између првог и другог светла) и три полупречника светла
+(пречник првог светла и полупречник другог), док је центар трећег
+светла од горње ивице удаљен за три размака (размак од горње ивице,
+размак између првог и другог и размак између другог и трећег светла) и
+пет полупречника светла (пречнике првог и другог и полупречник трећег
+светла).
+           
+.. activecode:: semafor
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/semafor.py
+
+   # redosled kojim se svetla pale i njihovo trajanje:
+   #    crveno       3 sekunde
+   #    crveno-žuto  1 sekunda
+   #    zeleno       4 sekunde
+   #    žuto         1 sekunda
+   svetla = [((True, False, False), 3000),
+             ((True, True, False), 1000),
+             ((False, False, True), 4000),
+             ((False, True, False), 1000)]
+    
+   broj_svetla = 0   # redni broj svetla koje se uključuje
+    
+   def crtaj():
+       # crtamo semafor
+       prozor.fill(pg.Color("white"))
+       razmak = 10                    # razmak između susednih svetala i između svetla i gornje tj. donje ivice prozora
+       cx = sirina / 2                # centar svakog svetla je horizontalno na sredini prozora
+       r = (visina - 4 * razmak) / 6  # poluprečnik svakog svetla (3 prečnika, dva razmaka između svetala i dva razmaka od ivice daju visinu prozora)
+       ((crveno, zuto, zeleno), trajanje) = svetla[broj_svetla]  # čitamo boju i trajanje trenutnog svetla
+       if crveno:    # crtamo crveno svetlo (ako je potrebno)
+           cy = r + razmak
+           pg.draw.circle(prozor, pg.Color("red"), (round(cx), round(cy)), round(r))
+       if zuto:     # crtamo žuto svetlo (ako je potrebno)
+           cy = ???
+           ???
+       if zeleno:   # crtamo zeleno svetlo (ako je potrebno)
+           cy = ???
+           ???
+    
+   def na_otkucaj_tajmera():
+       global broj_svetla                             # otkucao je tajmer i menja se svetlo
+       broj_svetla = (broj_svetla + 1) % len(svetla)  # prelazimo na naredno svetlo
+       trajanje = ???                                 # čitamo trajanje narednog svetla
+       pg.time.set_timer(???, ???)                    # zakazujemo sledeći otkucaj tajmera

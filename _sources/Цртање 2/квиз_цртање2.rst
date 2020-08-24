@@ -1,0 +1,224 @@
+21.6. Квиз - Цртање  
+===================
+
+Питање 1.
+~~~~~~~~~
+
+.. dragndrop:: pygame_quiz_koordinate_upari_simetricne
+    :feedback: Покушај поново!
+    :match_1: (30, 40)|||(370, 40)
+    :match_2: (120, 40)|||(280, 40)
+    :match_3: (170, 40)|||(230, 40)
+    :match_4: (40, 80)|||(40, 320)
+
+    Повежи тачке са њима симетричним тачкама у односу на усправну или водоравну осу симетрије 
+    прозора који је широк и висок по 400 пиксела.
+
+
+Питање 2.
+~~~~~~~~~
+
+.. fillintheblank:: pygame_quiz_simetricno_oko_vertikale
+
+    Ако је прозор ширине 300 пиксела, које су координате тачке
+    која је симетрична тачки (100, 100) у односу на вертикалну
+    осу симетрије прозора (резултат напиши у облику уређеног пара)?
+
+    - :\(200,[ ]*100\): Тачно!
+      :\(200,[ ]*[0-9]+\): Пажљивије израчунај координату y.
+      :\([0-9]+,[ ]*100\): Пажљивије израчунај координату x.
+      :\([0-9]+,[ ]*[0-9]+\): Пажљивије израчунај обе координате.
+      :.*: Резултат запиши у облику уређеног пара.
+
+
+Питање 3. 
+~~~~~~~~~
+
+.. fillintheblank:: pygame_quiz_simetricno_oko_horizontale
+
+    Ако је прозор висине 300 пиксела, које су координате тачке која је
+    симетрична тачки (100, 100) у односу на хоризонталну осу симетрије
+    прозора (резултат напиши у облику уређеног пара)?
+
+    - :\(100,[ ]*200\): Тачно!
+      :\(100,[ ]*[0-9]+\): Пажљивије израчунај координату y.
+      :\([0-9]+,[ ]*200\): Пажљивије израчунај координату x.
+      :\([0-9]+,[ ]*[0-9]+\): Пажљивије израчунај обе координате.
+      :.*: Резултат запиши у облику уређеног пара.
+
+
+Питање 4.
+~~~~~~~~~
+
+.. mchoice:: trouglovi
+   :answer_a: Два троугла симетрично пресликана у односу на вертикалну осу симетрије прозора
+   :feedback_a: Нетачно
+   :answer_b: Два троугла симетрично пресликана у односу на хоризонталну осу симетрије прозора
+   :feedback_b: Тачно
+   :answer_c: Два несиметрична троулга
+   :feedback_c: Нетачно
+   :answer_d: Два симетрично пресликана троугла који се додирују
+   :feedback_d: Нетачно    
+   :correct: b
+    
+   Шта ће исцртати следеће две функције у прозору ширине 300 пиксела и висине 300 пиксела? 
+
+   .. code-block:: python
+  
+      pg.draw.polygon(prozor, pg.Color("gray"), [(50, 100), (150, 100), (100, 50)])
+      pg.draw.polygon(prozor, pg.Color("gray"), [(50, 200), (150, 200), (100, 250)])
+
+   Изабери тачан одговор:
+
+Питање 5.
+~~~~~~~~~
+
+.. mchoice:: elipse_simetrija
+   :answer_a: pg.draw.ellipse(prozor, pg.Color("gray"), (200, 100, 50, 80) )
+   :feedback_a: Тачно
+   :answer_b:  pg.draw.ellipse(prozor, pg.Color("gray"), (250, 100, 50, 80) )
+   :feedback_b: Нетачно    
+   :answer_c: pg.draw.ellipse(prozor, pg.Color("gray"), (50, 200, 50, 80) )
+   :feedback_c: Нетачно  
+   :answer_d: pg.draw.ellipse(prozor, pg.Color("gray"), (100, 180, 50, 80) )
+   :feedback_d: Нетачно    
+   :correct: a
+    
+   Дата линија програма исцртава једну елипсу. Ако је прозор је ширине 300 пиксела и висине 300 пиксела, која од понуђених функција ће исцртати елипсу симетричну већ нацртаној у односу на вертикалну осу симетрије прозора?
+
+   .. code-block:: python
+  
+      pg.draw.ellipse(prozor, pg.Color("gray"), (50, 100, 50, 80) )
+
+   Изабери тачан одговор:
+
+Питање 6.
+~~~~~~~~~
+
+.. mchoice:: pomeranje_duzi
+    :answer_a: pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1+100), (x, y2))
+    :feedback_a: Нетачно    
+    :answer_b: pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1+100), (x+100, y2+100))
+    :feedback_b: Нетачно    
+    :answer_c: pygame.draw.line(prozor, pygame.Color("black"), (x, y1+100), (x, y2+100))
+    :feedback_c: Нетачно    
+    :answer_d: pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1), (x+100, y2))
+    :feedback_d: Тачно
+    :answer_e: pygame.draw.line(prozor, pygame.Color("black"), (x, y1), (x+100, y2+100))
+    :feedback_e: Нетачно    
+    :correct: d
+    
+    Једна усправна дуж је нацртана наредбом
+
+    .. code-block:: python
+
+        pygame.draw.line(prozor, pygame.Color("black"), (x, y1), (x, y2))
+
+    Којом наредбом ћемо нацртати исту такву дуж, померену 100 пиксела удесно?
+
+    Изабери тачан одговор:
+ 
+Питање 7.
+~~~~~~~~~
+
+.. mchoice:: cifra_osam
+    :answer_a: Секу се
+    :feedback_a: Нетачно    
+    :answer_b: Додирују се
+    :feedback_b: Тачно
+    :answer_c: Немају заједничких тачака
+    :feedback_c: Нетачно    
+    :answer_d: Први се налази унутар другог
+    :feedback_d: Нетачно    
+    :correct: b
+    
+    Какав је међусобни положај кругова нацртаних овим наредбама?
+
+    .. code-block:: python
+
+        pygame.draw.circle(prozor, pygame.Color("black"), (x, y-r), r, 1)
+        pygame.draw.circle(prozor, pygame.Color("black"), (x, y+r), r, 1)
+
+
+    Изабери тачан одговор:
+
+Питање 8.
+~~~~~~~~~
+
+.. mchoice:: cifra_jedan
+    :answer_a: У тачки "A"
+    :feedback_a: Нетачно    
+    :answer_b: У тачки "B"
+    :feedback_b: Тачно
+    :answer_c: У тачки "C"
+    :feedback_c: Нетачно    
+    :answer_d: У тачки "D"
+    :feedback_d: Нетачно    
+    :correct: b
+    
+    Извршавањем следеће две наредбе исцртава се облик цифре 1.
+
+    .. code-block:: python
+
+        pygame.draw.line(prozor, pygame.Color("black"), (x, y+2*a), (x+a, y), 3)
+        pygame.draw.line(prozor, pygame.Color("black"), (x+a, y), (x+a, y+4*a), 3)
+      
+    Где je при томе тачка (x, y)?
+
+    .. image:: ../../_images/pg_rel_koord_cifra1.png
+
+
+    Изабери тачан одговор:
+
+Питање 9.
+~~~~~~~~~
+
+.. mchoice:: iks_oks_zuta
+    :answer_a: (x, y+2*d), (x+3*d, y+2*d)
+    :feedback_a: Тачно
+    :answer_b: (x, y+d), (x+3*d, y+d)
+    :feedback_b: Нетачно    
+    :answer_c: (x+2*d, y), (x+2*d, y+3*d)
+    :feedback_c: Нетачно    
+    :answer_d: (x, y+2*d), (x+2*d, y+2*d)
+    :feedback_d: Нетачно    
+    :correct: a
+    
+    Нека је на следећој слици горње лево теме решетке у тачки (x, y), а страница малих квадрата нека је дужине *d*.
+
+        .. image:: ../../_images/pg_rel_koord_iksoks_zuta.png
+
+    Које су координате крајева жуте дужи?
+
+    Изабери тачан одговор:
+ 
+
+Питање 10.
+~~~~~~~~~~
+
+.. mchoice:: cifra_cetiri
+    :answer_a: T1, T3
+    :feedback_a: Тачно
+    :answer_b: T2, T3
+    :feedback_b: Нетачно    
+    :answer_c: T1, T4
+    :feedback_c: Нетачно    
+    :answer_d: T2, T4
+    :feedback_d: Нетачно    
+    :correct: a
+    
+    Извршавањем следећих наредби треба да се исцрта облик цифре 4.
+
+    .. code-block:: python
+
+        T1 = (x, y+3*a)
+        T2 = (x+3*a, y+3*a)
+        T3 = (x+2*a, y)
+        T4 = (x+2*a, y+4*a)
+        pygame.draw.line(prozor, pygame.Color("black"),  T1,  T2, 1) # vodoravna
+        pygame.draw.line(prozor, pygame.Color("black"),  T3,  T4, 1) # uspravna
+        pygame.draw.line(prozor, pygame.Color("black"), ___, ___, 1) # kosa
+
+    Шта треба да стоји уместо линија у последњој наредби да би била исцртана четворка?
+
+    Изабери тачан одговор:

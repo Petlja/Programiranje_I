@@ -1,0 +1,276 @@
+29.2. Догађаји тастатуре
+========================
+
+Сваки пут када корисник притисне и када отпусти неки тастер на
+тастатури региструје се догађај. За сваки клик тастером догоде се два
+посебна догађаја: ``pg.KEYDOWN`` и ``pg.KEYUP``. 
+
+У склопу обраде догађаја притиска тастера, често нас занима да сазнамо
+који је тастер притиснут. Догађај типа ``pg.KEYDOWN`` податак о томе
+чува у пољу ``key``, па ако је догађај сачуван у променљивој
+``dogadjaj``, анализом вредности ``dogadjaj.key`` можемо одредити који
+је тастер притиснут и реаговати на одговарајући начин. Ако је
+притиснута нека од стрелица, ``dogadjaj.key`` ће имати вредности
+``pg.K_LEFT`` (стрелица на лево), ``pg.K_RIGHT`` (стрелица на десно),
+``pg.K_UP`` (стрелица на горе) или ``pg.K_DOWN`` (стрелица на доле).
+Сличне константе постоје и за друге тастере (на пример, за слова
+можемо користити ``pg.K_a``, ``pg.K_b``, ..., ``pg.K_z``).
+
+
+Бојење круга тастатуром
+'''''''''''''''''''''''
+
+.. questionnote::
+
+   Напиши програм који ће цртати круг на центру екрана који ће бити
+   обојен док је неки тастер притиснут.
+
+- Контролу да ли круг треба или не треба да буде обојен вршићемо
+  помоћу глобалне логичке променљиве ``obojen``.
+
+- У функцији ``crtaj`` ћемо цртати круг, чија ће дебљина зависити од
+  вредности глобалне променљиве ``obojen``. Подсетимо се, дебљина 0
+  означава да круг треба да буде испуњен.
+
+- Приликом сваког догађаја типа ``pg.KEYDOWN`` променљивој ``obojen``
+  ћемо додељивати вредност ``True``, а приликом сваког догађаја типа
+  ``pg.KEYUP`` вредност ``False``.
+
+.. activecode:: bojenje_kruga_tastaturom
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/obojen_krug_tastaturom.py
+
+   obojen = False   # promenljiva koja određuje da li je krug obojen ili nije
+
+   # crtanje scene
+   def crtaj():
+       debljina = 0 if obojen else 1
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, pg.Color("red"), (200, 200), 100, ???)
+
+   # obrada događaja
+   def obradi_dogadjaj(dogadjaj):
+       global obojen
+       if dogadjaj.type == pg.KEYDOWN:    # prisnut je taster
+           ???                            # krug postaje obojen
+           return True                    # treba ponovo nacrtati scenu
+       elif dogadjaj.type == pg.KEYUP:    # otpušten je taster
+           ???                            # krug postaje neobojen
+           return True                    # treba ponovo nacrtati scenu
+       return False                       # ne treba punovo crtati scenu
+
+                 
+Покушај да модификујеш претходни програм тако што ћеш док је тастер
+притиснут уместо црвеног круга цртати плави квадрат. Покушај да га
+модификујеш тако да реагује само на притисак и отпуштање тастера за
+размак.
+
+Шетање лоптице тастатуром
+'''''''''''''''''''''''''
+
+.. questionnote::
+
+   Напиши програм у којем корисник шета лоптицу по екрану
+   тастатуром. 
+
+- Стање програма је одређено положајем лоптице. Помоћу две глобалне
+  променљиве ``x`` и ``y`` памтићемо тренутни положај центра лоптице
+  на екрану (иницијализоваћемо их тако да се лоптица налази у центру
+  екрана).  Променљива ``r`` садржаће полупречник лоптице, али се она
+  неће мењати током рада програма.
+
+- У функцији ``crtaj`` бојићемо позадину прозора у бело (да би се
+  обрисао његов претходни садржај) и исцртаваћемо плаву лоптицу на
+  положају одређеном текућим стањем програма (вредностима променљивих
+  ``x`` и ``y``).
+  
+- Догађаје ћемо обрађивати у посебној функцији ``obradi_dogadjaj``.
+  Приликом сваког притиска на тастер стрелице, координата ``x`` или
+  координата ``y`` центра лоптице треба за мало да се промени (увећа
+  или умањи, у зависности од тога која је стрелица притиснута). То
+  колико ће се мало лоптица померити одређено је променљивама ``dx`` и
+  ``dy`` (поставићемо их обе на 10 пиксела). Када притиснемо стрелицу
+  на десно, тада увећавамо променљиву ``x`` за вредност
+  ``dx``. Слично, када притиснемо стрелицу на лево, тада умањујемо
+  променљиву ``x`` за ``dx``, када притиснемо стрелицу на горе тада
+  умањујемо променљиву ``y`` за ``dy``, а када притиснемо стрелицу на
+  доле, тада увећавамо променљиву ``y`` за ``dy``.
+
+
+.. activecode:: setanje_loptice_tastaturom
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/setanje_loptice_tastaturom.py
+
+   (x, y) = (sirina // 2, visina // 2)  # koordinate centra loptice (inicijalno je ona u centru prozora)
+   r = 40                               # poluprečnik loptice
+   (dx, dy) = (10, 10)                  # pomeraji po x i y koordinati
+    
+   def crtanje():
+       prozor.fill(pg.Color("white"))                       # bojimo prozor u belo
+       pg.draw.circle(prozor, pg.Color("blue"), (x, y), r)  # crtamo lopticu
+    
+   def obradi_dogadjaj(dogadjaj):
+       global x, y
+       if dogadjaj.type == pg.KEYDOWN:      # pritisak tastera na tastaturi
+           # strelica na levo
+           if dogadjaj.key == pg.K_LEFT:    # strelica na levo
+               x -= dx                      # pomeramo lopticu na levo
+               return True                  # treba ponovo nacrtati ekran
+           # strelica na desno
+           ???
+           # strelica na gore
+           ???
+           # strelica na dole
+           ???
+           ???
+       return False                         # ne treba ponovo nacrtati ekran
+
+Решење са речником
+&&&&&&&&&&&&&&&&&&
+       
+Уместо гранања којим испитујемо која стрелица је притиснута, можемо
+направити речник који сваком тастеру придружује уређен пар који
+представља померај обе координате који се додаје на текуће координате
+центра лоптице када се тај тастер притисне.
+
+.. activecode:: recnik_pomeraja
+   :passivecode: true
+
+   pomeraj = {pg.K_LEFT: (-dx, 0),
+              pg.K_RIGHT: (dx, 0),
+              pg.K_DOWN: (0, dy),
+              pg.K_UP: (0, -dy)}
+   
+
+Tада се реакција на притисак тастера може реализовати веома једноставно.
+
+.. activecode:: recnik_pomeraja_reakcija
+   :passivecode: true
+
+   # pritisak tastera na tastaturi
+   if dogadjaj.type == pg.KEYDOWN:
+       if dogadjaj.key in pomeraj:
+           # pomeramo centar loptice za odgovarajući pomeraj
+           (DX, DY) = pomeraj[dogadjaj.key]
+           x += DX
+           y += DY
+
+Шетање свемирског брода
+&&&&&&&&&&&&&&&&&&&&&&&
+           
+Додатно, уместо цртања лоптице можемо да шетамо неку сличицу по екрану
+и тиме добијемо основу неке једноставне игрице. То, на пример, може
+бити следећи свемирски брод (слика се зове ``spaceship.png`` и не
+заборави да је ископираш ако покрећеш овај пример у локалу).
+
+.. image:: ../../_images/spaceship.png
+
+.. activecode:: setanje_lika_tastaturom
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/setanje_lika_tastaturom.py
+
+   brod = pg.image.load('spaceship.png')  # učitavamo sliku svemirskog broda
+   brod_sirina = brod.get_width()         # očitavamo dimenzije slike
+   brod_visina = ???
+    
+   (x, y) = (sirina / 2, visina / 2)   # koordinate centra broda (inicijalno u centru prozora)
+   (dx, dy) = (10, 10)                 # pomeraji po x i y koordinati
+    
+   def crtanje():
+       prozor.fill(pg.Color("black"))        # bojimo prozor u belo
+       prozor.blit(brod, (x - ???, y - ???)) # crtamo brod tako da mu je centar u (x, y)
+    
+   def obradi_dogadjaj(dogadjaj):
+       global x, y
+       # pomeraji koji odgovaraju strelicama
+       pomeraj = {pg.K_LEFT: (-dx, 0),
+                  ???,
+                  ???,
+                  ???}
+       if dogadjaj.type == pg.KEYDOWN:      # pritisak tastera na tastaturi
+           if dogadjaj.key in pomeraj:
+               # pomeramo centar broda za odgovarajući pomeraj
+               (DX, DY) = pomeraj[dogadjaj.key]
+               ???   # ažuriramo x koordinatu
+               ???   # ažuriramo y koordinatu
+               # pošto je brod pomeren, ponovo ćemo crtati scenu
+               return True
+       return False # ne treba ponovo crtati scenu
+
+
+Сударање са ивицама
+&&&&&&&&&&&&&&&&&&&
+      
+.. questionnote::
+
+   Модификуј програм у којем се шетала лоптица тако да сваки пут када
+   лоптица удари у ивицу екрана, она мења боју на насумичан начин.
+
+- Стање програма проширујемо глобалном променљивом ``boja`` која ће
+  садржати боју лоптице (она ће бити постављена насумично, помоћу
+  функције ``nasumicna_boja`` која је већ имплементирана у "сивом
+  коду").
+
+- Функцију ``crtaj`` ћемо модификовати тако да у обзир узме и вредност
+  променљиве ``boja``.
+  
+- Након сваке промене положаја центра лоптице (што се дешава у склопу
+  обраде догађаја), треба проверити да ли је она испала ван граница
+  екрана и ако јесте, вратити је и променити јој боју. Притиском
+  стрелица на десно лоптица која је била на екрану је могла испасти
+  једино преко десне ивице екрана. Зато је приликом реакције на
+  догађај притиска тог тастера довољно само проверити да ли је десни
+  крај лоптице десно од десне ивице екрана тј. да ли је вредност ``x +
+  r`` већа од ширине екрана тј. вредности променљиве ``sirina``. Ако
+  јесте, тада ``x`` можемо поставити на ``sirina - r`` (што је
+  најдешњи положај лоптице у коме се она још налази на екрану) и
+  променити јој насумично боју. Веома слично, приликом реаговања на
+  догађај притиска стрелице на лево умањиваћемо ``x`` за ``dx``,
+  проверавати да ли је ``x - r`` постало негативно и ако јесте
+  постављати ``x`` на ``r`` и лоптици мењати боју. Аналогно ћемо
+  поступати и у случају друге две стрелице (једино што ћемо тада
+  мењати ``y`` за ``dy``).
+         
+.. activecode:: setanje_loptice_tastaturom_sudari
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/setanje_loptice_tastaturom_sudari.py
+
+   (x, y) = (sirina / 2, visina / 2)   # koordinate centra prozora
+   boja = nasumicna_boja()             # boja loptice se odredjuje nasumično
+   r = 40                              # poluprečnik loptice
+   (dx, dy) = (10, 10)                 # pomeraji po x i y koordinati
+    
+   def crtaj():
+       prozor.fill(pg.Color("white"))                        # bojimo prozor u belo
+       pg.draw.circle(prozor, boja, (round(x), round(y)), r) # crtamo lopticu
+    
+   def obradi_dogadjaj(dogadjaj):
+       global x, y, boja
+    
+       if dogadjaj.type == pg.KEYDOWN:
+           # strelica na levo
+           if dogadjaj.key == pg.K_LEFT:
+               x -= dx                      # pomeramo lopticu na levo
+               if x - r < 0:                # ako je ispala van prozora
+                   x = r                    #    vraćamo je
+                   boja = nasumicna_boja()  #    menjamo joj boju
+               return True                  # treba ponovo nacrtati scenu
+           # strelica na desno
+           ???
+           # strelica na gore
+           ???
+           # strelica na dole
+           ???
+       return True                  # ne treba ponovo nacrtati scenu

@@ -1,0 +1,238 @@
+28.3. Квиз - судари објеката на екрану
+======================================
+
+Питање 1.
+~~~~~~~~~
+
+.. mchoice:: sudari_loptica
+    :answer_a: Прва
+    :feedback_a: Нетачно    
+    :answer_b: Обе
+    :feedback_b: Тачно
+    :answer_c: Друга
+    :feedback_c: Нетачно    
+    :answer_d: Ниједна
+    :feedback_d: Нетачно    
+    :correct: b
+    
+    Која од следећих функција проверава да ли су се две лоптице судариле
+
+    (1)
+        .. code-block:: python
+
+            def sudar_loptica():
+                razmak_centara = math.sqrt((x_koordinata_prvog_kruga-x_koordinata_drugog_kruga)**2 + (y_koordinata_prvog_kruga-y_koordinata_drugog_kruga)**2)
+                return razmak_centara < 2*poluprecnik_krugova
+
+    (2)
+        .. code-block:: python
+
+            def sudar_loptica():
+                razmak_centara = math.sqrt((x_koordinata_prvog_kruga-x_koordinata_drugog_kruga)**2 + (y_koordinata_prvog_kruga-y_koordinata_drugog_kruga)**2)
+                if razmak_centara < 2*poluprecnik_krugova:
+                    return True
+
+    
+    Изабери тачан одговор:
+
+
+Питање 2.
+~~~~~~~~~
+
+.. mchoice:: sudari_linija
+    :answer_a: 1
+    :feedback_a: Нетачно    
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Тачно
+    :answer_d: 4
+    :feedback_d: Нетачно    
+    :correct: c
+    
+    Која од следећих функција проверава да ли се круг судара са хоризонталном ивицом екрана?
+
+    .. code-block:: python
+
+        (1)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if x_centar_kruga - poluprecnik_kruga <0:
+                    return True
+
+        (2)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if x_centar_kruga - poluprecnik_kruga < 0 and x_centar_kruga + poluprecnik_kruga > sirina:
+                    return True
+
+        (3)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if x_centar_kruga - poluprecnik_kruga <0 or x_centar_kruga + poluprecnik_kruga > sirina:
+                    return True
+
+        
+        (4)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if x_centar_kruga + poluprecnik_kruga <0 or x_centar_kruga - poluprecnik_kruga > sirina:
+                    return True
+
+    Изабери тачан одговор:
+
+Питање 3.
+~~~~~~~~~
+
+.. mchoice:: sudari_ivice
+    :answer_a: 1
+    :feedback_a: 
+    :answer_b: 2
+    :feedback_b: Тачно   
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :answer_d: 4
+    :feedback_d: Нетачно    
+    :correct: c
+    
+    Која од следећих функција проверава да ли се квадрат сударио са горњом/доњом ивицом екрана?  
+
+    .. code-block:: python
+
+        (1)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if y_gornje_levo_teme  <0 or y_gornje_levo_teme_ + stranica_kvadrata > visina:
+                    return True
+            
+
+        (2)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if y_gornje_levo_teme_ - polovina_stranice <0
+                    return True
+
+        (3)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if y_gornje_levo_teme  <0 and y_gornje_levo_teme_ + stranica_kvadrata > visina:
+                    return True
+
+        
+        (4)
+        .. code-block:: python
+
+            def sudar_sa_ivicom():
+                if y_gornje_levo_teme - stranica kvadrata <0 or y_gornje_levo_teme_ - stranica_kvadrata > visina:
+                    return True
+
+
+    Изабери тачан одговор:
+
+
+Питање 4.
+~~~~~~~~~
+
+.. mchoice:: sudari_dopuni
+    :answer_a: Сваки круг има своју брзину
+    :feedback_a: Тачно
+    :answer_b: Брзина кругова се мења
+    :feedback_b: Нетачно    
+    :answer_c: Кругови се одбијају о ивице прозора
+    :feedback_c: Нетачно    
+    :answer_d: кругови мењају боју при сваком исцртавању фрејма
+    :feedback_d: Нетачно    
+    :correct: a
+    
+    Дата је функција *nov_frejm*, која се позива одређени број пута у секунди и анимира кретање *n* кругова (изостављена је иницијализација глобалних података, али треба претпоставити да су сви подаци на почетку различити). Сваки елемент листе *krugovi* је торка која описује један круг.
+
+    .. code-block:: python
+
+      
+        import pygame as pg
+        import pygamebg
+
+        (sirina, visina) = (400, 450)    # otvaramo prozor
+        prozor = pygamebg.open_window(sirina, visina, "zadatak_novifrejm")
+
+        (x, y) = (sirina // 2, visina // 2) 
+        (dx, dy) = (2, 2)  
+        r = 30             
+
+        def crtaj():
+            prozor.fill(pg.Color("white"))
+            pg.draw.circle(prozor, pg.Color("black"), (x, y), r)
+
+        ???????
+
+        pygamebg.frame_loop(100, novi_frejm)
+
+
+
+    Која од следећих функција допуњује код тако да се лоптица одбија од ивица екрана?  
+
+    .. code-block:: python
+
+        (1)
+        .. code-block:: python
+
+            def novi_frejm():
+                global x, y, dx, dy  
+                x += dx
+                y += dy
+                if x - r < 0 or x + r > sirina:
+                    dx = -dx
+                if y - r < 0 or y + r > visina:
+                    dy = -dy
+                crtaj()
+            
+
+        (2)
+        .. code-block:: python
+
+            def novi_frejm():
+                global x, y, dx, dy  
+                x += dx
+                y += dy
+                if x + r < 0 or x - r > sirina:
+                    dx = -dx
+                if y + r < 0 or y - r > visina:
+                    dy = -dy
+                crtaj()
+
+        (3)
+        .. code-block:: python
+
+            def novi_frejm():
+                global x, y, dx, dy  
+                x += dx
+                y += dy
+                if x + r < 0 and x - r > sirina:
+                    dx = -dx
+                if y + r < 0 and y - r > visina:
+                    dy = -dy
+                crtaj()
+
+        
+        (4)
+        .. code-block:: python
+
+            def novi_frejm():
+                x += dx
+                y += dy
+                if x + r < 0 or x - r > sirina:
+                    dx = -dx
+                if y + r < 0 or y - r > visina:
+                    dy = -dy
+                crtaj()
+
+
+    Изабери тачан одговор:
+

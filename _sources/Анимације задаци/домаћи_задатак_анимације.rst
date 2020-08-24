@@ -1,0 +1,69 @@
+27.2. Домаћи задатак - анимације
+================================
+
+.. questionnote::
+
+   Напиши програм који приказује дигитални сат.
+
+Приказ тренутног времена потребно је извршити сваке секунде. Задатак
+ћемо решити помоћу анимације која је подешена тако да се сваке прелази
+на нови фрејм и исцртава садржај прозора.
+
+Ова анимација је необична јер нема потребе за представљањем стања
+прозора. Дакле, нећемо имати нити глобалне променљиве нити функцију за
+прелазак на нови фрејм. У функцији ``crtaj`` очитаваћемо тренутно
+време и приказивати га на средини екрана.
+
+Језик Python нам пружа подршку да очитамо тренутно време системског
+сата рачунара на ком се програм извршава. Функција ``datetime.now()``
+из модула ``datetime`` (који увозимо на почетку програма помоћу
+``import datetime``) враћа тренутно време у облику структуре чије поље
+``hour`` садржи број сати (од 0 до 23), поље ``minute`` садржи број
+минута (од 0 до 59) и ``second`` садржи број секунди (од 0 до 59).  На
+основу тога поставићемо вредности променљивих ``sati``, ``minuti``,
+``sekunde``.
+
+На основу броја сати, минута и секунди градимо текст који ћемо
+приказати. Желимо да и сати и минути и секунде увек имају тачно две
+цифре (ако су једноцифрени, желимо да се допуне водећим нулама). У
+језику Python ниску ``str`` можемо допунити водећим нулама до дужине
+``n`` позивом ``str.rjust(n, "0")``. Подсетимо се да ниске
+надовезујемо применом оператора ``+``.
+
+Када смо направили ниску која садржи тренутно време приказујемо је на
+средини прозора. То радимо на потпуно исти начин као у примерима које
+смо приказали у поглављу о цртању (можемо да дефинишемо посебну
+функцију која исписује дати текст тако да му центар буде у датој
+тачки).
+
+Допуни наредни програм на основу претходне дискусије.
+
+.. activecode:: digitalni_sat
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/digitalni_sat.py
+
+   def tekst_centriran(poruka, x, y):
+       font = pg.font.SysFont("Arial", 40)     # font kojim će biti prikazan tekst
+       # gradimo sličicu koja predstavlja tu poruku ispisanu crnom bojom
+       tekst = font.render(poruka, True, ???)
+       # određujemo veličinu tog teksta (da bismo mogli da ga centriramo)
+       (sirina_teksta, visina_teksta) = (tekst.get_width(), ???)
+       # položaj određujemo tako da tekst bude centriran
+       (x, y) = (???, ???)
+       # prikazujemo sličicu na odgovarajućem mestu na ekranu
+       prozor.blit(???, (x, y))
+    
+   def crtaj():
+       prozor.fill(pg.Color("white"))          # bojimo pozadinu u belo
+       vreme = datetime.datetime.now()         # određujemo trenutno vreme
+       sati = vreme.hour
+       minuti = vreme.minute
+       sekundi = vreme.second
+       # tekst koja će se ispisivati    
+       poruka = (str(sati).rjust(2, "0") + ":" +
+                 ??? + ":" + \
+                 ???)
+       tekst_centriran(poruka, sirina / 2, ???)

@@ -1,0 +1,255 @@
+27.1. Анимације кретања
+=======================
+
+Кретање објеката по екрану
+--------------------------
+
+Кретање лоптице
+'''''''''''''''
+
+Прикажимо још један пример анимације организоване на начин који смо описали на часу са анимацијама.  Написаћемо програм који анимира лоптицу која се креће са леве ка десној ивици екрана.
+
+.. activecode:: loptica_jednostavna
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :includesrc: _includes/loptica_jednostavna.py
+                 
+- Потребно је да дефинишемо променљиве које ће описивати стање
+  објеката који се анимирају. У нашем примеру то је једна црвена
+  лоптица и пошто се она креће хоризонтално, по средини екрана довољно
+  је да памтимо само њену координату x (то може, на пример, бити
+  координата њеног центра, а могла би бити и, на пример, координата
+  горњег левог темена квадрата описаног око ње). Пошто лоптица своје
+  кретање започиње на левом крају екрана, променљиву ``x`` ћемо
+  иницијализовати на нулу.
+
+- Функција ``crtaj`` се сада реализује веома једноставно. У њој бојимо
+  позадину екрана у бело и затим исцртавамо лоптицу коришћењем
+  вредности њеног положаја ``x``.
+
+- При преласку на сваки нови фрејм потребно је да лоптицу померимо
+  мало (на пример, за 1 пиксел) удесно. Дакле, у функцији
+  ``novi_frejm`` потребно је само да увећамо вредност променљиве ``x``
+  за 1. Пошто се мења вредност променљиве ``x`` која је глобална, у
+  функцији ``novi_frejm`` морамо променљиву ``x`` означимо помоћу
+  кључне речи ``global``. Након померања лоптице позивамо функцију
+  ``crtaj``.
+
+Варијације на тему лоптице која се креће
+''''''''''''''''''''''''''''''''''''''''
+
+Хајде сада да покушамо да програм из горњег примера модификујемо тако да се лоптица која изађе на
+десном крају екрана појављује поново на левом крају екрана.
+
+.. activecode:: loptica_jednostavna_1
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :includesrc: _includes/loptica_jednostavna_1.py
+
+Мана претходног програма је то што лоптица не испадне цела са екрана пре него
+што се пребаци на леву страну. Такође, када се појави на левој страни,
+она се већ до пола види. Покушај да то поправиш.
+                
+.. activecode:: loptica_jednostavna_2
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/loptica_jednostavna_2.py
+
+   x = 0  # pozicija loptice
+
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, pg.Color("red"), (x, visina // 2), 30)
+
+   def novi_frejm():
+       global x
+       x += 1    # pomeramo lopticu za jedan piksel nadesno
+       if x > ???:
+           x = -???
+       crtaj()
+
+Преправимо сада програм тако да лоптица промени полупречник сваки пут
+када се поново појави на левом крају екрана.
+
+- Стање програма треба проширити глобалном променљивом ``r``.
+- У функцији ``crtaj`` потребно је цртати лоптицу полупречника ``r``,
+  уместо досадашњег фиксног полупречника 30.
+- У функцији ``novi_frejm`` проверу да ли је лоптица испала са екрана
+  треба прилагодити тако да ради исправно за сваку вредност
+  полупречника. Када лоптица испадне, нови полупречник треба одабрати
+  насумично, из интервала :math:`[5, 30]` (подсети се, насумичан цео
+  број добијамо функцијом ``random.randint``). Пошто се у овој
+  функцији може променити вредност глобалних променљивих ``x`` и
+  ``r``, потребно је навести их уз кључну реч ``global``.
+
+Покушај да овај и наредне програме напишеш потпуно самостално (увек
+проширујући и прилагођавајући претходну верзију). Ако се негде
+заглавиш, потражи помоћ, па онда допуни започети програмски кôд.
+
+.. activecode:: loptica_jednostavna_3
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/loptica_jednostavna_3.py
+
+   x = 0  # pozicija loptice
+   r = 30 # poluprečnik loptice
+
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, pg.Color("red"), (x, visina // 2), r)
+
+   def novi_frejm():
+       global x, r
+       x += 1    # pomeramo lopticu za jedan piksel nadesno
+       if ???:
+           r = ???
+           x = ???
+       crtaj()
+
+Допуни сада програм тако да се свака нова лоптица креће различитом
+брзином.
+
+- Стање програма је потребно доупнити брзином ``v`` која представља
+  брзину изражену у пикселима по фрејму (она мери колико се пиксела
+  лоптица помери надесно у сваком фрејму).
+- Функцију ``crtaj`` нема потребе мењати.
+- У функцији ``novi_frejm``, када лоптица изађе са екрана, поред
+  промене хоризонталне позиције и насумичног одређивања полупречника,
+  насумично јој је потребно одредити и брзину (на пример, цео број
+  између 1 и 10). Пошто ова функција мења сада и глобалну променљиву
+  ``v``, и та променљива треба да буде означена кључном речју
+  ``global``.
+           
+.. activecode:: loptica_jednostavna_4
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/loptica_jednostavna_4.py
+
+   x = 0  # pozicija loptice
+   r = 30 # poluprečnik loptice
+   v = 1  # brzina loptice
+
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, pg.Color("red"), (x, visina // 2), r)
+
+   def novi_frejm():
+       global x, r, ???
+       x += ???  # pomeramo lopticu za jedan piksel nadesno
+       if x - r > sirina:
+           r = random.randint(5, 30)
+           x = -r
+           ???
+       crtaj()
+
+Допуни сада програм тако да се свака нова лоптица креће на различитој
+висини. Висину бирај насумично, али тако да лоптица цела буде унутар
+прозора.
+           
+.. activecode:: loptica_jednostavna_5
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/loptica_jednostavna_5.py
+
+   x = 0           # pozicija loptice
+   y = ???         # visina loptice, inicijalno na sredini ekrana
+   r = 30          # poluprečnik loptice
+   v = 1           # brzina loptice
+    
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, pg.Color("red"), (x, y), r)
+    
+   def novi_frejm():
+       global x, y, r, v
+       x += v    # pomeramo lopticu za jedan piksel nadesno
+       if x - r > sirina:
+           r = random.randint(5, 30)
+           x = -r
+           y = ??? # nasumično određujemo visinu
+           v = random.randint(1, 5)
+       crtaj()
+
+Једини параметар лоптице који се за сада никада не мења је боја. На
+крају, допуни програм тако да се и боја сваке нове лоптице бира
+насумично.
+           
+.. activecode:: loptica_jednostavna_6
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/loptica_jednostavna_6.py
+
+   x = 0  # pozicija loptice
+   y = visina // 2
+   r = 30 # poluprečnik loptice
+   v = 1  # brzina loptice
+   boja = pg.Color("red") # boja loptice
+    
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, boja, (x, y), r)
+    
+   def novi_frejm():
+       global x, y, r, v, boja
+       x += v    # pomeramo lopticu za jedan piksel nadesno
+       if x - r > sirina:
+           r = random.randint(5, 30)
+           x = -r
+           y = random.randint(r, visina - r)
+           v = random.randint(1, 5)
+           boja = (???, ???, ???)
+       crtaj()
+
+Вежбе ради, измени претходни програм тако да се лоптице крећу с десна
+налево.
+           
+.. activecode:: loptica_jednostavna_7
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/loptica_jednostavna_7.py
+
+   x = ???  # pozicija loptice
+   y = ???
+   r = 30 # poluprečnik loptice
+   v = 1  # brzina loptice
+   boja = pg.Color("red") # boja loptice
+    
+   def crtaj():
+       # crtamo lopticu
+       prozor.fill(pg.Color("white"))
+       pg.draw.circle(prozor, boja, (x, y), r)
+    
+   def novi_frejm():
+       global x, y, r, v, boja
+       ???    # pomeramo lopticu za jedan piksel nadesno
+       if ???:
+           r = random.randint(5, 30)
+           x = ???
+           y = random.randint(r, visina - r)
+           v = random.randint(1, 5)
+           boja = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+       crtaj()

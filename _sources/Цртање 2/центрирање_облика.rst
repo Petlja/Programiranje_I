@@ -1,0 +1,126 @@
+21.2. Центрирање облика
+=======================
+
+Иако се цртање правоугаоника или елипсе врши тако што се задају
+координате горњег левог темена, често имамо потребу да нацртамо
+правоугаоник или елипсу којима су познате координате средишта и
+димензије. Размисли о томе како се то може урадити, па кроз наредна
+питања провери да ли си у праву.
+
+.. mchoice:: pygame_quiz_centriranje_pravougaonika
+   :answer_a: pg.draw.rect(prozor, boja, (100, 100, 80, 40))
+   :answer_b: pg.draw.rect(prozor, boja, (100, 100, 160, 80))
+   :answer_c: pg.draw.rect(prozor, boja, (60, 80, 80, 40))
+   :answer_d: pg.draw.rect(prozor, boja, (20, 60, 160, 80))
+   :correct: c
+   :feedback_a: Покушај поново
+   :feedback_b: Покушај поново
+   :feedback_c: Тачно
+   :feedback_d: Покушај поново
+   
+   Знаш да желиш да нацрташ правоугаоник ширине `80` и висине `40` тако
+   да му је центар у тачки `100` и `100`. Коју наредбу можеш да
+   употребиш за то?
+
+.. mchoice:: pygame_quiz_centriranje_elipse
+   :answer_a: pg.draw.ellipse(prozor, boja, (80, 100, 60, 40))
+   :answer_b: pg.draw.ellipse(prozor, boja, (80, 100), (60, 40))
+   :answer_c: pg.draw.ellipse(prozor, boja, (20, 60, 120, 80))
+   :answer_d: pg.draw.ellipse(prozor, boja, (80, 100), (120, 80))
+   :correct: c
+   :feedback_a: Покушај поново
+   :feedback_b: Покушај поново
+   :feedback_c: Тачно
+   :feedback_d: Покушај поново
+
+   Да би се нацртала елипса са центром у тачки `(80, 100)`, чије су
+   полуосе `60` и `40` пиксела, потребно је извршити позив функције:
+
+Прилагоди сада наредни програм тако што ћеш направити жути
+правоугаоник и плаву елипсу димензија 100 пута 80 пискела чији је
+центар у центру прозора, тј. тачки (150, 150).
+   
+.. activecode:: centrirani_pravougaonici_i_elipse
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/centrirani_pravougaonici_i_elipse.py
+
+   prozor.fill(pg.Color("white"))
+   pg.draw.rect(prozor, pg.Color("yellow"), (???, ???, ???, ???))
+   pg.draw.ellipse(prozor, pg.Color("blue"), (???, ???, ???, ???))
+
+Сличан, али још мало компликованији задатак је да се нацрта
+правоугаоник познатих димензија, који је центриран унутар другог датог
+правоугаоника. Прво можеш да израчунаш средиште задатог, описаног
+правоугаоника, а затим да израчунаш координате горњег левог темена
+уписаног правоугаоника тако што од средишта одузмеш половину ширине и
+половину висине уписаног правоугаоника. Провери да ли ово разумеш,
+тако што ћеш одговорити на следеће питање.
+   
+.. mchoice:: pygame_quiz_pravougaonik_centriran_u_pravougaonik
+   :answer_a: pg.draw.rect(prozor, pg.Color("blue"), (20, 0, 40, 30))
+   :answer_b: pg.draw.rect(prozor, pg.Color("blue"), (130, 170, 40, 30))
+   :answer_c: pg.draw.rect(prozor, pg.Color("blue"), (40, 35, 40, 30))
+   :answer_d: pg.draw.rect(prozor, pg.Color("blue"), (170, 205, 40, 30))
+   :correct: d
+   :feedback_a: Покушај поново
+   :feedback_b: Покушај поново
+   :feedback_c: Покушај поново
+   :feedback_d: Тачно
+
+   Правоугаоник плаве боје, ширине 40 и висине 30 пиксела треба да
+   буде центриран у жутом правоугаонику чија је ширина 120 и висина
+   100 пиксела и чије је горње лево теме у тачки (130, 170). Како се
+   тај правоугаоник може нацртати?
+
+У наредном програму можеш и да провериш како ово функционише.
+   
+.. activecode:: centrirani_pravougaonik_u_pravougaoniku
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/centrirani_pravougaonik_u_pravougaoniku.py
+
+   prozor.fill(pg.Color("white"))
+   pg.draw.rect(prozor, pg.Color("yellow"), (230, 270, 120, 100))
+   pg.draw.ellipse(prozor, pg.Color("blue"), (???, ???, ???, ???))
+
+У специјалном случају када је спољни правоугаоник цео прозор,
+правоугаоник можемо центрирати тако што му :math:`x` координату горњег левог
+темена поставимо на половину разлике између ширине прозора и ширине
+правоугаоника, а :math:`y` координату поставимо на половину разлике између
+ширине између висине прозора и висине правоугаоника. На тај начин
+слободан простор око правоугаоника равномерно распоређујемо на леву и
+десну, односно на горњу и доњу маргину.
+
+.. questionnote::
+
+   Напиши програм који црта црвени квадрат димензије 200 пиксела,
+   зелени димензије 150 пиксела и плави димензије 100 пиксела који су
+   центрирани у прозору димензије 300 пута 300 пиксела.
+
+.. activecode:: centrirani_kvadrati_u_prozoru
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/centrirani_pravougaonici_u_prozoru.py
+
+   prozor.fill(pg.Color("white"))
+   # crveni kvadrat
+   # zeleni kvadrat
+   # plavi kvadrat
+   
+.. reveal:: centrirani_kvadrati_u_prozoru_reveal
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: centrirani_kvadrati_u_prozoru_reveal_code
+      :passivecode:
+
+      pg.draw.rect(prozor, pg.Color("red"), (50, 50, 200, 200))
+      pg.draw.rect(prozor, pg.Color("green"), (75, 75, 150, 150))
+      pg.draw.rect(prozor, pg.Color("blue"), (100, 100, 100, 100))
