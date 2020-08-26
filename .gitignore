@@ -2,5 +2,6 @@ __pycache__
 .vscode
 build_info
 pavement.pyc
+build
 _build
 _intermediate
