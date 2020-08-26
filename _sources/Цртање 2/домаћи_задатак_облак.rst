@@ -7,7 +7,7 @@
 .. activecode:: oblak
    :passivecode: onlymain
    :autorun:
-   :includesrc: src/01-crtanje/oblak.py
+   :includesrc: _includes/oblak.py
 
 
 .. questionnote::
