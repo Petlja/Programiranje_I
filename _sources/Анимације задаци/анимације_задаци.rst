@@ -223,8 +223,8 @@
            smajlic = ???
        crtaj()
 
-Домаћи задатак - сијалице
-'''''''''''''''''''''''''
+Сијалице
+''''''''
 
 .. questionnote::
 
@@ -269,8 +269,8 @@
        crtaj()
 
        
-Домаћи задатак - цртани филм
-''''''''''''''''''''''''''''
+Цртани филм
+'''''''''''
 
 .. questionnote::
 
@@ -310,7 +310,7 @@
    :modaloutput: 
    :enablecopy:
    :playtask:
-   :includexsrc: _includes/setanje.py
+   :includexsrc: _includes/setanje_animacije.py
 
    # učitavamo u listu slike setanje1.png, setanje2.png, ..., setanje5.png
    slike = []   # niz u koji dodajemo slike

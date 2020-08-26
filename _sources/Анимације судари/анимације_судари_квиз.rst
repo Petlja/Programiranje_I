@@ -5,15 +5,15 @@
 ~~~~~~~~~
 
 .. mchoice:: sudari_loptica
-    :answer_a: Прва
-    :feedback_a: Нетачно    
-    :answer_b: Обе
-    :feedback_b: Тачно
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно  
     :answer_c: Друга
-    :feedback_c: Нетачно    
+    :feedback_c: 3
     :answer_d: Ниједна
     :feedback_d: Нетачно    
-    :correct: b
+    :correct: a
     
     Која од следећих функција проверава да ли су се две лоптице судариле
 
@@ -29,9 +29,13 @@
 
             def sudar_loptica():
                 razmak_centara = math.sqrt((x_koordinata_prvog_kruga-x_koordinata_drugog_kruga)**2 + (y_koordinata_prvog_kruga-y_koordinata_drugog_kruga)**2)
-                if razmak_centara < 2*poluprecnik_krugova:
-                    return True
+                return razmak_centara > 2*poluprecnik_krugova
 
+    (3)
+        .. code-block:: python
+
+            def sudar_loptica(x_koordinata_prvog_kruga, x_koordinata_drugog_kruga, y_koordinata_prvog_kruga, y_koordinata_drugog_kruga):
+                return math.sqrt((x_koordinata_prvog_kruga-x_koordinata_drugog_kruga)**2 + (y_koordinata_prvog_kruga-y_koordinata_drugog_kruga)**2)
     
     Изабери тачан одговор:
 
