@@ -41,6 +41,7 @@
    operativni_sistemi = ["windows", "linux", "android", "ios"]
    for i in range(len(???)):  # ispravi ovaj red
        print(i + 1, operativni_sistemi[0])  # ispravi ovaj red
+
 Препорука је да, када пролазимо елементе колекције, треба користити први 
 начин јер се добија јаснији (и нешто ефикаснији) програм.
 

@@ -10,9 +10,9 @@ prozor = pygamebg.open_window(sirina, visina, "Две лоптице")
 
 r = 20
 (x1, y1) = (r, r)
-(dx1, dy1) = (1, 1)
+(dx1, dy1) = (2, 3)
 (x2, y2) = (sirina - r, visina - r)
-(dx2, dy2) = (-1, -1)
+(dx2, dy2) = (-3, -2)
 
 def crtaj():
     prozor.fill(pg.Color("white"))

@@ -50,7 +50,7 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Која од следећих функција проверава да ли се круг судара са хоризонталном ивицом екрана?
+    Која од следећих функција проверава да ли се круг судара (додирује) са било левом, било десном ивицом екрана?
 
     .. code-block:: python
 
@@ -58,30 +58,25 @@
         .. code-block:: python
 
             def sudar_sa_ivicom():
-                if x_centar_kruga - poluprecnik_kruga <0:
-                    return True
+                return x_centar_kruga - poluprecnik_kruga < 0
 
         (2)
         .. code-block:: python
 
             def sudar_sa_ivicom():
-                if x_centar_kruga - poluprecnik_kruga < 0 and x_centar_kruga + poluprecnik_kruga > sirina:
-                    return True
+                return x_centar_kruga - poluprecnik_kruga < 0 and x_centar_kruga + poluprecnik_kruga > sirina
 
         (3)
         .. code-block:: python
 
             def sudar_sa_ivicom():
-                if x_centar_kruga - poluprecnik_kruga <0 or x_centar_kruga + poluprecnik_kruga > sirina:
-                    return True
-
+                return x_centar_kruga - poluprecnik_kruga < 0 or x_centar_kruga + poluprecnik_kruga > sirina
         
         (4)
         .. code-block:: python
 
             def sudar_sa_ivicom():
-                if x_centar_kruga + poluprecnik_kruga <0 or x_centar_kruga - poluprecnik_kruga > sirina:
-                    return True
+                return x_centar_kruga + poluprecnik_kruga < 0 or x_centar_kruga - poluprecnik_kruga > sirina
 
     Изабери тачан одговор:
 
@@ -90,49 +85,34 @@
 
 .. mchoice:: sudari_ivice
     :answer_a: 1
-    :feedback_a: 
+    :feedback_a: Тачно
     :answer_b: 2
-    :feedback_b: Тачно   
+    :feedback_b: Нетачно
     :answer_c: 3
-    :feedback_c: Нетачно    
+    :feedback_c: Нетачно
     :answer_d: 4
-    :feedback_d: Нетачно    
-    :correct: c
+    :feedback_d: Нетачно
+    :correct: a
     
     Која од следећих функција проверава да ли се квадрат сударио са горњом/доњом ивицом екрана?  
 
     .. code-block:: python
 
         (1)
-        .. code-block:: python
-
             def sudar_sa_ivicom():
-                if y_gornje_levo_teme  <0 or y_gornje_levo_teme_ + stranica_kvadrata > visina:
-                    return True
-            
+                return y_gornje_levo_teme < 0 or y_gornje_levo_teme + stranica_kvadrata > visina
 
         (2)
-        .. code-block:: python
-
             def sudar_sa_ivicom():
-                if y_gornje_levo_teme_ - polovina_stranice <0
-                    return True
+                return y_gornje_levo_teme - polovina_stranice < 0
 
         (3)
-        .. code-block:: python
-
             def sudar_sa_ivicom():
-                if y_gornje_levo_teme  <0 and y_gornje_levo_teme_ + stranica_kvadrata > visina:
-                    return True
-
+                return y_gornje_levo_teme < 0 and y_gornje_levo_teme + stranica_kvadrata > visina
         
         (4)
-        .. code-block:: python
-
             def sudar_sa_ivicom():
-                if y_gornje_levo_teme - stranica kvadrata <0 or y_gornje_levo_teme_ - stranica_kvadrata > visina:
-                    return True
-
+                return y_gornje_levo_teme - stranica kvadrata < 0 or y_gornje_levo_teme_ - stranica_kvadrata > visina
 
     Изабери тачан одговор:
 
@@ -141,13 +121,13 @@
 ~~~~~~~~~
 
 .. mchoice:: sudari_dopuni
-    :answer_a: Сваки круг има своју брзину
+    :answer_a: Функција 1
     :feedback_a: Тачно
-    :answer_b: Брзина кругова се мења
-    :feedback_b: Нетачно    
-    :answer_c: Кругови се одбијају о ивице прозора
-    :feedback_c: Нетачно    
-    :answer_d: кругови мењају боју при сваком исцртавању фрејма
+    :answer_b: Функција 2
+    :feedback_b: Нетачно
+    :answer_c: Функција 3
+    :feedback_c: Нетачно
+    :answer_d: Функција 4
     :feedback_d: Нетачно    
     :correct: a
     
@@ -181,8 +161,6 @@
     .. code-block:: python
 
         (1)
-        .. code-block:: python
-
             def novi_frejm():
                 global x, y, dx, dy  
                 x += dx
@@ -195,8 +173,6 @@
             
 
         (2)
-        .. code-block:: python
-
             def novi_frejm():
                 global x, y, dx, dy  
                 x += dx
@@ -208,8 +184,6 @@
                 crtaj()
 
         (3)
-        .. code-block:: python
-
             def novi_frejm():
                 global x, y, dx, dy  
                 x += dx
@@ -222,8 +196,6 @@
 
         
         (4)
-        .. code-block:: python
-
             def novi_frejm():
                 x += dx
                 y += dy
