@@ -38,11 +38,11 @@ lessons:
     guid: 102e6fae-33d2-44ab-938b-9f0ca17e60de
     activities:
       - type: reading
-        title: Лекција
+        title: 1.1. Линијски програми 
         file: 1a.rst
         guid: f03227d8-ab84-4c64-9180-a77b5d7ab58b
       - type: reading
-        title: Лекција
+        title: 1.2. Бројачка петља `for`
         file: 1b.rst
         guid: ad288008-e86b-4255-a6b9-c0da241f26b7
   - title: 2. лекција - Робот Карел
@@ -50,11 +50,11 @@ lessons:
     guid: 6f8ab8af-f563-40b4-8c6d-6e4ccd9d7045
     activities:
       - type: reading
-        title: Лекција
+        title: 2.1. Условне петље
         file: 2a.rst
         guid: 330e6e4d-2371-4513-a90b-447acae82af4
       - type: reading
-        title: Лекција
+        title: 2.2. Гранање
         file: 2b.rst
         guid: f35d3b28-5aef-4821-96b8-548765596c19
   - title: 3. лекција - вежбање
@@ -62,7 +62,7 @@ lessons:
     guid: 4be44082-6709-4193-a527-2f1689ba583d
     activities:
       - type: reading
-        title: Лекција
+        title: 3.1. Вежбање
         file: 3a.rst
         guid: 6715aafa-b9b5-49b6-82b7-d473059d0d3d
   - title: 4. Квиз - робот Карел
@@ -70,7 +70,7 @@ lessons:
     guid: 2794cfc2-75ee-43bd-b5b2-4c2aa7b457bb
     activities:
       - type: quiz
-        title: 4. Квиз - робот Карел
+        title: 4.1. Квиз
         file: 4a.rst
         guid: bd84746c-1007-40fa-96a1-1061531db1eb
   - title: 5. лекција - Корњача графика (гранање, угнежљене петље, процедуре, торке, листе)
@@ -78,15 +78,15 @@ lessons:
     guid: 0a4a76cd-03d3-428e-8019-860589d9aea9
     activities:
       - type: reading
-        title: Лекција
+        title: 5.1. Корњача графика
         file: 50.rst
         guid: 7amm1517-5b33-4c49-9299-23078b0d8361
       - type: reading
-        title: Лекција
+        title: 5.2. Понављање, гранање, угнежђене петље, торке/листе
         file: 5a.rst
         guid: 7a3f1517-5b33-4c49-9299-23078b0d8361
       - type: reading
-        title: Лекција
+        title: 5.3. Процедуре
         file: 5b.rst
         guid: 4e2b40fb-594a-497d-881b-b5d4c8c48e47
   - title: 6. лекција - вежбање
@@ -94,7 +94,7 @@ lessons:
     guid: 3847d7c8-ff63-4136-92b1-3c4840242bca
     activities:
       - type: reading
-        title: Лекција
+        title: 6.1. Вежбање
         file: 6a.rst
         guid: 327724dd-83a2-409e-b852-42c6056c606e
   - title: 7. лекција -квиз
@@ -102,7 +102,7 @@ lessons:
     guid: f63670aa-033b-49ea-88de-ed01e0bcf1c5
     activities:
       - type: reading
-        title: 7.1. Квиз - корњача графика
+        title: 7.1. Квиз 
         file: 7a.rst
         guid: 1245ee05-e831-4d44-952e-5f97055fde55
   - title: 8. лекција 
@@ -110,11 +110,11 @@ lessons:
     guid: 986d5314-a202-416c-9d00-edd54bf1f04c
     activities:
       - type: reading
-        title: Лекција
+        title: 8.1. Основне аритметичке операције и примена
         file: 8a.rst
         guid: 86ede5ad-3aba-4abe-b6ff-b11c22c6657d    
       - type: reading
-        title: Лекција
+        title: 8.2. Вежбање
         file: 8b.rst
         guid: 63b22829-cff1-48fb-bfcc-00da205621b4
   - title: 9. лекција 
@@ -122,7 +122,7 @@ lessons:
     guid: 986d5314-a202-416c-9d00-edd54bf1f06t
     activities:
       - type: quiz
-        title: Лекција
+        title: 9.1. Квиз
         file: izrazi.rst
         guid: 86ede5ad-3aba-4abe-b6ff-b11c22c66511   
   - title: 10. лекција 
@@ -130,11 +130,11 @@ lessons:
     guid: f1ee2c94-4023-4307-8875-6d455b4a567f
     activities:
       - type: reading
-        title: Лекција
+        title: 10.1. Цели и реални бројеви, дељење
         file: 9a.rst
         guid: 3b285d82-051d-4da2-ae3c-e4b92446cd8e    
       - type: reading
-        title: Лекција
+        title: 10.2. Целобројно дељење - позициони запис броја
         file: 9b.rst
         guid: 253dc2d3-195e-4a60-bdf5-862998412a7a     
   - title: 11. лекција 
@@ -142,11 +142,11 @@ lessons:
     guid: 501e7102-1901-42ad-a767-928533ecf1e9
     activities:
       - type: reading
-        title: Лекција
+        title: 11.1. Коришћење готових функција
         file: 10a.rst
         guid: 30b9f050-3c10-4a9b-9c91-4e00f1cced31    
       - type: reading
-        title: Лекција
+        title: 11.2. Дефинисање функција
         file: 10b.rst
         guid: 7b7317dd-336e-4d15-b311-05f03cd38d77
   - title: 12. лекција 
@@ -154,7 +154,7 @@ lessons:
     guid: f8b5d8cd-c885-4019-bdad-34225e29817f
     activities:
       - type: quiz
-        title: Лекција
+        title: 12.1. Квиз - коришћење функција
         file: funkcije.rst
         guid: 72474390-394a-4834-8dd5-e4169e34c02f    
   - title: 13. лекција 
@@ -162,11 +162,11 @@ lessons:
     guid: f8b5d8cd-cf55-4019-bdad-34225e29817f
     activities:
       - type: reading
-        title: Лекција
+        title: 13.1. Гранање
         file: 12a.rst
         guid: 72474326-394a-4834-8dd5-e4169e34c02f    
       - type: reading
-        title: Лекција
+        title: 13.2. Конструкција `elif`
         file: 12b.rst
         guid: f696f251-ea7d-4413-a449-00bc62b6eeda
   - title: 14. лекција 
@@ -174,7 +174,7 @@ lessons:
     guid: f8b5d8cd-cf55-4019-bdad-34225e29187f
     activities:
       - type: quiz
-        title: Лекција
+        title: 14.1. Квиз
         file: grananje.rst
         guid: 72411326-394a-4834-8dd5-e4169e34c02f      
   - title: 15. лекција - понављање
@@ -182,11 +182,11 @@ lessons:
     guid: 97b7c690-0649-4c18-afab-3133d1633d51
     activities:
       - type: reading
-        title: Лекција
+        title: 15.1. Понављање
         file: 13a.rst
         guid: e0694c8a-0082-45a7-acae-246559602c55    
       - type: reading
-        title: Лекција
+        title: 15.2. Условна петља
         file: 13b.rst
         guid: 6c489177-63fe-414b-8fe2-ce0bffda2510
   - title: 16. лекција 
@@ -194,7 +194,7 @@ lessons:
     guid: 97b7c690-0999-4c18-afab-3133d1633d51
     activities:
       - type: quiz
-        title: Лекција
+        title: 16.1. Квиз
         file: ponavljanje.rst
         guid: e0694c8a-0082-45a7-acae-246559612c55    
   - title: 17. лекција - структуре
@@ -202,11 +202,11 @@ lessons:
     guid: a0c33527-c62d-483b-9100-bc35480503cc
     activities:
       - type: reading
-        title: Лекција
+        title: 17.1. Структуре
         file: 15a.rst
         guid: 658ccd89-cabb-4bed-942d-9e9e4ba6d20f    
       - type: reading
-        title: Лекција
+        title: 17.2. Скупови, речници
         file: 15b.rst
         guid: fe8deeec-8716-4208-8115-38583ceb43ad
   - title: 18. лекција - структуре
@@ -214,7 +214,7 @@ lessons:
     guid: 7ff277ce-8a51-4abc-8400-06f7b3140bcc
     activities:
       - type: reading
-        title: Лекција
+        title: 18.1. Обрада структура података коришћењем петљи
         file: 16a.rst
         guid: 3878f63e-8276-41a9-a54e-3e43ef629afb  
   - title: 19. лекција 
@@ -222,7 +222,7 @@ lessons:
     guid: 7f2277ce-8a51-4abc-8400-06f7b3140bcc
     activities:
       - type: quiz
-        title: Лекција
+        title: 19.1. Квиз
         file: strukture.rst
         guid: 3878f11e-8276-41a9-a54e-3e43ef629afb  
   - title: 20. Програмирање 2Д графике - Увод у Pygame #OVDE POČINJE PYGAME
