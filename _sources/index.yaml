@@ -102,7 +102,7 @@ lessons:
     guid: f63670aa-033b-49ea-88de-ed01e0bcf1c5
     activities:
       - type: reading
-        title: 7.1. Квиз 
+        title: 7.1. Квиз - корњача графика 
         file: 7a.rst
         guid: 1245ee05-e831-4d44-952e-5f97055fde55
   - title: 8. Израчунавања 
@@ -122,7 +122,7 @@ lessons:
     guid: 986d5314-a202-416c-9d00-edd54bf1f06t
     activities:
       - type: quiz
-        title: 9.1. Квиз
+        title: 9.1. Квиз - изрази
         file: izrazi.rst
         guid: 86ede5ad-3aba-4abe-b6ff-b11c22c66511   
   - title: 10. Реално и целобројно дељење
@@ -166,7 +166,7 @@ lessons:
         file: 12a.rst
         guid: 72474326-394a-4834-8dd5-e4169e34c02f    
       - type: reading
-        title: 13.2. Конструкција `elif`
+        title: 13.2. Конструкција elif
         file: 12b.rst
         guid: f696f251-ea7d-4413-a449-00bc62b6eeda
   - title: 14. Квиз 
@@ -174,7 +174,7 @@ lessons:
     guid: f8b5d8cd-cf55-4019-bdad-34225e29187f
     activities:
       - type: quiz
-        title: 14.1. Квиз
+        title: 14.1. Квиз - гранање
         file: grananje.rst
         guid: 72411326-394a-4834-8dd5-e4169e34c02f      
   - title: 15. Понављање
