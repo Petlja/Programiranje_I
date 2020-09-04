@@ -371,7 +371,7 @@ lessons:
         description: #opciono
         guid: f2086bcb-e7a5-47a6-96bf-632321418fc5
       - type: reading
-        title: 25.3.Распоређивање боја
+        title: 25.3. Распоређивање боја
         file: распоређивање_боја.rst
         description: #opciono
         guid: e8d79c09-2526-4001-9538-3e035ba020fc
