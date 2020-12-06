@@ -5,3 +5,5 @@ pavement.pyc
 build
 _build
 _intermediate
+*~
+

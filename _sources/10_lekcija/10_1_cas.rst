@@ -1,0 +1,317 @@
+10.1. Израчунавања - задаци за вежбање
+######################################
+
+Обућа
+'''''
+  
+.. questionnote::
+
+   У једној фабрици обуће прошле године је произведено 356.000 пари
+   ципела и 247.923 пара чизама. Напиши програм који израчунава колико
+   је пари ципела произведено више него пари чизама и колико је укупно
+   произведено пари обуће и колико је укупно произведено комада
+   обуће. Напиши програм тако да исправно ради и када у бројеви дати у
+   задатку другачији.
+
+.. activecode:: обућа
+
+   pari_cipela = 356000
+   pari_cizama = 247923
+   # dopuni rešenje
+
+Провери да ли је програм добро израчунао
+
+.. fillintheblank:: fill_обућа1
+		    
+   Колико има више пари ципела него пари чизама?
+      
+   - :^108077$: Тачан одговор
+     :.*: Одузми број пари чизама од броја ципела
+
+.. fillintheblank:: fill_обућа2
+
+   Колико укупно има пари ципела и чизама?
+
+   - :^603923$: Тачан одговор
+     :.*: Сабери број пари ципела и чизама
+
+.. fillintheblank:: fill_обућа3
+	  
+   Колико укупно има комада обуће?
+
+   - :^1207846$: Тачан одговор
+     :.*: Помножи број пари ципела и чизама са два
+		  
+	      
+.. reveal:: обућа_решење
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: обућа_решење_код
+    
+      pari_cipela = 356000
+      pari_cizama = 247923
+      vise_pari_cipela = pari_cipela - pari_cizama
+      print(vise_pari_cipela)
+      ukupno_pari_obuce = pari_cipela + pari_cizama
+      print(ukupno_pari_obuce)
+      ukupno_komada_obuce = ukupno_pari_obuce * 2
+      print(ukupno_komada_obuce)
+
+Карте у возу
+''''''''''''
+
+.. questionnote::
+
+   Кондуктер је једног дана прегледао карте са бројевима од 276,898 до
+   277,236. Напиши програм који израчунава колико путника се тог дана
+   возило возом?
+
+.. activecode:: број_путника
+
+   od_karte = 277236
+   do_karte = 276898
+   broj_karata = 0     # popravi ovaj red
+   print(broj_karata)   
+
+.. fillintheblank:: fill_број_путника
+		    
+      Колико се путника возило возом?
+
+      - :^339$: Тачан одговор!
+	:.*: Размисли како би се резултат израчунао да су продате карте од броја 3 до броја 7. Пази да не погрешиш за један.
+
+   
+.. reveal:: број_путника_решење
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: број_путника_решење_код
+
+      od_karte = 277236
+      do_karte = 276898
+      broj_karata = od_karte - do_karte + 1
+      print(broj_karata)
+
+Аутомобили
+''''''''''
+  
+.. questionnote::
+
+   Продавница половних аутомобила има 317 возила. Од тог броја 95 је
+   потпуно исправно. Колико је потребно новца да сви аутомобили
+   постану исправни, ако поправка једног аута кошта 9756 динара.
+
+.. activecode:: аутомобили
+   :runortest: automobili, ispravni, popravka_jednog, popravka_svih
+		
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   automobili = 317
+   ispravni = 95
+   popravka_jednog = 9756
+   # -*- acsection: main -*-
+   # dopuni ovde kod
+   # -*- acsection: after-main -*-
+   print(popravka_svih)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for automobili, ispravni, popravka_jednog, popravka_svih in [(442, 118, 11324, 3668976), (92, 83, 955, 8595)]:
+             self.assertEqual(acMainSection(automobili = automobili, ispravni = ispravni, popravka_jednog = popravka_jednog)["popravka_svih"],popravka_svih,"Ако је у продавници било %s аутомобила, од којих је %s било исправно, а ако поправка једног кошта %s динара, поправка укупно кошта %s динара." % (automobili, ispravni, popravka_jednog, popravka_svih))
+   myTests().main()
+		
+   
+.. reveal:: аутомобили_решење_reveal
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+   
+   .. activecode:: аутомобили_решење
+
+      automobili = 317
+      ispravni = 95
+      neispravni = automobili - ispravni
+      popravka_jednog = 9756
+      popravka_svih   = neispravni * popravka_jednog
+      print(popravka_svih)
+
+
+Сличице
+'''''''
+
+.. questionnote::
+
+   Урош и Растко имају заједно 317 сличица. Растко и Павле имају
+   заједно 295 сличица. Павле и Урош имају заједно 212 сличица. Напиши
+   програм који израчунава и исписује колико сличица има свако од њих.
+
+.. activecode:: сличице_у_паровима
+
+   uros_i_rastko = 317
+   rastko_i_pavle = 295
+   pavle_i_uros = 212
+   # dopuni resenje
+   print(pavle, uros, rastko)
+
+Провери да ли твој програм исправно израчунава решење.
+   
+.. fillintheblank:: fill_сличице_1
+		    
+      Колико сличица има Урош?
+
+      - :^117$: Тачан одговор
+	:.*: Покушај поново
+
+.. fillintheblank:: fill_сличице_2
+      
+      Колико сличица има Растко?
+      
+      - :^200$: Тачан одговор
+	:.*: Покушај поново
+
+.. fillintheblank:: fill_сличице_3
+      
+      Колико сличица има Павле?
+      
+      - :^95$: Тачан одговор
+	:.*: Покушај поново
+      
+   
+.. reveal:: сличице_помоћ
+   :showtitle: Прикажи малу помоћ
+   :hidetitle: Сакриј малу помоћ
+
+   Израчунај прво колико сви заједно имају сличица.
+		
+.. reveal:: сличице_решење
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: сличице_у_паровима_решење
+
+      uros_i_rastko = 317
+      rastko_i_pavle = 295
+      pavle_i_uros = 212
+      zajedno = (uros_i_rastko + rastko_i_pavle + pavle_i_uros) // 2
+      pavle = zajedno - uros_i_rastko
+      uros = zajedno - rastko_i_pavle
+      rastko = zajedno - pavle_i_uros
+      print(pavle, uros, rastko)
+
+Провери да ли твој програм и даље ради када се измене вредности
+улазних података. Израчунај колико Павле има сличица.
+
+.. activecode:: slicice_test
+   :runortest: rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle
+		
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   uros_i_rastko = 317
+   rastko_i_pavle = 295
+   pavle_i_uros = 212
+   # -*- acsection: main -*-
+   # dopuni ovde kod
+   # -*- acsection: after-main -*-
+   print(pavle)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle in [(73, 94, 81, 30), (103, 75, 94, 61)]:
+             self.assertEqual(acMainSection(rastko_i_pavle = rastko_i_pavle, uros_i_rastko = uros_i_rastko, pavle_i_uros = pavle_i_uros)["pavle"],pavle,"Ако Растко и Павле имају %s сличица, Урош и Растко %s сличица, а Павле и Урош %s сличица, тада Павле има %s сличица." % (rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle))
+   myTests().main()
+
+
+
+Израз
+'''''
+  
+.. questionnote::
+
+   Број 345 увећај 76 пута, па добијени резултат увећај за количник
+   бројева 141126 и 258 (први број јесте дељив са другим). Који се
+   резултат добија? Задатак реши једним изразом (немој да рачунаш
+   пешке).
+
+.. activecode:: операције
+
+   print()   # у заграде упиши израз
+
+Провери да ли је твој програм израчунао тачно решење.
+   
+.. fillintheblank:: fill_израз3
+		    
+   Колико је решење?
+   
+   - :^26767$: Тачан одговор
+     :.*: Покушај поново
+
+
+Оловке
+''''''
+      
+.. questionnote::
+
+   Сташа је 16 оловака платила 3408 динара. Колико ће платити 21 оловку?
+
+.. activecode:: оловке_израз
+
+   print() # у заграде упиши израз
+
+Провери да ли твој програм исправно израчунава решење.
+   
+.. fillintheblank:: fill_оловке
+		    
+   Колико кошта 21 оловка?
+
+   - :^4473$: Тачан одговор!
+     :.*: Покушај поново
+   
+   
+Куповина
+''''''''
+   
+.. questionnote::
+   
+   Ана има 8460 динара. Петину новца је потрошила у књижари, а трећину
+   укупне суме у самопослузи. Колико новца је остало Ани?
+
+.. activecode:: књижара_самопослуга
+   :runortest: novac, ostalo
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: var-init -*-
+   novac  = 8460
+   # -*- acsection: main -*-
+   # dopuni ovde kod
+   # -*- acsection: after-main -*-
+   print(ostalo)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+          for novac, ostalo in [(1110, 518), (1380, 644)]:
+             self.assertEqual(acMainSection(novac = novac)["ostalo"],ostalo,"Ако је Ана имала %s динара, остало јој је %s динара." % (novac, ostalo))
+   myTests().main()
+	       
+		
+   
+.. reveal:: књижара_самопослуга_решење_reveal
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+   
+   .. activecode:: књижара_самопослуга_решење
+
+      novac = 8460
+      knjizara = novac/5
+      samoposluga = novac/3
+      ostalo = novac - (knjizara + samoposluga)
+      print(ostalo)
+
+   Решење смо могли добити и помоћу једног израза.
+   
+   .. activecode:: књижара_самопослуга_израз
+    
+      print(8460 - (8460 / 5 + 8460 / 3))
+

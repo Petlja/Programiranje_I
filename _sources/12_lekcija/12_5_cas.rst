@@ -1,0 +1,70 @@
+12.5. Вежбање
+#############
+
+Сви парни бројеви прве стотине
+''''''''''''''''''''''''''''''
+   
+.. questionnote::
+
+   Напиши програм који исписује све парне бројеве прве стотине.
+
+.. activecode:: 123
+
+   for i in ???  # dopuni ovaj red
+       print(i)
+
+Распродаја ципела
+'''''''''''''''''
+
+.. questionnote::
+
+   У току је распродаја ципела. Напиши програм који корисницима
+   омогућава да израчунају снижену цену ципела које желе да купе. У
+   петљи се уноси цена ципела и проценат снижења и исписује се снижена
+   цена. Програм престаје са радом када се унесе цена 0.
+
+Једна могућност је да учитамо цену на почетку провера, а затим да у
+петљи ``while`` проверавамо да ли је цена различита од нуле и да, ако
+јесте, израчунамо снижење и учитамо поново цену и проценат како
+бисмо се припремили за следећи корак.
+   
+.. activecode:: while125
+
+   cena = float(input("Unesi cenu cipela:"))
+   procenat = float(input("Unesi procenat sniženja:"))
+   while cena != 0:
+       snizena_cena = ???  # izračunavamo sniženu cenu
+       print("Snižena cena:", snizena_cena)
+       ??? # učitavamo novu cenu i procenat
+   
+Још једно могуће решење се заснива на томе да направимо бесконачну
+петљу (петљу у ``while True:`` којој је услов увек испуњен), на чијем
+ћемо почетку учитавати цену и проценат. Ако је цена нула, петљу ћемо
+прекидати наредбом ``break``, а у супротном ћемо израчунавати и
+исписивати снижени износ.
+
+.. activecode:: while2125
+
+   while True:
+       cena = float(input("Unesi cenu cipela:"))
+       procenat = float(input("Unesi procenat sniženja:"))
+       if cena == 0:
+           break
+       snizena_cena = ???  # izračunavamo sniženu cenu
+       print("Snižena cena:", snizena_cena)
+
+.. reveal:: while_reveal_2
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: while_2
+
+      cena = float(input("Unesi cenu cipela:"))
+      procenat = float(input("Unesi procenat sniženja:"))
+      while cena != 0:
+          snizena_cena = cena * (1 - procenat / 100)
+          print("Snižena cena:", snizena_cena)
+          cena = float(input("Unesi cenu cipela:"))
+          procenat = float(input("Unesi procenat sniženja:"))
+
+          

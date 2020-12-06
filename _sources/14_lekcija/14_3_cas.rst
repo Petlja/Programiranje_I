@@ -1,0 +1,79 @@
+14.3. Квиз
+##########
+
+
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: ss2
+    :answer_a: lista(2)
+    :feedback_a: Нетачно
+    :answer_b: lista.append(2)
+    :feedback_b: Тачно    
+    :answer_c: lista[2]
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који од следећих начина се додаје елемент 2 мна крај дате листе ``lista =[1, 5, 9, 7]``?
+
+
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: s3
+    :answer_a: d(lista)
+    :feedback_a: Нетачно
+    :answer_b: len(lista)
+    :feedback_b: Тачно    
+    :answer_c: lista.len()
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који од следећих начина одредити дужину листе ``lista = [1,2,3,4]`` (број елемената листе)?
+
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp4
+    :answer_a: 1 in range(ocene)
+    :feedback_a: Нетачно
+    :answer_b: 1 in ocene
+    :feedback_b: Тачно    
+    :answer_c: ocene contains 1
+    :feedback_c: Нетачно    
+    :correct: b
+
+Како се проверава да ли број `1` припада листи `ocene`?
+	      
+
+Питање 4.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp5
+    :answer_a: lista[1]
+    :feedback_a: Нетачно
+    :answer_b: lista[0]
+    :feedback_b: Тачно    
+    :answer_c: lista[2]
+    :feedback_c: Нетачно    
+    :correct: b
+
+    Дата је листа ``lista = [2,3,4,5]``, на који од следећих начина се може издвојити први елемент листе?
+
+Питање 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp6
+    :answer_a: matematika = 3.5
+    :feedback_a: Нетачно
+    :answer_b: ocena["matematika"] = 3.5
+    :feedback_b: Тачно    
+    :answer_c: ocena[matematika] = 3.5
+    :feedback_c: Нетачно
+    :answer_d: ocena["matematika"] = 3,5
+    :feedback_d: Нетачно
+    :correct: b
+
+    Речник називу сваког предмета додељује просечну оцену из тог
+    предмета. Којом наредбом се математици придружује просечна оцена
+    3,5?

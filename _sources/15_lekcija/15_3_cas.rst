@@ -1,0 +1,109 @@
+15.3. Квиз
+##########
+
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp1
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: a
+
+    На који од следећих начин се исписују елементи листе ``lista = [1, 22, 43, 5]``? Изабери тачан одговор:
+
+    (1)
+
+    .. code-block:: python
+
+     for broj in lista:
+     	print(broj)
+
+    (2)
+
+    .. code-block:: python
+
+     for broj in lista:
+     	print(lista[broj])
+
+    (3)
+
+    .. code-block:: python
+
+     for broj in range(lista):
+     	print(lista[broj])
+
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: spp2
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Тачно    
+    :correct: c
+
+    На који од следећих начин се исписује сваки други елемент листе ``lista``? Изабери тачан одговор:
+
+    (1)
+
+    .. code-block:: python
+
+     for i in range(1, len(lista), 1):
+     	print(lista[i])
+
+    (2)
+
+    .. code-block:: python
+
+     for elem in lista:
+     	print(elem)
+
+    (3)
+
+    .. code-block:: python
+
+     for elem in lista[::2]:
+     	print(elem)
+	
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: spp3
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Тачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који начин се може проћи кроз све елементе речника `predmeti`
+    који пресликава називе предмета у оцене из тих предмета. Изабери
+    тачан одговор:
+    
+    (1)
+
+    .. code-block:: python
+
+     for (predmet, ocena) in predmeti:
+     	print(predmet, ocena)
+
+    (2)
+
+    .. code-block:: python
+
+     for (predmet, ocena) in predmeti.items():
+     	print(predmet, ocena)
+
+    (3)
+
+    .. code-block:: python
+
+     for predmet in predmeti.items():
+     	print(predmeti[predmet])
