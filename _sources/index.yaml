@@ -398,7 +398,18 @@ lessons:
         file: 15_4_cas.rst
         description: #opciono
         guid: 730987e6-ec3c-40b1-9741-64fe6cd0944c
-  
+
+  - title: 16. Откривање и исправљање грешака
+    folder: 16_lekcija
+    guid: 3d4c4bdf-dd5f-4dc0-953f-4d59ca05cc90
+    description: 16_lekcija
+    activities:
+      - type: reading
+        title: 16.1. Откривање и исправљање грешака и коришћење дебагера
+        file: 16_1_cas.rst
+        description: #opciono
+        guid: bbb08795-16b5-4cd1-be94-932d7225a44c
+        
   - title: 20. Програмирање 2Д графике - Увод у Pygame #OVDE POČINJE PYGAME
     folder: предговор
     guid: e6155e3c-824e-42a6-b48f-98f762bfe94b
