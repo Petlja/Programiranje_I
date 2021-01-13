@@ -1,5 +1,5 @@
-Завршни квиз
-============
+31. Завршни квиз
+================
 
 Питање 1.
 ~~~~~~~~~
@@ -222,3 +222,169 @@
    Коју функцију користимо да бисмо приказали слику на Пајгејм прозору?
 
    Изабери тачан одговор:
+
+Питање 11.
+~~~~~~~~~~
+
+.. mchoice:: dkeydownup1zavr
+   :answer_a: Плави круг ће постати и остати видљив након првог притиска на било који тастер.
+   :feedback_a: Нетачно    
+   :answer_b: Плави круг не може бити видљив, јер одмах по исцртавању бива прецртан црвеним кругом.
+   :feedback_b: Нетачно    
+   :answer_c: Плави круг ће бити видљив онолико дуго колико је тастер притиснут.
+   :feedback_c: Тачно
+   :correct: c
+
+      
+   Ако је реакција на догађаје дефинисана наредним кодом, шта је потребно да корисник уради да би плави круг био видљив?
+
+   .. code-block:: python
+
+      def obradi_dogadjaj(dogadjaj):
+            if dogadjaj.type == pg.KEYDOWN:
+               pg.draw.circle(prozor, pg.Color("blue"), (200, 200), 100)
+            elif dogadjaj.type == pg.KEYUP:
+               pg.draw.circle(prozor, pg.Color("red"), (200, 200), 100)
+
+   Изабери тачан одговор:
+
+Питање 12.
+~~~~~~~~~~
+
+.. mchoice:: pg_brzina_pixperseczavr
+   :answer_a: 3 пиксела по секунди
+   :feedback_a: Нетачно    
+   :answer_b: 20 пиксела по секунди
+   :feedback_b: Нетачно    
+   :answer_c: 60 пиксела по секунди
+   :feedback_c: Тачно
+   :answer_d: не помера се
+   :feedback_d: Нетачно    
+   :correct: c
+      
+   Дат је део програма којим се анимира кретање црвеног круга
+
+   .. code-block:: python
+
+         def novi_frejm():
+            global x
+            x += 3
+            prozor.fill(pg.Color("white"))
+            pg.draw.circle(prozor, pg.Color("red"), (x, y), 30)
+       
+         pygamebg.frame_loop(20, novi_frejm)    
+
+   Којом брзином се помера круг по екрану?
+
+   Изабери тачан одговор:
+
+Питање 13.
+~~~~~~~~~~
+
+.. mchoice:: pg_krug_raste2zavr
+   :answer_a: На сваких 100 милисекунди круг се помера за 10 пиксела на десно.
+   :feedback_a: Нетачно    
+   :answer_b: Круг пролази преко екрана и у сваком проласку мења брзину.
+   :feedback_b: Тачно    
+   :answer_c: На сваких 100 милисекунди полупречник круга (који је на почетку 20 пиксела) се повећава за 10 пиксела.
+   :feedback_c: Нетачно
+   :answer_d: Ниједан од осталих понуђених одговора није тачан.  
+   :feedback_d: Нетачно    
+   :correct: b
+      
+   Шта је резултат извршавања следећег програма?
+
+   .. code-block:: python
+
+      import pygame as pg, pygamebg
+      import random
+      prozor = pygamebg.open_window(200,100, "")
+      x = 0
+      z = 15
+      r = 30
+      def novi_frejm():
+            global x, z
+            x += z
+            prozor.fill(pg.Color("white"))
+            pg.draw.circle(prozor, pg.Color("red"), (x, 50), r)
+            if x - r > 200:
+                  x = -r
+                  z = random.randint(10, 30)
+      pygamebg.frame_loop(10, novi_frejm)
+
+
+
+Питање 14.
+~~~~~~~~~~
+
+.. mchoice:: sudari_linijazavr
+   :answer_a: 1
+   :feedback_a: Нетачно    
+   :answer_b: 2
+   :feedback_b: Нетачно    
+   :answer_c: 3
+   :feedback_c: Тачно
+   :answer_d: 4
+   :feedback_d: Нетачно    
+   :correct: c
+      
+   Која од следећих функција проверава да ли се круг судара (додирује) са било левом, било десном ивицом екрана?
+
+   .. code-block:: python
+
+      (1)
+      .. code-block:: python
+
+            def sudar_sa_ivicom():
+               return x_centar_kruga - poluprecnik_kruga < 0
+
+      (2)
+      .. code-block:: python
+
+            def sudar_sa_ivicom():
+               return x_centar_kruga - poluprecnik_kruga < 0 and x_centar_kruga + poluprecnik_kruga > sirina
+
+      (3)
+      .. code-block:: python
+
+            def sudar_sa_ivicom():
+               return x_centar_kruga - poluprecnik_kruga < 0 or x_centar_kruga + poluprecnik_kruga > sirina
+         
+      (4)
+      .. code-block:: python
+
+            def sudar_sa_ivicom():
+               return x_centar_kruga + poluprecnik_kruga < 0 or x_centar_kruga - poluprecnik_kruga > sirina
+
+   Изабери тачан одговор:
+
+Питање 15.
+~~~~~~~~~~
+
+.. mchoice:: dkeypojedinacnolevozavr
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: a
+    
+    Којим од понуђених линија кода се врши провера да ли је притиснут тастер стрелице лево?
+
+    1)
+        .. code-block:: python
+
+            if (dogadjaj.type == pygame.KEYDOWN) and (dogadjaj.key == pygame.K_LEFT):  
+
+    2)
+        .. code-block:: python
+
+            if (dogadjaj.type == pygame.KEYDOWN) or (dogadjaj.key == pygame.LEFT):
+
+    3)
+        .. code-block:: python
+
+            if (dogadjaj.type == pygame.K_LEFT):
+
+    Изабери тачан одговор:

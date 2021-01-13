@@ -429,137 +429,137 @@ lessons:
         description: #opciono
         guid: bbb08795-16b5-4cd1-be94-932d7225a44c
         
-  - title: 20. Програмирање 2Д графике - Увод у Pygame #OVDE POČINJE PYGAME
+  - title: 17. Програмирање 2Д графике - Увод у Pygame #OVDE POČINJE PYGAME
     folder: предговор
     guid: e6155e3c-824e-42a6-b48f-98f762bfe94b
     description: Прва лекција
     activities:
       - type: reading
-        title: 20.1 Увод у Pygame
+        title: 17.1 Увод у Pygame
         file: предговор.rst
         description: 
         guid: 0b5b7bcc-4b86-40de-a1b2-1c94df8e16a3
       - type: reading
-        title: 20.2 Основна структура Пајгејм програма
+        title: 17.2 Основна структура Пајгејм програма
         file: основна_структура_програма.rst
         description: 
         guid: eba9b01e-c069-44f2-912f-befffbb32bdd
-  - title: 21. Увод у Pygame - Координатни систем и боје
+  - title: 18. Увод у Pygame - Координатни систем и боје
     folder: Координатни систем и боје
     guid: f1148cb4-38ab-435f-80aa-87c79cc76ff1
     description:  Прва лекција
     activities:
       - type: reading
-        title: 21.1 Координатни систем
+        title: 18.1 Координатни систем
         file: координатни_систем.rst
         description: #opciono
         guid: beaca2c0-2619-4c59-9c87-91e75920771a
       - type: reading
-        title: 21.2 Боје
+        title: 18.2 Боје
         file: боје.rst
         description: #opciono
         guid: 0b27e129-9623-4e7b-bb66-360a2d29caaf
       - type: reading
-        title: 21.3 Најважније из ове лекције
+        title: 18.3 Најважније из ове лекције
         file: најважније_координатни_боје.rst
         description: #opciono
         guid: e2f4c1df-5521-47f9-b0ea-70d59b98ea5e
       - type: quiz
-        title: 21.4 Квиз - координатни систем и боје
+        title: 18.4 Квиз - координатни систем и боје
         file: тест_координатни_систем_боје.rst
         description: #opciono
         guid: 01d8349e-2a4b-41bd-8d7f-2a22cadbc2dd
-  - title: 22. Цртање основних облика
+  - title: 19. Цртање основних облика
     folder: Цртање 1
     guid: 701419e5-e8c9-4b75-bb77-d6e1098f2e26
     description:  Друга лекција
     activities:
       - type: reading
-        title: 22.1. Дужи
+        title: 19.1. Дужи
         file: дужи.rst
         description: #opciono
         guid: 28410ee3-f611-4e68-b4c3-be6175e58818
       - type: reading
-        title: 22.2. Правоугаоници и елипсе
+        title: 19.2. Правоугаоници и елипсе
         file: правоугаоници_елипсе.rst
         description: #opciono
         guid: b928b948-609f-4a1c-8f63-4b2fb0f165ee
       - type: reading
-        title: 22.3. Кругови и многоуглови
+        title: 19.3. Кругови и многоуглови
         file: кругови_многоуглови.rst
         description: #opciono
         guid: 6849e45c-1b4c-4e12-bb8a-4b651ffcffcf
       - type: reading
-        title: 22.4. Најважније из ове лекције
+        title: 19.4. Најважније из ове лекције
         file: најважније_цртање1.rst
         description: #opciono
         guid: b17c3a07-73d2-4d1e-8625-5434d44f72ac
       - type: reading
-        title: 22.5. Домаћи задатак
+        title: 19.5. Домаћи задатак
         file: домаћи_задатак_паткица.rst
         description: #opciono
         guid: dadd3b45-f4c9-40a1-bd76-93670070ea06
       - type: quiz
-        title: 22.6. Квиз - цртање облика
+        title: 19.6. Квиз - цртање облика
         file: цртање_облика_квиз.rst
         description: #opciono
         guid: f1dbff55-d404-4b22-8a27-51436a228eb7
-  - title: 23. Цртање основних облика
+  - title: 20. Цртање основних облика
     folder: Цртање 2
     guid: 3c525750-b762-400c-8a41-d62953b5e80e
     description:  Друга лекција
     activities:
       - type: reading
-        title: 23.1. Симетрија
+        title: 20.1. Симетрија
         file: симетрија.rst
         description: #opciono
         guid: 1906c9ec-af4a-4d0f-8b33-40420c6d4f64
       - type: reading
-        title: 23.2. Центрирање облика
+        title: 20.2. Центрирање облика
         file: центрирање_облика.rst
         description: #opciono
         guid: ef1b2124-ef1a-4940-956a-da73e43a79f4
       - type: reading
-        title: 23.3. Релативно задавање координата и димензија
+        title: 20.3. Релативно задавање координата и димензија
         file: релативно_задавање_координата_и_димензија.rst
         description: #opciono
         guid: ead2738d-fbe7-4caa-85ce-0235617aef5e
       - type: reading
-        title: 23.4. Најважније из ове лекције
+        title: 20.4. Најважније из ове лекције
         file: најважније_цртање2.rst
         description: #opciono
         guid: fb42435c-6134-4752-85fa-3280dc54629b
       - type: reading
-        title: 23.5. Домаћи задатак
+        title: 20.5. Домаћи задатак
         file: домаћи_задатак_облак.rst
         description: #opciono
         guid: b0ec9c24-6412-41d3-862b-e2fc55cef484
       - type: quiz
-        title: 23.6. Квиз - Цртање  
+        title: 20.6. Квиз - Цртање  
         file: квиз_цртање2.rst
         description: #opciono
         guid: 43680cb0-3630-49f8-b008-b25b88d489d1
-  - title: 24. Цртање основних облика - утврђивање
+  - title: 21. Цртање основних облика - утврђивање
     folder: Релативно задавање координата - утврђивање
     guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
     description: Релативне координате утврђивање
     activities:
       - type: reading
-        title: 24.1. Релативно задавање координата - утврђивање
+        title: 21.1. Релативно задавање координата - утврђивање
         file: relativne_koordinate_utvrdjivanje.rst
         description: #opciono
         guid: 0be414d6-45c1-4159-83ab-6f1b618e677f
       - type: reading
-        title: 24.2. Домаћи задатак
+        title: 21.2. Домаћи задатак
         file: zadatak_relativne_koordinate_utvrdjivanje.rst
         description: #opciono
         guid: 0e4f16eb-ffc9-489e-a227-fa967c9e4607
       - type: quiz
-        title: 24.3. Квиз - релативне координате и димензије
+        title: 21.3. Квиз - релативне координате и димензије
         file: relativne_koordinate_test2.rst
         description: #opciono
         guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
-  - title: 25. Цртање правилних облика помоћу петљи
+  - title: 22. Цртање правилних облика помоћу петљи
     folder: Цртање уз помоћ петљи
     guid: b5741e7a-0d8e-459f-87d3-3b40c0a2a864
     description: Петље 1
@@ -589,158 +589,168 @@ lessons:
         file: квиз_петље.rst
         description: #opciono
         guid: 365d8653-0ab6-491f-bbd9-9706fa2e2974
-  - title: 26. Угнежђене петље и гранање
+  - title: 23. Угнежђене петље и гранање
     folder: Угнежђене петље
     guid: d09f5479-4a90-4b7a-b5c8-9b3e378cb777
     description: Петље 2
     activities:
       - type: reading
-        title: 26.1. Гранање
+        title: 23.1. Гранање
         file: гранање.rst
         description: #opciono
         guid: 3d18e350-f8bf-4fd9-88b0-cbfe9a665109
       - type: reading
-        title: 26.2. Угнежђене петље
+        title: 23.2. Угнежђене петље
         file: угнежђене_петље.rst
         description: #opciono
         guid: c037e617-e676-4275-97e3-d0e0923fae42
       - type: reading
-        title: 26.3. Домаћи задатак
+        title: 23.3. Домаћи задатак
         file: угнежђене_петље_задатак.rst
         description: #opciono
         guid: d50d0691-c159-44b7-aae2-1fd13b026e2c
       - type: quiz
-        title: 26.4. Квиз - угнежђене петље и гранање
+        title: 23.4. Квиз - угнежђене петље и гранање
         file: квиз_петље_угнежђене.rst
         description: #opciono
         guid: 5ed5b3f9-aeeb-49d2-b22f-11d2f148dd9f
-  - title: 27. Приказ слика и текста
+  - title: 24. Приказ слика и текста
     folder: Слике и текст
     guid: 76327c12-b333-4e59-99c4-a42fac5754df
     description: Слике и текст
     activities:
       - type: reading
-        title: 27.1. Приказ слике и текста
+        title: 24.1. Приказ слике и текста
         file: slike.rst
         description: #opciono
         guid: b9615387-2736-42c2-ae40-82e6719af068
       - type: quiz
-        title: 27.2. Слике и текст - квиз
+        title: 24.2. Слике и текст - квиз
         file: slike_test.rst
         description: #opciono
         guid: 1f06a9b3-d42f-4a44-b1ee-57b70c5209ec
-  - title: 28. Анимације
+  - title: 25. Анимације
     folder: Анимације
     guid: e6a6a2f4-a671-4ec0-9456-0ed06355b99e
     description: Анимације увод
     activities:
       - type: reading
-        title: 28.1. Анимације
+        title: 25.1. Анимације
         file: анимације.rst
         description: #opciono
         guid: cddc9a54-8e08-4db1-9499-d797cbb8bc97
       - type: reading
-        title: 28.2. Како раде анимације
+        title: 25.2. Како раде анимације
         file: како_раде_анимације.rst
         description: #opciono
         guid: 9ab47c18-6845-4af6-838a-2fa3f2c7db01
       - type: quiz
-        title: 28.3. Квиз - анимације
+        title: 25.3. Квиз - анимације
         file: анимације_квиз.rst
         description: #opciono
         guid: 32115908-70e9-4dad-bb38-0d62732a605c
-  - title: 29. Анимације задаци
+  - title: 26. Анимације задаци
     folder: Анимације задаци
     guid: 1b7c7134-a66e-4578-b30f-7725f81f8055
     description: Анимације задаци
     activities:
       - type: reading
-        title: 29.1. Анимације задаци
+        title: 26.1. Анимације задаци
         file: анимације_задаци.rst
         description: #opciono
         guid: ad802cb0-c2b8-44d5-b2ef-9cd214f7312f
       - type: reading
-        title: 29.2. Анимације домаћи
+        title: 26.2. Анимације домаћи
         file: домаћи_задатак_анимације.rst
         description: #opciono
         guid: dcfdbd32-1ffd-4437-9580-74542f90dd9b
-  - title: 30. Анимације кретања
+  - title: 27. Анимације кретања
     folder: анимације кретања
     guid: 0e856354-3249-4b45-9804-29df554eabee
     description: Анимације кретања
     activities:
       - type: reading
-        title: 30.1. Анимације кретања
+        title: 27.1. Анимације кретања
         file: анимације_кретања.rst
         description: #opciono
         guid: f3718a1f-ccf5-42fd-854e-b6638365a3c3
       - type: reading
-        title: 30.2. Анимације кретања домаћи
+        title: 27.2. Анимације кретања домаћи
         file: анимације_кретања_домаћи.rst
         description: #opciono
         guid: 870b4252-a215-4594-881a-4bf0d4481ec5
       - type: quiz
-        title: 30.3. Квиз - анимације кретања
+        title: 27.3. Квиз - анимације кретања
         file: анимације_кретања_квиз.rst
         description: #opciono
         guid: 55c4b834-0b7f-4092-ada3-4f52689a5366
-  - title: 31. Анимације судара објеката
+  - title: 28. Анимације судара објеката
     folder: Анимације судари
     guid: b1877858-f357-45c5-812c-64926aa023bd
     description: Анимације судари
     activities:
       - type: reading
-        title: 31.1. Анимације - судари објеката на екрану
+        title: 28.1. Анимације - судари објеката на екрану
         file: анимације_судари.rst
         description: #opciono
         guid: 1eb6e7dd-a5b9-4d03-b44f-51c25f6db54b
       - type: reading
-        title: 31.2. Домаћи - судари објеката на екрану
+        title: 28.2. Домаћи - судари објеката на екрану
         file: судари_домаћи.rst
         description: #opciono
         guid: 8553c7db-ce5a-41f3-8786-77eb11c0d488
       - type: quiz
-        title: 31.3. Квиз - судари објеката на екрану
+        title: 28.3. Квиз - судари објеката на екрану
         file: анимације_судари_квиз.rst
         description: #opciono
         guid: e1aa77d6-0371-4891-a3ba-9459f80f0607
-  - title: 32. Догађаји 
+  - title: 29. Догађаји 
     folder: Догађаји 
     guid: de317fe8-a1d0-4d0d-a873-228872b143fd
     description: Догађаји
     activities:
       - type: reading
-        title: 32.1. Догађаји увод
+        title: 29.1. Догађаји увод
         file: догађаји.rst
         description: #opciono
         guid: 0e2eeb45-f4f0-45c8-a004-d9a28f374522
       - type: reading
-        title: 32.2. Догађаји тастатуре
+        title: 29.2. Догађаји тастатуре
         file: догађаји_тастатуре.rst
         description: #opciono
         guid: d8068947-de6f-4ec1-ae82-063b1384992c
       - type: reading
-        title: 32.3. Догађаји миша
+        title: 29.3. Догађаји миша
         file: догађаји_миша.rst
         description: #opciono
         guid: 6d114f6e-37c8-4416-bb3d-903865038e3d
       - type: quiz
-        title: 32.4. Квиз - догађаји
+        title: 29.4. Квиз - догађаји
         file: догађаји_квиз.rst
         description: #opciono
         guid: 1c8d4a9d-ed53-479d-b032-ae05093c6275
-  - title: 33. Комбиновање догађаја и анимација
+  - title: 30. Комбиновање догађаја и анимација
     folder: Догађаји_анимације
     guid: 3bc92356-ee11-4357-8673-367be9cd355b
     description: Догађаји и анимације
     activities:
       - type: reading
-        title: 33.1. Комбиновање догађаја и анимација
+        title: 32.1. Комбиновање догађаја и анимација
         file: Комбиновање_догађаја_и_анимација.rst
         description: #opciono
         guid: 5a6cc2db-ed81-4f12-8bd7-9a396b1d7924
       - type: quiz
-        title: 33. 2. Квиз - догађаји и анимације
+        title: 30. 2. Квиз - догађаји и анимације
         file: догађаји_анимације_квиз.rst
         description: #opciono
         guid: 3a66f46e-db0c-4b84-80ad-821b9876e48f
+  - title: 31. Завршни квиз
+    folder: завршни_тест
+    guid: a44a5204-7d45-4a2b-8b53-afaedf27ea06
+    description: завршни квиз
+    activities:
+      - type: quiz
+        title: 31. Завршни квиз
+        file: zavrsni_test.rst
+        description: #opciono
+        guid: 9f135016-0af1-4f2f-af56-1aba6d95e0f4
