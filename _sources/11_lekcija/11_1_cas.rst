@@ -66,7 +66,7 @@
 Како би се подсетио / подсетила онога што си прочитао / прочитала у `Приручнику <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10>`_
 уради следеће примере:
 
-- `Малди програмери <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10#id4>`__
+- `Млади програмери <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10#id4>`__
 - `Тобоган <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10#id7>`__
 - `Ко иде пре у дневнику <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10#id13>`__
 - `Парност броја <https://petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/kontrolatoka-cas10#id16>`__
