@@ -36,3 +36,11 @@
    :playtask:
    :includehsrc: _includes/koordinate.py
 
+.. topic:: Погледај видео:
+
+   Погледај овај видео како би утврдио/утврдила своје разумевање координатног система у Пајгејму.
+
+    .. ytpopup:: osqRhn3LAx8
+        :width: 735
+        :height: 415
+        :align: center 
