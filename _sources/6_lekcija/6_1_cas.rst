@@ -257,7 +257,7 @@
 
    Напиши програм у којем корњача црта звезду са пет кракова.
 
-.. image:: ../../_images/star5.png
+.. image:: ../../_images/star51.png
    :width: 300px   
    :align: center
 

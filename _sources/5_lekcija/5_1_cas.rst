@@ -79,7 +79,7 @@
 
 Израчунајмо унутрашње и спољашње углове звезде са 5 кракова.
 
-.. image:: ../../_images/star5.png
+.. image:: ../../_images/star51.png
    :width: 250px   
    :align: center
 
