@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Паткица")
+prozor = pygamebg.open_window(sirina, visina, "Patkica")
 
 # -*- acsection: main -*-
 
@@ -48,11 +48,11 @@ def crtanje():
     pg.draw.ellipse(prozor, pg.Color("black") , (170, 230, 60, 30), 7)
     #crtamo nogice
     #leva
-    pg.draw.circle(prozor, zuta, (90, 310), 30)
-    pg.draw.circle(prozor, pg.Color("black"), (90, 310), 30, 7)
+    pg.draw.ellipse(prozor, zuta, (60, 280, 60, 60))
+    pg.draw.ellipse(prozor, pg.Color("black"), (60, 280, 60, 60), 7)
     #desna
-    pg.draw.circle(prozor, zuta, (310, 310), 30)
-    pg.draw.circle(prozor, pg.Color("black"), (310, 310), 30, 7)
+    pg.draw.ellipse(prozor, zuta, (280, 280, 60, 60))
+    pg.draw.ellipse(prozor, pg.Color("black"), (280, 280, 60, 60), 7)
  
     pg.draw.line(prozor, pg.Color("black"), (mis_x, 0), (mis_x, visina))
     pg.draw.line(prozor, pg.Color("black"), (0, mis_y), (sirina, mis_y))

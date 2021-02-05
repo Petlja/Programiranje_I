@@ -4,18 +4,14 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (500, 300)  # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Ауто и авион")
+prozor = pygamebg.open_window(sirina, visina, "Auto i avion")
 
 # -*- acsection: main -*-
 
 avion_slika = pg.image.load("avion.png")
 (avion_x, avion_y) = (0, 0)
-avion_brzina = 200
 auto_slika = pg.image.load("auto.png")
 (auto_x, auto_y) = (0, visina - auto_slika.get_height())
-auto_brzina = 100
-FPS = 25
-dt = 1/FPS
 
 def crtaj():
     prozor.fill(pg.Color("white"))
@@ -26,12 +22,12 @@ def novi_frejm():
     global avion_x, avion_y, auto_x, auto_y
 
     # pomeramo avion
-    avion_x += avion_brzina*dt
+    avion_x += 2
     if avion_x > sirina:
         avion_x = - avion_slika.get_width()
 
     # pomeramo auto
-    auto_x += auto_brzina*dt
+    auto_x += 1
     if auto_x > sirina:
         auto_x = - auto_slika.get_width()
 
@@ -41,4 +37,4 @@ def novi_frejm():
 
 # -*- acsection: after-main -*-
 
-pygamebg.frame_loop(FPS, novi_frejm)
+pygamebg.frame_loop(100, novi_frejm)

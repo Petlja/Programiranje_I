@@ -4,15 +4,15 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 200)  # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Две лоптице")
+prozor = pygamebg.open_window(sirina, visina, "Dve loptice")
 
 # -*- acsection: main -*-
 
 r = 20
 (x1, y1) = (r, r)
-(dx1, dy1) = (2, 3)
+(dx1, dy1) = (1, 1)
 (x2, y2) = (sirina - r, visina - r)
-(dx2, dy2) = (-3, -2)
+(dx2, dy2) = (-1, -1)
 
 def crtaj():
     prozor.fill(pg.Color("white"))
@@ -20,12 +20,12 @@ def crtaj():
     pg.draw.circle(prozor, pg.Color("blue"), (x2, y2), r)
 
 # rastojanje između centara loptica
+def rastojanje():
+    return math.sqrt((x1-x2)**2 + (y1-y2)**2)
 
 # provera da li se dve loptice sudaraju
 def sudar():
-    razmak_centara = math.sqrt((x1-x2)**2 + (y1-y2)**2)
-    if razmak_centara < 2*r:
-        return True
+    return rastojanje() <= 2*r
 
 def novi_frejm():
     global x1, y1, x2, y2, dx1, dy1, dx2, dy2
