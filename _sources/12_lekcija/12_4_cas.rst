@@ -60,9 +60,9 @@
     .. code-block:: python
 
        for i in range(28):
-       	o = int(input("unesi broj opravdanih")
-      	n = int(input("unesi broj neopravdanih")
-      	u = o + n
+          o = int(input("unesi broj opravdanih"))
+          n = int(input("unesi broj neopravdanih"))
+          u = o + n
        print(u)
 
 Питање 4.
@@ -84,8 +84,8 @@
     .. code-block:: python
  
      for i in range(36):
-    	o = int(input("unesi broj opravdanih")
-    	n = int(input("unesi broj neopravdanih")
+    	o = int(input("unesi broj opravdanih"))
+    	n = int(input("unesi broj neopravdanih"))
     	u = o + n
         print(u)
 
