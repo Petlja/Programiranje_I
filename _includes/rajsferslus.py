@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (100, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "")
+prozor = pygamebg.open_window(sirina, visina, "Rajsferšlus")
 
 # -*- acsection: main -*-
 

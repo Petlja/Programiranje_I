@@ -173,12 +173,12 @@
 
 .. activecode:: чоколадне_бананице
 
-   broj_dece = int(input("Koliko će dece doći na priredbu: "))
+   broj_dece = int(input("Koliko ce dece doci na priredbu: "))
    ukupno_bananica = int(input("Koliko ukupno ima bananica: "))
    bananica_po_detetu = ukupno_bananica // broj_dece
    ostalo_bananica = ukupno_bananica % broj_dece
-   print("Svako će dete dobiti", bananica_po_detetu, "bananica.")
-   print("Ostaće", ostalo_bananica, "bananica.")
+   print("Svako ce dete dobiti", bananica_po_detetu, "bananica.")
+   print("Ostace", ostalo_bananica, "bananica.")
 
 Приметимо и да смо број преосталих бананица могли израчунати и тако
 што од укупног броја бананица одузмемо број бананица које су подељене

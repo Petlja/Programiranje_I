@@ -60,7 +60,7 @@
    .. activecode:: while_2
 
       cena = float(input("Unesi cenu cipela:"))
-      procenat = float(input("Unesi procenat sniženja:"))
+      procenat = float(input("Unesi procenat snizenja:"))
       while cena != 0:
           snizena_cena = cena * (1 - procenat / 100)
           print("Snižena cena:", snizena_cena)

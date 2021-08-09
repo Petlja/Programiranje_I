@@ -84,7 +84,7 @@
    if pada_kisa:
        print("Ponesi kišobran")
    else:
-       print("Ne moraš da nosiš kišobran")
+       print("Ne moras da nosiš kišobran")
 
 Ако у претходном програму у првом реду уместо вредности ``True``
 поставиш вредност ``False``, добићеш другачију поруку након покретања

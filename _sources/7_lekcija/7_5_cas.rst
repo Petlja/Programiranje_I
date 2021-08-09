@@ -26,7 +26,7 @@
 		    
    Колико је решење?
    
-   - :^2311$: Тачан одговор
+   - :^2311.0$: Тачан одговор
      :.*: Покушај поново
    
 Тркачи
@@ -52,7 +52,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for vasa, ukupno in [(2462, 12809), (773, 6053)]:
-             self.assertEqual(acMainSection(vasa = vasa)["ukupno"],ukupno,"Ако је Васа претрчао %s метара, укупно су претрчали %s метара." % (vasa, ukupno))
+             self.assertEqual(acMainSection(vasa = vasa)["ukupno"],ukupno, U"Ако је Васа претрчао %s метара, укупно су претрчали %s метара." % (vasa, ukupno))
    myTests().main()
    
 .. reveal:: тркачи_решење_reveal
@@ -134,20 +134,20 @@
   Vladislav_kraj = 0
   Uros_pocetak = 0
   Uros_kraj = 0
-  print("Стефан:", Stefan_pocetak, "-", Stefan_kraj)
-  print("Радослав:", Radoslav_pocetak, "-", Radoslav_kraj)
-  print("Владислав:", Vladislav_pocetak, "-", Vladislav_kraj)
-  print("Урош:", Uros_pocetak, "-", Uros_kraj)
+  print("Stefan:", Stefan_pocetak, "-", Stefan_kraj)
+  print("Radoslav:", Radoslav_pocetak, "-", Radoslav_kraj)
+  print("Vladislav:", Vladislav_pocetak, "-", Vladislav_kraj)
+  print("Uros:", Uros_pocetak, "-", Uros_kraj)
 
 Исправи претходни програм тако да исправно израчуна периоде у којима
 су владали краљеви. Ако све урадиш како треба добићеш следеће резултате:
 
 ::
 
-   Стефан: 1217 - 1228
-   Радослав: 1228 - 1234
-   Владислав: 1234 - 1243
-   Урош: 1243 - 1276
+   Stefan: 1217 - 1228
+   Radoslav: 1228 - 1234
+   Vladislav: 1234 - 1243
+   Uros: 1243 - 1276
 
 
 Једначина
@@ -190,7 +190,7 @@
    prvi_sabirak = 123780
    zbir = 321732
    # -*- acsection: main -*-
-   drugi_sabirak = 0    # popravi resenje
+   drugi_sabirak = 0    # popravi rešenje
    # -*- acsection: after-main -*-
    print(drugi_sabirak)
    ====
@@ -198,6 +198,6 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for prvi_sabirak, zbir, drugi_sabirak in [(100, 230, 130), (200, 942, 742)]:
-             self.assertEqual(acMainSection(prvi_sabirak = prvi_sabirak, zbir = zbir)["drugi_sabirak"],drugi_sabirak,"Ако је једначина %s + x = %s, тада је x = %s." % (prvi_sabirak, zbir, drugi_sabirak))
+             self.assertEqual(acMainSection(prvi_sabirak = prvi_sabirak, zbir = zbir)["drugi_sabirak"],drugi_sabirak,U"Ако је једначина %s + x = %s, тада је x = %s." % (prvi_sabirak, zbir, drugi_sabirak))
    myTests().main()
 

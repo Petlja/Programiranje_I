@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (100, random.randint(150, 500)) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "")
+prozor = pygamebg.open_window(sirina, visina, "Vertikalno raspoređeni krugovi")
 
 # -*- acsection: main -*-
 

@@ -238,7 +238,8 @@
 елементима. 
 
 .. activecode:: математичари
-
+   :passivecode:
+   
    matematicari = ["Рене Декарт", "Жозеф Луј Лагранж", "Карл Фридрих Гаус", "Леонард Ојлер"]
    dekart = matematicari[0]
    lagranz = matematicari[1]

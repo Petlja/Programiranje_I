@@ -112,13 +112,13 @@ b`.
    # -*- acsection: main -*-
    najveci = 0 # ispravi ovu liniju
    # -*- acsection: after-main -*-
-   print("Највећи број поена је: ", najveci)
+   print("Najveći broj poena je: ", najveci)
    ====
    from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
        def testOne(self):
           for asmir, sneza, mica in [(3542, 2388, 4123), (3562, 4221, 1002), (7428, 2842, 9413)]:
-             self.assertEqual(acMainSection(asmir = asmir, sneza = sneza, mica = mica)["najveci"],max(asmir, sneza, mica),"Ако су редом освајали %s, %s и %s поена, тада је највећи број поена %s." % (asmir, sneza, mica, max(asmir, sneza, mica)))
+             self.assertEqual(acMainSection(asmir = asmir, sneza = sneza, mica = mica)["najveci"],max(asmir, sneza, mica),U"Ако су редом освајали %s, %s и %s поена, тада је највећи број поена %s." % (asmir, sneza, mica, max(asmir, sneza, mica)))
    myTests().main()
    
 
@@ -189,8 +189,8 @@ x_2`. Размотримо наредни задатак.
 		
    # -*- acsection: general-init -*-
    # -*- acsection: var-init -*-
-   sprat1 = int(input("На ком се спрату налази први другар?"))
-   sprat2 = int(input("На ком се спрату налази други другар?"))
+   sprat1 = int(input("Na kom se spratu nalazi prvi drugar?"))
+   sprat2 = int(input("Na kom se spratu nalazi drugi drugar?"))
    # -*- acsection: main -*-
    rastojanje = 0 # ispravi svoj red
    # -*- acsection: after-main -*-
@@ -200,6 +200,6 @@ x_2`. Размотримо наредни задатак.
    class myTests(TestCaseGui):
        def testOne(self):
           for sprat1, sprat2 in [(8, 4), (3, 6), (-1, 8), (4, -2)]:
-             self.assertEqual(acMainSection(sprat1 = sprat1, sprat2 = sprat2)["rastojanje"],abs(sprat1-sprat2),"Растојање између спратова %s и %s је %s." % (sprat1, sprat2, abs(sprat1-sprat2)))
+             self.assertEqual(acMainSection(sprat1 = sprat1, sprat2 = sprat2)["rastojanje"],abs(sprat1-sprat2),U"Растојање између спратова %s и %s је %s." % (sprat1, sprat2, abs(sprat1-sprat2)))
    myTests().main()
    

@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Sahovska tabla")
+prozor = pygamebg.open_window(sirina, visina, "Šahovska tabla")
 
 # -*- acsection: main -*-
 

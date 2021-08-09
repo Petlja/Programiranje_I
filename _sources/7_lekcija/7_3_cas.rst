@@ -44,7 +44,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for prvi_dan, ukupno in [(84, 387), (122, 539), (153, 663)]:
-             self.assertEqual(acMainSection(prvi_dan = prvi_dan)["ukupno"],ukupno,"Ако је први дан прочитао %s стране, број страна књиге је %s." % (prvi_dan, ukupno))
+             self.assertEqual(acMainSection(prvi_dan = prvi_dan)["ukupno"],ukupno,U"Ако је први дан прочитао %s стране, број страна књиге је %s." % (prvi_dan, ukupno))
    myTests().main()
 
 Поправи претходни програм тако што ћеш изменити само оне редове који
@@ -117,7 +117,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for pera, zajedno in [(100, 542), (200, 942)]:
-             self.assertEqual(acMainSection(pera = pera)["zajedno"],zajedno,"Ако је Пера засадио %s стабала, заједно су засадили %s стабала." % (pera, zajedno))
+             self.assertEqual(acMainSection(pera = pera)["zajedno"],zajedno,U"Ако је Пера засадио %s стабала, заједно су засадили %s стабала." % (pera, zajedno))
    myTests().main()
    
 Притисни сада дугме **Корак по корак**. Оно ти пружа могућност да

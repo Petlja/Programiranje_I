@@ -2,29 +2,6 @@
 #############
 
 
-Индекс телесне масе
-'''''''''''''''''''
-
-   
-.. questionnote::
-
-   Индекс телесне масе човека (енгл. body mass index, bmi) се дефинише
-   као количник његове масе у килограмима и квадрата његове висине у
-   метрима. Нормалним се сматра индекс телесне масе из (затвореног)
-   интервала од :math:`18,5\frac{kg}{m^2}` до 25
-   :math:`25\frac{kg}{m^2}`. Да ли човек који је висок 180 центиметара
-   и тежак 79 килограма нормалне дебљине?
-
-.. activecode:: telesna_masa
-		
-   masa = 79
-   visina = 180 / 100
-   bmi = masa / (visina * visina)
-   if 18.5 <= bmi and bmi <= 25:
-       print("indeks telesne mase je u preporučenim granicama")
-   else:
-       print("Masa treba da bude od", 18.5*visina*visina, "do", 25*visina*visina, "kg")
-
 Кућни ред
 '''''''''
 
@@ -91,10 +68,10 @@
    class myTests(TestCaseGui):
 
        def testOne(self):
-          self.assertEqual(prestupna(2000), True, "2000 јесте преступна")
-          self.assertEqual(prestupna(1900), False, "1900 није преступна")
-          self.assertEqual(prestupna(2017), False, "2017 није преступна")
-          self.assertEqual(prestupna(2020), True, "2020 јесте преступна")
+          self.assertEqual(prestupna(2000), True, U"2000 јесте преступна")
+          self.assertEqual(prestupna(1900), False, U"1900 није преступна")
+          self.assertEqual(prestupna(2017), False, U"2017 није преступна")
+          self.assertEqual(prestupna(2020), True, U"2020 јесте преступна")
 
    myTests().main()
 

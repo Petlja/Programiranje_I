@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (500, 100) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Kvadrati - naizmenicno menjanje boja")
+prozor = pygamebg.open_window(sirina, visina, "Kvadrati - naizmenično menjanje boja")
 
 # -*- acsection: main -*-
 

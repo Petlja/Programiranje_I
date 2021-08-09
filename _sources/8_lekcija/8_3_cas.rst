@@ -52,7 +52,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for broj, kontrolni_broj in [(71425, 19), (33214, 13), (62040, 12)]:
-             self.assertEqual(acMainSection(broj = broj)["kontrolni_broj"],kontrolni_broj,"За број %s контролни број је %s." % (broj, kontrolni_broj))
+             self.assertEqual(acMainSection(broj = broj)["kontrolni_broj"],kontrolni_broj,U"За број %s контролни број је %s." % (broj, kontrolni_broj))
    myTests().main()
    
 
@@ -114,7 +114,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for sati, minuta, minuta_od_ponoci in [(14, 19, 859), (11, 13, 673), (23, 59, 1439)]:
-             self.assertEqual(acMainSection(sati = sati, minuta = minuta)["minuta_od_ponoci"],minuta_od_ponoci,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
+             self.assertEqual(acMainSection(sati = sati, minuta = minuta)["minuta_od_ponoci"],minuta_od_ponoci,U"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
    myTests().main()
    
    
@@ -146,7 +146,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for sati, minuta, minuta_od_ponoci in [(14, 19, 859), (11, 13, 673), (23, 59, 1439)]:
-             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["sati"],sati,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
-             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["minuta"],minuta,"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
+             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["sati"],sati,U"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
+             self.assertEqual(acMainSection(minuta_od_ponoci = minuta_od_ponoci)["minuta"],minuta,U"У %s:%s протекло је %s минута од поноћи." % (sati, minuta, minuta_od_ponoci))
    myTests().main()
 

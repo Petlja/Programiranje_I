@@ -103,9 +103,9 @@
       n = 100
       for j in range(4):
           for i in range(4):
-	      turtle.forward(n)
-	      turtle.left(90)
-	  turtle.left(90)
+              turtle.forward(n)
+              turtle.left(90)
+          turtle.left(90)
 
    Решење са помоћном процедуром за цртање квадрата.
 	 
@@ -115,8 +115,8 @@
 
       def kvadrat(n):
           for i in range(4):
-	  turtle.forward(n)
-	  turtle.left(90)
+              turtle.forward(n)
+              turtle.left(90)
 
       n = 100
       for i in range(4):

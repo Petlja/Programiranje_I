@@ -58,9 +58,9 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for broj_strana, dan in [(369, 123), (333, 111)]:
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["prvi_dan"],dan,"Ако књига има %s страна, први дан је прочитано %s страна." % (broj_strana,dan))
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["drugi_dan"],dan,"Ако књига има %s страна, други дан је прочитано %s страна." % (broj_strana,dan))
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["treci_dan"],dan,"Ако књига има %s страна, трећи дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["prvi_dan"],dan,U"Ако књига има %s страна, први дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["drugi_dan"],dan,U"Ако књига има %s страна, други дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["treci_dan"],dan,U"Ако књига има %s страна, трећи дан је прочитано %s страна." % (broj_strana,dan))
    myTests().main()
    
 

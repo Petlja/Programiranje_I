@@ -25,21 +25,21 @@
 		    
    Колико има више пари ципела него пари чизама?
       
-   - :^108077$: Тачан одговор
+   - :^\s*108077\s*$: Тачан одговор
      :.*: Одузми број пари чизама од броја ципела
 
 .. fillintheblank:: fill_обућа2
 
    Колико укупно има пари ципела и чизама?
 
-   - :^603923$: Тачан одговор
+   - :^\s*603923\s*$: Тачан одговор
      :.*: Сабери број пари ципела и чизама
 
 .. fillintheblank:: fill_обућа3
 	  
    Колико укупно има комада обуће?
 
-   - :^1207846$: Тачан одговор
+   - :^\s*1207846\s*$: Тачан одговор
      :.*: Помножи број пари ципела и чизама са два
 		  
 	      
@@ -69,8 +69,8 @@
 
 .. activecode:: број_путника
 
-   od_karte = 277236
-   do_karte = 276898
+   od_karte = 276898
+   do_karte = 277236
    broj_karata = 0     # popravi ovaj red
    print(broj_karata)   
 
@@ -78,7 +78,7 @@
 		    
       Колико се путника возило возом?
 
-      - :^339$: Тачан одговор!
+      - :^\s*339\s*$: Тачан одговор!
 	:.*: Размисли како би се резултат израчунао да су продате карте од броја 3 до броја 7. Пази да не погрешиш за један.
 
    
@@ -88,8 +88,8 @@
 
    .. activecode:: број_путника_решење_код
 
-      od_karte = 277236
-      do_karte = 276898
+      od_karte = 276898
+      do_karte = 277236
       broj_karata = od_karte - do_karte + 1
       print(broj_karata)
 
@@ -119,7 +119,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for automobili, ispravni, popravka_jednog, popravka_svih in [(442, 118, 11324, 3668976), (92, 83, 955, 8595)]:
-             self.assertEqual(acMainSection(automobili = automobili, ispravni = ispravni, popravka_jednog = popravka_jednog)["popravka_svih"],popravka_svih,"Ако је у продавници било %s аутомобила, од којих је %s било исправно, а ако поправка једног кошта %s динара, поправка укупно кошта %s динара." % (automobili, ispravni, popravka_jednog, popravka_svih))
+             self.assertEqual(acMainSection(automobili = automobili, ispravni = ispravni, popravka_jednog = popravka_jednog)["popravka_svih"],popravka_svih, U"Ако је у продавници било %s аутомобила, од којих је %s било исправно, а ако поправка једног кошта %s динара, поправка укупно кошта %s динара." % (automobili, ispravni, popravka_jednog, popravka_svih))
    myTests().main()
 		
    
@@ -160,21 +160,21 @@
 		    
       Колико сличица има Урош?
 
-      - :^117$: Тачан одговор
+      - :^\s*117\s*$: Тачан одговор
 	:.*: Покушај поново
 
 .. fillintheblank:: fill_сличице_2
       
       Колико сличица има Растко?
       
-      - :^200$: Тачан одговор
+      - :^\s*200\s*$: Тачан одговор
 	:.*: Покушај поново
 
 .. fillintheblank:: fill_сличице_3
       
       Колико сличица има Павле?
       
-      - :^95$: Тачан одговор
+      - :^\s*95\s*$: Тачан одговор
 	:.*: Покушај поново
       
    
@@ -219,7 +219,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle in [(73, 94, 81, 30), (103, 75, 94, 61)]:
-             self.assertEqual(acMainSection(rastko_i_pavle = rastko_i_pavle, uros_i_rastko = uros_i_rastko, pavle_i_uros = pavle_i_uros)["pavle"],pavle,"Ако Растко и Павле имају %s сличица, Урош и Растко %s сличица, а Павле и Урош %s сличица, тада Павле има %s сличица." % (rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle))
+             self.assertEqual(acMainSection(rastko_i_pavle = rastko_i_pavle, uros_i_rastko = uros_i_rastko, pavle_i_uros = pavle_i_uros)["pavle"],pavle, U"Ако Растко и Павле имају %s сличица, Урош и Растко %s сличица, а Павле и Урош %s сличица, тада Павле има %s сличица." % (rastko_i_pavle, uros_i_rastko, pavle_i_uros, pavle))
    myTests().main()
 
 
@@ -244,7 +244,7 @@
 		    
    Колико је решење?
    
-   - :^26767$: Тачан одговор
+   - :^\s*26767.0|26767\s*$: Тачан одговор
      :.*: Покушај поново
 
 
@@ -265,7 +265,7 @@
 		    
    Колико кошта 21 оловка?
 
-   - :^4473$: Тачан одговор!
+   - :^\s*4473|4473.0\s*$: Тачан одговор!
      :.*: Покушај поново
    
    
@@ -292,7 +292,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for novac, ostalo in [(1110, 518), (1380, 644)]:
-             self.assertEqual(acMainSection(novac = novac)["ostalo"],ostalo,"Ако је Ана имала %s динара, остало јој је %s динара." % (novac, ostalo))
+             self.assertEqual(acMainSection(novac = novac)["ostalo"],ostalo, U"Ако је Ана имала %s динара, остало јој је %s динара." % (novac, ostalo))
    myTests().main()
 	       
 		

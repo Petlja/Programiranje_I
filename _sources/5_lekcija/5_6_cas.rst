@@ -20,7 +20,6 @@
    :playtask:
 
    import turtle
-   n = 10
    for i in range(10):
        # izracunavamo dimenziju narednog kvaddrata
        a = 10*i + 10
@@ -28,7 +27,6 @@
        ???
    ====
    import turtle
-   n = 10
    for i in range(10):
        # izracunavamo dimenziju narednog kvaddrata
        a = 10*i + 10

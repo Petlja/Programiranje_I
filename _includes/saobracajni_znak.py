@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300)
-prozor = pygamebg.open_window(sirina, visina, "Saobracajni znak")
+prozor = pygamebg.open_window(sirina, visina, "Saobraćajni znak")
 
 def jednakostranicni(cx, cy, h, boja):
     a = int(h * 2 / math.sqrt(3))

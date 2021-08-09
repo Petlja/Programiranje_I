@@ -140,7 +140,7 @@
     (Одговор упиши навођењем редних бројева наредби распоређених у одговарајући редослед, нпр. 12213)
     Одговор: |blank|
 
-   - :^\s*1213222|1212223\s*$: Тачно
+   - :^\s*1213222|1212223|1212322|1212232\s*$: Тачно
      :x: Одговор није тачан.
       
 
@@ -185,10 +185,10 @@
     .. code-block:: python
 
       from karel import *   
-      while (moze_napred()):
-        while (ima_loptica_na_polju()):
+      while moze_napred():
+        while ima_loptica_na_polju():
           uzmi()
-        while (ima_loptica_kod_sebe()):
+        while ima_loptica_kod_sebe():
           ostavi()
         napred()   
 
@@ -197,11 +197,11 @@
 
       from karel import *   
       napred()
-      while (moze_napred()):
-        while (ima_loptica_kod_sebe()):
+      while moze_napred():
+        while ima_loptica_kod_sebe():
           ostavi()
         napred()
-        while (ima_loptica_na_polju()):
+        while ima_loptica_na_polju():
           uzmi()
         napred()  
 
@@ -209,11 +209,11 @@
     .. code-block:: python
 
       from karel import *   
-      while (moze_napred()):
-        while (ima_loptica_na_polju()):
+      while moze_napred():
+        while ima_loptica_na_polju():
           uzmi()
         napred()
-        while (ima_loptica_kod_sebe()):
+        while ima_loptica_kod_sebe():
           ostavi()
         napred()  
 
@@ -221,23 +221,23 @@
     .. code-block:: python
 
       from karel import *   
-      while (moze_napred()):
+      while moze_napred():
         napred()
-        while (ima_loptica_na_polju()):
+        while ima_loptica_na_polju():
           uzmi()
         napred()
-        while (ima_loptica_kod_sebe()):
+        while ima_loptica_kod_sebe():
           ostavi()
 
   (5)
     .. code-block:: python
 
       from karel import *   
-      while (moze_napred()):
-        while (ima_loptica_na_polju()):
+      while moze_napred():
+        while ima_loptica_na_polju():
           uzmi()
         napred()
-        while (ima_loptica_kod_sebe()):
+        while ima_loptica_kod_sebe():
           ostavi()
 
 
