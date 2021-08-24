@@ -32,25 +32,6 @@ description:
     - text: Збирка кратких питања из програмирања за први разред
       href: https://petlja.org/biblioteka/r/kursevi/python-zbirka-pitanja-gim
 
-archived-lessons:
-  - guid: 102e6fae-33d2-44ab-938b-9f0ca17e60de
-  - guid: 6f8ab8af-f563-40b4-8c6d-6e4ccd9d7045
-  - guid: 4be44082-6709-4193-a527-2f1689ba583d
-  - guid: 2794cfc2-75ee-43bd-b5b2-4c2aa7b457bb
-  - guid: 0a4a76cd-03d3-428e-8019-860589d9aea9
-  - guid: 3847d7c8-ff63-4136-92b1-3c4840242bca
-  - guid: f63670aa-033b-49ea-88de-ed01e0bcf1c5
-  - guid: 986d5314-a202-416c-9d00-edd54bf1f04c
-  - guid: 986d5314-a202-416c-9d00-edd54bf1f06t
-  - guid: f1ee2c94-4023-4307-8875-6d455b4a567f
-  - guid: 501e7102-1901-42ad-a767-928533ecf1e9
-  - guid: f8b5d8cd-c885-4019-bdad-34225e29817f
-  - guid: f8b5d8cd-cf55-4019-bdad-34225e29187f
-  - guid: 97b7c690-0649-4c18-afab-3133d1633d51
-  - guid: a0c33527-c62d-483b-9100-bc35480503cc
-  - guid: 7ff277ce-8a51-4abc-8400-06f7b3140bcc
-  - guid: 7f2277ce-8a51-4abc-8400-06f7b3140bcc
-
 lessons:
   - title: 1. Робот Карел - линијски програми и бројачка петља
     folder: 1_lekcija
@@ -93,12 +74,12 @@ lessons:
         file: 2_2_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
-      - type: reading
+      - type: quiz
         title: 2.3. Квиз
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-      - type: quiz
+      - type: reading
         title: 2.4. Вежбање
         file: 2_4_cas.rst
         description: #opciono
@@ -140,7 +121,7 @@ lessons:
         file: 4_4_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3lo4872f18
-      - type: quiz
+      - type: reading
         title: 4.5. Вежбање
         file: 4_5_cas.rst
         description: #opciono
