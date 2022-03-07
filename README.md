@@ -2,6 +2,12 @@
 
 Ovaj repozitorijum posvećen je kursu za prvi razred gimnazije za nastavnu temu Programiranje. Kurs se na Petlji nalazi ovde https://petlja.org/kurs/477/0
 
+## Konverzija *HTML*
+
+U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
+
+Na https://petlja.github.io/Programiranje_I možete pregledati na taj način dobijene *HTML* strane.
+
 ## License
 
 This work by Fondacija Petlja is licensed under a
