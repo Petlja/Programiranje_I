@@ -1,4 +1,4 @@
-# Настава програмирања за Први разред гимназије
+# Nastava programiranja ya Prvi razred gimnazije
 
 Ovaj repozitorijum posvećen je kursu za prvi razred gimnazije za nastavnu temu Programiranje. Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/477/0
 
