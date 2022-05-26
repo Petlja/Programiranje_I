@@ -4,7 +4,7 @@ Ovaj repozitorijum posvećen je kursu za prvi razred gimnazije za nastavnu temu 
 
 Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/477/0
 
-Kirs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa sa: https://github.com/Petlja/gim1_rac_prog/releases
+Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa sa: https://github.com/Petlja/gim1_rac_prog/releases
 
 ## Konverzija *HTML*
 
