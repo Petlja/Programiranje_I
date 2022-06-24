@@ -102,7 +102,7 @@
 	   var code = ["from karel import *",
         "for i in range(3): # ponovi tri puta",
         "    ??? # idi napred",
-        "    if True: # ako je na polju loptica",
+        "    if ???: # ako je na polju loptica",
         "        ??? # uzmi lopticu"]
             return {world: world, robot: robot, code: code};
             },
