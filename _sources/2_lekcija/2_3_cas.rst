@@ -148,7 +148,6 @@
 ~~~~~~~~~
 
 .. mchoice:: karel_brloptica_for
-  :multiple_answers:
   :answer_a: Програм (1)
   :feedback_a: Нетачно    
   :answer_b: Програм (2)
@@ -156,10 +155,8 @@
   :answer_c: Програм (3)
   :feedback_c: Нетачно    
   :answer_d: Програм (4)
-  :feedback_d: Тачно
-  :answer_e: Програм (5)
   :feedback_e: Тачно
-  :correct: ['d', 'e']
+  :correct: ['d']
   
 
   Нека се Карел робот налази у лавиринту као на слици
@@ -229,18 +226,5 @@
         while ima_loptica_kod_sebe():
           ostavi()
 
-  (5)
-    .. code-block:: python
-
-      from karel import *   
-      while moze_napred():
-        while ima_loptica_na_polju():
-          uzmi()
-        napred()
-        while ima_loptica_kod_sebe():
-          ostavi()
-
-
-
-  Изабери тачанe одговорe:
+  Изабери тачан одговор:
 
