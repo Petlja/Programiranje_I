@@ -192,7 +192,7 @@ lessons:
         description: #opciono
         guid: ee8759b0-069a-40da-87fb-b9518e39fa59
       - type: reading
-        title: 7.2. Променљиве - имена међурезултата
+        title: 7.2. Променљиве - места за смештање података
         file: 7_2_cas.rst
         description: #opciono
         guid: b8b21901-7e30-452b-a004-f855275bf3df
