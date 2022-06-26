@@ -133,7 +133,7 @@ lessons:
         description: #opciono
         guid: b3f341de-5720-4a2c-a1b0-ba71ad3d4384
         
-  - title: 5. Корњача графика - гранање, процедуре, торке/листе
+  - title: 5. Корњача графика - гранање, функције, торке/листе
     folder: 5_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
     description: 5_lekcija
@@ -149,7 +149,7 @@ lessons:
         description: #opciono
         guid: 9a5db7aa-ef66-4ca8-8c4e-bbd28d09a90c
       - type: reading
-        title: 5.3. Процедуре
+        title: 5.3. Функције
         file: 5_3_cas.rst
         description: #opciono
         guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
