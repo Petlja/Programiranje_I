@@ -138,9 +138,9 @@
    vrsta  = kralj[1]
    kolona_na_ivici = kolona == "a" or kolona == "h"
    vrsta_na_ivici  = vrsta == "1" or vrsta == "8"
-   if True:  # ispravi ovaj red
+   if ???:  # ispravi ovaj red
        broj_poteza = 3
-   elif True:  # ispravi ovaj red
+   elif ???:  # ispravi ovaj red
        broj_poteza = 5
    else:
        broj_poteza = 0   # ispravi ovaj red
@@ -159,7 +159,7 @@
 .. activecode:: бајтова_у_килобајту
 
    odgovor = int(input("Koliko bajtova ima u jednom kilobajtu"))
-   if True:  # popravi ovaj uslov
+   if ???:  # popravi ovaj uslov
        print("Bravo")
    else:
        print("Odgovor nije tačan")
@@ -216,13 +216,13 @@
    
    if poeni < 51:
        ocena = 5
-   elif True:      # ispravi ovaj red
+   elif ???:      # ispravi ovaj red
        ocena = 6
-   elif True:      # ispravi ovaj red
+   elif ???:      # ispravi ovaj red
        ocena = 7
    elif poeni < 81:
        ocena = 0   # ispravi ovaj red
-   elif True:      # ispravi ovaj red
+   elif ???:      # ispravi ovaj red
        ocena = 9
    else:
        ocena = 0    # ispravi ovaj red

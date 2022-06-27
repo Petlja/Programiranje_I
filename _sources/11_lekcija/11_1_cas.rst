@@ -134,10 +134,10 @@
 .. activecode:: позитиван_функција_1
 
    def pozitivan(x):
-        if x > 0:
-            return True
-        else:
-            return False
+       if x > 0:
+           return True
+       else:
+           return False
        
    x = int(input("Unesi broj:"))
    if pozitivan(x):

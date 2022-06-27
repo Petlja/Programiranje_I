@@ -296,7 +296,7 @@ lessons:
         description: #opciono
         guid: 10b5abc5-d204-475e-9057-8ade59943236
       - type: reading
-        title: 11.3. Конструкција elif
+        title: 11.3. Конструкција if-elif-else
         file: 11_3_cas.rst
         description: #opciono
         guid: 9799de49-73c8-4b79-9b62-ad81bd792128
