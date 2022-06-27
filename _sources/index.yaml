@@ -311,23 +311,23 @@ lessons:
         description: #opciono
         guid: f8751dac-80d3-443b-900e-9ebbaf6820bb
 
-  - title: 12. Понављање 
+  - title: 12. Петље 
     folder: 12_lekcija
     guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
     description: 12_lekcija
     activities:
       - type: reading
-        title: 12.1. Понављање
+        title: 12.1. Понављање - петља for 
         file: 12_1_cas.rst
         description: #opciono
         guid: 1b469fa03-6e83-4f19-bf1b-97bff2cd9f84
       - type: reading
-        title: 12.2. Условна петља
+        title: 12.2. Условна петља - while
         file: 12_2_cas.rst
         description: #opciono
         guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
       - type: reading
-        title: 12.3. Угнежђене петље
+        title: 12.3. Сложенија примена петљи
         file: 12_3_cas.rst
         description: #opciono
         guid: ab9f7f5e-b554-45bf-ad4e-9c5f70761a88
