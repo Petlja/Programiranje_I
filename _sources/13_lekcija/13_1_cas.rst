@@ -1,5 +1,5 @@
-13.1. Контрола тока - задаци вежбање
-####################################
+13.1. Контрола тока - задаци за вежбање
+#######################################
 
 Број урађених задатака
 ''''''''''''''''''''''
@@ -56,9 +56,9 @@
    # -*- acsection: var-init -*-
    broj_poena = int(input("Unesi broj poena: "))
    # -*- acsection: main -*-
-   if True:
+   if ???:
        ocena = 0
-   elif True:
+   elif ???:
        ocena = 0
    # ispravi i dopuni prethodni kod
    # -*- acsection: after-main -*-

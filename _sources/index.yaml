@@ -342,7 +342,7 @@ lessons:
         description: #opciono
         guid: 9ca1b7f1-a88e-4fa6-8033-f889024963ed
 
-  - title: 13. Контрола тока - задаци за вежбање
+  - title: 13. Контрола тока - вежбање
     folder: 13_lekcija
     guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228  
     description: 13_lekcija
