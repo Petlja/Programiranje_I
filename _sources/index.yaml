@@ -359,23 +359,28 @@ lessons:
     description: 14_lekcija
     activities:
       - type: reading
-        title: 14.1. Торке, листе и ниске
+        title: 14.1. Торке и листе
         file: 14_1_cas.rst
         description: #opciono
         guid: fbc6dd0b-f551-4a60-914d-673ee8c0ecf3
       - type: reading
-        title: 14.2. Скупови и речници
+        title: 14.2. Ниске
         file: 14_2_cas.rst
+        description: #opciono
+        guid: b735280e-7896-4399-938b-c4140cd6fd88
+      - type: reading
+        title: 14.3. Скупови и речници
+        file: 14_3_cas.rst
         description: #opciono
         guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
       - type: quiz
-        title: 14.3. Квиз
-        file: 14_3_cas.rst
+        title: 14.4. Квиз
+        file: 14_4_cas.rst
         description: #opciono
         guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
       - type: reading
-        title: 14.4. Вежбање
-        file: 14_4_cas.rst
+        title: 14.5. Вежбање
+        file: 14_5_cas.rst
         description: #opciono
         guid: e1807cea-7406-49e1-b061-020d521fc5b5
         
