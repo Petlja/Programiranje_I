@@ -616,8 +616,13 @@ lessons:
         file: slike.rst
         description: #opciono
         guid: b9615387-2736-42c2-ae40-82e6719af068
+      - type: reading
+        title: 24.2. Вежбање
+        file: slike_vezbanje.rst
+        description: #opciono
+        guid: 699106f1-d233-44f8-873f-dd06a78b75cc
       - type: quiz
-        title: 24.2. Слике и текст - квиз
+        title: 24.3. Слике и текст - квиз
         file: slike_test.rst
         description: #opciono
         guid: 1f06a9b3-d42f-4a44-b1ee-57b70c5209ec
