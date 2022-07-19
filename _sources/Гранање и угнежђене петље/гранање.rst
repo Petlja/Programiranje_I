@@ -1,8 +1,31 @@
 23.1. Гранање
 =============
 
-Наизменично смењивање боја и облика
------------------------------------
+.. questionnote::
+    Напиши програм који садржи логичку променљиву која се зове *kvadrat* постављену на *True* или *False*.
+    У зависности од њене вредности у центру екрана се црта квадрат (за вредност *True*) а за вредност 
+    *False* у центру екрана се црта круг.
+
+.. activecode:: if_kvadrat
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/if_kvadrat.py
+
+   prozor.fill(pg.Color("yellow")) # bojimo pozadinu prozora u zuto
+
+   kvadrat = ??? # Upisi ovde True pa pokreni, a zatim False pa ponovo pokreni
+
+   if kvadrat:
+       pg.draw.rect(prozor, pg.Color("blue"), (100, 100, 100, 100), 3)
+   else:
+       pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50, 3)
+
+Комбиновање гранања и петље
+
+Наизменично смењивање боја и облика (комбиновање гранања и петље)
+-----------------------------------------------------------------
 
 У многим ситуацијама су цртежи такви да се наизменично смењују два
 правила на основу којих се црта. На пример, ако желимо да нацртамо

@@ -581,8 +581,8 @@ lessons:
         file: квиз_петље.rst
         description: #opciono
         guid: 365d8653-0ab6-491f-bbd9-9706fa2e2974
-  - title: 23. Угнежђене петље и гранање
-    folder: Угнежђене петље
+  - title: 23. Гранање и угнежђене петље
+    folder: Гранање и угнежђене петље
     guid: d09f5479-4a90-4b7a-b5c8-9b3e378cb777
     description: Петље 2
     activities:
