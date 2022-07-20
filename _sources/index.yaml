@@ -637,12 +637,17 @@ lessons:
         description: #opciono
         guid: cddc9a54-8e08-4db1-9499-d797cbb8bc97
       - type: reading
-        title: 25.2. Како раде анимације
+        title: 25.2. Анимације - примери
+        file: анимације_2.rst
+        description: #opciono
+        guid: 88c5fd65-1f81-414d-8f8b-cd2e283a129c
+      - type: reading
+        title: 25.3. Како раде анимације
         file: како_раде_анимације.rst
         description: #opciono
         guid: 9ab47c18-6845-4af6-838a-2fa3f2c7db01
       - type: quiz
-        title: 25.3. Квиз - анимације
+        title: 25.4. Квиз - анимације
         file: анимације_квиз.rst
         description: #opciono
         guid: 32115908-70e9-4dad-bb38-0d62732a605c

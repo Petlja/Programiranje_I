@@ -15,7 +15,7 @@ def crtaj():
     # broj kvadrata
     broj_kvadrata = 8
     # dimenzija kvadrata
-    a = sirina / broj_kvadrata
+    a = sirina // broj_kvadrata
 
     # prolazimo kroz sva polja
     for i in range(broj_kvadrata):
