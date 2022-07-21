@@ -154,7 +154,7 @@
             prozor.fill(pg.Color("white"))
             pg.draw.circle(prozor, pg.Color("black"), (x, y), r)
 
-        ???????
+        # ??? на ово место треба да дође функција коју изаберете 
 
         pygamebg.frame_loop(100, novi_frejm)
 
