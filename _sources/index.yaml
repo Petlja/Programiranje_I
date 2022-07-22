@@ -741,8 +741,13 @@ lessons:
         file: Комбиновање_догађаја_и_анимација.rst
         description: #opciono
         guid: 5a6cc2db-ed81-4f12-8bd7-9a396b1d7924
+      - type: reading
+        title: 32.2. Домаћи задатак
+        file: комбиновање_домаћи_задатак.rst
+        description: #opciono
+        guid: 9add8ccc-5371-43e8-b84d-d63499ea4901
       - type: quiz
-        title: 30. 2. Квиз - догађаји и анимације
+        title: 30. 3. Квиз - догађаји и анимације
         file: догађаји_анимације_квиз.rst
         description: #opciono
         guid: 3a66f46e-db0c-4b84-80ad-821b9876e48f
