@@ -211,6 +211,12 @@ lessons:
         file: 7_5_cas.rst
         description: #opciono
         guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
+      - type: coding-quiz
+        title: 7.6. Израчунавања - додатни задаци
+        problems:
+          - https://petlja.org/biblioteka/r/Zbirka-python/trening
+          - https://petlja.org/biblioteka/r/Zbirka-python/list_papira
+        guid: 53abb6d0-1319-4f6b-b185-7476cc2feae4
         
   - title: 8. Израчунавања - цели и реални бројеви, дељење
     folder: 8_lekcija
@@ -242,6 +248,12 @@ lessons:
         file: 8_5_cas.rst
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
+      - type: coding-quiz
+        title: 8.6. Цели и реални бројеви, дељење - додатни задци
+        problems:
+          - https://petlja.org/biblioteka/r/Zbirka-python/razlomak_u_mesovit_broj
+          - https://petlja.org/biblioteka/r/Zbirka-python/cena_hleba
+        guid: 6a4b6a21-3783-4168-85d9-0000132a2406
 
   - title: 9. Израчунавања - коришћење и дефинисање функција
     folder: 9_lekcija
@@ -310,6 +322,11 @@ lessons:
         file: 11_5_cas.rst
         description: #opciono
         guid: f8751dac-80d3-443b-900e-9ebbaf6820bb
+      - type: coding-quiz
+        title: 11.6. Гранање - додатни задтак
+        problems:
+          - https://petlja.org/biblioteka/r/Zbirka-python/jabuke
+        guid: 11db7f4e-1a4f-415e-8a0a-6a1d26f0b2da
 
   - title: 12. Петље 
     folder: 12_lekcija
@@ -341,6 +358,12 @@ lessons:
         file: 12_5_cas.rst
         description: #opciono
         guid: 9ca1b7f1-a88e-4fa6-8033-f889024963ed
+      - type: coding-quiz
+        title: 12.6. Петље - додатни задтак
+        problems:
+          - https://petlja.org/biblioteka/r/Zbirka-python/kvadrat_od_zvezdica
+        guid: e646af85-f38c-4177-81cd-ac429107e38d
+
 
   - title: 13. Контрола тока - вежбање
     folder: 13_lekcija
