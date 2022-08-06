@@ -55,12 +55,12 @@ lessons:
         description: #opciono
         guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
       - type: quiz
-        title: 1.4. Квиз
+        title: 1.3. Квиз
         file: 1_3_cas.rst
         description: #opciono
         guid: 498mm35b-3e01-4d69-ba48-549dc26dfa2a
       - type: reading
-        title: 1.3. Вежбање
+        title: 1.4. Вежбање
         file: 1_4_cas.rst
         description: #opciono
         guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
