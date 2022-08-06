@@ -87,9 +87,7 @@
        turtle.forward(100)      #   idi napred 100 koraka
        turtle.left(360 / n)     #   okreni se za 360:n stepeni
      
-.. reveal:: полигон
-   :showtitle: Сазнај више - полигон (неправилан многоуагао)
-   :hidetitle: Сакриј
+.. learnmorenote::
 
    **Полигон - неправилан многоугао**
 

@@ -148,7 +148,7 @@ while, па се и условна петља назива петља ``while``.
 
       napred()
       while ima_loptica_na_polju():
-         uzmi()
+          uzmi()
 
 
 
