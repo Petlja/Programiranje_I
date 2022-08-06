@@ -585,22 +585,22 @@ lessons:
         description: #opciono
         guid: 43cfab4e-fbba-4494-9c15-8ab95ce2cbaa
       - type: reading
-        title: 25.2. Генератор случајних бројева
+        title: 22.2. Генератор случајних бројева
         file: генератор_насумичних_бројева.rst
         description: #opciono
         guid: f2086bcb-e7a5-47a6-96bf-632321418fc5
       - type: reading
-        title: 25.3. Распоређивање боја
+        title: 22.3. Распоређивање боја
         file: распоређивање_боја.rst
         description: #opciono
         guid: e8d79c09-2526-4001-9538-3e035ba020fc
       - type: reading
-        title: 25.4. Домаћи задатак
+        title: 22.4. Домаћи задатак
         file: петље_задатак.rst
         description: #opciono
         guid: 6b42de11-2b68-4780-b3e5-e54cc16c3ca6
       - type: quiz
-        title: 25.5. Квиз - петље
+        title: 22.5. Квиз - петље
         file: квиз_петље.rst
         description: #opciono
         guid: 365d8653-0ab6-491f-bbd9-9706fa2e2974
