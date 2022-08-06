@@ -580,7 +580,7 @@ lessons:
     description: Петље 1
     activities:
       - type: reading
-        title: 25.1. Правилно распоређивање облика
+        title: 22.1. Правилно распоређивање облика
         file: распоређивање_облика.rst
         description: #opciono
         guid: 43cfab4e-fbba-4494-9c15-8ab95ce2cbaa
