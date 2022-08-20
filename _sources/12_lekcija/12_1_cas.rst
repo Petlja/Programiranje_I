@@ -79,7 +79,7 @@ range(n):``. Наредни програм 10 пута исписује пору
 		
    for i in range(5):                                # ponovi 5 puta:
        a = int(input("Unesi dužinu stranice:"))      #   učitaju dužinu stranice
-       O = 0                                         #   izračunaj obim - ispravi ovaj red
+       O = 3*a                                       #   izračunaj obim
        print(O)                                      #   ispiši obim
 
 Приметимо да су све наредбе у телу петље увучене у односу на петљу,
