@@ -79,7 +79,7 @@
    n = 6
    for i in range(0):         # ponovi n puta:
        turtle.forward(0)        #   idi napred 100 koraka
-       turtle.left(0)           #   okreni se za 360:n stepeni
+       turtle.left(0)           #   okreni se za 360/n stepeni
    ====
    import turtle
    n = 6
