@@ -23,11 +23,11 @@
 
    import turtle
 
-   for i in range(3):
-       for j in range(4):
-           turtle.forward(50)
-	   turtle.right(90)
-       turtle.right(120)
+   for i in range(3):       # ponavljamo tri puta za crtanje tri kvadrata
+       for j in range(4):     # crtamo četiri stranice jednog kvadrata      
+           turtle.forward(50)   
+	   turtle.right(90)         
+       turtle.right(120)    # posle crtanja jednog kvadrata okrećemo se za 120 stepeni 
 
 По сличном принципу можемо нацртати и наизглед доста сложеније облике.
 
