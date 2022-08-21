@@ -79,10 +79,16 @@
            return True          #   treba ponovo crtati
        return ???               # ne treba ponovo crtati
 
-       
+.. reveal:: dan_noc_1
+  :showtitle: Прикажи решење
+  :hidetitle: Сакриј решење
+
+  .. activecode:: dan_noc_resenje
+    :nocodelens:
+    :includesrc: _includes/dan_noc.py
    
-Боја позадине мишем
-'''''''''''''''''''
+Боја позадине у зависности од положаја миша
+'''''''''''''''''''''''''''''''''''''''''''
                  
 .. questionnote::
 
