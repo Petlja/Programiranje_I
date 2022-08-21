@@ -786,13 +786,13 @@ lessons:
         file: догађаји_анимације_квиз.rst
         description: #opciono
         guid: 3a66f46e-db0c-4b84-80ad-821b9876e48f
-  - title: 31. Завршни квиз
+  - title: 31. Пајгејм - завршни квиз
     folder: завршни_тест
     guid: a44a5204-7d45-4a2b-8b53-afaedf27ea06
-    description: завршни квиз
+    description: Пајгејм - завршни квиз
     activities:
       - type: quiz
-        title: 31. Завршни квиз
+        title: 31. Пајгејм - завршни квиз 
         file: zavrsni_test.rst
         description: #opciono
         guid: 9f135016-0af1-4f2f-af56-1aba6d95e0f4
