@@ -721,24 +721,24 @@ lessons:
         file: анимације_кретања_квиз.rst
         description: #opciono
         guid: 55c4b834-0b7f-4092-ada3-4f52689a5366
-  - title: 28. Анимације судара објеката
-    folder: Анимације судари
+  - title: 28. Анимације сусрета објеката
+    folder: Анимације сусрети
     guid: b1877858-f357-45c5-812c-64926aa023bd
-    description: Анимације судари
+    description: Анимације сусрети
     activities:
       - type: reading
-        title: 28.1. Анимације - судари објеката на екрану
-        file: анимације_судари.rst
+        title: 28.1. Анимације - сусрети објеката на екрану
+        file: анимације_сусрети.rst
         description: #opciono
         guid: 1eb6e7dd-a5b9-4d03-b44f-51c25f6db54b
       - type: reading
-        title: 28.2. Домаћи - судари објеката на екрану
-        file: судари_домаћи.rst
+        title: 28.2. Домаћи - сусрети објеката на екрану
+        file: сусрети_домаћи.rst
         description: #opciono
         guid: 8553c7db-ce5a-41f3-8786-77eb11c0d488
       - type: quiz
-        title: 28.3. Квиз - судари објеката на екрану
-        file: анимације_судари_квиз.rst
+        title: 28.3. Квиз - сусрети објеката на екрану
+        file: анимације_сусрети_квиз.rst
         description: #opciono
         guid: e1aa77d6-0371-4891-a3ba-9459f80f0607
   - title: 29. Догађаји 
