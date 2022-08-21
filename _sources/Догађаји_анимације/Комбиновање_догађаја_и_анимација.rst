@@ -79,7 +79,13 @@
            # dodaj obradu srelice na desno
            ???
 
+.. reveal:: setanje_do_platforme_1
+  :showtitle: Прикажи решење
+  :hidetitle: Сакриј решење
 
+  .. activecode:: setanje_do_platforme_resenje
+    :nocodelens:
+    :includesrc: _includes/setanje.py
 
 Коришћење тајмера
 -----------------
