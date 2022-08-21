@@ -686,18 +686,18 @@ lessons:
         file: анимације_квиз.rst
         description: #opciono
         guid: 32115908-70e9-4dad-bb38-0d62732a605c
-  - title: 26. Анимације задаци
+  - title: 26. Анимације - задаци
     folder: Анимације задаци
     guid: 1b7c7134-a66e-4578-b30f-7725f81f8055
-    description: Анимације задаци
+    description: Анимације - задаци
     activities:
       - type: reading
-        title: 26.1. Анимације задаци
+        title: 26.1. Анимације - задаци
         file: анимације_задаци.rst
         description: #opciono
         guid: ad802cb0-c2b8-44d5-b2ef-9cd214f7312f
       - type: reading
-        title: 26.2. Анимације домаћи
+        title: 26.2. Анимације - домаћи
         file: домаћи_задатак_анимације.rst
         description: #opciono
         guid: dcfdbd32-1ffd-4437-9580-74542f90dd9b
