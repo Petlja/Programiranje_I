@@ -414,18 +414,18 @@ lessons:
         description: #opciono
         guid: e1807cea-7406-49e1-b061-020d521fc5b5
         
-  - title: 15. Структуре података и петље
+  - title: 15. Примена петље у структурама података
     folder: 15_lekcija
     guid: 0a8c8243-ee8e-4d9b-97a9-9eef7d9754e2
     description: 15_lekcija
     activities:
       - type: reading
-        title: 15.1. Торке, листе, ниске и петље
+        title: 15.1. Примена петље у торци, листи и ниски
         file: 15_1_cas.rst
         description: #opciono
         guid: 6d9ba56e-7ada-4e3a-84f5-8ef96ddc2f08
       - type: reading
-        title: 15.2. Речници и петље
+        title: 15.2. Примена петље у речнику
         file: 15_2_cas.rst
         description: #opciono
         guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
