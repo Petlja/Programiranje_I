@@ -82,11 +82,11 @@ range(n):``. Наредни програм 10 пута исписује пору
        O = ???                                       #   izračunaj obim - ispravi ovaj red
        print(O)                                      #   ispiši obim
 
-.. reveal:: obim_pet_trouglova
+.. reveal:: обими_пет_троуглова_1
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
-   .. activecode:: обими_пет_троуглова_1
+   .. activecode:: обими_пет_троуглова_решење
 
       for i in range(5):                               # ponovi 5 puta:
           a = int(input("Unesi dužinu stranice:"))      #   učitaju dužinu stranice
