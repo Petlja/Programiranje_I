@@ -79,8 +79,19 @@ range(n):``. Наредни програм 10 пута исписује пору
 		
    for i in range(5):                                # ponovi 5 puta:
        a = int(input("Unesi dužinu stranice:"))      #   učitaju dužinu stranice
-       O = 3*a                                       #   izračunaj obim
+       O = ???                                       #   izračunaj obim - ispravi ovaj red
        print(O)                                      #   ispiši obim
+
+.. reveal:: obim_pet_trouglova
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: обими_пет_троуглова_1
+
+      for i in range(5):                               # ponovi 5 puta:
+          a = int(input("Unesi dužinu stranice:"))      #   učitaju dužinu stranice
+          O = 3*a                                       #   izračunaj obim
+          print(O)                                      #   ispiši obim
 
 Приметимо да су све наредбе у телу петље увучене у односу на петљу,
 али и да су међусобно поравнате, што мора увек бити случај (у
