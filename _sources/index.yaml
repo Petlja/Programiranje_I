@@ -249,7 +249,7 @@ lessons:
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
       - type: coding-quiz
-        title: 8.6. Цели и реални бројеви, дељење - додатни задци
+        title: 8.6. Цели и реални бројеви, дељење - додатни задaци
         problems:
           - https://petlja.org/biblioteka/r/Zbirka-python/razlomak_u_mesovit_broj
           - https://petlja.org/biblioteka/r/Zbirka-python/cena_hleba
@@ -359,7 +359,7 @@ lessons:
         description: #opciono
         guid: 9ca1b7f1-a88e-4fa6-8033-f889024963ed
       - type: coding-quiz
-        title: 12.6. Петље - додатни задтак
+        title: 12.6. Петље - додатни задaтак
         problems:
           - https://petlja.org/biblioteka/r/Zbirka-python/kvadrat_od_zvezdica
         guid: e646af85-f38c-4177-81cd-ac429107e38d
@@ -386,13 +386,11 @@ lessons:
         file: 14_1_cas.rst
         description: #opciono
         guid: fbc6dd0b-f551-4a60-914d-673ee8c0ecf3
-
       - type: reading
         title: 14.2. Функције за рад са торкама и листама
         file: 14_2_cas.rst
         description: #opciono
         guid: 5fce9f71-41ce-43ab-9361-afd4c557b312
-
       - type: reading
         title: 14.3. Ниске
         file: 14_3_cas.rst
@@ -409,7 +407,7 @@ lessons:
         description: #opciono
         guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
       - type: reading
-        title: 14.5. Вежбање
+        title: 14.6. Вежбање
         file: 14_6_cas.rst
         description: #opciono
         guid: e1807cea-7406-49e1-b061-020d521fc5b5
