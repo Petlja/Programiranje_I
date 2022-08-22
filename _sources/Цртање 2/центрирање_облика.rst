@@ -124,3 +124,5 @@
       pg.draw.rect(prozor, pg.Color("red"), (50, 50, 200, 200))
       pg.draw.rect(prozor, pg.Color("green"), (75, 75, 150, 150))
       pg.draw.rect(prozor, pg.Color("blue"), (100, 100, 100, 100))
+
+
