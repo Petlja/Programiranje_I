@@ -647,17 +647,12 @@ lessons:
         description: #opciono
         guid: b9615387-2736-42c2-ae40-82e6719af068
       - type: reading
-        title: 24.2. Најважније из ове лекције
-        file: slike_najvaznije.rst
-        description: #opciono
-        guid: 43fa12bc-ca51-4047-8a7a-f463170dfa25
-      - type: reading
-        title: 24.3. Вежбање
+        title: 24.2. Вежбање
         file: slike_vezbanje.rst
         description: #opciono
         guid: 699106f1-d233-44f8-873f-dd06a78b75cc
       - type: quiz
-        title: 24.4. Слике и текст - квиз
+        title: 24.3. Слике и текст - квиз
         file: slike_test.rst
         description: #opciono
         guid: 1f06a9b3-d42f-4a44-b1ee-57b70c5209ec
@@ -772,27 +767,27 @@ lessons:
     description: Догађаји и анимације
     activities:
       - type: reading
-        title: 32.1. Комбиновање догађаја и анимација
+        title: 30.1. Комбиновање догађаја и анимација
         file: Комбиновање_догађаја_и_анимација.rst
         description: #opciono
         guid: 5a6cc2db-ed81-4f12-8bd7-9a396b1d7924
       - type: reading
-        title: 32.2. Домаћи задатак
+        title: 30.2. Домаћи задатак
         file: комбиновање_домаћи_задатак.rst
         description: #opciono
         guid: 9add8ccc-5371-43e8-b84d-d63499ea4901
       - type: quiz
-        title: 30. 3. Квиз - догађаји и анимације
+        title: 30.3. Квиз - догађаји и анимације
         file: догађаји_анимације_квиз.rst
         description: #opciono
         guid: 3a66f46e-db0c-4b84-80ad-821b9876e48f
-  - title: 31. Пајгејм - завршни квиз
+  - title: 31. Пајгејм квиз
     folder: завршни_тест
     guid: a44a5204-7d45-4a2b-8b53-afaedf27ea06
     description: Пајгејм - завршни квиз
     activities:
       - type: quiz
-        title: 31. Пајгејм - завршни квиз 
+        title: 31.1. Пајгејм - завршни квиз 
         file: zavrsni_test.rst
         description: #opciono
         guid: 9f135016-0af1-4f2f-af56-1aba6d95e0f4
