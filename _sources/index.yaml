@@ -512,17 +512,12 @@ lessons:
         description: #opciono
         guid: 6849e45c-1b4c-4e12-bb8a-4b651ffcffcf
       - type: reading
-        title: 19.4. Најважније из ове лекције
-        file: најважније_цртање1.rst
-        description: #opciono
-        guid: b17c3a07-73d2-4d1e-8625-5434d44f72ac
-      - type: reading
-        title: 19.5. Домаћи задатак
+        title: 19.4. Домаћи задатак
         file: домаћи_задатак_паткица.rst
         description: #opciono
         guid: dadd3b45-f4c9-40a1-bd76-93670070ea06
       - type: quiz
-        title: 19.6. Квиз - цртање облика
+        title: 19.5. Квиз - цртање облика
         file: цртање_облика_квиз.rst
         description: #opciono
         guid: f1dbff55-d404-4b22-8a27-51436a228eb7
