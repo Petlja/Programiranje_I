@@ -472,22 +472,17 @@ lessons:
     description:  Прва лекција
     activities:
       - type: reading
-        title: 18.1 Координатни систем
+        title: 18.1. Координатни систем
         file: координатни_систем.rst
         description: #opciono
         guid: beaca2c0-2619-4c59-9c87-91e75920771a
       - type: reading
-        title: 18.2 Боје
+        title: 18.2. Боје
         file: боје.rst
         description: #opciono
         guid: 0b27e129-9623-4e7b-bb66-360a2d29caaf
-      - type: reading
-        title: 18.3 Најважније из ове лекције
-        file: најважније_координатни_боје.rst
-        description: #opciono
-        guid: e2f4c1df-5521-47f9-b0ea-70d59b98ea5e
       - type: quiz
-        title: 18.4 Квиз - координатни систем и боје
+        title: 18.3. Квиз - координатни систем и боје
         file: тест_координатни_систем_боје.rst
         description: #opciono
         guid: 01d8349e-2a4b-41bd-8d7f-2a22cadbc2dd
