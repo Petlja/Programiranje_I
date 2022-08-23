@@ -17,22 +17,23 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Када се помоћу петље црта испрекидана линија са цртама дужине 20 и размацима дужине 10, следећа црта је померена у односу на претходну за
+    Када се помоћу петље црта испрекидана линија са цртама дужине 20 и размацима 
+    дужине 10 пиксела, следећа црта је померена у односу на претходну за
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 
 Питање 2.
 ~~~~~~~~~
 
 .. mchoice:: for_kose
-    :answer_a: слика 1
+    :answer_a: 1
     :feedback_a: Нетачно    
-    :answer_b: слика 2
+    :answer_b: 2
     :feedback_b: Нетачно    
-    :answer_c: слика 3
+    :answer_c: 3
     :feedback_c: Тачно
-    :answer_d: слика 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: c
     
@@ -45,17 +46,17 @@
 
     .. image:: ../../_images/pg_petlje_kose.png
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 Питање 3.
 ~~~~~~~~~
 
 .. mchoice:: for_stepenice
-    :answer_a: усправна испрекидана линија
+    :answer_a: Усправна испрекидана линија.
     :feedback_a: Нетачно    
-    :answer_b: водоравна испрекидана линија
+    :answer_b: Водоравна испрекидана линија.
     :feedback_b: Нетачно    
-    :answer_c: степенаста линија
+    :answer_c: Степенаста линија.
     :feedback_c: Тачно
     :correct: c
     
@@ -71,7 +72,7 @@
 
 
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 
 Питање 4.
@@ -79,17 +80,18 @@
 
 .. mchoice:: for_isprekidana
     :multiple_answers:
-    :answer_a: код 1
+    :answer_a: 1
     :feedback_a: Тачно
-    :answer_b: код 2
+    :answer_b: 2
     :feedback_b: Тачно
-    :answer_c: код 3
+    :answer_c: 3
     :feedback_c: Тачно
-    :answer_d: код 4
+    :answer_d: 4
     :feedback_d: Тачно
     :correct: ['a', 'b', 'c', 'd']
     
-    Којим од датих кодова се може нацртати водоравна испрекидана линија од 10 цртица која почиње од тачке (x0, y0), тако да су и цртице и размаци дужине *a*?
+    Којим од датих кодова се може нацртати водоравна испрекидана линија од 10 цртица која почиње 
+    од тачке (:math:`x0`, :math:`y0`), тако да су и цртице и размаци дужине :math:`a`?
 
     (1)
       .. code-block:: python
@@ -119,7 +121,7 @@
 
 
 
-    Изабери тачан одговор:
+    Изабери тачне одговоре.
 
  
 
@@ -127,13 +129,13 @@
 ~~~~~~~~~
 
 .. mchoice:: for_cikcak
-    :answer_a: код 1
+    :answer_a: 1
     :feedback_a: Тачно
-    :answer_b: код 2
+    :answer_b: 2
     :feedback_b: Нетачно    
-    :answer_c: код 3
+    :answer_c: 3
     :feedback_c: Нетачно    
-    :answer_d: код 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: a
     
@@ -150,19 +152,19 @@
 
     .. image:: ../../_images/pg_petlje_cikcak.png
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 Питање 6.
 ~~~~~~~~~
 
 .. mchoice:: for_rect_1
-    :answer_a: слика 1
+    :answer_a: 1
     :feedback_a: Нетачно    
-    :answer_b: слика 2
+    :answer_b: 2
     :feedback_b: Тачно
-    :answer_c: слика 3
+    :answer_c: 3
     :feedback_c: Нетачно    
-    :answer_d: слика 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: b
     
@@ -177,19 +179,19 @@
 
     .. image:: ../../_images/pg_petlje_rect01.png
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
  
 Питање 7.
 ~~~~~~~~~
 
 .. mchoice:: for_krugovi01
-    :answer_a: слика 1
+    :answer_a: 1
     :feedback_a: Нетачно    
-    :answer_b: слика 2
+    :answer_b: 2
     :feedback_b: Нетачно    
-    :answer_c: слика 3
+    :answer_c: 3
     :feedback_c: Тачно
-    :answer_d: слика 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: c
     
@@ -230,7 +232,9 @@
         for a in range(20, 120, 20):
             pygame.draw.circle(prozor, pygame.Color("black"), (P, Q), 20, 1)
 
-    Ти кругови ће се додиривати ако уместо (P, Q) стоји ... (изабери тачан одговор)
+    Ти кругови ће се додиривати ако уместо (P, Q) стоји ... 
+    
+    Изабери тачне одговоре.
  
 
 Питање 9.
@@ -251,9 +255,9 @@
     :feedback_e: Тачно
     :correct: ['a', 'b', 'd', 'e']
 
-    Које од кружних линија, задатих следећим наредбама, садрже тачку (x, y)
+    Које од кружних линија задатих следећим наредбама садрже тачку (:math:`x`, :math:`y`)?
 
-    Изабери тачан одговор:
+    Изабери тачне одговоре.
 
 
 
@@ -261,13 +265,13 @@
 ~~~~~~~~~~
 
 .. mchoice:: for_krugovi04
-    :answer_a: слика 1
+    :answer_a: 1
     :feedback_a: Нетачно    
-    :answer_b: слика 2
+    :answer_b: 2
     :feedback_b: Тачно
-    :answer_c: слика 3
+    :answer_c: 3
     :feedback_c: Нетачно    
-    :answer_d: слика 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: b
     
@@ -282,4 +286,4 @@
 
 
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
