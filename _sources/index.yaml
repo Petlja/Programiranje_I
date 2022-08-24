@@ -514,7 +514,7 @@ lessons:
         file: цртање_облика_квиз.rst
         description: #opciono
         guid: f1dbff55-d404-4b22-8a27-51436a228eb7
-  - title: 20. Цртање основних облика
+  - title: 20. Напредне технике цртања
     folder: Цртање 2
     guid: 3c525750-b762-400c-8a41-d62953b5e80e
     description:  Друга лекција
