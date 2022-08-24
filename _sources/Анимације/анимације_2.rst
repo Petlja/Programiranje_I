@@ -28,6 +28,13 @@
            for j in range(broj_kvadrata):
            pg.draw.rect(prozor, nasumicna_boja(), ???)
 
+.. reveal:: podijum_animacija_1
+  :showtitle: Прикажи решење
+  :hidetitle: Сакриј решење
+
+  .. activecode:: podijum_animacija_resenje
+    :nocodelens:
+    :includesrc: _includes/podijum_animacije.py
                 
 Промена боје позадине у круг
 ''''''''''''''''''''''''''''
@@ -153,9 +160,7 @@
 ``crtaj``, да би се промењена сцена исцртала.
 
 
-.. topic:: Погледај видео:
-
-   У овом видеу погледај мало детаљније свео  чему је било речи у овом поглављу
+.. topic:: У овом видеу погледај мало детаљније свео  чему је било речи у овом поглављу
 
     .. ytpopup:: aW9PBGgeug4
         :width: 735
