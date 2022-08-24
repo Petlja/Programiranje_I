@@ -1,5 +1,5 @@
-5.4. Торке/листе
-################
+5.4. Торке и листе
+##################
 
 Некада су нам корисни подаци који садрже више различитих вредности,
 тако да се у сваком кораку петље користи друга вредност.
@@ -22,21 +22,16 @@
 ("red", "green", "blue", "yellow")``).  У сваком кораку петље, боју
 ћемо постављати на i-ти елемент те торке, где је i бројачка променљива
 која редом узима вредности 0, 1, 2 и 3 (i-том елементу торке ``boje``
-можемо приступити навођењем ``boje[i]``). У наредном програму опет има
-неколико грешака и твој задатак је да их исправиш.
+можемо приступити навођењем ``boje[i]``).
+
+.. learnmorenote::
+    На пример, када кажемо boje[0], то ће се односити на први елемент у торци тј. у нашем конкретном 
+    случају то је црвена боја "red".
 
 .. activecode:: корњача_шарени_квадрат
    :nocodelens:
    :enablecopy:
-   :playtask:
 
-   import turtle
-   boje = ("red", "green", "", "yellow")
-   for i in range(0):      # ponovi 4 puta:
-       turtle.color(boje)    #   postavi boju na i-ti element torke boja
-       turtle.forward(0)     #   idi napred 100 koraka
-       turtle.left(0)        #   okreni se nalevo za 90 stepeni
-   ====
    import turtle
    boje = ("red", "green", "blue", "yellow")
    for i in range(4):      # ponovi 4 puta:
@@ -83,3 +78,17 @@
    for i in range(10):          # ponovi 10 puta:
        turtle.forward(40)         #    idi napred 40 koraka
        turtle.left(uglovi[i % 2]) #    okreni se ulevo za naredni od dva ugla iz liste
+
+.. reveal:: корњача_петокрака_прикажи_решење
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+
+    .. activecode:: корњача_петокрака_решење_2
+       :nocodelens:
+
+       import turtle
+       uglovi = (72, -144)
+       for i in range(10):          # ponovi 10 puta:
+           turtle.forward(40)         #    idi napred 40 koraka
+           turtle.left(uglovi[i % 2]) #    okreni se ulevo za naredni od dva ugla iz liste
+

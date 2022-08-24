@@ -133,7 +133,7 @@ lessons:
         description: #opciono
         guid: b3f341de-5720-4a2c-a1b0-ba71ad3d4384
         
-  - title: 5. Корњача графика - гранање, угнежђене петље, функције, торке/листе
+  - title: 5. Корњача графика - гранање, угнежђене петље, функције, торке и листе
     folder: 5_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
     description: 5_lekcija
@@ -154,7 +154,7 @@ lessons:
         description: #opciono
         guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
       - type: reading
-        title: 5.4. Торке/листе
+        title: 5.4. Торке и листе
         file: 5_4_cas.rst
         description: #opciono
         guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
