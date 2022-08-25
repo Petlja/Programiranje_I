@@ -9,8 +9,8 @@
     :feedback_a: Тачно
     :answer_b: 2
     :feedback_b: Нетачно  
-    :answer_c: Друга
-    :feedback_c: 3
+    :answer_c: 3
+    :feedback_c: Нетачно
     :answer_d: Ниједна
     :feedback_d: Нетачно    
     :correct: a
@@ -37,7 +37,7 @@
             def sudar_loptica(x_koordinata_prvog_kruga, x_koordinata_drugog_kruga, y_koordinata_prvog_kruga, y_koordinata_drugog_kruga):
                 return math.sqrt((x_koordinata_prvog_kruga-x_koordinata_drugog_kruga)**2 + (y_koordinata_prvog_kruga-y_koordinata_drugog_kruga)**2)
     
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 
 Питање 2.
@@ -82,7 +82,7 @@
             def sudar_sa_ivicom():
                 return x_centar_kruga + poluprecnik_kruga < 0 or x_centar_kruga - poluprecnik_kruga > sirina
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 Питање 3.
 ~~~~~~~~~
@@ -98,7 +98,7 @@
     :feedback_d: Нетачно
     :correct: a
     
-    Која од следећих функција проверава да ли се квадрат сусрео са горњом/доњом ивицом екрана?  
+    Која од следећих функција проверава да ли се квадрат сусрео са горњом, односно доњом ивицом екрана?  
 
     .. code-block:: python
 
@@ -118,20 +118,20 @@
             def sudar_sa_ivicom():
                 return y_gornje_levo_teme - stranica kvadrata < 0 or y_gornje_levo_teme_ - stranica_kvadrata > visina
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
 
 Питање 4.
 ~~~~~~~~~
 
 .. mchoice:: sudari_dopuni
-    :answer_a: Функција 1
+    :answer_a: 1
     :feedback_a: Тачно
-    :answer_b: Функција 2
+    :answer_b: 2
     :feedback_b: Нетачно
-    :answer_c: Функција 3
+    :answer_c: 3
     :feedback_c: Нетачно
-    :answer_d: Функција 4
+    :answer_d: 4
     :feedback_d: Нетачно    
     :correct: a
     
@@ -210,5 +210,5 @@
                 crtaj()
 
 
-    Изабери тачан одговор:
+    Изабери тачан одговор.
 
