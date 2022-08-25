@@ -24,6 +24,7 @@
 
    sati = 15
    minuta = 23
+
    if (sati >= 6 and sati < 13) or (sati >= 17 and sati < 22):
        print("Možete da izvodite bučnije radove")
    else:
@@ -32,7 +33,10 @@
 или
 
 .. activecode:: кућни_ред_2
-		
+
+   sati = 15
+   minuta = 23 
+
    if not (sati < 6 or (13 <= sati and sati < 17) or sati >= 22):
        print("Možete da izvodite bučnije radove")
    else:
