@@ -38,11 +38,11 @@
        print("Snižena cena:", snizena_cena)
        ??? # učitavamo novu cenu i procenat
 
-.. reveal:: while_reveal_2
+.. reveal:: while125_reveal
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
-   .. activecode:: while_2
+   .. activecode:: while125_resenje
 
       cena = float(input("Unesi cenu cipela:"))
 
@@ -68,7 +68,7 @@
        snizena_cena = ???  # izračunavamo sniženu cenu
        print("Snižena cena:", snizena_cena)
 
-.. reveal:: while2125_reveal_2
+.. reveal:: while2125_reveal
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
