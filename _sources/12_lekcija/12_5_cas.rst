@@ -31,11 +31,26 @@
 .. activecode:: while125
 
    cena = float(input("Unesi cenu cipela:"))
-   procenat = float(input("Unesi procenat sniženja:"))
+   
    while cena != 0:
+       procenat = float(input("Unesi procenat sniženja:"))
        snizena_cena = ???  # izračunavamo sniženu cenu
        print("Snižena cena:", snizena_cena)
        ??? # učitavamo novu cenu i procenat
+
+.. reveal:: while_reveal_2
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: while_2
+
+      cena = float(input("Unesi cenu cipela:"))
+
+      while cena != 0:
+          procenat = float(input("Unesi procenat snizenja:"))
+          snizena_cena = cena * (1 - procenat / 100)   # izračunavamo sniženu cenu
+          print("Snižena cena:", snizena_cena)
+          cena = float(input("Unesi cenu cipela:"))
    
 Још једно могуће решење се заснива на томе да направимо бесконачну
 петљу (петљу у ``while True:`` којој је услов увек испуњен), на чијем
@@ -47,24 +62,24 @@
 
    while True:
        cena = float(input("Unesi cenu cipela:"))
-       procenat = float(input("Unesi procenat sniženja:"))
        if cena == 0:
            break
+       procenat = float(input("Unesi procenat sniženja:"))
        snizena_cena = ???  # izračunavamo sniženu cenu
        print("Snižena cena:", snizena_cena)
 
-.. reveal:: while_reveal_2
+.. reveal:: while2125_reveal_2
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
-   .. activecode:: while_2
+   .. activecode:: while2125_resenje
 
-      cena = float(input("Unesi cenu cipela:"))
-      procenat = float(input("Unesi procenat snizenja:"))
-      while cena != 0:
-          snizena_cena = cena * (1 - procenat / 100)
-          print("Snižena cena:", snizena_cena)
+      while True:
           cena = float(input("Unesi cenu cipela:"))
+          if cena == 0:
+              break
           procenat = float(input("Unesi procenat sniženja:"))
+          snizena_cena = cena * (1 - procenat / 100)  # izračunavamo sniženu cenu
+          print("Snižena cena:", snizena_cena)
 
           
