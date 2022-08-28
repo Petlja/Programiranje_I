@@ -87,9 +87,7 @@
        turtle.forward(100)      #   idi napred 100 koraka
        turtle.left(360 / n)     #   okreni se za 360:n stepeni
      
-.. learnmorenote::
-
-   **Полигон - неправилан многоугао**
+.. learnmorenote:: Полигон - неправилан многоугао
 
    Збир унутрашњих углова сваког *n*-тоугла (у Еуклидској
    геометрији) једнак је вредности :math:`(n-2)\cdot
