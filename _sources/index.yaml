@@ -328,18 +328,18 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka-python/jabuke
         guid: 11db7f4e-1a4f-415e-8a0a-6a1d26f0b2da
 
-  - title: 12. Петље 
+  - title: 12. Понављање - петље 
     folder: 12_lekcija
     guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
     description: 12_lekcija
     activities:
       - type: reading
-        title: 12.1. Понављање - петља for 
+        title: 12.1. Понављање - петља for
         file: 12_1_cas.rst
         description: #opciono
         guid: 1b469fa03-6e83-4f19-bf1b-97bff2cd9f84
       - type: reading
-        title: 12.2. Условна петља - while
+        title: 12.2. Понављање - условна петља while
         file: 12_2_cas.rst
         description: #opciono
         guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
