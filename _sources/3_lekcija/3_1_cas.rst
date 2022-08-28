@@ -97,7 +97,7 @@
    }
    
 .. reveal:: Karel_for_Take_5_3_8_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи Решење
    :hidetitle: Сакриј решење
    
    .. activecode:: Karel_for_Take_5_3_8_solution
@@ -318,7 +318,7 @@
    }
 
 .. reveal:: Karel_while_if_bring_all_balls_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи Решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_if_bring_all_balls_solution
@@ -521,7 +521,7 @@
    }
    
 .. reveal:: Karel_while_many_squares_two_bals_per_square_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи Решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_many_squares_two_bals_per_square_solution
@@ -585,7 +585,7 @@
    }              
 
 .. reveal:: Karel_while_many_squares_many_balls_per_square_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи Решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_many_squares_many_balls_per_square_solution
