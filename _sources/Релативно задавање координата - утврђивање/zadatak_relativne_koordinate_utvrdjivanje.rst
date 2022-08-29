@@ -44,8 +44,7 @@
    тако да се све црта у односу на сидро са координатама `x=100`,
    `y=100`.
                 
-   .. activecode:: pygame_quiz_uvodjenje_sidra_code
-      :passivecode: true
+   .. code:: Python
                     
       pg.draw.circle(prozor, pg.Color("red"), (100, 100), 50, 1)
       pg.draw.line(prozor, pg.Color("red"), (50, 50), (150, 150))
