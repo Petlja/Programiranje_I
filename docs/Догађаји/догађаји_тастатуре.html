@@ -6,6 +6,7 @@
     <title>29.2. Догађаји тастатуре</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -24,11 +25,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -110,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -117,40 +117,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -173,6 +147,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -258,8 +233,8 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../1_lekcija/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>1.1. Линијски програми</div></a>
                 <a href=../1_lekcija/1_2_cas.html><div class="studioLecture" id=activity-1_2_cas><i class="fas fa-file-alt activity-icon"></i>1.2. Бројачка петља for</div></a>
-                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.4. Квиз</div></a>
-                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.3. Вежбање</div></a>
+                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.3. Квиз</div></a>
+                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.4. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -302,14 +277,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_lekcija>
-                    <h5>5. Корњача графика - гранање, процедуре, торке/листе</h5>
+                    <h5>5. Корњача графика - гранање, угнежђене петље, функције, торке и листе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../5_lekcija/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>5.1. Гранање</div></a>
                 <a href=../5_lekcija/5_2_cas.html><div class="studioLecture" id=activity-5_2_cas><i class="fas fa-file-alt activity-icon"></i>5.2. Угнежђене петље</div></a>
-                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Процедуре</div></a>
-                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке/листе</div></a>
+                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Функције</div></a>
+                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке и листе</div></a>
                 <a href=../5_lekcija/5_5_cas.html><div class="studioLecture" id=activity-5_5_cas><i class="far fa-question-circle activity-icon"></i>5.5. Квиз</div></a>
                 <a href=../5_lekcija/5_6_cas.html><div class="studioLecture" id=activity-5_6_cas><i class="fas fa-file-alt activity-icon"></i>5.6. Вежбање</div></a>
                 </div>
@@ -332,10 +307,11 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../7_lekcija/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>7.1. Основне аритметичке операције и примена</div></a>
-                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - имена међурезултата</div></a>
+                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - места за смештање података</div></a>
                 <a href=../7_lekcija/7_3_cas.html><div class="studioLecture" id=activity-7_3_cas><i class="fas fa-file-alt activity-icon"></i>7.3. Тестирање и дебаговање програма</div></a>
                 <a href=../7_lekcija/7_4_cas.html><div class="studioLecture" id=activity-7_4_cas><i class="far fa-question-circle activity-icon"></i>7.4. Квиз</div></a>
                 <a href=../7_lekcija/7_5_cas.html><div class="studioLecture" id=activity-7_5_cas><i class="fas fa-file-alt activity-icon"></i>7.5. Вежбање</div></a>
+                <a href=../7_lekcija/7.6.%20Израчунавања%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-7.6.%20Израчунавања%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>7.6. Израчунавања - додатни задаци</div></a>
                 </div>
             </div>
                 
@@ -350,6 +326,7 @@
                 <a href=../8_lekcija/8_3_cas.html><div class="studioLecture" id=activity-8_3_cas><i class="fas fa-file-alt activity-icon"></i>8.3. Позициони запис бројева</div></a>
                 <a href=../8_lekcija/8_4_cas.html><div class="studioLecture" id=activity-8_4_cas><i class="far fa-question-circle activity-icon"></i>8.4. Квиз</div></a>
                 <a href=../8_lekcija/8_5_cas.html><div class="studioLecture" id=activity-8_5_cas><i class="fas fa-file-alt activity-icon"></i>8.5. Вежбање</div></a>
+                <a href=../8_lekcija/8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци.html><div class="studioLecture" id=activity-8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци><i class="far fa-question-circle activity-icon"></i>8.6. Цели и реални бројеви, дељење - додатни задaци</div></a>
                 </div>
             </div>
                 
@@ -384,29 +361,31 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../11_lekcija/11_1_cas.html><div class="studioLecture" id=activity-11_1_cas><i class="fas fa-file-alt activity-icon"></i>11.1. Гранање</div></a>
                 <a href=../11_lekcija/11_2_cas.html><div class="studioLecture" id=activity-11_2_cas><i class="fas fa-file-alt activity-icon"></i>11.2. Комбинација више логичких услова</div></a>
-                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција elif</div></a>
+                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција if-elif-else</div></a>
                 <a href=../11_lekcija/11_4_cas.html><div class="studioLecture" id=activity-11_4_cas><i class="far fa-question-circle activity-icon"></i>11.4. Квиз</div></a>
                 <a href=../11_lekcija/11_5_cas.html><div class="studioLecture" id=activity-11_5_cas><i class="fas fa-file-alt activity-icon"></i>11.5. Вежбање</div></a>
+                <a href=../11_lekcija/11.6.%20Гранање%20-%20додатни%20задтак.html><div class="studioLecture" id=activity-11.6.%20Гранање%20-%20додатни%20задтак><i class="far fa-question-circle activity-icon"></i>11.6. Гранање - додатни задтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-12_lekcija>
-                    <h5>12. Понављање</h5>
+                    <h5>12. Понављање - петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање</div></a>
-                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља</div></a>
-                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угнежђене петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање - петља for</div></a>
+                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Понављање - условна петља while</div></a>
+                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угњежђене петље</div></a>
                 <a href=../12_lekcija/12_4_cas.html><div class="studioLecture" id=activity-12_4_cas><i class="far fa-question-circle activity-icon"></i>12.4. Квиз</div></a>
                 <a href=../12_lekcija/12_5_cas.html><div class="studioLecture" id=activity-12_5_cas><i class="fas fa-file-alt activity-icon"></i>12.5. Вежбање</div></a>
+                <a href=../12_lekcija/12.6.%20Петље%20-%20додатни%20задaтак.html><div class="studioLecture" id=activity-12.6.%20Петље%20-%20додатни%20задaтак><i class="far fa-question-circle activity-icon"></i>12.6. Петље - додатни задaтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-13_lekcija>
-                    <h5>13. Контрола тока - задаци за вежбање</h5>
+                    <h5>13. Контрола тока - вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -420,21 +399,23 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке, листе и ниске</div></a>
-                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Скупови и речници</div></a>
-                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="far fa-question-circle activity-icon"></i>14.3. Квиз</div></a>
-                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Вежбање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке и листе</div></a>
+                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Функције за рад са торкама и листама</div></a>
+                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Ниске</div></a>
+                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Скупови и речници</div></a>
+                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="far fa-question-circle activity-icon"></i>14.5. Квиз</div></a>
+                <a href=../14_lekcija/14_6_cas.html><div class="studioLecture" id=activity-14_6_cas><i class="fas fa-file-alt activity-icon"></i>14.6. Вежбање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-15_lekcija>
-                    <h5>15. Структуре података и петље</h5>
+                    <h5>15. Примена петље у структурама података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Торке, листе, ниске и петље</div></a>
-                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Речници и петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Примена петље у торци, листи и ниски</div></a>
+                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Примена петље у речнику</div></a>
                 <a href=../15_lekcija/15_3_cas.html><div class="studioLecture" id=activity-15_3_cas><i class="far fa-question-circle activity-icon"></i>15.3. Квиз</div></a>
                 <a href=../15_lekcija/15_4_cas.html><div class="studioLecture" id=activity-15_4_cas><i class="fas fa-file-alt activity-icon"></i>15.4. Вежбање</div></a>
                 </div>
@@ -446,7 +427,7 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака и коришћење дебагера</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака, коришћење дебагера</div></a>
                 </div>
             </div>
                 
@@ -467,10 +448,9 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1 Координатни систем</div></a>
-                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2 Боје</div></a>
-                <a href=../Координатни%20систем%20и%20боје/најважније_координатни_боје.html><div class="studioLecture" id=activity-најважније_координатни_боје><i class="fas fa-file-alt activity-icon"></i>18.3 Најважније из ове лекције</div></a>
-                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.4 Квиз - координатни систем и боје</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1. Координатни систем</div></a>
+                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2. Боје</div></a>
+                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.3. Квиз - координатни систем и боје</div></a>
                 </div>
             </div>
                 
@@ -483,24 +463,22 @@
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%201/дужи.html><div class="studioLecture" id=activity-дужи><i class="fas fa-file-alt activity-icon"></i>19.1. Дужи</div></a>
                 <a href=../Цртање%201/правоугаоници_елипсе.html><div class="studioLecture" id=activity-правоугаоници_елипсе><i class="fas fa-file-alt activity-icon"></i>19.2. Правоугаоници и елипсе</div></a>
                 <a href=../Цртање%201/кругови_многоуглови.html><div class="studioLecture" id=activity-кругови_многоуглови><i class="fas fa-file-alt activity-icon"></i>19.3. Кругови и многоуглови</div></a>
-                <a href=../Цртање%201/најважније_цртање1.html><div class="studioLecture" id=activity-најважније_цртање1><i class="fas fa-file-alt activity-icon"></i>19.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.5. Домаћи задатак</div></a>
-                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.6. Квиз - цртање облика</div></a>
+                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.4. Домаћи задатак</div></a>
+                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.5. Квиз - цртање облика</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%202>
-                    <h5>20. Цртање основних облика</h5>
+                    <h5>20. Напредне технике цртања</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%202/симетрија.html><div class="studioLecture" id=activity-симетрија><i class="fas fa-file-alt activity-icon"></i>20.1. Симетрија</div></a>
                 <a href=../Цртање%202/центрирање_облика.html><div class="studioLecture" id=activity-центрирање_облика><i class="fas fa-file-alt activity-icon"></i>20.2. Центрирање облика</div></a>
                 <a href=../Цртање%202/релативно_задавање_координата_и_димензија.html><div class="studioLecture" id=activity-релативно_задавање_координата_и_димензија><i class="fas fa-file-alt activity-icon"></i>20.3. Релативно задавање координата и димензија</div></a>
-                <a href=../Цртање%202/најважније_цртање2.html><div class="studioLecture" id=activity-најважније_цртање2><i class="fas fa-file-alt activity-icon"></i>20.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.5. Домаћи задатак</div></a>
-                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.6. Квиз - Цртање</div></a>
+                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.4. Домаћи задатак</div></a>
+                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.5. Квиз - Цртање</div></a>
                 </div>
             </div>
                 
@@ -522,24 +500,24 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>25.1. Правилно распоређивање облика</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>25.2. Генератор случајних бројева</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>25.3. Распоређивање боја</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>25.4. Домаћи задатак</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>25.5. Квиз - петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>22.1. Правилно распоређивање облика</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>22.2. Генератор случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>22.3. Распоређивање боја</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>22.4. Домаћи задатак</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>22.5. Квиз - петље</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Угнежђене%20петље>
-                    <h5>23. Угнежђене петље и гранање</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Гранање%20и%20угнежђене%20петље>
+                    <h5>23. Гранање и угнежђене петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
-                <a href=../Угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Гранање%20и%20угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
                 </div>
             </div>
                 
@@ -550,7 +528,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>24.1. Приказ слике и текста</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.2. Слике и текст - квиз</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>24.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.3. Слике и текст - квиз</div></a>
                 </div>
             </div>
                 
@@ -561,19 +540,20 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Анимације/анимације.html><div class="studioLecture" id=activity-анимације><i class="fas fa-file-alt activity-icon"></i>25.1. Анимације</div></a>
-                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.2. Како раде анимације</div></a>
-                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.3. Квиз - анимације</div></a>
+                <a href=../Анимације/анимације_2.html><div class="studioLecture" id=activity-анимације_2><i class="fas fa-file-alt activity-icon"></i>25.2. Анимације - примери</div></a>
+                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.3. Како раде анимације</div></a>
+                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.4. Квиз - анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20задаци>
-                    <h5>26. Анимације задаци</h5>
+                    <h5>26. Анимације - задаци</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације задаци</div></a>
-                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације домаћи</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације - задаци</div></a>
+                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације - домаћи</div></a>
                 </div>
             </div>
                 
@@ -590,14 +570,14 @@
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20судари>
-                    <h5>28. Анимације судара објеката</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20сусрети>
+                    <h5>28. Анимације сусрета објеката</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20судари/анимације_судари.html><div class="studioLecture" id=activity-анимације_судари><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/судари_домаћи.html><div class="studioLecture" id=activity-судари_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/анимације_судари_квиз.html><div class="studioLecture" id=activity-анимације_судари_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - судари објеката на екрану</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20сусрети/анимације_сусрети.html><div class="studioLecture" id=activity-анимације_сусрети><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/сусрети_домаћи.html><div class="studioLecture" id=activity-сусрети_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/анимације_сусрети_квиз.html><div class="studioLecture" id=activity-анимације_сусрети_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - сусрети објеката на екрану</div></a>
                 </div>
             </div>
                 
@@ -620,18 +600,19 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>32.1. Комбиновање догађаја и анимација</div></a>
-                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30. 2. Квиз - догађаји и анимације</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>30.1. Комбиновање догађаја и анимација</div></a>
+                <a href=../Догађаји_анимације/комбиновање_домаћи_задатак.html><div class="studioLecture" id=activity-комбиновање_домаћи_задатак><i class="fas fa-file-alt activity-icon"></i>30.2. Домаћи задатак</div></a>
+                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30.3. Квиз - догађаји и анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-завршни_тест>
-                    <h5>31. Завршни квиз</h5>
+                    <h5>31. Пајгејм квиз</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31. Завршни квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31.1. Пајгејм - завршни квиз</div></a>
                 </div>
             </div>
                 </div>
@@ -650,32 +631,37 @@
     
   <div class="section" id="id1">
 <h1>29.2. Догађаји тастатуре<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Сваки пут када корисник притисне и када отпусти неки тастер на
-тастатури региструје се догађај. За сваки клик тастером догоде се два
-посебна догађаја: <code class="docutils literal notranslate"><span class="pre">pg.KEYDOWN</span></code> и <code class="docutils literal notranslate"><span class="pre">pg.KEYUP</span></code>.</p>
-<p>У склопу обраде догађаја притиска тастера, често нас занима да сазнамо
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Када корисник притисне неки тастер на тастатури, региструје се догађај <code class="docutils literal notranslate"><span class="pre">pg.KEYDOWN</span></code>, а
+када отпусти, региструје се догађај <code class="docutils literal notranslate"><span class="pre">pg.KEYUP</span></code>.</p>
+
+    </div></div>
+<p>У склопу обраде догађаја притиска тастера често нас занима да сазнамо
 који је тастер притиснут. Догађај типа <code class="docutils literal notranslate"><span class="pre">pg.KEYDOWN</span></code> податак о томе
 чува у пољу <code class="docutils literal notranslate"><span class="pre">key</span></code>, па ако је догађај сачуван у променљивој
 <code class="docutils literal notranslate"><span class="pre">dogadjaj</span></code>, анализом вредности <code class="docutils literal notranslate"><span class="pre">dogadjaj.key</span></code> можемо одредити који
 је тастер притиснут и реаговати на одговарајући начин. Ако је
 притиснута нека од стрелица, <code class="docutils literal notranslate"><span class="pre">dogadjaj.key</span></code> ће имати вредности
-<code class="docutils literal notranslate"><span class="pre">pg.K_LEFT</span></code> (стрелица на лево), <code class="docutils literal notranslate"><span class="pre">pg.K_RIGHT</span></code> (стрелица на десно),
-<code class="docutils literal notranslate"><span class="pre">pg.K_UP</span></code> (стрелица на горе) или <code class="docutils literal notranslate"><span class="pre">pg.K_DOWN</span></code> (стрелица на доле).
+<code class="docutils literal notranslate"><span class="pre">pg.K_LEFT</span></code> (стрелица налево), <code class="docutils literal notranslate"><span class="pre">pg.K_RIGHT</span></code> (стрелица надесно),
+<code class="docutils literal notranslate"><span class="pre">pg.K_UP</span></code> (стрелица нагоре) или <code class="docutils literal notranslate"><span class="pre">pg.K_DOWN</span></code> (стрелица надоле).
 Сличне константе постоје и за друге тастере (на пример, за слова
 можемо користити <code class="docutils literal notranslate"><span class="pre">pg.K_a</span></code>, <code class="docutils literal notranslate"><span class="pre">pg.K_b</span></code>, …, <code class="docutils literal notranslate"><span class="pre">pg.K_z</span></code>).</p>
 <div class="section" id="id2">
 <h2>Бојење круга тастатуром<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који ће цртати круг у центру прозора који ће бити
 обојен док је неки тастер притиснут.</p>
 
-    </p></div></div>
+    </div></div>
 <ul class="simple">
 <li><p>Контролу да ли круг треба или не треба да буде обојен вршићемо
 помоћу глобалне логичке променљиве <code class="docutils literal notranslate"><span class="pre">obojen</span></code>.</p></li>
@@ -686,6 +672,19 @@
 ћемо додељивати вредност <code class="docutils literal notranslate"><span class="pre">True</span></code>, а приликом сваког догађаја типа
 <code class="docutils literal notranslate"><span class="pre">pg.KEYUP</span></code> вредност <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ul>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>По завршетку, покушај да модификујеш претходни програм тако што ћеш, док је тастер
+притиснут, уместо црвеног круга цртати плави квадрат.</p>
+<p>После тога, покушај да га
+модификујеш тако да реагује само на притисак и отпуштање тастера за
+размак.</p>
+
+    </div></div>
 
 <div data-childcomponent="bojenje_kruga_tastaturom" class="course-box course-box-problem course-content">
 
@@ -745,45 +744,78 @@ def obradi_dogadjaj(dogadjaj):
     return False                       # ne treba punovo crtati scenu
 </textarea>
 </div>
-<p>Покушај да модификујеш претходни програм тако што ћеш док је тастер
-притиснут уместо црвеног круга цртати плави квадрат. Покушај да га
-модификујеш тако да реагује само на притисак и отпуштање тастера за
-размак.</p>
+
+    <div data-component="reveal" id="bojenje_kruga_tastaturom_1"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="bojenje_kruga_tastaturom_resenje" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=bojenje_kruga_tastaturom_resenje data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+    data-includesrc="# -*- acsection: general-init -*-
+import pygame as pg
+import pygamebg
+
+(sirina, visina) = (400, 400)    # otvaramo prozor
+prozor = pygamebg.open_window(sirina, visina, &quot;Bojenje kruga tastaturom&quot;)
+
+# -*- acsection: main -*-
+
+obojen = False   # promenljiva koja određuje da li je krug obojen ili nije
+
+def crtaj():
+    debljina = 0 if obojen else 1
+    prozor.fill(pg.Color(&quot;white&quot;))
+    pg.draw.circle(prozor, pg.Color(&quot;red&quot;), (200, 200), 100, debljina)
+
+def obradi_dogadjaj(dogadjaj):
+    global obojen
+    if dogadjaj.type == pg.KEYDOWN:    # prisnut je taster
+        obojen = True
+        return True
+    elif dogadjaj.type == pg.KEYUP:    # otpušten je taster
+        obojen = False
+        return True
+    return False
+
+# -*- acsection: after-main -*-
+
+pygamebg.event_loop(crtaj, obradi_dogadjaj)
+"   >
+
+
+</textarea>
 </div>
+
+    </div>
+    </div>
 <div class="section" id="id3">
 <h2>Шетање лоптице тастатуром<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм у којем корисник шета лоптицу по екрану
 тастатуром.</p>
 
-    </p></div></div>
+    </div></div>
 <ul class="simple">
-<li><p>Стање сцене је одређено положајем лоптице. Помоћу две глобалне
-променљиве <code class="docutils literal notranslate"><span class="pre">x</span></code> и <code class="docutils literal notranslate"><span class="pre">y</span></code> памтићемо тренутни положај центра лоптице
-у прозору (иницијализоваћемо их тако да се лоптица налази у центру
-прозора).  Променљива <code class="docutils literal notranslate"><span class="pre">r</span></code> садржаће полупречник лоптице, али се она
-неће мењати током рада програма.</p></li>
-<li><p>У функцији <code class="docutils literal notranslate"><span class="pre">crtaj</span></code> бојићемо позадину прозора у бело (да би се
-обрисао његов претходни садржај) и исцртаваћемо плаву лоптицу на
-положају одређеном текућим стањем сцене (вредностима променљивих
-<code class="docutils literal notranslate"><span class="pre">x</span></code> и <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p></li>
-<li><p>Догађаје ћемо обрађивати у посебној функцији <code class="docutils literal notranslate"><span class="pre">obradi_dogadjaj</span></code>.
-Приликом сваког притиска на тастер стрелице, координата <code class="docutils literal notranslate"><span class="pre">x</span></code> или
-координата <code class="docutils literal notranslate"><span class="pre">y</span></code> центра лоптице треба за мало да се промени (увећа
-или умањи, у зависности од тога која је стрелица притиснута). То
-колико ће се мало лоптица померити одређено је променљивама <code class="docutils literal notranslate"><span class="pre">dx</span></code> и
-<code class="docutils literal notranslate"><span class="pre">dy</span></code> (поставићемо их обе на 10 пиксела). Када притиснемо стрелицу
-на десно, тада увећавамо променљиву <code class="docutils literal notranslate"><span class="pre">x</span></code> за вредност
-<code class="docutils literal notranslate"><span class="pre">dx</span></code>. Слично, када притиснемо стрелицу на лево, тада умањујемо
-променљиву <code class="docutils literal notranslate"><span class="pre">x</span></code> за <code class="docutils literal notranslate"><span class="pre">dx</span></code>, када притиснемо стрелицу на горе тада
-умањујемо променљиву <code class="docutils literal notranslate"><span class="pre">y</span></code> за <code class="docutils literal notranslate"><span class="pre">dy</span></code>, а када притиснемо стрелицу на
-доле, тада увећавамо променљиву <code class="docutils literal notranslate"><span class="pre">y</span></code> за <code class="docutils literal notranslate"><span class="pre">dy</span></code>.</p></li>
+<li><p>Стање сцене је одређено положајем лоптице. Променљиве <code class="docutils literal notranslate"><span class="pre">x</span></code> и <code class="docutils literal notranslate"><span class="pre">y</span></code>
+памтиће тренутни положај центра лоптице у прозору (на почетку у центру
+прозора).  Променљива <code class="docutils literal notranslate"><span class="pre">r</span></code> садржаће полупречник лоптице.</p></li>
+<li><p>У функцији <code class="docutils literal notranslate"><span class="pre">crtaj</span></code> бојићемо позадину прозора у бело (брише се претходни садржај)
+и исцртаваћемо лоптицу на текућем положају (<code class="docutils literal notranslate"><span class="pre">x</span></code> , <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p></li>
+<li><p>Догађаје ћемо обрађивати у функцији <code class="docutils literal notranslate"><span class="pre">obradi_dogadjaj</span></code>.
+Притиском на тастер стрелице, координата <code class="docutils literal notranslate"><span class="pre">x</span></code> или
+координата <code class="docutils literal notranslate"><span class="pre">y</span></code> треба мало да се промени (увећа
+или умањи, у зависности од тога која је стрелица притиснута). Колико ће се
+лоптица померити одређују <code class="docutils literal notranslate"><span class="pre">dx</span></code> (померање по <code class="docutils literal notranslate"><span class="pre">x</span></code>) и
+<code class="docutils literal notranslate"><span class="pre">dy</span></code> (померање по <code class="docutils literal notranslate"><span class="pre">y</span></code>). Када притиснемо стрелицу
+надесно, увећавамо променљиву <code class="docutils literal notranslate"><span class="pre">x</span></code>. Када притиснемо стрелицу налево, умањујемо
+променљиву <code class="docutils literal notranslate"><span class="pre">x</span></code>. Када притиснемо стрелицу нагоре,
+умањујемо променљиву <code class="docutils literal notranslate"><span class="pre">y</span></code>, а када притиснемо стрелицу надоле, увећавамо променљиву <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p></li>
 </ul>
 
 <div data-childcomponent="setanje_loptice_tastaturom" class="course-box course-box-problem course-content">
@@ -862,7 +894,7 @@ def obradi_dogadjaj(dogadjaj):
 </textarea>
 </div>
 <div class="section" id="id4">
-<h3>Решење са речником<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>Решење са коришћењем речника<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Уместо гранања којим испитујемо која стрелица је притиснута, можемо
 направити речник који сваком тастеру придружује уређен пар који
 представља померај обе координате који се додаје на текуће координате
@@ -901,11 +933,11 @@ if dogadjaj.type == pg.KEYDOWN:
 </div>
 </div>
 <div class="section" id="id5">
-<h3>Шетање свемирског брода<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>Додатно, уместо цртања лоптице можемо да шетамо неку сличицу по екрану
-и тиме добијемо основу неке једноставне игрице. То, на пример, може
-бити следећи свемирски брод (слика се зове <code class="docutils literal notranslate"><span class="pre">spaceship.png</span></code> и не
-заборави да је ископираш ако покрећеш овај пример у локалу).</p>
+<h3>Померање свемирског брода<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Уместо лоптице, можемо да померамо неку сличицу
+и тако добијемо основу једноставне игрице. На пример
+свемирски брод (<code class="docutils literal notranslate"><span class="pre">spaceship.png</span></code>). Не
+заборави ископираш сличицу ако радиш у ИДЛЕ окружењу!</p>
 <img alt="../_images/spaceship.png" src="../_images/spaceship.png" />
 
 <div data-childcomponent="setanje_lika_tastaturom" class="course-box course-box-problem course-content">
@@ -990,38 +1022,34 @@ def obradi_dogadjaj(dogadjaj):
 </div>
 </div>
 <div class="section" id="id6">
-<h3>Сударање са ивицама<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3>Сусретање са ивицом прозора<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Модификуј програм у којем се шетала лоптица тако да сваки пут када
-лоптица удари у ивицу прозора, она мења боју на насумичан начин.</p>
+лоптица удари у ивицу прозора, мења боју на насумичан начин.</p>
 
-    </p></div></div>
+    </div></div>
 <ul class="simple">
-<li><p>Стање сцене проширујемо глобалном променљивом <code class="docutils literal notranslate"><span class="pre">boja</span></code> која ће
-садржати боју лоптице (она ће бити постављена насумично, помоћу
-функције <code class="docutils literal notranslate"><span class="pre">nasumicna_boja</span></code> која је већ имплементирана у „сивом
-коду”).</p></li>
+<li><p>Стање сцене проширујемо глобалном променљивом <code class="docutils literal notranslate"><span class="pre">boja</span></code>, која ће
+садржати боју лоптице.</p></li>
 <li><p>Функцију <code class="docutils literal notranslate"><span class="pre">crtaj</span></code> ћемо модификовати тако да у обзир узме и вредност
 променљиве <code class="docutils literal notranslate"><span class="pre">boja</span></code>.</p></li>
-<li><p>Након сваке промене положаја центра лоптице (што се дешава у склопу
-обраде догађаја), треба проверити да ли је она испала ван граница
+<li><p>Након сваке промене положаја лоптице,
+треба проверити да ли је она испала ван граница
 прозора и ако јесте, вратити је и променити јој боју. Притиском
-стрелица на десно лоптица која је била у прозору је могла испасти
+стрелица надесно лоптица која је била у прозору је могла испасти
 једино преко десне ивице прозора. Зато је приликом реакције на
-догађај притиска тог тастера довољно само проверити да ли је десни
-крај лоптице десно од десне ивице прозора тј. да ли је вредност <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span>
-<span class="pre">r</span></code> већа од ширине прозора тј. вредности променљиве <code class="docutils literal notranslate"><span class="pre">sirina</span></code>. Ако
+догађај притиска тог тастера довољно проверити да ли је десни
+крај лоптице десно од десне ивице прозора, тј. да ли је вредност <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+</span> <span class="pre">r</span></code>
+већа од вредности променљиве <code class="docutils literal notranslate"><span class="pre">sirina</span></code>. Ако
 јесте, тада <code class="docutils literal notranslate"><span class="pre">x</span></code> можемо поставити на <code class="docutils literal notranslate"><span class="pre">sirina</span> <span class="pre">-</span> <span class="pre">r</span></code> (што је
-најдешњи положај лоптице у коме се она још налази у прозору) и
+најдешњи положај лоптице у прозору) и
 променити јој насумично боју. Веома слично, приликом реаговања на
-догађај притиска стрелице на лево умањиваћемо <code class="docutils literal notranslate"><span class="pre">x</span></code> за <code class="docutils literal notranslate"><span class="pre">dx</span></code>,
-проверавати да ли је <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">r</span></code> постало негативно и ако јесте
+догађај притиска стрелице налево умањиваћемо <code class="docutils literal notranslate"><span class="pre">x</span></code> за <code class="docutils literal notranslate"><span class="pre">dx</span></code>,
+проверавати да ли је <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">-</span> <span class="pre">r</span></code> постало негативно и ако јесте,
 постављати <code class="docutils literal notranslate"><span class="pre">x</span></code> на <code class="docutils literal notranslate"><span class="pre">r</span></code> и лоптици мењати боју. Аналогно ћемо
 поступати и у случају друге две стрелице (једино што ћемо тада
 мењати <code class="docutils literal notranslate"><span class="pre">y</span></code> за <code class="docutils literal notranslate"><span class="pre">dy</span></code>).</p></li>
@@ -1135,7 +1163,7 @@ def obradi_dogadjaj(dogadjaj):
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="догађаји.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходно лекција </span> </a>
+  <a  href="догађаји.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>
@@ -1149,9 +1177,11 @@ def obradi_dogadjaj(dogadjaj):
     
   </div>
 </div>
+
 <div class="petljadoc-resources">
   <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
 </div>
+
 
 <div class="lectureToolbox">
 

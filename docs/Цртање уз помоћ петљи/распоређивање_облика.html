@@ -6,6 +6,7 @@
     <title>22.1. Правилно распоређивање облика</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -24,11 +25,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -110,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -117,40 +117,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -173,6 +147,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -258,8 +233,8 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../1_lekcija/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>1.1. Линијски програми</div></a>
                 <a href=../1_lekcija/1_2_cas.html><div class="studioLecture" id=activity-1_2_cas><i class="fas fa-file-alt activity-icon"></i>1.2. Бројачка петља for</div></a>
-                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.4. Квиз</div></a>
-                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.3. Вежбање</div></a>
+                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.3. Квиз</div></a>
+                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.4. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -302,14 +277,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_lekcija>
-                    <h5>5. Корњача графика - гранање, процедуре, торке/листе</h5>
+                    <h5>5. Корњача графика - гранање, угнежђене петље, функције, торке и листе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../5_lekcija/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>5.1. Гранање</div></a>
                 <a href=../5_lekcija/5_2_cas.html><div class="studioLecture" id=activity-5_2_cas><i class="fas fa-file-alt activity-icon"></i>5.2. Угнежђене петље</div></a>
-                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Процедуре</div></a>
-                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке/листе</div></a>
+                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Функције</div></a>
+                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке и листе</div></a>
                 <a href=../5_lekcija/5_5_cas.html><div class="studioLecture" id=activity-5_5_cas><i class="far fa-question-circle activity-icon"></i>5.5. Квиз</div></a>
                 <a href=../5_lekcija/5_6_cas.html><div class="studioLecture" id=activity-5_6_cas><i class="fas fa-file-alt activity-icon"></i>5.6. Вежбање</div></a>
                 </div>
@@ -332,10 +307,11 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../7_lekcija/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>7.1. Основне аритметичке операције и примена</div></a>
-                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - имена међурезултата</div></a>
+                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - места за смештање података</div></a>
                 <a href=../7_lekcija/7_3_cas.html><div class="studioLecture" id=activity-7_3_cas><i class="fas fa-file-alt activity-icon"></i>7.3. Тестирање и дебаговање програма</div></a>
                 <a href=../7_lekcija/7_4_cas.html><div class="studioLecture" id=activity-7_4_cas><i class="far fa-question-circle activity-icon"></i>7.4. Квиз</div></a>
                 <a href=../7_lekcija/7_5_cas.html><div class="studioLecture" id=activity-7_5_cas><i class="fas fa-file-alt activity-icon"></i>7.5. Вежбање</div></a>
+                <a href=../7_lekcija/7.6.%20Израчунавања%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-7.6.%20Израчунавања%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>7.6. Израчунавања - додатни задаци</div></a>
                 </div>
             </div>
                 
@@ -350,6 +326,7 @@
                 <a href=../8_lekcija/8_3_cas.html><div class="studioLecture" id=activity-8_3_cas><i class="fas fa-file-alt activity-icon"></i>8.3. Позициони запис бројева</div></a>
                 <a href=../8_lekcija/8_4_cas.html><div class="studioLecture" id=activity-8_4_cas><i class="far fa-question-circle activity-icon"></i>8.4. Квиз</div></a>
                 <a href=../8_lekcija/8_5_cas.html><div class="studioLecture" id=activity-8_5_cas><i class="fas fa-file-alt activity-icon"></i>8.5. Вежбање</div></a>
+                <a href=../8_lekcija/8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци.html><div class="studioLecture" id=activity-8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци><i class="far fa-question-circle activity-icon"></i>8.6. Цели и реални бројеви, дељење - додатни задaци</div></a>
                 </div>
             </div>
                 
@@ -384,29 +361,31 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../11_lekcija/11_1_cas.html><div class="studioLecture" id=activity-11_1_cas><i class="fas fa-file-alt activity-icon"></i>11.1. Гранање</div></a>
                 <a href=../11_lekcija/11_2_cas.html><div class="studioLecture" id=activity-11_2_cas><i class="fas fa-file-alt activity-icon"></i>11.2. Комбинација више логичких услова</div></a>
-                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција elif</div></a>
+                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција if-elif-else</div></a>
                 <a href=../11_lekcija/11_4_cas.html><div class="studioLecture" id=activity-11_4_cas><i class="far fa-question-circle activity-icon"></i>11.4. Квиз</div></a>
                 <a href=../11_lekcija/11_5_cas.html><div class="studioLecture" id=activity-11_5_cas><i class="fas fa-file-alt activity-icon"></i>11.5. Вежбање</div></a>
+                <a href=../11_lekcija/11.6.%20Гранање%20-%20додатни%20задтак.html><div class="studioLecture" id=activity-11.6.%20Гранање%20-%20додатни%20задтак><i class="far fa-question-circle activity-icon"></i>11.6. Гранање - додатни задтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-12_lekcija>
-                    <h5>12. Понављање</h5>
+                    <h5>12. Понављање - петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање</div></a>
-                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља</div></a>
-                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угнежђене петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање - петља for</div></a>
+                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Понављање - условна петља while</div></a>
+                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угњежђене петље</div></a>
                 <a href=../12_lekcija/12_4_cas.html><div class="studioLecture" id=activity-12_4_cas><i class="far fa-question-circle activity-icon"></i>12.4. Квиз</div></a>
                 <a href=../12_lekcija/12_5_cas.html><div class="studioLecture" id=activity-12_5_cas><i class="fas fa-file-alt activity-icon"></i>12.5. Вежбање</div></a>
+                <a href=../12_lekcija/12.6.%20Петље%20-%20додатни%20задaтак.html><div class="studioLecture" id=activity-12.6.%20Петље%20-%20додатни%20задaтак><i class="far fa-question-circle activity-icon"></i>12.6. Петље - додатни задaтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-13_lekcija>
-                    <h5>13. Контрола тока - задаци за вежбање</h5>
+                    <h5>13. Контрола тока - вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -420,21 +399,23 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке, листе и ниске</div></a>
-                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Скупови и речници</div></a>
-                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="far fa-question-circle activity-icon"></i>14.3. Квиз</div></a>
-                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Вежбање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке и листе</div></a>
+                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Функције за рад са торкама и листама</div></a>
+                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Ниске</div></a>
+                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Скупови и речници</div></a>
+                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="far fa-question-circle activity-icon"></i>14.5. Квиз</div></a>
+                <a href=../14_lekcija/14_6_cas.html><div class="studioLecture" id=activity-14_6_cas><i class="fas fa-file-alt activity-icon"></i>14.6. Вежбање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-15_lekcija>
-                    <h5>15. Структуре података и петље</h5>
+                    <h5>15. Примена петље у структурама података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Торке, листе, ниске и петље</div></a>
-                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Речници и петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Примена петље у торци, листи и ниски</div></a>
+                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Примена петље у речнику</div></a>
                 <a href=../15_lekcija/15_3_cas.html><div class="studioLecture" id=activity-15_3_cas><i class="far fa-question-circle activity-icon"></i>15.3. Квиз</div></a>
                 <a href=../15_lekcija/15_4_cas.html><div class="studioLecture" id=activity-15_4_cas><i class="fas fa-file-alt activity-icon"></i>15.4. Вежбање</div></a>
                 </div>
@@ -446,7 +427,7 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака и коришћење дебагера</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака, коришћење дебагера</div></a>
                 </div>
             </div>
                 
@@ -467,10 +448,9 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1 Координатни систем</div></a>
-                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2 Боје</div></a>
-                <a href=../Координатни%20систем%20и%20боје/најважније_координатни_боје.html><div class="studioLecture" id=activity-најважније_координатни_боје><i class="fas fa-file-alt activity-icon"></i>18.3 Најважније из ове лекције</div></a>
-                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.4 Квиз - координатни систем и боје</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1. Координатни систем</div></a>
+                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2. Боје</div></a>
+                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.3. Квиз - координатни систем и боје</div></a>
                 </div>
             </div>
                 
@@ -483,24 +463,22 @@
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%201/дужи.html><div class="studioLecture" id=activity-дужи><i class="fas fa-file-alt activity-icon"></i>19.1. Дужи</div></a>
                 <a href=../Цртање%201/правоугаоници_елипсе.html><div class="studioLecture" id=activity-правоугаоници_елипсе><i class="fas fa-file-alt activity-icon"></i>19.2. Правоугаоници и елипсе</div></a>
                 <a href=../Цртање%201/кругови_многоуглови.html><div class="studioLecture" id=activity-кругови_многоуглови><i class="fas fa-file-alt activity-icon"></i>19.3. Кругови и многоуглови</div></a>
-                <a href=../Цртање%201/најважније_цртање1.html><div class="studioLecture" id=activity-најважније_цртање1><i class="fas fa-file-alt activity-icon"></i>19.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.5. Домаћи задатак</div></a>
-                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.6. Квиз - цртање облика</div></a>
+                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.4. Домаћи задатак</div></a>
+                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.5. Квиз - цртање облика</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%202>
-                    <h5>20. Цртање основних облика</h5>
+                    <h5>20. Напредне технике цртања</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%202/симетрија.html><div class="studioLecture" id=activity-симетрија><i class="fas fa-file-alt activity-icon"></i>20.1. Симетрија</div></a>
                 <a href=../Цртање%202/центрирање_облика.html><div class="studioLecture" id=activity-центрирање_облика><i class="fas fa-file-alt activity-icon"></i>20.2. Центрирање облика</div></a>
                 <a href=../Цртање%202/релативно_задавање_координата_и_димензија.html><div class="studioLecture" id=activity-релативно_задавање_координата_и_димензија><i class="fas fa-file-alt activity-icon"></i>20.3. Релативно задавање координата и димензија</div></a>
-                <a href=../Цртање%202/најважније_цртање2.html><div class="studioLecture" id=activity-најважније_цртање2><i class="fas fa-file-alt activity-icon"></i>20.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.5. Домаћи задатак</div></a>
-                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.6. Квиз - Цртање</div></a>
+                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.4. Домаћи задатак</div></a>
+                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.5. Квиз - Цртање</div></a>
                 </div>
             </div>
                 
@@ -522,24 +500,24 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>25.1. Правилно распоређивање облика</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>25.2. Генератор случајних бројева</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>25.3. Распоређивање боја</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>25.4. Домаћи задатак</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>25.5. Квиз - петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>22.1. Правилно распоређивање облика</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>22.2. Генератор случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>22.3. Распоређивање боја</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>22.4. Домаћи задатак</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>22.5. Квиз - петље</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Угнежђене%20петље>
-                    <h5>23. Угнежђене петље и гранање</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Гранање%20и%20угнежђене%20петље>
+                    <h5>23. Гранање и угнежђене петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
-                <a href=../Угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Гранање%20и%20угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
                 </div>
             </div>
                 
@@ -550,7 +528,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>24.1. Приказ слике и текста</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.2. Слике и текст - квиз</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>24.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.3. Слике и текст - квиз</div></a>
                 </div>
             </div>
                 
@@ -561,19 +540,20 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Анимације/анимације.html><div class="studioLecture" id=activity-анимације><i class="fas fa-file-alt activity-icon"></i>25.1. Анимације</div></a>
-                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.2. Како раде анимације</div></a>
-                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.3. Квиз - анимације</div></a>
+                <a href=../Анимације/анимације_2.html><div class="studioLecture" id=activity-анимације_2><i class="fas fa-file-alt activity-icon"></i>25.2. Анимације - примери</div></a>
+                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.3. Како раде анимације</div></a>
+                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.4. Квиз - анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20задаци>
-                    <h5>26. Анимације задаци</h5>
+                    <h5>26. Анимације - задаци</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације задаци</div></a>
-                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације домаћи</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације - задаци</div></a>
+                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације - домаћи</div></a>
                 </div>
             </div>
                 
@@ -590,14 +570,14 @@
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20судари>
-                    <h5>28. Анимације судара објеката</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20сусрети>
+                    <h5>28. Анимације сусрета објеката</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20судари/анимације_судари.html><div class="studioLecture" id=activity-анимације_судари><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/судари_домаћи.html><div class="studioLecture" id=activity-судари_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/анимације_судари_квиз.html><div class="studioLecture" id=activity-анимације_судари_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - судари објеката на екрану</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20сусрети/анимације_сусрети.html><div class="studioLecture" id=activity-анимације_сусрети><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/сусрети_домаћи.html><div class="studioLecture" id=activity-сусрети_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/анимације_сусрети_квиз.html><div class="studioLecture" id=activity-анимације_сусрети_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - сусрети објеката на екрану</div></a>
                 </div>
             </div>
                 
@@ -620,18 +600,19 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>32.1. Комбиновање догађаја и анимација</div></a>
-                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30. 2. Квиз - догађаји и анимације</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>30.1. Комбиновање догађаја и анимација</div></a>
+                <a href=../Догађаји_анимације/комбиновање_домаћи_задатак.html><div class="studioLecture" id=activity-комбиновање_домаћи_задатак><i class="fas fa-file-alt activity-icon"></i>30.2. Домаћи задатак</div></a>
+                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30.3. Квиз - догађаји и анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-завршни_тест>
-                    <h5>31. Завршни квиз</h5>
+                    <h5>31. Пајгејм квиз</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31. Завршни квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31.1. Пајгејм - завршни квиз</div></a>
                 </div>
             </div>
                 </div>
@@ -650,20 +631,20 @@
     
   <div class="section" id="id1">
 <h1>22.1. Правилно распоређивање облика<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Наредна област бавиће се тиме како да употребимо петље како бисмо нацртали занимљивије цртеже. Задаци који следе у наредних неколико часова представљаће сјајан начин да провежбаш колико разумеш употребу петљи у Пајтону.</p>
+<p>Наредна област бавиће се тиме како да употребимо петље како бисмо нацртали занимљивије цртеже.
+Задаци који следе представљају сјајан начин да провежбаш колико разумеш
+употребу петљи у Пајтону.</p>
 <div class="section" id="id2">
 <h2>Мердевине<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Измени наредни програм тако да се пречаге мердевина цртају у
+<p>Измени наредни програм тако да се пречке мердевина цртају у
 петљи.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Пажљиво проучи које се вредности мењају кроз позиве функције
 <code class="docutils literal notranslate"><span class="pre">pg.draw.line</span></code>, шта је почетна вредност, шта је крајња вредност и
 који је корак, па на основу тога позови функцију <code class="docutils literal notranslate"><span class="pre">range</span></code> у оквиру
@@ -705,11 +686,11 @@ pg.draw.line(prozor, pg.Color("brown"), (100, 10), (100, visina - 10), 10)
 pg.draw.line(prozor, pg.Color("brown"), (200, 10), (200, visina - 10), 10)
 
 # ovaj deo prepraviti
-pg.draw.line(prozor, pg.Color("brown"), (100,  50), (200, 50), 10)  # prečaga
-pg.draw.line(prozor, pg.Color("brown"), (100, 100), (200, 100), 10) # prečaga
-pg.draw.line(prozor, pg.Color("brown"), (100, 150), (200, 150), 10) # prečaga
-pg.draw.line(prozor, pg.Color("brown"), (100, 200), (200, 200), 10) # prečaga
-pg.draw.line(prozor, pg.Color("brown"), (100, 250), (200, 250), 10) # prečaga
+pg.draw.line(prozor, pg.Color("brown"), (100,  50), (200, 50), 10)  # prečka
+pg.draw.line(prozor, pg.Color("brown"), (100, 100), (200, 100), 10) # prečka
+pg.draw.line(prozor, pg.Color("brown"), (100, 150), (200, 150), 10) # prečka
+pg.draw.line(prozor, pg.Color("brown"), (100, 200), (200, 200), 10) # prečka
+pg.draw.line(prozor, pg.Color("brown"), (100, 250), (200, 250), 10) # prečka
 </textarea>
 </div>
 
@@ -752,9 +733,9 @@ pygamebg.wait_loop()
     </div>
     <div class="section" id="id3">
 <h3>Правилно распоређени бројеви<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>У претходном примеру било је потребно да набројимо неки низ
+<p>У претходном примеру било је потребно да набројиш неки низ
 правилно распоређених бројева (низ 50, 100, 150, 200, 250).</p>
-<p>У решењима задатка видели смо да је један начин да се то уради петља
+<p>У решењима задатка видео си да је једна од могућности да се то уради петља
 облика</p>
 
 <div data-childcomponent="petlja1" class="course-box course-box-problem course-content">
@@ -773,7 +754,11 @@ for x in range(x0, xMax+1, dx):
 <span class="math notranslate nohighlight">\([x_0, x_{Max}+1) = [x_0, x_{Max}]\)</span>).</p>
 <p>Провери да ли ово разумеш тако што ћеш одговорити на следеће питање.</p>
 
-<div class="course-box course-box-problem course-content">
+<div class="course-box course-box-problem course-content petlja-problem-box dragndrop-question">
+    <div class="image-background"></div>
+    <div class="petlja-problem-box-icon-holder"> </div>
+    <img src="../_static/img/dragndrop-img.svg" class="petlja-problem-image  dragndrop-image" /> 
+    <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
 <ul data-component="dragndrop" id="pygame_quiz_upari_petlje_i_aritmeticke_nizove">
     <span data-component="question">Q-172: Упари низ бројева са петљом која га генерише.</span>
 	<span data-component=feedback>Покушај поново!</span>
@@ -789,11 +774,11 @@ for x in range(x0, xMax+1, dx):
 
     <li data-component="draggable" id="pygame_quiz_upari_petlje_i_aritmeticke_nizove_drag4">100, 200, 300, 400, 500, 600</li>
     <li data-component="dropzone" for="pygame_quiz_upari_petlje_i_aritmeticke_nizove_drag4">for i in range(100, 600+1, 100)</li>
-</ul></div><p>Наведимо још неколико начина да се исти ефекат постигне. Ако почетак
+</ul></div><p>Навешћемо још неколико опција којима се постиже исти ефекат. Ако почетак
 обележимо са <span class="math notranslate nohighlight">\(x_0\)</span>, а корак са <span class="math notranslate nohighlight">\(d_x\)</span>, тада су вредности
 које исписујемо <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(x_0 + d_x\)</span>, <span class="math notranslate nohighlight">\(x_0+2d_x\)</span>,
 <span class="math notranslate nohighlight">\(x_0+3d_x\)</span> итд. Ако желимо да набројимо <span class="math notranslate nohighlight">\(n\)</span> ових вредности,
-тада можемо употребити петљу облика</p>
+можемо да употребити петљу облика</p>
 
 <div data-childcomponent="petlja2" class="course-box course-box-problem course-content">
 
@@ -807,7 +792,7 @@ for i in range(n):
     ...
 </textarea>
 </div>
-<p>Још један начин је да променљиву <cite>x</cite> ажурирамо кроз сваки корак петље,
+<p>Још један начин је да променљиву <cite>x</cite> ажурирамо кроз сваки корак петље
 тако што је увећавамо за <cite>dx</cite>.</p>
 
 <div data-childcomponent="petlja3" class="course-box course-box-problem course-content">
@@ -823,38 +808,40 @@ for i in range(n):
     x += dx
 </textarea>
 </div>
-<p>Видећемо да се велики број задатака са цртањем правилно распоређених
+<p>Видећеш да се велики број задатака са цртањем правилно распоређених
 облика може решити применом оваквих петљи.</p>
 <p>Нагласимо још и да функција <code class="docutils literal notranslate"><span class="pre">range</span></code> са кораком (са три аргумента)
 прима обавезно целобројне аргументе, па у ситуацијама када корак није
-целобројан њено коришћење није могуће.</p>
+целобројан, њено коришћење није могуће.</p>
 </div>
 <div class="section" id="id4">
 <h3>Хоризонтално и вертикално распоређивање облика<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Често у применама имамо потребу да распоредимо објекте тако да буду
-један до другога, тако да су сви објекти равномерно распоређени,
+један до другог, тако да су сви објекти равномерно распоређени,
 тј. тако да су свака два узастопна објекта на истом растојању.</p>
 </div>
 </div>
 <div class="section" id="id5">
 <h2>Хоризонтално распоређени кругови<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Нацртај 10 кругова пречника 30 пискела тако да буду равномерно
+<p>Нацртај 10 кругова пречника 30 пиксела тако да буду равномерно
 распоређени ширином прозора и да се међусобно додирују.</p>
 
-    </p></div></div>
-<p>Наредних пар питања ће ти помоћи да решиш овај задатак.</p>
+    </div></div>
+<p>Наредних неколико питања ће ти помоћи да решиш овај задатак.</p>
 
-            <div class="course-box course-box-question course-content">
+            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
+                <div class="image-background"></div>
+                <div class="petlja-problem-box-icon-holder"> </div>
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
+                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame_quiz_rastojanje_centara_krugova">
-            <p>Q-173: Ако се два круга полупречника <span class="math notranslate nohighlight">\(r\)</span> додирују, тада је растојање
-између њихових центара једнако:</p>
+            <p>Q-173: Ако се два круга полупречника <span class="math notranslate nohighlight">\(r\)</span> додирују, растојање
+између њихових центара је једнако:</p>
 
             <li data-component="answer" data-correct id="pygame_quiz_rastojanje_centara_krugova_opt_a">2*r</li><li data-component="feedback" id="pygame_quiz_rastojanje_centara_krugova_opt_a">Тачно</li>
             
@@ -868,10 +855,16 @@ for i in range(n):
             </ul>
             </div>
             
-        <div class="course-box course-box-question course-content">
+        <div class="course-box course-box-question course-content petlja-problem-box fitb-question">
+        <div class="image-background"></div>
+        <div class="petlja-problem-box-icon-holder"> </div>
+        <img src="../_static/img/fitb-img.svg" class="petlja-problem-image  fitb-image" /> 
+        <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+        
         <div data-component="fillintheblank" id="pygame_quiz_rastojanje_kruga_od_leve_ivice">
-            <p>Ако круг полупречника <span class="math notranslate nohighlight">\(r\)</span> додирује леву ивицу прозора, тада
-је x координата његовог центра једнака:</p>
+            <p>Ако круг полупречника <span class="math notranslate nohighlight">\(r\)</span> додирује леву ивицу прозора,
+<span class="math notranslate nohighlight">\(x\)</span>
+координата његовог центра је једнака:</p>
 <input type="text">
         <script type="application/json">
             [[{"regex": "^ *[ +]*r[ +]* *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>\u041f\u043e\u043a\u0443\u0448\u0430\u0458 \u043f\u043e\u043d\u043e\u0432\u043e.</p>\n"}]]
@@ -924,9 +917,9 @@ for i in range(10):
     x += ???  # аžuriramo x tako da postane koordinata centra narednog kruga
 </textarea>
 </div>
-<p>Још један начин да се овај задатак реши је тај да се примети да су
-координате центара кругова редом <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(r + 2r\)</span>, <span class="math notranslate nohighlight">\(r +
-4r\)</span>, <span class="math notranslate nohighlight">\(r + 6r\)</span> итд. Дакле, x координата круга са редним бројем
+<p>Још један начин да се овај задатак реши јесте да се уочи да су
+координате центара кругова редом <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(r + 2r\)</span>, <span class="math notranslate nohighlight">\(r + 4r\)</span>,
+<span class="math notranslate nohighlight">\(r + 6r\)</span> итд. Дакле, <span class="math notranslate nohighlight">\(x\)</span> координата круга са редним бројем
 <span class="math notranslate nohighlight">\(i\)</span> је <span class="math notranslate nohighlight">\(r + 2\cdot i\cdot r\)</span> тј. <span class="math notranslate nohighlight">\((2i+1)r\)</span>. Реши
 задатак коришћењем ове формуле.</p>
 
@@ -975,13 +968,11 @@ for i in range(10):
 може вршити набрајање са кораком (нпр. <code class="docutils literal notranslate"><span class="pre">range(r,</span> <span class="pre">r</span> <span class="pre">+</span> <span class="pre">10*2*r</span> <span class="pre">+</span> <span class="pre">1,</span>
 <span class="pre">2*r)</span></code>).</p>
 <div class="topic">
-<p class="topic-title first">Погледај видео:</p>
-<p>У овом погедај како да упторебиш петље како би правилно распоредио/распоредила облике по хоризонтали прозора.</p>
-<blockquote>
-<div>
+<p class="topic-title">Како можеш да употребиш петље да правилно распоредиш облике по хоризонтали прозора.</p>
+
     <div  id="3G8HEacrnyQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/3G8HEacrnyQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -992,28 +983,25 @@ for i in range(10):
     </div>
     
     
-    </div></blockquote>
-</div>
+    </div>
 </div>
 <div class="section" id="id6">
 <h2>Вертикално распоређени кругови<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Прикажимо сада како можемо распоредити кругове вертикално.</p>
+<p>Приказаћемо сада како кругове можемо распоредити вертикално.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који црта кругове полупречника 10 пиксела равномерно
-распоређене вертикално средином прозора, тако да су им центри
+распоређене вертикално средином прозора тако да су им центри
 удаљени 30 пиксела (нацртај све кругове који се виде). Висина
 прозора се мења приликом сваког покретања програма.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Овај задатак је сличан претходном, уз неколико важних разлика. То што
 су кругови распоређени вертикално уместо хоризонтално не мења много -
-само је потребно заменити улогу x и y координата. Растојање између
+само је потребно заменити улогу <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> координата. Растојање између
 центара је овај пут фиксно (износи 30 пиксела) и не израчунава се
 на основу полупречника. Кључна разлика је то што број кругова није
 унапред задат већ је кругове потребно цртати све док се бар неки њихов
@@ -1070,27 +1058,25 @@ while ???:
 <div class="section" id="id7">
 <h2>Правоугаона мрежа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који исцртава правоугаону мрежу која се састоји од
-100 правоугаоних поља, распоређених у 10 врста и 10
+100 правоугаоних поља распоређених у 10 врста и 10
 колона (исцртати само линије мреже и то хоризонталне линије плавом
-бојом, а вертикалне црвеном, дебљине 5 пиксела).</p>
+бојом, а вертикалне црвеном, дебљине пет пиксела).</p>
 
-    </p></div></div>
-<p>Основни задатак је одредити координате x вертикалних линија и
-координате y хоризонталних линија. Ширину једног правоугаоника можемо
+    </div></div>
+<p>Основни задатак је да се одреде координате <span class="math notranslate nohighlight">\(x\)</span> вертикалних линија и
+координате <span class="math notranslate nohighlight">\(y\)</span> хоризонталних линија. Ширину једног правоугаоника можемо
 одредити дељењем ширине прозора бројем колона (у нашем случају то је
 10), док висину једног правоугаоника можемо одредити дељењем висине
 прозора бројем врста (то је поново 10). Означимо те димензије са
 <span class="math notranslate nohighlight">\(d_x\)</span> и <span class="math notranslate nohighlight">\(d_y\)</span>. Вертикалне линије се онда налазе на
 растојању <span class="math notranslate nohighlight">\(d_x\)</span>, <span class="math notranslate nohighlight">\(2 d_x\)</span>, <span class="math notranslate nohighlight">\(3 d_x\)</span>, …, <span class="math notranslate nohighlight">\(9
-d_x\)</span> пиксела од леве ивице прозора (то су им координате x). Пошто се
-те линије простиру од врха до дна прозора, координате y крајњих тачака су
+d_x\)</span> пиксела од леве ивице прозора (то су им координате <span class="math notranslate nohighlight">\(x\)</span>). Пошто се
+те линије простиру од врха до дна прозора, координате <span class="math notranslate nohighlight">\(y\)</span> крајњих тачака су
 једнаке нули, односно висини прозора. Понављање цртања линија остварујемо,
 наравно, употребом петље <code class="docutils literal notranslate"><span class="pre">for</span></code>, при чему је најбоље да се бројач
 <code class="docutils literal notranslate"><span class="pre">i</span></code> креће од један до девет, јер се тада у кораку <code class="docutils literal notranslate"><span class="pre">i</span></code> црта линија
@@ -1149,8 +1135,8 @@ for i in range(1, brojPodeoka):
 ???
 </textarea>
 </div>
-<p>Још један начин да се одреди координата наредне линије је да се
-координата претходне линије увећа за ширину тј. дужину правоугаоника.</p>
+<p>Још један начин да се одреди координата наредне линије јесте да се
+координата претходне линије увећа за ширину, односно дужину правоугаоника.</p>
 
 <div data-childcomponent="pravougaona_mreza_alt" class="course-box course-box-problem course-content">
 
@@ -1172,22 +1158,20 @@ for i in range(1, brojPodeoka):
 <div class="section" id="id9">
 <h2>Кругови дуж дијагонале<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који дуж целе главне дијагонале прозора распоређује
 <span class="math notranslate nohighlight">\(n=10\)</span> једнаких кругова.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Пречници кругова деле главну дијагоналу на <span class="math notranslate nohighlight">\(n\)</span> једнаких делова.
 Полупречник кругова можемо израчунати тако што дужину дијагонале
 поделимо са <span class="math notranslate nohighlight">\(2n\)</span>, а дужину дијагонале можемо израчунати
 Питагорином теоремом као <span class="math notranslate nohighlight">\(\sqrt{s^2 + v^2}\)</span>, где су <span class="math notranslate nohighlight">\(s\)</span> и
-<span class="math notranslate nohighlight">\(v\)</span> ширина тј. висина прозора. На основу Талесове теореме
-пројекције центара кругова на x осу и на y осу
+<span class="math notranslate nohighlight">\(v\)</span> ширина, односно висина прозора. На основу Талесове теореме
+пројекције центара кругова на <span class="math notranslate nohighlight">\(x\)</span> осу и на <span class="math notranslate nohighlight">\(y\)</span> осу
 деле ивице прозора у истом односу у ком центри кругова деле
 дијагоналу. Ако са <span class="math notranslate nohighlight">\(k_x\)</span> означимо <span class="math notranslate nohighlight">\(n\)</span>-ти део ширине
 прозора, а са <span class="math notranslate nohighlight">\(k_y\)</span> означимо <span class="math notranslate nohighlight">\(n\)</span>-ти део висине прозора,
@@ -1258,7 +1242,7 @@ for i in range(n):
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходно лекција </span> </a>
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>
@@ -1272,9 +1256,11 @@ for i in range(n):
     
   </div>
 </div>
+
 <div class="petljadoc-resources">
   <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
 </div>
+
 
 <div class="lectureToolbox">
 

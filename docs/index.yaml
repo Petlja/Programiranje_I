@@ -9,20 +9,20 @@ description:
     text: Збирка кратких питања из програмирања за први разред
   longDescription: '<div class="document">
 
-    <p>Овај курс је намењен ученицима 1. разреда гимназије за предмет Рачунарство
+    <p>Овај курс је намењен ученицима првог разреда гимназије за предмет Рачунарство
     и информатика у току другог полугодишта.
 
-    У оквиру овог курса детаљно је обрађена наставна тема Програмирање.  Курс у потпуности
-    прати програм наставе и учења за овај предмет.
+    У оквиру овог курса детаљно је обрађена наставна тема „Програмирање“. Курс у потпуности
+    прати програм наставе за овај предмет,
 
-    Курс је организован по двочасима. Први део курса посвећен је изучавању програмског
-    језика Пајтон, а у другом делу се изучава Пајгејм,
+    а целине су осмишљене тако да свака одговара двочасу. Први део курса посвећен
+    је изучавању програмског језика Пајтон, а у другом делу се изучава Пајгејм,
 
-    библиотека овог програмског језика намењена за 2д графику. Материјал намењен за
-    један двочас се састоји од лекције,
+    библиотека овог програмског језика која се користи за 2д графику. Материјал намењен
+    за један двочас састоји се од лекције,
 
-    дела са питалицама, којима се ученицима скреће пажња на најбитније делове из садржаја
-    лекције и  квизова,
+    дела са питалицама, којима се ученицима скреће пажња на оно најбитније из садржаја
+    лекције, и  квизова,
 
     који имају за циљ проверу усвојеног градива.</p>
 
@@ -45,8 +45,8 @@ description:
 
     '
   requirements:
-  - Имаш инсталиран Пајтон
-  - Имаш отворен налог на Петљи
+  - Инсталиран *Python*
+  - Отворен налог на Петљи
   shortDescription: Програмирање у Пајтону за први разред гимназије
   toc:
   - Робот Карел
@@ -56,7 +56,7 @@ description:
   - Структуре података
   willLearn:
   - Ово је почетни курс текстуалног програмирања у програмском језику Пајтон. Научићеш
-    основне концепте програмирања (изразе, контролу тока, структуре...)
+    основне концепте програмирања (изразе, контролу тока, структуре...).
 lang: sr-Cyrl
 lessons:
 - activities:
@@ -76,13 +76,13 @@ lessons:
     file: 1_3_cas.html
     guid: 498mm35b-3e01-4d69-ba48-549dc26dfa2a
     src: 1_3_cas.rst
-    title: 1.4. Квиз
+    title: 1.3. Квиз
     type: quiz
   - description: ''
     file: 1_4_cas.html
     guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
     src: 1_4_cas.rst
-    title: 1.3. Вежбање
+    title: 1.4. Вежбање
     type: reading
   archived-activities: []
   description: 1_lekcija
@@ -188,13 +188,13 @@ lessons:
     file: 5_3_cas.html
     guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
     src: 5_3_cas.rst
-    title: 5.3. Процедуре
+    title: 5.3. Функције
     type: reading
   - description: ''
     file: 5_4_cas.html
     guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
     src: 5_4_cas.rst
-    title: 5.4. Торке/листе
+    title: 5.4. Торке и листе
     type: reading
   - description: ''
     file: 5_5_cas.html
@@ -212,8 +212,9 @@ lessons:
   description: 5_lekcija
   folder: 5_lekcija
   guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
-  normalized_title: 5. Корњача графика - гранање, процедуре, торкелисте
-  title: 5. Корњача графика - гранање, процедуре, торке/листе
+  normalized_title: 5. Корњача графика - гранање, угнежђене петље, функције, торке
+    и листе
+  title: 5. Корњача графика - гранање, угнежђене петље, функције, торке и листе
 - activities:
   - description: ''
     file: 6_1_cas.html
@@ -238,7 +239,7 @@ lessons:
     file: 7_2_cas.html
     guid: b8b21901-7e30-452b-a004-f855275bf3df
     src: 7_2_cas.rst
-    title: 7.2. Променљиве - имена међурезултата
+    title: 7.2. Променљиве - места за смештање података
     type: reading
   - description: ''
     file: 7_3_cas.html
@@ -258,6 +259,14 @@ lessons:
     src: 7_5_cas.rst
     title: 7.5. Вежбање
     type: reading
+  - description: ''
+    file: 7.6. Израчунавања - додатни задаци.html
+    guid: 53abb6d0-1319-4f6b-b185-7476cc2feae4
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/trening
+    - https://petlja.org/biblioteka/r/Zbirka-python/list_papira
+    title: 7.6. Израчунавања - додатни задаци
+    type: coding-quiz
   archived-activities: []
   description: 7_lekcija
   folder: 7_lekcija
@@ -295,6 +304,14 @@ lessons:
     src: 8_5_cas.rst
     title: 8.5. Вежбање
     type: reading
+  - description: ''
+    file: 8.6. Цели и реални бројеви, дељење - додатни задaци.html
+    guid: 6a4b6a21-3783-4168-85d9-0000132a2406
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/razlomak_u_mesovit_broj
+    - https://petlja.org/biblioteka/r/Zbirka-python/cena_hleba
+    title: 8.6. Цели и реални бројеви, дељење - додатни задaци
+    type: coding-quiz
   archived-activities: []
   description: 8_lekcija
   folder: 8_lekcija
@@ -362,7 +379,7 @@ lessons:
     file: 11_3_cas.html
     guid: 9799de49-73c8-4b79-9b62-ad81bd792128
     src: 11_3_cas.rst
-    title: 11.3. Конструкција elif
+    title: 11.3. Конструкција if-elif-else
     type: reading
   - description: ''
     file: 11_4_cas.html
@@ -376,6 +393,13 @@ lessons:
     src: 11_5_cas.rst
     title: 11.5. Вежбање
     type: reading
+  - description: ''
+    file: 11.6. Гранање - додатни задтак.html
+    guid: 11db7f4e-1a4f-415e-8a0a-6a1d26f0b2da
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/jabuke
+    title: 11.6. Гранање - додатни задтак
+    type: coding-quiz
   archived-activities: []
   description: 11_lekcija
   folder: 11_lekcija
@@ -387,19 +411,19 @@ lessons:
     file: 12_1_cas.html
     guid: 1b469fa03-6e83-4f19-bf1b-97bff2cd9f84
     src: 12_1_cas.rst
-    title: 12.1. Понављање
+    title: 12.1. Понављање - петља for
     type: reading
   - description: ''
     file: 12_2_cas.html
     guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
     src: 12_2_cas.rst
-    title: 12.2. Условна петља
+    title: 12.2. Понављање - условна петља while
     type: reading
   - description: ''
     file: 12_3_cas.html
     guid: ab9f7f5e-b554-45bf-ad4e-9c5f70761a88
     src: 12_3_cas.rst
-    title: 12.3. Угнежђене петље
+    title: 12.3. Угњежђене петље
     type: reading
   - description: ''
     file: 12_4_cas.html
@@ -413,12 +437,19 @@ lessons:
     src: 12_5_cas.rst
     title: 12.5. Вежбање
     type: reading
+  - description: ''
+    file: 12.6. Петље - додатни задaтак.html
+    guid: e646af85-f38c-4177-81cd-ac429107e38d
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/kvadrat_od_zvezdica
+    title: 12.6. Петље - додатни задaтак
+    type: coding-quiz
   archived-activities: []
   description: 12_lekcija
   folder: 12_lekcija
   guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
-  normalized_title: 12. Понављање
-  title: 12. Понављање
+  normalized_title: 12. Понављање - петље
+  title: 12. Понављање - петље
 - activities:
   - description: ''
     file: 13_1_cas.html
@@ -430,32 +461,44 @@ lessons:
   description: 13_lekcija
   folder: 13_lekcija
   guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228
-  normalized_title: 13. Контрола тока - задаци за вежбање
-  title: 13. Контрола тока - задаци за вежбање
+  normalized_title: 13. Контрола тока - вежбање
+  title: 13. Контрола тока - вежбање
 - activities:
   - description: ''
     file: 14_1_cas.html
     guid: fbc6dd0b-f551-4a60-914d-673ee8c0ecf3
     src: 14_1_cas.rst
-    title: 14.1. Торке, листе и ниске
+    title: 14.1. Торке и листе
     type: reading
   - description: ''
     file: 14_2_cas.html
-    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
+    guid: 5fce9f71-41ce-43ab-9361-afd4c557b312
     src: 14_2_cas.rst
-    title: 14.2. Скупови и речници
+    title: 14.2. Функције за рад са торкама и листама
     type: reading
   - description: ''
     file: 14_3_cas.html
-    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
+    guid: b735280e-7896-4399-938b-c4140cd6fd88
     src: 14_3_cas.rst
-    title: 14.3. Квиз
-    type: quiz
+    title: 14.3. Ниске
+    type: reading
   - description: ''
     file: 14_4_cas.html
-    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
     src: 14_4_cas.rst
-    title: 14.4. Вежбање
+    title: 14.4. Скупови и речници
+    type: reading
+  - description: ''
+    file: 14_5_cas.html
+    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
+    src: 14_5_cas.rst
+    title: 14.5. Квиз
+    type: quiz
+  - description: ''
+    file: 14_6_cas.html
+    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    src: 14_6_cas.rst
+    title: 14.6. Вежбање
     type: reading
   archived-activities: []
   description: 14_lekcija
@@ -468,13 +511,13 @@ lessons:
     file: 15_1_cas.html
     guid: 6d9ba56e-7ada-4e3a-84f5-8ef96ddc2f08
     src: 15_1_cas.rst
-    title: 15.1. Торке, листе, ниске и петље
+    title: 15.1. Примена петље у торци, листи и ниски
     type: reading
   - description: ''
     file: 15_2_cas.html
     guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
     src: 15_2_cas.rst
-    title: 15.2. Речници и петље
+    title: 15.2. Примена петље у речнику
     type: reading
   - description: ''
     file: 15_3_cas.html
@@ -492,14 +535,14 @@ lessons:
   description: 15_lekcija
   folder: 15_lekcija
   guid: 0a8c8243-ee8e-4d9b-97a9-9eef7d9754e2
-  normalized_title: 15. Структуре података и петље
-  title: 15. Структуре података и петље
+  normalized_title: 15. Примена петље у структурама података
+  title: 15. Примена петље у структурама података
 - activities:
   - description: ''
     file: 16_1_cas.html
     guid: bbb08795-16b5-4cd1-be94-932d7225a44c
     src: 16_1_cas.rst
-    title: 16.1. Откривање и исправљање грешака и коришћење дебагера
+    title: 16.1. Откривање и исправљање грешака, коришћење дебагера
     type: reading
   archived-activities: []
   description: 16_lekcija
@@ -531,25 +574,19 @@ lessons:
     file: координатни_систем.html
     guid: beaca2c0-2619-4c59-9c87-91e75920771a
     src: координатни_систем.rst
-    title: 18.1 Координатни систем
+    title: 18.1. Координатни систем
     type: reading
   - description: ''
     file: боје.html
     guid: 0b27e129-9623-4e7b-bb66-360a2d29caaf
     src: боје.rst
-    title: 18.2 Боје
-    type: reading
-  - description: ''
-    file: најважније_координатни_боје.html
-    guid: e2f4c1df-5521-47f9-b0ea-70d59b98ea5e
-    src: најважније_координатни_боје.rst
-    title: 18.3 Најважније из ове лекције
+    title: 18.2. Боје
     type: reading
   - description: ''
     file: тест_координатни_систем_боје.html
     guid: 01d8349e-2a4b-41bd-8d7f-2a22cadbc2dd
     src: тест_координатни_систем_боје.rst
-    title: 18.4 Квиз - координатни систем и боје
+    title: 18.3. Квиз - координатни систем и боје
     type: quiz
   archived-activities: []
   description: Прва лекција
@@ -577,22 +614,16 @@ lessons:
     title: 19.3. Кругови и многоуглови
     type: reading
   - description: ''
-    file: најважније_цртање1.html
-    guid: b17c3a07-73d2-4d1e-8625-5434d44f72ac
-    src: најважније_цртање1.rst
-    title: 19.4. Најважније из ове лекције
-    type: reading
-  - description: ''
     file: домаћи_задатак_паткица.html
     guid: dadd3b45-f4c9-40a1-bd76-93670070ea06
     src: домаћи_задатак_паткица.rst
-    title: 19.5. Домаћи задатак
+    title: 19.4. Домаћи задатак
     type: reading
   - description: ''
     file: цртање_облика_квиз.html
     guid: f1dbff55-d404-4b22-8a27-51436a228eb7
     src: цртање_облика_квиз.rst
-    title: 19.6. Квиз - цртање облика
+    title: 19.5. Квиз - цртање облика
     type: quiz
   archived-activities: []
   description: Друга лекција
@@ -620,29 +651,23 @@ lessons:
     title: 20.3. Релативно задавање координата и димензија
     type: reading
   - description: ''
-    file: најважније_цртање2.html
-    guid: fb42435c-6134-4752-85fa-3280dc54629b
-    src: најважније_цртање2.rst
-    title: 20.4. Најважније из ове лекције
-    type: reading
-  - description: ''
     file: домаћи_задатак_облак.html
     guid: b0ec9c24-6412-41d3-862b-e2fc55cef484
     src: домаћи_задатак_облак.rst
-    title: 20.5. Домаћи задатак
+    title: 20.4. Домаћи задатак
     type: reading
   - description: ''
     file: квиз_цртање2.html
     guid: 43680cb0-3630-49f8-b008-b25b88d489d1
     src: квиз_цртање2.rst
-    title: 20.6. Квиз - Цртање
+    title: 20.5. Квиз - Цртање
     type: quiz
   archived-activities: []
   description: Друга лекција
   folder: Цртање 2
   guid: 3c525750-b762-400c-8a41-d62953b5e80e
-  normalized_title: 20. Цртање основних облика
-  title: 20. Цртање основних облика
+  normalized_title: 20. Напредне технике цртања
+  title: 20. Напредне технике цртања
 - activities:
   - description: ''
     file: relativne_koordinate_utvrdjivanje.html
@@ -673,31 +698,31 @@ lessons:
     file: распоређивање_облика.html
     guid: 43cfab4e-fbba-4494-9c15-8ab95ce2cbaa
     src: распоређивање_облика.rst
-    title: 25.1. Правилно распоређивање облика
+    title: 22.1. Правилно распоређивање облика
     type: reading
   - description: ''
     file: генератор_насумичних_бројева.html
     guid: f2086bcb-e7a5-47a6-96bf-632321418fc5
     src: генератор_насумичних_бројева.rst
-    title: 25.2. Генератор случајних бројева
+    title: 22.2. Генератор случајних бројева
     type: reading
   - description: ''
     file: распоређивање_боја.html
     guid: e8d79c09-2526-4001-9538-3e035ba020fc
     src: распоређивање_боја.rst
-    title: 25.3. Распоређивање боја
+    title: 22.3. Распоређивање боја
     type: reading
   - description: ''
     file: петље_задатак.html
     guid: 6b42de11-2b68-4780-b3e5-e54cc16c3ca6
     src: петље_задатак.rst
-    title: 25.4. Домаћи задатак
+    title: 22.4. Домаћи задатак
     type: reading
   - description: ''
     file: квиз_петље.html
     guid: 365d8653-0ab6-491f-bbd9-9706fa2e2974
     src: квиз_петље.rst
-    title: 25.5. Квиз - петље
+    title: 22.5. Квиз - петље
     type: quiz
   archived-activities: []
   description: Петље 1
@@ -732,10 +757,10 @@ lessons:
     type: quiz
   archived-activities: []
   description: Петље 2
-  folder: Угнежђене петље
+  folder: Гранање и угнежђене петље
   guid: d09f5479-4a90-4b7a-b5c8-9b3e378cb777
-  normalized_title: 23. Угнежђене петље и гранање
-  title: 23. Угнежђене петље и гранање
+  normalized_title: 23. Гранање и угнежђене петље
+  title: 23. Гранање и угнежђене петље
 - activities:
   - description: ''
     file: slike.html
@@ -744,10 +769,16 @@ lessons:
     title: 24.1. Приказ слике и текста
     type: reading
   - description: ''
+    file: slike_vezbanje.html
+    guid: 699106f1-d233-44f8-873f-dd06a78b75cc
+    src: slike_vezbanje.rst
+    title: 24.2. Вежбање
+    type: reading
+  - description: ''
     file: slike_test.html
     guid: 1f06a9b3-d42f-4a44-b1ee-57b70c5209ec
     src: slike_test.rst
-    title: 24.2. Слике и текст - квиз
+    title: 24.3. Слике и текст - квиз
     type: quiz
   archived-activities: []
   description: Слике и текст
@@ -763,16 +794,22 @@ lessons:
     title: 25.1. Анимације
     type: reading
   - description: ''
+    file: анимације_2.html
+    guid: 88c5fd65-1f81-414d-8f8b-cd2e283a129c
+    src: анимације_2.rst
+    title: 25.2. Анимације - примери
+    type: reading
+  - description: ''
     file: како_раде_анимације.html
     guid: 9ab47c18-6845-4af6-838a-2fa3f2c7db01
     src: како_раде_анимације.rst
-    title: 25.2. Како раде анимације
+    title: 25.3. Како раде анимације
     type: reading
   - description: ''
     file: анимације_квиз.html
     guid: 32115908-70e9-4dad-bb38-0d62732a605c
     src: анимације_квиз.rst
-    title: 25.3. Квиз - анимације
+    title: 25.4. Квиз - анимације
     type: quiz
   archived-activities: []
   description: Анимације увод
@@ -785,20 +822,20 @@ lessons:
     file: анимације_задаци.html
     guid: ad802cb0-c2b8-44d5-b2ef-9cd214f7312f
     src: анимације_задаци.rst
-    title: 26.1. Анимације задаци
+    title: 26.1. Анимације - задаци
     type: reading
   - description: ''
     file: домаћи_задатак_анимације.html
     guid: dcfdbd32-1ffd-4437-9580-74542f90dd9b
     src: домаћи_задатак_анимације.rst
-    title: 26.2. Анимације домаћи
+    title: 26.2. Анимације - домаћи
     type: reading
   archived-activities: []
-  description: Анимације задаци
+  description: Анимације - задаци
   folder: Анимације задаци
   guid: 1b7c7134-a66e-4578-b30f-7725f81f8055
-  normalized_title: 26. Анимације задаци
-  title: 26. Анимације задаци
+  normalized_title: 26. Анимације - задаци
+  title: 26. Анимације - задаци
 - activities:
   - description: ''
     file: анимације_кретања.html
@@ -826,29 +863,29 @@ lessons:
   title: 27. Анимације кретања
 - activities:
   - description: ''
-    file: анимације_судари.html
+    file: анимације_сусрети.html
     guid: 1eb6e7dd-a5b9-4d03-b44f-51c25f6db54b
-    src: анимације_судари.rst
-    title: 28.1. Анимације - судари објеката на екрану
+    src: анимације_сусрети.rst
+    title: 28.1. Анимације - сусрети објеката на екрану
     type: reading
   - description: ''
-    file: судари_домаћи.html
+    file: сусрети_домаћи.html
     guid: 8553c7db-ce5a-41f3-8786-77eb11c0d488
-    src: судари_домаћи.rst
-    title: 28.2. Домаћи - судари објеката на екрану
+    src: сусрети_домаћи.rst
+    title: 28.2. Домаћи - сусрети објеката на екрану
     type: reading
   - description: ''
-    file: анимације_судари_квиз.html
+    file: анимације_сусрети_квиз.html
     guid: e1aa77d6-0371-4891-a3ba-9459f80f0607
-    src: анимације_судари_квиз.rst
-    title: 28.3. Квиз - судари објеката на екрану
+    src: анимације_сусрети_квиз.rst
+    title: 28.3. Квиз - сусрети објеката на екрану
     type: quiz
   archived-activities: []
-  description: Анимације судари
-  folder: Анимације судари
+  description: Анимације сусрети
+  folder: Анимације сусрети
   guid: b1877858-f357-45c5-812c-64926aa023bd
-  normalized_title: 28. Анимације судара објеката
-  title: 28. Анимације судара објеката
+  normalized_title: 28. Анимације сусрета објеката
+  title: 28. Анимације сусрета објеката
 - activities:
   - description: ''
     file: догађаји.html
@@ -885,13 +922,19 @@ lessons:
     file: Комбиновање_догађаја_и_анимација.html
     guid: 5a6cc2db-ed81-4f12-8bd7-9a396b1d7924
     src: Комбиновање_догађаја_и_анимација.rst
-    title: 32.1. Комбиновање догађаја и анимација
+    title: 30.1. Комбиновање догађаја и анимација
+    type: reading
+  - description: ''
+    file: комбиновање_домаћи_задатак.html
+    guid: 9add8ccc-5371-43e8-b84d-d63499ea4901
+    src: комбиновање_домаћи_задатак.rst
+    title: 30.2. Домаћи задатак
     type: reading
   - description: ''
     file: догађаји_анимације_квиз.html
     guid: 3a66f46e-db0c-4b84-80ad-821b9876e48f
     src: догађаји_анимације_квиз.rst
-    title: 30. 2. Квиз - догађаји и анимације
+    title: 30.3. Квиз - догађаји и анимације
     type: quiz
   archived-activities: []
   description: Догађаји и анимације
@@ -904,12 +947,12 @@ lessons:
     file: zavrsni_test.html
     guid: 9f135016-0af1-4f2f-af56-1aba6d95e0f4
     src: zavrsni_test.rst
-    title: 31. Завршни квиз
+    title: 31.1. Пајгејм - завршни квиз
     type: quiz
   archived-activities: []
-  description: завршни квиз
+  description: Пајгејм - завршни квиз
   folder: завршни_тест
   guid: a44a5204-7d45-4a2b-8b53-afaedf27ea06
-  normalized_title: 31. Завршни квиз
-  title: 31. Завршни квиз
+  normalized_title: 31. Пајгејм квиз
+  title: 31. Пајгејм квиз
 title: Програмирање у Пајтону за први разред гимназије

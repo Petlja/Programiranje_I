@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>14.1. Торке, листе, ниске</title>
+    <title>14.1. Торке и листе</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -231,8 +233,8 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../1_lekcija/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>1.1. Линијски програми</div></a>
                 <a href=../1_lekcija/1_2_cas.html><div class="studioLecture" id=activity-1_2_cas><i class="fas fa-file-alt activity-icon"></i>1.2. Бројачка петља for</div></a>
-                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.4. Квиз</div></a>
-                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.3. Вежбање</div></a>
+                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.3. Квиз</div></a>
+                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.4. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -275,14 +277,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_lekcija>
-                    <h5>5. Корњача графика - гранање, процедуре, торке/листе</h5>
+                    <h5>5. Корњача графика - гранање, угнежђене петље, функције, торке и листе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../5_lekcija/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>5.1. Гранање</div></a>
                 <a href=../5_lekcija/5_2_cas.html><div class="studioLecture" id=activity-5_2_cas><i class="fas fa-file-alt activity-icon"></i>5.2. Угнежђене петље</div></a>
-                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Процедуре</div></a>
-                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке/листе</div></a>
+                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Функције</div></a>
+                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке и листе</div></a>
                 <a href=../5_lekcija/5_5_cas.html><div class="studioLecture" id=activity-5_5_cas><i class="far fa-question-circle activity-icon"></i>5.5. Квиз</div></a>
                 <a href=../5_lekcija/5_6_cas.html><div class="studioLecture" id=activity-5_6_cas><i class="fas fa-file-alt activity-icon"></i>5.6. Вежбање</div></a>
                 </div>
@@ -305,10 +307,11 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../7_lekcija/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>7.1. Основне аритметичке операције и примена</div></a>
-                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - имена међурезултата</div></a>
+                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - места за смештање података</div></a>
                 <a href=../7_lekcija/7_3_cas.html><div class="studioLecture" id=activity-7_3_cas><i class="fas fa-file-alt activity-icon"></i>7.3. Тестирање и дебаговање програма</div></a>
                 <a href=../7_lekcija/7_4_cas.html><div class="studioLecture" id=activity-7_4_cas><i class="far fa-question-circle activity-icon"></i>7.4. Квиз</div></a>
                 <a href=../7_lekcija/7_5_cas.html><div class="studioLecture" id=activity-7_5_cas><i class="fas fa-file-alt activity-icon"></i>7.5. Вежбање</div></a>
+                <a href=../7_lekcija/7.6.%20Израчунавања%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-7.6.%20Израчунавања%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>7.6. Израчунавања - додатни задаци</div></a>
                 </div>
             </div>
                 
@@ -323,6 +326,7 @@
                 <a href=../8_lekcija/8_3_cas.html><div class="studioLecture" id=activity-8_3_cas><i class="fas fa-file-alt activity-icon"></i>8.3. Позициони запис бројева</div></a>
                 <a href=../8_lekcija/8_4_cas.html><div class="studioLecture" id=activity-8_4_cas><i class="far fa-question-circle activity-icon"></i>8.4. Квиз</div></a>
                 <a href=../8_lekcija/8_5_cas.html><div class="studioLecture" id=activity-8_5_cas><i class="fas fa-file-alt activity-icon"></i>8.5. Вежбање</div></a>
+                <a href=../8_lekcija/8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци.html><div class="studioLecture" id=activity-8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задaци><i class="far fa-question-circle activity-icon"></i>8.6. Цели и реални бројеви, дељење - додатни задaци</div></a>
                 </div>
             </div>
                 
@@ -357,29 +361,31 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../11_lekcija/11_1_cas.html><div class="studioLecture" id=activity-11_1_cas><i class="fas fa-file-alt activity-icon"></i>11.1. Гранање</div></a>
                 <a href=../11_lekcija/11_2_cas.html><div class="studioLecture" id=activity-11_2_cas><i class="fas fa-file-alt activity-icon"></i>11.2. Комбинација више логичких услова</div></a>
-                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција elif</div></a>
+                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција if-elif-else</div></a>
                 <a href=../11_lekcija/11_4_cas.html><div class="studioLecture" id=activity-11_4_cas><i class="far fa-question-circle activity-icon"></i>11.4. Квиз</div></a>
                 <a href=../11_lekcija/11_5_cas.html><div class="studioLecture" id=activity-11_5_cas><i class="fas fa-file-alt activity-icon"></i>11.5. Вежбање</div></a>
+                <a href=../11_lekcija/11.6.%20Гранање%20-%20додатни%20задтак.html><div class="studioLecture" id=activity-11.6.%20Гранање%20-%20додатни%20задтак><i class="far fa-question-circle activity-icon"></i>11.6. Гранање - додатни задтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-12_lekcija>
-                    <h5>12. Понављање</h5>
+                    <h5>12. Понављање - петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање</div></a>
-                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља</div></a>
-                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угнежђене петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање - петља for</div></a>
+                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Понављање - условна петља while</div></a>
+                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угњежђене петље</div></a>
                 <a href=../12_lekcija/12_4_cas.html><div class="studioLecture" id=activity-12_4_cas><i class="far fa-question-circle activity-icon"></i>12.4. Квиз</div></a>
                 <a href=../12_lekcija/12_5_cas.html><div class="studioLecture" id=activity-12_5_cas><i class="fas fa-file-alt activity-icon"></i>12.5. Вежбање</div></a>
+                <a href=../12_lekcija/12.6.%20Петље%20-%20додатни%20задaтак.html><div class="studioLecture" id=activity-12.6.%20Петље%20-%20додатни%20задaтак><i class="far fa-question-circle activity-icon"></i>12.6. Петље - додатни задaтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-13_lekcija>
-                    <h5>13. Контрола тока - задаци за вежбање</h5>
+                    <h5>13. Контрола тока - вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -393,21 +399,23 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке, листе и ниске</div></a>
-                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Скупови и речници</div></a>
-                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="far fa-question-circle activity-icon"></i>14.3. Квиз</div></a>
-                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Вежбање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке и листе</div></a>
+                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Функције за рад са торкама и листама</div></a>
+                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Ниске</div></a>
+                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Скупови и речници</div></a>
+                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="far fa-question-circle activity-icon"></i>14.5. Квиз</div></a>
+                <a href=../14_lekcija/14_6_cas.html><div class="studioLecture" id=activity-14_6_cas><i class="fas fa-file-alt activity-icon"></i>14.6. Вежбање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-15_lekcija>
-                    <h5>15. Структуре података и петље</h5>
+                    <h5>15. Примена петље у структурама података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Торке, листе, ниске и петље</div></a>
-                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Речници и петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Примена петље у торци, листи и ниски</div></a>
+                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Примена петље у речнику</div></a>
                 <a href=../15_lekcija/15_3_cas.html><div class="studioLecture" id=activity-15_3_cas><i class="far fa-question-circle activity-icon"></i>15.3. Квиз</div></a>
                 <a href=../15_lekcija/15_4_cas.html><div class="studioLecture" id=activity-15_4_cas><i class="fas fa-file-alt activity-icon"></i>15.4. Вежбање</div></a>
                 </div>
@@ -419,7 +427,7 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака и коришћење дебагера</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака, коришћење дебагера</div></a>
                 </div>
             </div>
                 
@@ -440,10 +448,9 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1 Координатни систем</div></a>
-                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2 Боје</div></a>
-                <a href=../Координатни%20систем%20и%20боје/најважније_координатни_боје.html><div class="studioLecture" id=activity-најважније_координатни_боје><i class="fas fa-file-alt activity-icon"></i>18.3 Најважније из ове лекције</div></a>
-                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.4 Квиз - координатни систем и боје</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем%20и%20боје/координатни_систем.html><div class="studioLecture" id=activity-координатни_систем><i class="fas fa-file-alt activity-icon"></i>18.1. Координатни систем</div></a>
+                <a href=../Координатни%20систем%20и%20боје/боје.html><div class="studioLecture" id=activity-боје><i class="fas fa-file-alt activity-icon"></i>18.2. Боје</div></a>
+                <a href=../Координатни%20систем%20и%20боје/тест_координатни_систем_боје.html><div class="studioLecture" id=activity-тест_координатни_систем_боје><i class="far fa-question-circle activity-icon"></i>18.3. Квиз - координатни систем и боје</div></a>
                 </div>
             </div>
                 
@@ -456,24 +463,22 @@
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%201/дужи.html><div class="studioLecture" id=activity-дужи><i class="fas fa-file-alt activity-icon"></i>19.1. Дужи</div></a>
                 <a href=../Цртање%201/правоугаоници_елипсе.html><div class="studioLecture" id=activity-правоугаоници_елипсе><i class="fas fa-file-alt activity-icon"></i>19.2. Правоугаоници и елипсе</div></a>
                 <a href=../Цртање%201/кругови_многоуглови.html><div class="studioLecture" id=activity-кругови_многоуглови><i class="fas fa-file-alt activity-icon"></i>19.3. Кругови и многоуглови</div></a>
-                <a href=../Цртање%201/најважније_цртање1.html><div class="studioLecture" id=activity-најважније_цртање1><i class="fas fa-file-alt activity-icon"></i>19.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.5. Домаћи задатак</div></a>
-                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.6. Квиз - цртање облика</div></a>
+                <a href=../Цртање%201/домаћи_задатак_паткица.html><div class="studioLecture" id=activity-домаћи_задатак_паткица><i class="fas fa-file-alt activity-icon"></i>19.4. Домаћи задатак</div></a>
+                <a href=../Цртање%201/цртање_облика_квиз.html><div class="studioLecture" id=activity-цртање_облика_квиз><i class="far fa-question-circle activity-icon"></i>19.5. Квиз - цртање облика</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%202>
-                    <h5>20. Цртање основних облика</h5>
+                    <h5>20. Напредне технике цртања</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%202/симетрија.html><div class="studioLecture" id=activity-симетрија><i class="fas fa-file-alt activity-icon"></i>20.1. Симетрија</div></a>
                 <a href=../Цртање%202/центрирање_облика.html><div class="studioLecture" id=activity-центрирање_облика><i class="fas fa-file-alt activity-icon"></i>20.2. Центрирање облика</div></a>
                 <a href=../Цртање%202/релативно_задавање_координата_и_димензија.html><div class="studioLecture" id=activity-релативно_задавање_координата_и_димензија><i class="fas fa-file-alt activity-icon"></i>20.3. Релативно задавање координата и димензија</div></a>
-                <a href=../Цртање%202/најважније_цртање2.html><div class="studioLecture" id=activity-најважније_цртање2><i class="fas fa-file-alt activity-icon"></i>20.4. Најважније из ове лекције</div></a>
-                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.5. Домаћи задатак</div></a>
-                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.6. Квиз - Цртање</div></a>
+                <a href=../Цртање%202/домаћи_задатак_облак.html><div class="studioLecture" id=activity-домаћи_задатак_облак><i class="fas fa-file-alt activity-icon"></i>20.4. Домаћи задатак</div></a>
+                <a href=../Цртање%202/квиз_цртање2.html><div class="studioLecture" id=activity-квиз_цртање2><i class="far fa-question-circle activity-icon"></i>20.5. Квиз - Цртање</div></a>
                 </div>
             </div>
                 
@@ -495,24 +500,24 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>25.1. Правилно распоређивање облика</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>25.2. Генератор случајних бројева</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>25.3. Распоређивање боја</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>25.4. Домаћи задатак</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>25.5. Квиз - петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_облика.html><div class="studioLecture" id=activity-распоређивање_облика><i class="fas fa-file-alt activity-icon"></i>22.1. Правилно распоређивање облика</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/генератор_насумичних_бројева.html><div class="studioLecture" id=activity-генератор_насумичних_бројева><i class="fas fa-file-alt activity-icon"></i>22.2. Генератор случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/распоређивање_боја.html><div class="studioLecture" id=activity-распоређивање_боја><i class="fas fa-file-alt activity-icon"></i>22.3. Распоређивање боја</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/петље_задатак.html><div class="studioLecture" id=activity-петље_задатак><i class="fas fa-file-alt activity-icon"></i>22.4. Домаћи задатак</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/квиз_петље.html><div class="studioLecture" id=activity-квиз_петље><i class="far fa-question-circle activity-icon"></i>22.5. Квиз - петље</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Угнежђене%20петље>
-                    <h5>23. Угнежђене петље и гранање</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Гранање%20и%20угнежђене%20петље>
+                    <h5>23. Гранање и угнежђене петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
-                <a href=../Угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
-                <a href=../Угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Гранање%20и%20угнежђене%20петље/гранање.html><div class="studioLecture" id=activity-гранање><i class="fas fa-file-alt activity-icon"></i>23.1. Гранање</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље.html><div class="studioLecture" id=activity-угнежђене_петље><i class="fas fa-file-alt activity-icon"></i>23.2. Угнежђене петље</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/угнежђене_петље_задатак.html><div class="studioLecture" id=activity-угнежђене_петље_задатак><i class="fas fa-file-alt activity-icon"></i>23.3. Домаћи задатак</div></a>
+                <a href=../Гранање%20и%20угнежђене%20петље/квиз_петље_угнежђене.html><div class="studioLecture" id=activity-квиз_петље_угнежђене><i class="far fa-question-circle activity-icon"></i>23.4. Квиз - угнежђене петље и гранање</div></a>
                 </div>
             </div>
                 
@@ -523,7 +528,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>24.1. Приказ слике и текста</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.2. Слике и текст - квиз</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>24.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>24.3. Слике и текст - квиз</div></a>
                 </div>
             </div>
                 
@@ -534,19 +540,20 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Анимације/анимације.html><div class="studioLecture" id=activity-анимације><i class="fas fa-file-alt activity-icon"></i>25.1. Анимације</div></a>
-                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.2. Како раде анимације</div></a>
-                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.3. Квиз - анимације</div></a>
+                <a href=../Анимације/анимације_2.html><div class="studioLecture" id=activity-анимације_2><i class="fas fa-file-alt activity-icon"></i>25.2. Анимације - примери</div></a>
+                <a href=../Анимације/како_раде_анимације.html><div class="studioLecture" id=activity-како_раде_анимације><i class="fas fa-file-alt activity-icon"></i>25.3. Како раде анимације</div></a>
+                <a href=../Анимације/анимације_квиз.html><div class="studioLecture" id=activity-анимације_квиз><i class="far fa-question-circle activity-icon"></i>25.4. Квиз - анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20задаци>
-                    <h5>26. Анимације задаци</h5>
+                    <h5>26. Анимације - задаци</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације задаци</div></a>
-                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације домаћи</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20задаци/анимације_задаци.html><div class="studioLecture" id=activity-анимације_задаци><i class="fas fa-file-alt activity-icon"></i>26.1. Анимације - задаци</div></a>
+                <a href=../Анимације%20задаци/домаћи_задатак_анимације.html><div class="studioLecture" id=activity-домаћи_задатак_анимације><i class="fas fa-file-alt activity-icon"></i>26.2. Анимације - домаћи</div></a>
                 </div>
             </div>
                 
@@ -563,14 +570,14 @@
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20судари>
-                    <h5>28. Анимације судара објеката</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Анимације%20сусрети>
+                    <h5>28. Анимације сусрета објеката</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Анимације%20судари/анимације_судари.html><div class="studioLecture" id=activity-анимације_судари><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/судари_домаћи.html><div class="studioLecture" id=activity-судари_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - судари објеката на екрану</div></a>
-                <a href=../Анимације%20судари/анимације_судари_квиз.html><div class="studioLecture" id=activity-анимације_судари_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - судари објеката на екрану</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Анимације%20сусрети/анимације_сусрети.html><div class="studioLecture" id=activity-анимације_сусрети><i class="fas fa-file-alt activity-icon"></i>28.1. Анимације - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/сусрети_домаћи.html><div class="studioLecture" id=activity-сусрети_домаћи><i class="fas fa-file-alt activity-icon"></i>28.2. Домаћи - сусрети објеката на екрану</div></a>
+                <a href=../Анимације%20сусрети/анимације_сусрети_квиз.html><div class="studioLecture" id=activity-анимације_сусрети_квиз><i class="far fa-question-circle activity-icon"></i>28.3. Квиз - сусрети објеката на екрану</div></a>
                 </div>
             </div>
                 
@@ -593,18 +600,19 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>32.1. Комбиновање догађаја и анимација</div></a>
-                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30. 2. Квиз - догађаји и анимације</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Догађаји_анимације/Комбиновање_догађаја_и_анимација.html><div class="studioLecture" id=activity-Комбиновање_догађаја_и_анимација><i class="fas fa-file-alt activity-icon"></i>30.1. Комбиновање догађаја и анимација</div></a>
+                <a href=../Догађаји_анимације/комбиновање_домаћи_задатак.html><div class="studioLecture" id=activity-комбиновање_домаћи_задатак><i class="fas fa-file-alt activity-icon"></i>30.2. Домаћи задатак</div></a>
+                <a href=../Догађаји_анимације/догађаји_анимације_квиз.html><div class="studioLecture" id=activity-догађаји_анимације_квиз><i class="far fa-question-circle activity-icon"></i>30.3. Квиз - догађаји и анимације</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-завршни_тест>
-                    <h5>31. Завршни квиз</h5>
+                    <h5>31. Пајгејм квиз</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31. Завршни квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>31.1. Пајгејм - завршни квиз</div></a>
                 </div>
             </div>
                 </div>
@@ -622,18 +630,18 @@
     <div id="main-content">
     
   <div class="section" id="id1">
-<h1>14.1. Торке, листе, ниске<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>14.1. Торке и листе<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>У свим програмима које смо до сада писали податке смо чували у
 појединачним променљивама. То су били обично појединачни бројеви или
 евентуално краћи делови текста (нпр. име или презиме).  Елементарни
 подаци које смо до сада сретали били су цели бројеви (типа <code class="docutils literal notranslate"><span class="pre">int</span></code>),
 реални бројеви (типа <code class="docutils literal notranslate"><span class="pre">float</span></code>), логичке вредности (типа <code class="docutils literal notranslate"><span class="pre">bool</span></code>) и
-ниске (типа <code class="docutils literal notranslate"><span class="pre">str</span></code>). У многим реалним применама имамо потребу да у
+ниске (типа <code class="docutils literal notranslate"><span class="pre">str</span></code>). У многим реалним применама потребно је да у
 програму запамтимо, а касније и обрадимо веће количине података. У тим
 ситуацијама коришћење појединачних променљивих за памћење сваког
-појединачног података није практично или, чак, није могуће и потребно је
+појединачног података није практично или, чак, није могуће, и потребно је
 користити <strong>структуре података</strong> које нам омогућавају да помоћу једне
-променљиве представимо читаве <strong>колекције</strong> података, које се састоје
+променљиве представимо читаве <strong>колекције</strong> података које се састоје
 од више вредности неког једноставнијег типа. У зависности од података
 које желимо да сачувамо и операција које са њима желимо да спроведемо,
 бирамо коју од неколико различитих врста структура података које имамо
@@ -642,7 +650,7 @@
 
     <div  id="o2AZmGDDcEg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/o2AZmGDDcEg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -653,14 +661,12 @@
     </div>
     
     
-    <div class="section" id="id2">
-<h2>Торке и листе<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Запитајмо се како бисмо у програму могли представити списак имена
+    <p>Како бисмо у програму могли да представимо списак имена
 кошаркаша у једном тиму? Нека је то наша кошаркашка репрезентација
-која се 2019. такмичила на светском првенству у
+која се 2019. такмичила на Светском првенству у
 кошарци. Претпоставићемо да сваки играч има свој редни број и то од 1
 до 12.</p>
-<p>Један могући начин би био да уведемо пуно засебних променљивих:</p>
+<p>Један могући начин би био да уведемо много засебних променљивих:</p>
 
 <div data-childcomponent="кошаркаши_без_листе" class="course-box course-box-problem course-content">
 
@@ -676,12 +682,30 @@ igrac4 = "Василије Мицић"
 ...
 </textarea>
 </div>
-<p>Међутим, оваква репрезентација података није згодна јер не можемо
+<p>Међутим, овакав приказ података није згодан јер не можемо
 једноставно да одговоримо на разна интересантна питања о кошаркашима
-(на пример, колико укупно има играча, ко носи број који се уноси са
-улаза, који број носи неки дати играч и слично). Бољи начин да
-представимо списак играча је да употребимо <strong>торку</strong> или <strong>листу</strong>.
-На пример, торку имена кошаркаша можемо дефинисати на следећи начин.</p>
+(на пример, колико укупно има играча, ко носи задат број дреса,
+који број носи неки дати играч и слично). Бољи начин да
+представимо списак играча је да употребимо <strong>торку</strong> или <strong>листу</strong>.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Суштинска разлика између торке и листе је то што је торка
+<strong>имутабилна</strong> што значи да јој не можемо мењати вредности када је
+једном дефинишемо. Са друге стране, листе допуштају да им мењамо
+појединачне елементе, уклањамо елементе, додајемо нове и слично. Све
+операције у којима се врши анализа садржаја биће идентичне, без обзира
+на то да ли је реч о листи или о торки, и описаћемо их у наставку (иако ћемо
+у примерима користити торке, све оне се на потпуно исти начин могу
+применити и на листе). Операције у којима се врши промена су
+специфичне за листе и није их могуће спровести над торкама, па ћемо њих
+описати засебно.</p>
+
+    </div></div>
+<p>На пример, торку имена кошаркаша можемо дефинисати на следећи начин.</p>
 
 <div data-childcomponent="кошаркаши_торка" class="course-box course-box-problem course-content">
 
@@ -697,27 +721,30 @@ igraci = ("Стефан Јовић", "Василије Мицић", "Богда�
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper learnmorenote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/learnmorenote-img.svg" class="note-image learnmorenote-image" /> 
         <div class="course-content">
-            <p>
+            
+<p>Називи колекција података у математици</p>
 <p>Запис облика (35, 128) се у математици назива <em>уређени пар</em>, запис
 облика (250, 120, 310) <em>уређена тројка</em>, запис облика (135, 22,
-83, 57) <em>уређена четворка</em> итд. Када дужина није позната, каже се
-<em>уређена n-торка</em> (<em>уређена енторка</em>), али у програмирању је
+83, 57) <em>уређена четворка</em>, итд. Када дужина није позната, каже се
+<em>уређена n-торка</em> (уређена „енторка“), али у програмирању је
 одомаћено краће име - <em>торка</em>.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Дакле, торку дефинишемо тако што између обичних малих заграда (заграда
-<code class="docutils literal notranslate"><span class="pre">(</span></code> и <code class="docutils literal notranslate"><span class="pre">)</span></code>) наводимо елементе раздвојене зарезима. Приметимо да је
-листа имена кошаркаша веома дугачка, тако да смо је прегледности ради
+<code class="docutils literal notranslate"><span class="pre">(</span></code> и <code class="docutils literal notranslate"><span class="pre">)</span></code>) наводимо елементе раздвојене зарезима. Видећете да је
+листа имена кошаркаша веома дугачка, тако да смо је, прегледности ради,
 разбили у више редова. Иако у општем случају није допуштено делити
 наредбе на више линија, то је могуће ако је садржај тих линија окружен
-неким заградама (пошто је у првој линији отворена заграда <code class="docutils literal notranslate"><span class="pre">(</span></code>, након
+неким заградама. Пошто је у првој линији отворена заграда <code class="docutils literal notranslate"><span class="pre">(</span></code>, након
 читања прве, аутоматски се читају и друга и трећа и четврта линија, све
-док се не наиђе на затворену заграду <code class="docutils literal notranslate"><span class="pre">)</span></code>).</p>
+док се не наиђе на затворену заграду <code class="docutils literal notranslate"><span class="pre">)</span></code>.</p>
 <p>Дефинисање листе би се разликовало од дефинисања торке само по томе
 што би се уместо обичних малих заграда <code class="docutils literal notranslate"><span class="pre">(...)</span></code> употребиле угласте
-заграде употребиле обичне заграде <code class="docutils literal notranslate"><span class="pre">[...]</span></code>.</p>
+заграде <code class="docutils literal notranslate"><span class="pre">[...]</span></code>.</p>
 
 <div data-childcomponent="кошаркаши_листа" class="course-box course-box-problem course-content">
 
@@ -732,20 +759,10 @@ igraci = ["Стефан Јовић", "Василије Мицић", "Богда�
           "Бобан Марјановић", "Мирослав Радуљица", "Никола Милутинов"]
 </textarea>
 </div>
-<p>Суштинска разлика између торке и листе је то што је торка
-<strong>имутабилна</strong> што значи да јој не можемо мењати вредности када је
-једном дефинишемо. Са друге стране, листе допуштају да им мењамо
-појединачне елементе, уклањамо елементе, додајемо нове и слично. Све
-операције у којима се врши анализа садржаја биће идентичне, без обзира
-да ли се ради о листи или о торки и описаћемо их у наставку (иако ћемо
-у примерима користити торке, све оне се на потпуно исти начин могу
-применити и на листе). Операције у којима се врши промена су
-специфичне за листе и није их могуће спровести над торкама па ћемо њих
-описати засебно.</p>
 <p>Појединачни чланови торке или листе називају се и
 <strong>елементи</strong>. Елементи могу бити ниске (као у овом примеру), али и
 бројеви, друге торке или листе и било шта друго. Чак је могуће у исту
-торку тј. листу поставити елементе различитог типа. Као пример торке
+торку, односно листу, поставити елементе различитог типа. Као пример торке
 бројева, формирајмо торку висина ових наших кошаркаша.</p>
 
 <div data-childcomponent="висине_кошаркаша" class="course-box course-box-problem course-content">
@@ -758,35 +775,38 @@ igraci = ["Стефан Јовић", "Василије Мицић", "Богда�
 visine = (198, 197, 198, 198, 203, 203, 210, 208, 213, 221, 213, 212)
 </textarea>
 </div>
-<p>Двочлане торке (уређени парови) и вишечлане торке ( уређене тројке,
-четворке итд.) се најчешће користе за груписање тек неколико
+<p>Двочлане торке (уређени парови) и вишечлане торке (уређене тројке,
+четворке, итд.) најчешће се користе за груписање тек неколико
 појединачних података. На пример, позицију фигуре на шаховској табли
 можемо представити помоћу уређеног пара који чини ознака врсте (слова
 од <code class="docutils literal notranslate"><span class="pre">a</span></code> до <code class="docutils literal notranslate"><span class="pre">h</span></code>) и ознака колоне (броја од 1 до 8). На пример,
 <code class="docutils literal notranslate"><span class="pre">(&quot;b&quot;,</span> <span class="pre">6)</span></code>. Слично, позиције на географској карти се описују помоћу
-географске ширине и дужине тј. помоћу пара реалних бројева.  Тако се
+географске ширине и дужине, тј. помоћу пара реалних бројева.  Тако се
 град Париз налази на позицији која се може описати помоћу пара
 <code class="docutils literal notranslate"><span class="pre">(48.8566,</span> <span class="pre">2.3522)</span></code>. Време можемо представити помоћу уређене тројке
 коју чине сат, минут и секунд (на пример, <code class="docutils literal notranslate"><span class="pre">(7,</span> <span class="pre">25,</span> <span class="pre">37)</span></code>).</p>
-<p>За груписање већег броја података чешће се користе листе, поготово ако
-није унапред познато колико таквих података може бити тј. ако се број
-података може изменити током рада програма. На пример, ако желимо да
+<p>Када није унапред познато колико података (елемената) треба да буде груписано, односно ако се број
+података може изменити током рада програма, за груписање се користе листе.
+На пример, ако желимо да
 представимо оцене ученика, чешће бисмо употребили листу јер ученик
 може да добије још неку оцену, па је листу његових оцена потребно
 проширити, што није могуће ако се оцене представе торком.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper learnmorenote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/learnmorenote-img.svg" class="note-image learnmorenote-image" /> 
         <div class="course-content">
-            <p>
+            
+<p>Шта се чешће користи у пракси?</p>
 <p>Већина програмских језика не разликује имутабилне и мутабилне
 колекције. Зато програмери често користе искључиво листе, чак и у
 ситуацијама када је коришћење торки примереније. То се не сматра
 великим пропустом.</p>
 
-    </p></div></div>
-<div class="section" id="id7">
-<h3>Издвајање елемената<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<p>Елементима торке (или листе) приступа се на основу њихове <strong>позиције</strong>
+    </div></div>
+<div class="section" id="id6">
+<h2>Издвајање елемената<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Елементима торке (или листе) приступа се на основу њихове <strong>позиције</strong>,
 тј. <strong>индекса</strong>. Бројање креће од нуле. Први елемент листе се налази
 на позицији 0, други на позицији 1 и тако даље.  На пример, елементи
 у листи <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">[3,</span> <span class="pre">7,</span> <span class="pre">4,</span> <span class="pre">2,</span> <span class="pre">5]</span></code> се броје на следећи начин.</p>
@@ -817,11 +837,25 @@ visine = (198, 197, 198, 198, 203, 203, 210, 208, 213, 221, 213, 212)
 </tbody>
 </table>
 <p>Зато је првом елементу могуће приступити са <code class="docutils literal notranslate"><span class="pre">a[0]</span></code> и вредност тога
-израза је <code class="docutils literal notranslate"><span class="pre">3</span></code> (јер се на позицији 0 у листи налази број <code class="docutils literal notranslate"><span class="pre">3</span></code>),
-другом елементу са <code class="docutils literal notranslate"><span class="pre">a[1]</span></code> и вредност тог израза је <code class="docutils literal notranslate"><span class="pre">7</span></code> и тако
+израза је <code class="docutils literal notranslate"><span class="pre">3</span></code> (јер се на позицији 0 у листи налази број <code class="docutils literal notranslate"><span class="pre">3</span></code>).
+Другом елементу се приступа са <code class="docutils literal notranslate"><span class="pre">a[1]</span></code> и вредност тог израза је <code class="docutils literal notranslate"><span class="pre">7</span></code>, и тако
 даље.</p>
-<p>Негативни индекси упућују на бојање од краја (с десна на лево), па -1
-означава последњи елемент, -2 претпоследњи и тако даље.</p>
+
+<div data-childcomponent="позиције_пример" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=позиције_пример data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = [3, 7, 4, 2, 5]
+
+print(a[0])
+print(a[1])
+</textarea>
+</div>
+<p>Негативни индекси упућују на бојање од краја (здесна налево), па -1
+означава последњи елемент, -2 претпоследњи, и тако даље.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 36%" />
@@ -849,32 +883,72 @@ visine = (198, 197, 198, 198, 203, 203, 210, 208, 213, 221, 213, 212)
 </tbody>
 </table>
 <p>Зато је последњем елементу могуће приступити помоћу <code class="docutils literal notranslate"><span class="pre">a[-1]</span></code>,
-претпоследњем помоћу <code class="docutils literal notranslate"><span class="pre">a[-2]</span></code> итд.</p>
-<p>Још једна операција која је често корисна је издвајање дела торке
-тј. листе.  Елементима између позиција <code class="docutils literal notranslate"><span class="pre">a</span></code> и <code class="docutils literal notranslate"><span class="pre">b</span></code> укључујући
-позицију <code class="docutils literal notranslate"><span class="pre">a</span></code>, али искључујући позицију <code class="docutils literal notranslate"><span class="pre">b</span></code> могуће је приступити
+претпоследњем помоћу <code class="docutils literal notranslate"><span class="pre">a[-2]</span></code>, итд.</p>
+
+<div data-childcomponent="негативне_позиције_пример" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=негативне_позиције_пример data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = [3, 7, 4, 2, 5]
+
+print(a[-1])
+print(a[-2])
+</textarea>
+</div>
+<p>Још једна операција која је често корисна је издвајање дела торке,
+односно листе.  Елементима између позиција <code class="docutils literal notranslate"><span class="pre">a</span></code> и <code class="docutils literal notranslate"><span class="pre">b</span></code> укључујући
+позицију <code class="docutils literal notranslate"><span class="pre">a</span></code>, али искључујући позицију <code class="docutils literal notranslate"><span class="pre">b</span></code>, могуће је приступити
 помоћу <code class="docutils literal notranslate"><span class="pre">a[a:b]</span></code>.</p>
 <p>На пример, <code class="docutils literal notranslate"><span class="pre">ime[1:4]</span></code> издваја елементе имена на позицијама 1, 2 и 3
-(распон <code class="docutils literal notranslate"><span class="pre">[1:4]</span></code> је полуотворен тј. позиција 1 је урачуната, а
-позиција 4 није). Ако је <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">[3,</span> <span class="pre">7,</span> <span class="pre">4,</span> <span class="pre">2,</span> <span class="pre">5]</span></code> тада је <code class="docutils literal notranslate"><span class="pre">a[1:4]</span></code>
+(распон <code class="docutils literal notranslate"><span class="pre">[1:4]</span></code> је полуотворен, тј. позиција 1 је урачуната, а
+позиција 4 није).</p>
+
+<div data-childcomponent="издвајање_пример" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=издвајање_пример data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+ime = ["Стефан", "Јелена", "Петар", "Бојана", "Никола", "Сања"]
+
+print(ime[1:4])
+</textarea>
+</div>
+<p>Ако је <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">[3,</span> <span class="pre">7,</span> <span class="pre">4,</span> <span class="pre">2,</span> <span class="pre">5]</span></code>, тада је <code class="docutils literal notranslate"><span class="pre">a[1:4]</span></code>
 листа чија је вредност <code class="docutils literal notranslate"><span class="pre">[7,</span> <span class="pre">4,</span> <span class="pre">2]</span></code>. Ако се изостави број иза
 двотачке, издвајају се елементи до краја. На пример <code class="docutils literal notranslate"><span class="pre">a[2:]</span></code> је листа
 која има вредност <code class="docutils literal notranslate"><span class="pre">[4,</span> <span class="pre">2,</span> <span class="pre">5]</span></code>.</p>
-<p>Употребимо ове операције да решимо неколико задатака о нашим играчима.</p>
-<div class="section" id="id8">
-<h4>Играч са датим бројем дреса<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 
-    <div class="course-box course-box-special">
+<div data-childcomponent="издвајање_пример_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=издвајање_пример_1 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = [3, 7, 4, 2, 5]
+
+print(a[1:4])
+print(a[2:])
+</textarea>
+</div>
+<p>Употребимо ове операције да решимо неколико задатака о нашим играчима.</p>
+<div class="section" id="id11">
+<h3>Играч са датим бројем дреса<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Познат је списак играча у тиму. Они носе дресове са бројевима од 1
 па на даље. Напиши програм који за дати број дреса одређује играча
-који игра под тим редним бројем.</p>
+који игра под тим бројем.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Пошто се уносе бројеви од 1 до дужине торке (или листе), а индекси се
 крећу од 0 па до претходника дужине торке, након учитавања броја дреса
 приступиће се елементу чији је индекс за 1 мањи од броја дреса.</p>
@@ -894,7 +968,7 @@ dres = int(input("Број дреса: "))
 print(igraci[dres - 1])
 </textarea>
 </div>
-<p>Начин да се избегне ово померање индекса за 1 био би да се на почетно
+<p>Ово померање индекса за 1 може се избећи ако се на почетно
 место убаци неки вештачки елемент (на пример, празна ниска).</p>
 
 <div data-childcomponent="играч_са_датим_бројем_1" class="course-box course-box-problem course-content">
@@ -915,10 +989,10 @@ print()   # dopuni ovaj red
 </div>
 </div>
 </div>
-<div class="section" id="id11">
-<h3>Распакивање<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h2>Распакивање<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <p>Ако знамо дужину торке или листе, могуће је на лак начин именовати
-сваки њен елемент тј. сместити сваки елемент у посебну променљиву.</p>
+сваки њен елемент, тј. сместити сваки елемент у посебну променљиву.</p>
 <p>На пример, претпоставимо да торка <code class="docutils literal notranslate"><span class="pre">matematicari</span></code> садржи пуна имена
 четири велика математичара: Ренеа Декарта, Жозефа Луја Лагранжа, Карла
 Фридриха Гауса и Леонарда Ојлера. Направимо четири посебне променљиве
@@ -956,10 +1030,10 @@ print(gaus)
 </textarea>
 </div>
 <p>Првој променљивој са леве стране се додељује први елемент листе са
-десне стране, другој променљивој други елемент листе и тако даље. Овај
+десне стране, другој променљивој други елемент листе, и тако даље. Овај
 поступак називамо <strong>распакивање</strong>. Исти ефекат би се постигао и да су
-четири променљиве са леве стране биле наведене у склопу торке
-тј. листе.</p>
+четири променљиве са леве стране биле наведене у склопу торке,
+односно листе.</p>
 
 <div data-childcomponent="распакивање_листе_1" class="course-box course-box-problem course-content">
 
@@ -973,722 +1047,7 @@ matematicari = ["Рене Декарт", "Жозеф Луј Лагранж", "К
 print(gaus)
 </textarea>
 </div>
-<p>Распакивање се може применити и на уређене парове и торке. Примени то
-у решавању наредног једноставног задатка.</p>
-</div>
-<div class="section" id="id15">
-<h3>Функције за рад са торкама и листама<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
-<p>Језик Python нам на располагање ставља неколико функција којима можемо
-одредити често коришћене статистике елемената листе. Функцијом <code class="docutils literal notranslate"><span class="pre">len</span></code>
-израчунавамо дужину листе, функцијом <code class="docutils literal notranslate"><span class="pre">sum</span></code> израчунавамо збир
-елемената листе, функцијом <code class="docutils literal notranslate"><span class="pre">min</span></code> најмањи елемент у листи, а
-функцијом <code class="docutils literal notranslate"><span class="pre">max</span></code> највећи. Ове функције можемо употребити да
-једноставно решимо разне практичне задатке.</p>
-<div class="section" id="id16">
-<h4>Просечна оцена<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Дате су оцене из неколико предмета. Израчунај просечну оцену.</p>
-
-    </p></div></div>
-<p>Просек тј. аритметичка средина се једноставно добија дељењем збира
-елемената њиховим бројем.</p>
-
-<div data-childcomponent="просек_оцена" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=просек_оцена data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-ocene = [5, 4, 5, 3, 5]
-prosek = sum(ocene) / len(ocene)
-print(prosek)
-</textarea>
-</div>
-</div>
-<div class="section" id="id18">
-<h4>Најмања оцена<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Ако се зна да су оцене из природних наука последње три у листи
-оцена, израчунај Горанову најмању оцену из тих предмета.</p>
-
-    </p></div></div>
-<p>У овом задатку комбиновање идвајање сегмента елемената торке и
-функцију за проналажење минимума.</p>
-
-<div data-childcomponent="последње_оцене" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=последње_оцене data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-ocene = (5, 4, 5, 3, 5, 4, 4, 5)
-ocene_iz_prirodnih_nauka = ocene[-3:]
-print(min(ocene_iz_prirodnih_nauka))
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="id20">
-<h3>Претрага<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
-<p>Погледајмо на почетку наредни видео:</p>
-
-    <div  id="2bhMU5uiMSU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/2bhMU5uiMSU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-2bhMU5uiMSU" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-2bhMU5uiMSU">
-        </div>
-    </div>
-    
-    
-    <p>Проверу да ли елемент припада торки тј. листи могуће је извршити
-коришћењем оператора <code class="docutils literal notranslate"><span class="pre">in</span></code> (на пример, <code class="docutils literal notranslate"><span class="pre">&quot;Бобан</span> <span class="pre">Марјановић&quot;</span> <span class="pre">in</span>
-<span class="pre">igraci</span></code>). У наредном примеру проверавамо да ли је кошаркаш чије се
-име и презиме учитавају при покретању програма играо за репрезентацију
-на СП 2019. године.</p>
-
-<div data-childcomponent="Калинић_не_игра" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=Калинић_не_игра data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-igraci = ["", "Стефан Јовић", "Марко Симоновић", "Богдан Богдановић",
-          "Никола Калинић", "Милан Мачван", "Стефан Марковић",
-          "Немања Недовић", "Мирослав Радуљица", "Милош Теодосић",
-          "Никола Јокић", "Владимир Штимац", "Стефан Бирчевић"]
-igrac = input("Унеси име и презиме кошаркаша:")
-if igrac in igraci:
-    print(igrac, "је играо за репрезентацију")
-else:
-    print(igrac, "није играо за репрезентацију")
-</textarea>
-</div>
-<p>Проналажење најмање позиције (индекса) на којој се налази неки тражени
-елемент може се урадити коришћењем методе <code class="docutils literal notranslate"><span class="pre">index</span></code>, којој се као
-једини параметар прослеђује елемент који се тражи.</p>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Методе су посебан облик функција које се позивају у облику
-<code class="docutils literal notranslate"><span class="pre">struktura.funkcija(parametri)</span></code>, уместо у облику
-<code class="docutils literal notranslate"><span class="pre">funkcija(struktura,</span> <span class="pre">parametri)</span></code>. Дакле, ако у листи <code class="docutils literal notranslate"><span class="pre">igraci</span></code>
-тражимо Николу Јокића, уместо да наведемо <code class="docutils literal notranslate"><span class="pre">index(igraci,</span> <span class="pre">&quot;Никола</span>
-<span class="pre">Јокић&quot;)</span></code>, навешћемо <code class="docutils literal notranslate"><span class="pre">igraci.index(&quot;Никола</span> <span class="pre">Јокић&quot;)</span></code>. Приметимо да
-су све наредбе корњачи заправо биле методе (користили смо
-<code class="docutils literal notranslate"><span class="pre">turtle.forward(100)</span></code>, а не <code class="docutils literal notranslate"><span class="pre">forward(turtle,</span> <span class="pre">100)</span></code>.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id22">
-<h3>Надовезивање<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
-<p>Две торке тј. листе можемо надовезати (спојити у једну) коришћењем
-операције <code class="docutils literal notranslate"><span class="pre">+</span></code>. Тиме се формира нова торка тј. листа, док се
-оригинали не мењају. Није могуће надовезати торку и листу, нити листу
-и торку.</p>
-<div class="section" id="id23">
-<h4>Висине девојчица и дечака у одељењу<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Познате су висине девојчица и висине дечака у једном одељењу. Направи
-торку свих висина и израчунај затим број и просечну висину свих ђака.</p>
-
-    </p></div></div>
-
-<div data-childcomponent="спајање_листа" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=спајање_листа data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-visine_devojcica = [165, 153, 155, 155, 157]
-visine_decaka = [170, 168, 173, 156, 172]
-visine = visine_devojcica + visine_decaka
-print(len(visine))
-print(sum(visine) / len(visine))
-</textarea>
-</div>
-<p>Слично као што код бројева множење представља узастопно сабирање, исти
-је случај и овде и може се наслутити да множење ниске природним бројем
-заправо представља њено понављање одређени број пута. На пример, ако
-желимо да направимо листу која садржи 100 нула, то можео урадити
-изразом <code class="docutils literal notranslate"><span class="pre">[0]</span> <span class="pre">*</span> <span class="pre">100</span></code>, док израз <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">1,</span> <span class="pre">2)</span> <span class="pre">*</span> <span class="pre">3</span></code> гради торку <code class="docutils literal notranslate"><span class="pre">(0,</span>
-<span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2)</span></code>.</p>
-</div>
-</div>
-<div class="section" id="id25">
-<h3>Сортирање<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
-<p>Елементе торке тј. листе је веома једноставно уредити од најмањег до
-највећег (па и обратно, од највећег до најмањег). Функција <code class="docutils literal notranslate"><span class="pre">sorted</span></code>
-се може применити и на торке и на листе и она на основу датих података
-гради нову торку тј. листу која садржи исте податке, у сортираном
-редоследу. Метода <code class="docutils literal notranslate"><span class="pre">sort</span></code> применљива је само на листе и она мења
-листу тако што јој елементе rеђа у сортираном редоследу. Ово је
-ефикасније него да се прави нова листа, али се оригинални редослед
-елемената губи.</p>
-<div class="section" id="id26">
-<h4>Три најјефтинија и најскупља производа<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Дата је листа цена производа. Колико коштају три најјефтинија, а
-колико три најскупља производа?</p>
-
-    </p></div></div>
-
-<div data-childcomponent="најјефтинији_и_најскупљи_производи" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=најјефтинији_и_најскупљи_производи data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-cene = (58.00, 104.95, 117.50, 11.95, 10.4, 37.95, 85.5)
-sortirane_cene = sorted(cene)
-print(sum(sortirane_cene[0:3]))
-print(sum(sortirane_cene[-3:]))
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="id28">
-<h3>Враћање торки из функције<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
-<p>Као што смо већ раније поменули, торке могу бити веома корисне да би
-се вратило више вредности из функције. Подсетимо сеове корисне
-технике.</p>
-<div class="section" id="id29">
-<h4>Конверзија угла у степене и минуте<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Напиши функцију која за угао дат у облику децималног броја степени
-одређује њему најближи угао дат у степенима и минутима. Употреби га
-да одредиш колико степени и минута има угао <span class="math notranslate nohighlight">\(36,2^\circ\)</span>.</p>
-
-    </p></div></div>
-
-<div data-childcomponent="функција_враћа_торку" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=функција_враћа_торку data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-def ugao(alfa):
-    # prevodimo ugao u minute i zaokruzujemo na najblizi ceo broj
-    alfa_min = int(round(alfa * 60))
-    # izdvajamo stepene i minute
-    stepeni = alfa_min // 60
-    minuta = alfa_min % 60
-    # vracamo rezultat
-    return (stepeni, minuta)
-
-(stepeni, minuta) = ugao(36.2);
-print(stepeni, ":", minuta)
-</textarea>
-</div>
-<p>Приметимо да се приликом прихватања резултата врши распакивање торке
-тј. да се променљивима <code class="docutils literal notranslate"><span class="pre">stepeni</span></code> и <code class="docutils literal notranslate"><span class="pre">minuta</span></code> додељују редом први и
-други елемент уређеног пара који је функција вратила.</p>
-</div>
-<div class="section" id="id31">
-<h4>Измене листе<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
-<p>Торке и ниске су имутабилни типови података, што значи да се, када се
-једном формирају, они не могу даље мењати. Са друге стране, листе је
-могуће мењати. Појединачни елементи листе се могу мењати на следећи
-начин.</p>
-
-<div data-childcomponent="измена_елемената_листе" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=измена_елемената_листе data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-boje = ["red", "green", "blue"]
-boje[0] = "purple"
-boje[2] = "orange"
-print(boje)
-</textarea>
-</div>
-<p>На првом месту у листи црвену боју смо заменили љубичастом, а на
-последњем плаву са нарандџастом, тако да на крају програма листа
-<code class="docutils literal notranslate"><span class="pre">boje</span></code> чува вредности <code class="docutils literal notranslate"><span class="pre">[&quot;purple&quot;,</span> <span class="pre">&quot;green&quot;,</span> <span class="pre">&quot;orange&quot;]</span></code>.</p>
-<p>Елемент на крај листе можемо додати методом <code class="docutils literal notranslate"><span class="pre">append</span></code>. На пример,
-уместо да мењамо, листу боја можемо да проширимо за две вредности.</p>
-
-<div data-childcomponent="додавање_елемената_у_листу" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=додавање_елемената_у_листу data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-boje = ["red", "green", "blue"]
-boje.append("purple")
-boje.append("orange")
-print(boje)
-</textarea>
-</div>
-<p>На крају овог програма, листа садржи вредности <code class="docutils literal notranslate"><span class="pre">[&quot;red&quot;,</span> <span class="pre">&quot;green&quot;,</span>
-<span class="pre">&quot;blue&quot;,</span> <span class="pre">&quot;purple&quot;,</span> <span class="pre">&quot;orange&quot;]</span></code>.</p>
-<p>Елементе из листе можемо брисати помоћу <code class="docutils literal notranslate"><span class="pre">del</span></code>. На пример, ако из
-листе дана желимо да обришемо дане викенда, то можемо урадити на
-наредни начин.</p>
-
-<div data-childcomponent="брисање_елемената_из_листе" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=брисање_елемената_из_листе data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-dani = ["nedelja", "ponedeljak", "utorak", "sreda", "četvrtak", "petak", "subota"]
-del dani[6]
-del dani[0]
-print(dani)
-</textarea>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="id35">
-<h2>Ниске<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
-<p>Погледај наредни видео:</p>
-
-    <div  id="hUsiAOanxSg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/hUsiAOanxSg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-hUsiAOanxSg" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-hUsiAOanxSg">
-        </div>
-    </div>
-    
-    
-    <p>Поред бројева, рачунари су веома добри и у раду са текстом и, као што
-смо видели, за рад са текстом се користе ниске и променљиве типа
-<code class="docutils literal notranslate"><span class="pre">str</span></code>. Иако се могу посматрати и као атомичке вредности (појединачни
-подаци), ниске се могу посматрати и као торке карактера (слова,
-интерпункцијских знакова и слично). Самим тим, на ниске се примењују
-скоро све технике које се користе у раду са торкама. Нагласимо да су,
-као и торке, и ниске имутабилне и да једном формирану ниску није
-могуће променити.</p>
-<div class="section" id="id36">
-<h3>Надовезивање ниски<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
-<p>Погледај наредни видео:</p>
-
-    <div  id="xU9PRElMSKo" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/xU9PRElMSKo/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-xU9PRElMSKo" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-xU9PRElMSKo">
-        </div>
-    </div>
-    
-    
-    <p>Слично као и над листама, над нискама се могу вршити одређене операције.
-Једна од основних операција је спајање две ниске. Ова операција
-донекле подсећа на сабирање и обележава се знаком <code class="docutils literal notranslate"><span class="pre">+</span></code>.  На пример,
-вредност израза <code class="docutils literal notranslate"><span class="pre">&quot;abraka&quot;</span> <span class="pre">+</span> <span class="pre">&quot;dabra&quot;</span></code> је <code class="docutils literal notranslate"><span class="pre">&quot;abrakadabra&quot;</span></code>.  Још
-једна интересантна операција је да се ниска помножи природним
-бројем. И множење ниске бројем функционише исто као код торки
-тј. листа. На пример, вредност израза <code class="docutils literal notranslate"><span class="pre">&quot;ba&quot;*2</span></code> је <code class="docutils literal notranslate"><span class="pre">&quot;baba&quot;</span></code>.</p>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="ниске_надовезивање_множење">
-            <p>Q-24: Који од наредних израза крију у себи исправно записан назив воћа?</p>
-
-            <li data-component="answer" data-correct id="ниске_надовезивање_множење_opt_a">"ba" + "na" * 2</li><li data-component="feedback" id="ниске_надовезивање_множење_opt_a">Тачно! "banana"</li>
-            
-            <li data-component="answer" data-correct id="ниске_надовезивање_множење_opt_b">"a" + "na" * 2 + "s"</li><li data-component="feedback" id="ниске_надовезивање_множење_opt_b">Тачно! "ananas"</li>
-            
-            <li data-component="answer"  id="ниске_надовезивање_множење_opt_c">"ba" * 2 + "na"</li><li data-component="feedback" id="ниске_надовезивање_множење_opt_c">Нетачно! "babana"</li>
-            
-            <li data-component="answer"  id="ниске_надовезивање_множење_opt_d">"an" * 2 + "nas"</li><li data-component="feedback" id="ниске_надовезивање_множење_opt_d">Нетачно! "anannas"</li>
-            
-
-            </ul>
-            </div>
-            <p>Допуни наредни програм тако да исправно испише име и презиме (у овом
-примеру треба да се испише <code class="docutils literal notranslate"><span class="pre">Петар</span> <span class="pre">Петровић</span></code>).</p>
-
-<div data-childcomponent="име_и_презиме" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=име_и_презиме data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-ime = "Петар"
-prezime = "Петровић"
-ime_i_prezime = ime prezime         # ispravi ovaj red
-print(ime_i_prezime)
-</textarea>
-</div>
-</div>
-<div class="section" id="id38">
-<h3>А шта је са цифрама у ниски?<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
-<p>Ниске у себи могу да садрже цифре, па чак могу да буду састављене
-искључиво од цифара. Међутим, када се на две ниске примени оператор
-<code class="docutils literal notranslate"><span class="pre">+</span></code> ниске се надовезују. Тако је резултат операције <code class="docutils literal notranslate"><span class="pre">&quot;12&quot;</span> <span class="pre">+</span> <span class="pre">&quot;34&quot;</span></code>
-једнак <code class="docutils literal notranslate"><span class="pre">&quot;1234&quot;</span></code>, а не <code class="docutils literal notranslate"><span class="pre">46</span></code> како би неки очекивали. Помоћу
-<code class="docutils literal notranslate"><span class="pre">input</span></code> уноси се увек текст, тј. резултат ове операције је увек
-ниска, чак иако тај текст садржи само цифре. Имајући ово у виду,
-покушај да предвидиш шта ће израчунати наредни програм када, након
-његовог покретања, корисник унесе 3, а затим и 5.</p>
-
-<div data-childcomponent="погрешно_сабирање" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=погрешно_сабирање data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-prvi_sabirak  = input("Unesi prvi sabirak: ")
-drugi_sabirak = input("Unesi drugi sabirak: ")
-zbir = prvi_sabirak + drugi_sabirak
-print(zbir)
-</textarea>
-</div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="ниске_надовезивање_множење_2">
-            <p>Q-25: Који је резултат извршавања претходног програма ако корисник унесе
-прво <code class="docutils literal notranslate"><span class="pre">3</span></code>, а затим <code class="docutils literal notranslate"><span class="pre">5</span></code>.</p>
-
-            <li data-component="answer"  id="ниске_надовезивање_множење_2_opt_a">8</li><li data-component="feedback" id="ниске_надовезивање_множење_2_opt_a">Нетачно! Иако корисник куца цифре, ``prvi_sabirak`` и
-``drugi_sabirak`` нису бројеви него ниске (текст) и
-зато се оператором ``+`` оне надовезују.</li>
-            
-            <li data-component="answer"  id="ниске_надовезивање_множење_2_opt_b">15</li><li data-component="feedback" id="ниске_надовезивање_множење_2_opt_b">Нетачно! Покушај поново.</li>
-            
-            <li data-component="answer" data-correct id="ниске_надовезивање_множење_2_opt_c">"35"</li><li data-component="feedback" id="ниске_надовезивање_множење_2_opt_c">Тачно!</li>
-            
-            <li data-component="answer"  id="ниске_надовезивање_множење_2_opt_d">"8"</li><li data-component="feedback" id="ниске_надовезивање_множење_2_opt_d">Нетачно! Иако корисник куца цифре, ``prvi_sabirak`` и
-``drugi_sabirak`` нису бројеви него ниске (текст) и
-зато се оператором ``+`` оне надовезују.</li>
-            
-
-            </ul>
-            </div>
-            <p>Ако текст садржи само цифре, онда се број представљен тим цифрама може
-добити помоћу <code class="docutils literal notranslate"><span class="pre">int</span></code>. На пример, <code class="docutils literal notranslate"><span class="pre">int(&quot;123&quot;)</span></code> је број <code class="docutils literal notranslate"><span class="pre">123</span></code>. Тако
-је <code class="docutils literal notranslate"><span class="pre">int(&quot;12&quot;)</span> <span class="pre">+</span> <span class="pre">int(&quot;34&quot;)</span></code> једнако <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">+</span> <span class="pre">34</span></code> тј.  <code class="docutils literal notranslate"><span class="pre">46</span></code>. Стога се
-учитавање броја може постићи помоћу <code class="docutils literal notranslate"><span class="pre">int(input(&quot;Unesi</span> <span class="pre">broj:</span>
-<span class="pre">&quot;))</span></code>. Тако се претходни програм који сабира два учитана броја може
-поправити на следећи начин:</p>
-
-<div data-childcomponent="сабирање" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=сабирање data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-prvi_sabirak  = int(input("Unesi prvi sabirak: "))
-drugi_sabirak = int(input("Unesi drugi sabirak: "))
-zbir = prvi_sabirak + drugi_sabirak
-print(zbir)
-</textarea>
-</div>
-<p>Ниска може да садржи и децимални запис неког броја и тада се број
-представљен том ниском може добити помоћу <code class="docutils literal notranslate"><span class="pre">float</span></code>. На пример,
-<code class="docutils literal notranslate"><span class="pre">float(&quot;123.45&quot;)</span></code> je број <code class="docutils literal notranslate"><span class="pre">123.45</span></code>. Претварање ниске у број је и у
-овом случају веома важно урадити, јер се у супротном оператор <code class="docutils literal notranslate"><span class="pre">+</span></code>
-односи на надовезивање ниски, а не на сабирање бројева. Провери да ли
-ово добро разумеш.</p>
-
-<div class="course-box course-box-problem course-content">
-<ul data-component="dragndrop" id="ниске_и_бројеви">
-    <span data-component="question">
-</span>
-	<span data-component=feedback>Покушај поново</span>
-
-    <li data-component="draggable" id="ниске_и_бројеви_drag1">float("3.5") + float("3.5")</li>
-    <li data-component="dropzone" for="ниске_и_бројеви_drag1">7.0</li>
-
-    <li data-component="draggable" id="ниске_и_бројеви_drag2">"3.5" + "0.5"</li>
-    <li data-component="dropzone" for="ниске_и_бројеви_drag2">"3.50.5"</li>
-
-    <li data-component="draggable" id="ниске_и_бројеви_drag3">3.5 + "3.5"</li>
-    <li data-component="dropzone" for="ниске_и_бројеви_drag3">greška</li>
-
-    <li data-component="draggable" id="ниске_и_бројеви_drag4">float("2.5") + 1.5</li>
-    <li data-component="dropzone" for="ниске_и_бројеви_drag4">4.0</li>
-</ul></div><p>Тако се децимални број може унети са <code class="docutils literal notranslate"><span class="pre">broj</span> <span class="pre">=</span> <span class="pre">float(input(&quot;Unesi</span>
-<span class="pre">decimalan</span> <span class="pre">broj:&quot;))</span></code>.</p>
-</div>
-<div class="section" id="id41">
-<h3>Дужина ниске, издвајање делова ниске<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
-<p>Дужину ниске тј. број њених карактера можемо добити помоћу функције
-<code class="docutils literal notranslate"><span class="pre">len</span></code>. Тако је <code class="docutils literal notranslate"><span class="pre">len(&quot;Zdravo&quot;)</span></code> једнако 6, јер ниска <code class="docutils literal notranslate"><span class="pre">&quot;Zdravo&quot;</span></code>
-има тачно 6 карактера.</p>
-
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="fill_len_1">
-            <p>Вредност <code class="docutils literal notranslate"><span class="pre">len(&quot;Popokatepetl&quot;)</span></code> је <input type="text"></p>
-
-        <script type="application/json">
-            [[{"number": [12, 12], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0418\u0437\u0431\u0440\u043e\u0458 \u043a\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0435 \u0443 \u0440\u0435\u0447\u0438</p>\n"}]]
-        </script>
-
-        </div>
-        </div>
-            
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="fill_len_2">
-            <p>Вредност <code class="docutils literal notranslate"><span class="pre">len(&quot;Супер</span> <span class="pre">Марио</span> <span class="pre">3!&quot;)</span></code> је <input type="text"></p>
-
-        <script type="application/json">
-            [[{"number": [14, 14], "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0418\u0437\u0431\u0440\u043e\u0458 \u043a\u0430\u0440\u043a\u0442\u0435\u0440\u0435 \u0443 \u0440\u0435\u0447\u0438 \u0440\u0430\u0447\u0443\u043d\u0430\u0458\u0443\u045b\u0438 \u043f\u043e\u0441\u0435\u0431\u043d\u043e \u0438 \u043f\u0440\u0430\u0437\u043d\u0438\u043d\u0435 \u0438 \u0438\u043d\u0442\u0435\u0440\u043f\u0443\u043d\u043a\u0446\u0438\u0458\u0441\u043a\u0435 \u0437\u043d\u0430\u043a\u0435</p>\n"}]]
-        </script>
-
-        </div>
-        </div>
-            <p>Као и у другим торкама и листама и карактери у ниски имају своје редне
-бројеве тј. позиције. Први карактер се налази на позицији 0, други на
-позицији 1 и тако даље. Могуће је издвојити појединачни карактер из
-ниске. На пример, ако је <code class="docutils literal notranslate"><span class="pre">ime</span> <span class="pre">=</span> <span class="pre">&quot;Zorana&quot;</span></code> тада се карактер <code class="docutils literal notranslate"><span class="pre">Z</span></code>
-може добити изразом <code class="docutils literal notranslate"><span class="pre">ime[0]</span></code>, а карактер <code class="docutils literal notranslate"><span class="pre">r</span></code> изразом <code class="docutils literal notranslate"><span class="pre">ime[2]</span></code>.</p>
-<p>Подржани су и негативни индекси тако што -1 означава последњи карактер,
--2 претпоследњи и тако даље. На пример, ако је <code class="docutils literal notranslate"><span class="pre">ime</span> <span class="pre">=</span> <span class="pre">&quot;Zorana&quot;</span></code> тада
-је <code class="docutils literal notranslate"><span class="pre">ime[-1]</span></code> карактер <code class="docutils literal notranslate"><span class="pre">a</span></code> док је <code class="docutils literal notranslate"><span class="pre">ime[-4]</span></code> карактер <code class="docutils literal notranslate"><span class="pre">r</span></code>.</p>
-<p>И издвајање дела ниске (подниске) функционише на исти начин као и код
-других торки тј. листа. Подсети се овога.</p>
-
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="fill_индекси_ниске">
-            <p>Дата је ниска <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">&quot;Programiranje</span> <span class="pre">je</span> <span class="pre">mnogo</span> <span class="pre">zabavno&quot;</span></code>.
-Вредност израза <code class="docutils literal notranslate"><span class="pre">s[0:4]</span></code> је <input type="text"></p>
-<p>Израз којим је из ниске <code class="docutils literal notranslate"><span class="pre">s</span></code> могуће издвојити реч <code class="docutils literal notranslate"><span class="pre">mnogo</span></code> је <input type="text"></p>
-
-        <script type="application/json">
-            [[{"regex": "^ *Prog|\"Prog\" *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *Progr *$", "regexFlags": "", "feedback": "<p>\u041a\u0430\u0440\u0430\u043a\u0442\u0435\u0440 \u0441\u0430 \u043f\u043e\u0441\u043b\u0435\u0434\u045a\u0435 \u043d\u0430\u0432\u0435\u0434\u0435\u043d\u0435 \u043f\u043e\u0437\u0438\u0446\u0438\u0458\u0435 \u0441\u0435 \u043d\u0435 \u0443\u0437\u0438\u043c\u0430</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u0418\u0437\u0431\u0440\u043e\u0458 \u043a\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0435 \u0443 \u0440\u0435\u0447\u0438</p>\n"}], [{"regex": "^ *s\\[(17\\:22|-13\\:-8)\\] *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u043e \u043f\u0440\u0435\u0431\u0440\u043e\u0458 \u043f\u043e\u0437\u0438\u0446\u0438\u0458\u0435. \u041c\u043e\u0436\u0435\u0448 \u0434\u0430 \u043a\u043e\u0440\u0438\u0441\u0442\u0438\u0448 \u0431\u0438\u043b\u043e \u043f\u043e\u0437\u0438\u0442\u0438\u0432\u043d\u0435 \u0438\u043d\u0434\u0435\u043a\u0441\u0435 (\u0441\u043b\u0435\u0432\u0430 \u043d\u0430 \u0434\u0435\u0441\u043d\u043e), \u0431\u0438\u043b\u043e \u043d\u0435\u0433\u0430\u0442\u0438\u0432\u043d\u0435 \u0438\u043d\u0434\u0435\u043a\u0441\u0435 (\u0441\u0434\u0435\u0441\u043d\u0430 \u043d\u0430 \u043b\u0435\u0432\u043e).</p>\n"}]]
-        </script>
-
-        </div>
-        </div>
-            <p>И наредни задатак се могу урадити коришћењем издвајања делова ниске.</p>
-<div class="section" id="id42">
-<h4>ЈМБГ<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Сваки грађанин Републике Србије има свој јединствени матични број
-(ЈМБГ). У њему прве две цифре одређују дан рођења, друге две месец,
-а наредне три цифре одређују годину рођења. Наредне две цифре
-одређују општину рођења, наредне три цифре су јединствене за ту
-особу при чему се из њих може одредити пол (комбинације од 000 до
-499 се додељују дечацима, а од 500 до 999 девојчицама). Последња
-цифра је контролна. Она се израчунава применом једне посебне
-формуле на претходне цифре. За дати ЈМБГ одредите ког дана и месеца
-се особа родила.</p>
-
-    </p></div></div>
-<p>Иако делује да је ЈМБГ број, њега је боље посматрати као ниску
-карактера тј.  стринг. Наиме, обично смо заинтересовани само за
-издвајање одређених делова ЈМБГ, док на ЈМБГ никада не примењујемо
-аритметичке операције (нпр. нема смисла сабирати два ЈМБГ нити ЈМБГ
-множити са 2). Издвајање делова је веома једноставно ако ЈМБГ
-представимо у облику ниске.</p>
-
-<div data-childcomponent="jmbg" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=jmbg data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-jmbg  = "1702992850011"
-dan   = jmbg[0:2]     # izdvajamo tekst sa pozicija 0 i 1
-mesec = ""            # izdvajamo tekst sa pozicija 2 i 3 - popravi ovaj red
-print("Rodjen si " + dan + "." + mesec + ".")
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="id43">
-<h3>Претрага ниске<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
-<p>Често је потребно да проверимо да ли једна ниска садржи неки карактер
-или садржи неку другу ниску. То можемо урадити коришћењем <code class="docutils literal notranslate"><span class="pre">find</span></code>.
-На пример, ако је <code class="docutils literal notranslate"><span class="pre">ime_i_prezime</span> <span class="pre">=</span> <span class="pre">&quot;Љубица</span> <span class="pre">Љубичић&quot;</span></code> тада је
-вредност <code class="docutils literal notranslate"><span class="pre">ime_i_prezime.find(&quot;</span> <span class="pre">&quot;)</span></code> једнака <code class="docutils literal notranslate"><span class="pre">6</span></code>, јер се размак може
-наћи на позицији 6. Ако потражимо карактер који ниска не садржи (на
-пример, <code class="docutils literal notranslate"><span class="pre">ime_i_prezime.find(&quot;,&quot;)</span></code>), добићемо вредност <code class="docutils literal notranslate"><span class="pre">-1</span></code>.
-Уместо <code class="docutils literal notranslate"><span class="pre">find</span></code> можемо употребити и <code class="docutils literal notranslate"><span class="pre">index</span></code> (као и код торки и
-листа), међутим, када се оно што се тражи не налази у ниски, <code class="docutils literal notranslate"><span class="pre">find</span></code>
-враћа вредност <code class="docutils literal notranslate"><span class="pre">-1</span></code>, док <code class="docutils literal notranslate"><span class="pre">index</span></code> даје грешку при извршавању
-програма.</p>
-<p>Претрагу можемо употребити да бисмо, на пример, издвојили име и
-презиме из датог имена и презимена (што је управо супротно од задатка
-у којем смо на основу посебног имена и презимена и добили спојено име
-и презиме).</p>
-
-<div data-childcomponent="издвајање_имена_и_презимена" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=издвајање_имена_и_презимена data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-ime_i_prezime = "Љубица Љубичић"
-razmak = ime_i_prezime.find(" ")
-ime = ime_i_prezime[0:razmak]
-prezime = ime_i_prezime[razmak+1:]
-print("Име: ", ime)
-print("Презиме: ", prezime)
-</textarea>
-</div>
-<p>Овај задатак има и лепше решење које користи функцију <code class="docutils literal notranslate"><span class="pre">split</span></code>, која
-формира листу речи дате реченице (врши поделу ниске на подниске на
-основу размака који се јављају унутар ниске).</p>
-
-<div data-childcomponent="издвајање_имена_и_презимена_split" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=издвајање_имена_и_презимена_split data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-ime_i_prezime = "Љубица Љубичић"
-(ime, prezime) = ime_i_prezime.split()
-print("Име: ", ime)
-print("Презиме: ", prezime)
-</textarea>
-</div>
-<p>Осим што можемо пронаћи позицију на којој се неко слово или нека
-подниска јавља унутар ниске, можемо и избројати колико се пута оно
-појављује. За то можемо користити <code class="docutils literal notranslate"><span class="pre">count</span></code>. На пример, број
-појављивања слова <code class="docutils literal notranslate"><span class="pre">a</span></code> у неком имену можемо израчунати помоћу
-<code class="docutils literal notranslate"><span class="pre">ime.count(&quot;a&quot;)</span></code>. Наредни задатак се веома једноставно може урадити
-применом методе <code class="docutils literal notranslate"><span class="pre">count</span></code>.</p>
-<div class="section" id="id45">
-<h4>Врсте реченица<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h4>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Дат је текст (ниска) који садржи неколико једноставних реченица.
-Одреди колико међу њима има обавештајних, колико има упитних и
-колико има узвичних реченица.</p>
-
-    </p></div></div>
-<p>Обавештајне реченице се завршавају тачком, упитне знаком питања, а
-узвичне узвичником. Број реченица сваке врсте можемо одредити тако што
-пребројимо колико се пута јавља сваки од ова три карактера (карактер
-тачка <code class="docutils literal notranslate"><span class="pre">.</span></code>, карактер упитник <code class="docutils literal notranslate"><span class="pre">?</span></code> и карактер узвичник <code class="docutils literal notranslate"><span class="pre">!</span></code>).</p>
-
-<div data-childcomponent="врсте_реченица" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=врсте_реченица data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-tekst = "Zdravo! Ja sam Marko! Kako se ti zoveš? Koji si ti razred? Ja sam šesti."
-print("Obaveštajnih:", tekst.count("."))
-print("Upitnih:", 0)         # ispravi ovaj red
-print("Uzvičnih:", 0)        # ispravi ovaj red
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="id47">
-<h3>Сложене торке и листе<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
-<p>Торке и листе могу да буду елементи других торки тј. листа. Направимо,
-на пример, торку која садржи податке о месецима током једне године
-која није преступна. За сваки месец знамо назив и број дана и те
-податке ћемо организовати помоћу уређених парова (на пример,
-<code class="docutils literal notranslate"><span class="pre">(&quot;април&quot;,</span> <span class="pre">30)</span></code>).</p>
-<div class="section" id="id48">
-<h4>Дани у месецу<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
-
-<div data-childcomponent="листа_торки" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=листа_торки data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-meseci = (("јануар", 31), ("фебруар", 28), ("март", 31), \
-          ("април", 30), ("мај", 31), ("јун", 30), \
-          ("јул", 31), ("август", 31), ("септембар", 30), \
-          ("октобар", 31), ("новембар", 30), ("децембар", 31))
-broj = int(input("Унеси редни број месеца:"))
-mesec = meseci[broj - 1]
-print("Назив:", mesec[0], "Број дана:", mesec[1])
-</textarea>
-</div>
-<p>Помоћну променљиву <code class="docutils literal notranslate"><span class="pre">mesec</span></code> није било неопходно користити. Поправи
-индексе у наредном програму тако да ради исто као и претходни.</p>
-
-<div data-childcomponent="листа_торки_1" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=листа_торки_1 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-meseci = (("јануар", 31), ("фебруар", 28), ("март", 31), \
-          ("април", 30), ("мај", 31), ("јун", 30), \
-          ("јул", 31), ("август", 31), ("септембар", 30), \
-          ("октобар", 31), ("новембар", 30), ("децембар", 31))
-broj = int(input("Унеси редни број месеца:"))
-# popravi indekse u narednom redu
-print("Назив:", meseci[0][0], "Број дана:", meseci[0][0])
-</textarea>
-</div>
-</div>
-</div>
+<p>Распакивање се може применити и на уређене парове и торке.</p>
 </div>
 </div>
 
