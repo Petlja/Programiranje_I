@@ -302,36 +302,36 @@
 
 .. activecode:: шаховске_фигуре
 
-   def kralj(x1, y1, x2, y2):
-       return False
+    def kralj(x1, y1, x2, y2):
+        return False
 
-   def top(x1, y1, x2, y2):
-       return False
+    def top(x1, y1, x2, y2):
+        return False
 
-   def lovac(x1, y1, x2, y2):
-       return False
+    def lovac(x1, y1, x2, y2):
+        return False
 
-   def kraljica(x1, y1, x2, y2):
-       return False
+    def kraljica(x1, y1, x2, y2):
+        return False
 
-   def konj(x1, y1, x2, y2):
-       return False
+    def konj(x1, y1, x2, y2):
+        return False
 
-   polje = (3, 5)
+    polje = (3, 5)
 
-   
-   def ispisi_dostupna_polja(polje, naziv_figure, figura_provera):
-       for x in range(1, 8+1):
-	  for y in range(1, 8+1):
-	     if (figura_provera(polje[0], polje[1], x, y)):
-	        print(naziv_figure, x, y)
+    # -*- acsection: after-main -*-
+    def ispisi_dostupna_polja(polje, naziv_figure, figura_provera):
+        for x in range(1, 8+1):
+            for y in range(1, 8+1):
+                if (figura_provera(polje[0], polje[1], x, y)):
+                    print(naziv_figure, x, y)
 
-   ispisi_dostupna_polja(polje, 'kralj:', kralj)
-   ispisi_dostupna_polja(polje, 'top:', top)
-   ispisi_dostupna_polja(polje, 'lovac:', lovac)
-   ispisi_dostupna_polja(polje, 'kraljica:', kraljica)
-   ispisi_dostupna_polja(polje, 'konj:', konj)
-
+    ispisi_dostupna_polja(polje, 'kralj:', kralj)
+    ispisi_dostupna_polja(polje, 'top:', top)
+    ispisi_dostupna_polja(polje, 'lovac:', lovac)
+    ispisi_dostupna_polja(polje, 'kraljica:', kraljica)
+    ispisi_dostupna_polja(polje, 'konj:', konj)
+    print('joca')
 
 .. reveal:: терен_тест_решење11
    :showtitle: Прикажи решење
@@ -356,7 +356,7 @@
 
       polje = (3, 5)
    
-      ====
+      # -*- acsection: after-main -*-
       def ispisi_dostupna_polja(polje, naziv_figure, figura_provera):
         for x in range(1, 8+1):
     	  for y in range(1, 8+1):
