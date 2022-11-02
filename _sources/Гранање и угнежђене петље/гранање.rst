@@ -120,8 +120,14 @@ a`. Координата :math:`y` горњег левог темена свак
    .. activecode:: naizmenicno_kod2
       :passivecode: true
     
+      # broj kvadrata koje treba iscrtati
+      broj_kvadrata = 10
+      # širina i visina jednog kvadrata
+      dimenzija_kvadrata = sirina / broj_kvadrata
+      # vertikalna sredina ekrana
+      sredina = visina / 2
       # prvi kvadrat je zute boje
-      zuto = true
+      zuto = True
       for i in range(0, broj_kvadrata):
           # boju odredjujemo na osnovu istinitosne vrednosti promenljive zuto
           if zuto:
@@ -131,7 +137,7 @@ a`. Координата :math:`y` горњег левог темена свак
           # menjamo boju za sledeci korak
           zuto = not zuto
           # koordinate gornjeg levog temena
-          (levo, gore) = (i*sirina_kvadrata, sredina - dimenzija_kvadrata / 2)
+          (levo, gore) = (i * dimenzija_kvadrata, sredina - dimenzija_kvadrata / 2)
           # crtamo kvadrat
           pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
 
