@@ -101,6 +101,7 @@
 
    .. activecode:: PyGame_movable_code
       :passivecode:
+      :includexsrc: _includes/movable_scalable.py
 
       def crtanje():
           prozor.fill(pg.Color("white"))
@@ -170,6 +171,7 @@
 
    .. activecode:: PyGame_movable_scalable_code
       :passivecode:
+      :includexsrc: _includes/movable_scalable.py
 
       def crtanje():
           prozor.fill(pg.Color("white"))
