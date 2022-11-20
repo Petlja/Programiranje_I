@@ -146,7 +146,7 @@
 .. mchoice:: funк7
     :answer_a: 33 "33"
     :feedback_a: Нетачно    
-    :answer_b: 33 "1122"
+    :answer_b: 33 1122
     :feedback_b: Тачно
     :answer_c: 1122 "1122"
     :feedback_c: Нетачно    
