@@ -323,7 +323,7 @@ lessons:
         description: #opciono
         guid: f8751dac-80d3-443b-900e-9ebbaf6820bb
       - type: coding-quiz
-        title: 11.6. Гранање - додатни задтак
+        title: 11.6. Гранање - додатни задатак
         problems:
           - https://petlja.org/biblioteka/r/Zbirka-python/jabuke
         guid: 11db7f4e-1a4f-415e-8a0a-6a1d26f0b2da
