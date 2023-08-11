@@ -43,6 +43,7 @@
    :hidetitle: Сакриј решење
 
    .. activecode:: while125_resenje
+      :timelimit: 60000
 
       cena = float(input("Unesi cenu cipela:"))
 
