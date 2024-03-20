@@ -26,7 +26,7 @@
    def crtaj():
        for i in range(broj_kvadrata):
            for j in range(broj_kvadrata):
-           pg.draw.rect(prozor, nasumicna_boja(), ???)
+               pg.draw.rect(prozor, nasumicna_boja(), ???)
 
 .. reveal:: podijum_animacija_1
   :showtitle: Прикажи решење
