@@ -117,7 +117,7 @@
    r = 40                               # poluprečnik loptice
    (dx, dy) = (10, 10)                  # pomeraji po x i y koordinati
     
-   def crtanje():
+   def crtaj():
        prozor.fill(pg.Color("white"))                       # bojimo prozor u belo
        pg.draw.circle(prozor, pg.Color("blue"), (x, y), r)  # crtamo lopticu
     
@@ -191,7 +191,7 @@ Tада се реакција на притисак тастера може ре
    (x, y) = (sirina / 2, visina / 2)   # koordinate centra broda (inicijalno u centru prozora)
    (dx, dy) = (10, 10)                 # pomeraji po x i y koordinati
     
-   def crtanje():
+   def crtaj():
        prozor.fill(pg.Color("black"))        # bojimo prozor u belo
        prozor.blit(brod, (x - ???, y - ???)) # crtamo brod tako da mu je centar u (x, y)
     
@@ -277,4 +277,4 @@ Tада се реакција на притисак тастера може ре
            ???
            # strelica na dole
            ???
-       return True                  # ne treba ponovo nacrtati scenu
+       return False                  # ne treba ponovo nacrtati scenu
